@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:background="@drawable/green_click_shape_rounded_corners"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/price_pane"
+        android:layout_width="wrap_content"
+        android:minWidth="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/dark_green_rounded_corner">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Rs" android:id="@+id/inn"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content" android:id="@+id/price"
+            android:layout_height="wrap_content" android:maxLines="@string/Button9"
+            android:text="@string/_30000"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/price_pane2"
+        android:layout_width="wrap_content"
+        android:minWidth="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/dark_green_rounded_corner">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Rs" android:id="@+id/inn2"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content" android:id="@+id/price2"
+            android:layout_height="wrap_content" android:maxLines="@string/Button9"
+            android:text="0"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView13"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/price_pane"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="66dp"
+        android:id="@+id/imagetext"
+        android:layout_height="66dp"
+        android:layout_below="@+id/price_pane"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="match_parent" android:id="@+id/name"
+        android:layout_height="wrap_content" android:textSize="13sp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:maxLines="@string/Button10"
+        android:lines="@string/Button10"
+        android:layout_below="@+id/imageView13"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:ellipsize="end"/>
+
+
+</RelativeLayout>

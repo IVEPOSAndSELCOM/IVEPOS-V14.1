@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tabla_cuerpo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/cust_idd"
+                    android:layout_height="match_parent"
+                    android:maxLines="@string/Button9"
+                    android:lines="@string/Button9"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="start|center_vertical"
+                    android:textSize="12sp"
+                    android:text="@string/cust_id"/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/name"
+                    android:layout_height="wrap_content"
+                    android:lines="@string/Button10"
+                    android:maxLines="@string/Button10"
+                    android:ellipsize="end"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="12sp"
+                    android:text="@string/name_nospace"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/Button9"
+                android:orientation="vertical"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/idd"
+                    android:layout_height="match_parent" android:visibility="gone"
+                    android:gravity="start|center_vertical"
+                    android:textSize="12sp"
+                    android:text="@string/No_"/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/address"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="12sp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/address"/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/pincode"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="12sp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/pincode"/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/phone"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="12sp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/settext83"/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/emailid"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="12sp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/email"/>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_weight="2.5"-->
+            <!--android:gravity="center_vertical">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent" android:orientation="horizontal"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content" android:paddingRight="1dp" android:id="@+id/inn"-->
+            <!--android:layout_height="wrap_content" android:paddingLeft="5dp"-->
+            <!--android:text="@string/Rs"-->
+            <!--android:textSize="12sp"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content" android:id="@+id/total"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:gravity="start|center_vertical"-->
+            <!--android:text="@string/sale"-->
+            <!--android:textSize="12sp"/>-->
+            <!--</LinearLayout>-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content" android:id="@+id/total"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingLeft="5dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingRight="5dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="start|center_vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/sale"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="12sp"/>&ndash;&gt;-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content" android:id="@+id/balance"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:gravity="start|center_vertical"-->
+            <!--android:text="@string/balance"-->
+            <!--android:textSize="12sp"/>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent" android:orientation="horizontal"-->
+            <!--android:layout_height="wrap_content" android:id="@+id/disc_layout">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content" android:id="@+id/discount"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:gravity="start|center_vertical"-->
+            <!--android:text="@string/subtitle14"-->
+            <!--android:textSize="12sp"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content" android:paddingRight="1dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="("/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content" android:paddingRight="1dp" android:id="@+id/disc_type"-->
+            <!--android:layout_height="wrap_content"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content" android:paddingRight="1dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=")"/>-->
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp" android:id="@+id/appr_rating"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1.5"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:gravity="end|center_vertical"-->
+            <!--android:textSize="12sp"-->
+            <!--android:text="@string/approval_rating"/>-->
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

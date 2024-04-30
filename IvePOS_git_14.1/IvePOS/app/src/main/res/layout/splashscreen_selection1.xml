@@ -1,0 +1,155 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <TextView
+        android:layout_width="match_parent" android:id="@+id/text1"
+        android:layout_height="wrap_content"
+        android:text="@string/business_type"
+        android:padding="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_below="@+id/text1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="154dp">
+                <LinearLayout
+                    android:layout_width="match_parent" android:id="@+id/layout_dine"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:elevation="2dp"
+                    android:background="@drawable/white_rounded_corners">
+                    <RadioButton
+                        android:id="@+id/radio_dine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="gotoAdmin">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_dine_logo"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/action_admin"
+                            android:lines="@string/Button10"
+                            android:layout_below="@+id/imageView"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:id="@+id/layout_qsr"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:elevation="2dp"
+                    android:background="@drawable/white_rounded_corners">
+                    <RadioButton
+                        android:id="@+id/radio_qsr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="gotoUser">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_qsr_logo"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView1"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/action_user"
+                            android:lines="@string/Button10"
+                            android:layout_below="@+id/imageView1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="154dp"
+                android:elevation="2dp"
+                android:background="@drawable/white_rounded_corners">
+                <LinearLayout
+                    android:layout_width="match_parent" android:id="@+id/layout_retail"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:id="@+id/radio_retail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="gotocloud_subscription">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_retail_logo"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView9"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/subscriptions"
+                            android:lines="@string/Button10"
+                            android:layout_below="@+id/imageView9"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

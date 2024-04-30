@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/qty"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Button10"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x"/>
+
+                <TextView
+                    android:layout_width="172dp" android:id="@+id/name"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="@string/Button10"
+                    android:ellipsize="end"
+                    android:text="Punjabi khanna special butter chicken "/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content" android:id="@+id/price"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="223"
+                android:layout_gravity="end"
+                android:layout_margin="3dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   "/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/sub_item_name"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:text="Punjabi khanna special butter chicken "/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content" android:id="@+id/sub_item_price"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="223"
+                android:layout_gravity="end"
+                android:layout_margin="3dp"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note: "/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/instructions"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

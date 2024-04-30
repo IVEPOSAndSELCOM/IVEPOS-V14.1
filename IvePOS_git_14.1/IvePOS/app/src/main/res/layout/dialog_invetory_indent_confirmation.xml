@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="320dp"
+    android:layout_height="wrap_content" android:background="#e6e6e6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:text="@string/print"
+                android:background="@drawable/light_black_click_shape_rounded_corners" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_margin="13dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_ok_done_green_48dp"/>
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/light_black_click_shape_rounded_corners"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/email_sms"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="15sp" android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/successfully_saved"
+            android:textColor="@color/ColorPrimaryDark"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+            android:padding="12dp"
+            android:elevation="2dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_rounded_corners">
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="@string/warning_items_may_be_in_the_tables_n" android:textColor="#000000"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/vendor_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_supplier_color_24dp"
+                        android:padding="6dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="9sp"
+                        android:text="@string/vendor"
+                        android:textColor="@color/DarkBlack"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/vendor_name_confirm"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@+id/vendor_box"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/intuition_payment_systems_llp"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/invoice_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/avg_sale_24dp"
+                        android:padding="6dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="9sp"
+                        android:text="@string/invoice"
+                        android:textColor="@color/DarkBlack"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/vendor_invoice_confirm"
+                    android:gravity="right"
+                    android:layout_toRightOf="@+id/invoice_box"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_123456789"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="6dp"
+                android:background="@color/LightBlack">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/Button9"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_toLeftOf="@+id/vendor_bill_confirm"
+                        android:textSize="12sp"
+                        android:text="@string/bill_amount"
+                        android:textColor="@color/green"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/inn"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/vendor_bill_confirm"
+                            android:textSize="15sp"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/_1000"
+                            android:textColor="#000000"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/MediumBlack"
+                    android:padding="4dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/Button9"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_toLeftOf="@+id/vendor_paid_confirm"
+                        android:textSize="12sp"
+                        android:text="@string/paid"
+                        android:textColor="@color/green"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/inn1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Rs"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/vendor_paid_confirm"
+                            android:textSize="15sp"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/_500"
+                            android:textColor="#000000"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/closetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ok"
+        android:padding="10dp"
+        android:text="@string/done"/>
+
+
+</LinearLayout>

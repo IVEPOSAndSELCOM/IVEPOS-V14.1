@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="320dp" android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6"
+        android:layout_marginBottom="5dp">
+
+        <ImageButton
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/light_black_click"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/subscription_prompt_cancel"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/title16"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btncancel"
+            android:layout_toLeftOf="@+id/refill"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/btndelete"
+            android:layout_toLeftOf="@+id/btnsave"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_done_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ok"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/save"/>
+
+    </RelativeLayout>
+
+    <LinearLayout android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content" android:id="@+id/add_item"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="visible">
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_toLeftOf="@+id/line"
+                android:layout_height="match_parent" android:id="@+id/closeadd"
+                android:layout_alignParentLeft="true" android:orientation="horizontal"/>
+
+
+            <ImageView
+                android:layout_width="1dp" android:id="@+id/line"
+                android:layout_height="match_parent"
+                android:background="#7f7f7f"/>
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:background="#e6e6e6"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp" android:paddingBottom="5dp"
+                    android:paddingLeft="5dp" android:paddingRight="5dp"
+                    android:background="#e6e6e6">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/greenglow"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/dialog_single_select"
+                            android:text="@string/single_select_items"
+                            android:textSize="15sp"
+                            android:gravity="right|center_vertical" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutmodset"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/dialog_editText1_set"
+                            android:selectAllOnFocus="true"
+                            android:hint="Modifier set*"
+                            android:textSize="15sp"
+                            android:nextFocusDown="@id/editText2"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:isScrollContainer="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="10dp">
+
+
+
+                        <LinearLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/holder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#e6e6e6">
+                    <LinearLayout
+                        android:layout_width="match_parent" android:orientation="vertical"
+                        android:layout_height="wrap_content" android:paddingTop="0dp"
+                        android:paddingLeft="15dp" android:paddingRight="15dp">
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

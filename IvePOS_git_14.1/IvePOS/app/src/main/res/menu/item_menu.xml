@@ -1,0 +1,102 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:id="@+id/action_category"-->
+        <!--android:orderInCategory="101"-->
+        <!--android:icon="@drawable/ic_category_black_24dp"-->
+        <!--android:title="  Category"-->
+        <!--app:showAsAction="always|withText"/>-->
+    <!--<item android:id="@+id/action_modifier"-->
+        <!--android:orderInCategory="102"-->
+        <!--android:icon="@drawable/ic_modifier_black_24dp"-->
+        <!--android:title="  Modifier"-->
+        <!--app:showAsAction="always|withText"/>-->
+    <!--<item android:id="@+id/action_tax"-->
+        <!--android:orderInCategory="103"-->
+        <!--android:icon="@drawable/ic_tax_black_24dp"-->
+        <!--android:title="  Tax"-->
+        <!--app:showAsAction="always|withText"/>-->
+
+    <item
+        android:menuCategory="system"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:orderInCategory="@string/Button11"
+        android:title="More options"
+        app:showAsAction="always" >
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <item android:id="@+id/action_barcode_printing"
+                android:orderInCategory="102"
+                android:icon="@drawable/ic_barcode_black_24dp"
+                android:title="@string/barcode_printing"/>
+
+            <item android:id="@+id/action_item_printing"
+                android:orderInCategory="102"
+                android:icon="@drawable/ic_print_black_24dp"
+                android:title="@string/item_printing"/>
+            <item android:id="@+id/action_download_csv"
+                android:orderInCategory="103"
+                android:icon="@drawable/ic_file_download_black_24dp"
+                android:title="@string/csv_download"/>
+            <item android:id="@+id/action_upload_csv"
+                android:orderInCategory="104"
+                android:icon="@drawable/ic_file_upload_black_24dp"
+                android:title="@string/csv_upload"/>
+            <item android:id="@+id/action_inventory_indent"
+                android:orderInCategory="105"
+                android:icon="@drawable/ic_smart_inventory_black_24dp"
+                android:title="@string/inventory_indent"/>
+            <item android:id="@+id/action_stock_transfer"
+                android:orderInCategory="106" android:visible="true"
+                android:icon="@drawable/ic_smart_inventory_black_24dp"
+                android:title="@string/stock_transfer"/>
+            <item android:id="@+id/action_syncnow"
+                android:orderInCategory="107"
+                android:icon="@drawable/ic_sync_black_icon_24dp"
+                android:title="@string/action_syncnow"/>
+            <item android:id="@+id/action_help"
+                android:orderInCategory="108"
+                android:icon="@drawable/ic_action_help_24dp"
+                android:title="@string/action_help"/>
+            <item android:id="@+id/action_modifiers" android:visible="false"
+                android:orderInCategory="109"
+                android:icon="@drawable/ic_modifier_black_24dp"
+                android:title="@string/action_modifier"/>
+        </menu>
+    </item>
+
+    <!--<item android:id="@+id/action_menu"-->
+        <!--android:menuCategory="system"-->
+        <!--android:icon="@drawable/menu_overflow1"-->
+        <!--android:showAsAction="always" >-->
+
+        <!--<menu xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+
+            <!--&lt;!&ndash; Search, should appear as action button &ndash;&gt;-->
+            <!--<item android:id="@+id/action_category"-->
+                <!--android:orderInCategory="101"-->
+                <!--android:icon="@drawable/category_icon_small"-->
+                <!--android:title="@string/action_category"/>-->
+            <!--<item android:id="@+id/action_modifier"-->
+                <!--android:orderInCategory="102"-->
+                <!--android:icon="@drawable/modifier_icon_small"-->
+                <!--android:title="@string/action_modifier"/>-->
+            <!--<item android:id="@+id/action_tax"-->
+                <!--android:orderInCategory="103"-->
+                <!--android:icon="@drawable/tax_icon_small"-->
+                <!--android:title="@string/action_tax"/>-->
+
+
+            <!--&lt;!&ndash; Settings, should always be in the overflow &ndash;&gt;-->
+            <!--&lt;!&ndash; <item android:id="@+id/action_settings"-->
+                <!--android:title="@string/action_settings"-->
+                <!--android:showAsAction="never" /> &ndash;&gt;-->
+
+        <!--</menu>-->
+
+
+
+    <!--</item>-->
+</menu>

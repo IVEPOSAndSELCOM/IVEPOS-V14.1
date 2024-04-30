@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/action_billsettings"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_receipt_black_24dp"
+        android:title="@string/action_billsettings_pref"
+        app:showAsAction="always|withText"/>
+
+    <item android:id="@+id/action_smartinvent"
+        android:orderInCategory="103"
+        android:icon="@drawable/ic_smart_inventory_black_24dp"
+        android:title="    Smart inventory"
+        app:showAsAction="always|withText"/>
+
+    <!--<item android:id="@+id/action_menu"-->
+        <!--android:menuCategory="system"-->
+        <!--android:icon="@drawable/menu_overflow1"-->
+
+
+        <!--android:showAsAction="always" >-->
+        <!--<menu xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!-->-->
+            <!--&lt;!&ndash; Search, should appear as action button &ndash;&gt;-->
+            <!--<item android:id="@+id/action_billsettings"-->
+                <!--android:orderInCategory="101"-->
+                <!--android:icon="@drawable/bill_receipt_icon_small"-->
+                <!--android:title="@string/action_billsettings_pref"/>-->
+            <!--<item android:id="@+id/action_speeddial"-->
+                <!--android:orderInCategory="102"-->
+                <!--android:icon="@drawable/quickaccess_pref_icon_small"-->
+                <!--android:title="@string/action_speeddial_pref"/>-->
+            <!--<item android:id="@+id/action_smartinvent"-->
+                <!--android:orderInCategory="103"-->
+                <!--android:icon="@drawable/inventory_pref_icon_small"-->
+                <!--android:title="@string/action_smartinventory_pref"/>-->
+            <!--<item android:id="@+id/action_network"-->
+                <!--android:orderInCategory="104"-->
+                <!--android:icon="@drawable/network_pref_icon_small"-->
+                <!--android:title="@string/action_network_pref"/>-->
+
+
+
+            <!--&lt;!&ndash; Settings, should always be in the overflow &ndash;&gt;-->
+            <!--&lt;!&ndash; <item android:id="@+id/action_settings"-->
+                <!--android:title="@string/action_settings"-->
+                <!--android:showAsAction="never" /> &ndash;&gt;-->
+
+        <!--</menu>-->
+    <!--</item>-->
+</menu>

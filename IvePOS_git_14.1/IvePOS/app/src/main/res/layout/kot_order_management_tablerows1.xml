@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <!--<TableLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent" android:id="@+id/table"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#ffffff">-->
+
+
+        <!-- Row 1 with single column -->
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" android:visibility="gone">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/Button9"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/date"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lasttransaction_date"
+                        android:textColor="#000000"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=","
+                        android:textColor="#000000"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/time"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time"
+                        android:textColor="#000000"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content" android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kot"
+                        android:textColor="#000000"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_"
+                        android:textColor="#000000"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/kot_no"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </TableRow>
+
+
+        <!-- Row 3 with 2 columns -->
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/itemname"
+                            android:layout_height="wrap_content"
+                            android:text="@string/item_name"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/modname"
+                            android:layout_height="wrap_content" android:visibility="gone"
+                            android:text="@string/mod_name"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/quantity"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qty"
+                        android:layout_alignParentRight="true"
+                        android:textSize="15sp"
+                        android:textColor="#000000"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--</TableLayout>-->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/relativeLayout1"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6">
+
+        <ImageButton
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/light_black_click"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/subscription_prompt_cancel"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/btn_redirect" android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnsave"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_add_white_24dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btncancel"
+            android:layout_toLeftOf="@+id/refill">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/category_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/chicken"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="vertical"
+            android:layout_height="wrap_content" android:id="@+id/sales_list">
+            <ImageView
+                android:layout_width="match_parent" android:id="@+id/imageView1"
+                android:layout_height="1dp" android:layout_below="@+id/list_header"
+                android:background="#7f7f7f"/>
+            <LinearLayout
+                android:layout_width="match_parent" android:id="@+id/list_header"
+                android:layout_height="wrap_content" android:paddingLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="6.8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"
+                    android:layout_weight="2.2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:paddingLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/date"
+                        android:text="@string/date"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:paddingLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/time"
+                        android:text="@string/time_title"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"
+                    android:layout_weight="2.4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:textSize="12sp"
+                        android:paddingLeft="5dp" android:paddingRight="5dp"
+                        android:paddingTop="6dp" android:paddingBottom="6dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/expensename"
+                        android:text="@string/expense_name"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.2"
+
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp" android:paddingRight="5dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/price"
+                    android:text="@string/amount"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent" android:id="@+id/imageView1"
+                android:layout_height="1dp" android:layout_below="@+id/list_header"
+                android:background="#7f7f7f"/>
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent" android:id="@+id/list_items"-->
+            <!--android:visibility="visible" android:orientation="vertical"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent" android:text="" android:textSize="1sp"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--<ListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/listView11"/>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="multipleChoice"/>
+
+</LinearLayout>

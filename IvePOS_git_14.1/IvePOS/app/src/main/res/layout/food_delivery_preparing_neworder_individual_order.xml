@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#ffffff"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/back_activity"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="?android:attr/actionBarItemBackground"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back_activity"
+            android:layout_toEndOf="@+id/back_activity"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content" android:id="@+id/order_id"
+                android:layout_height="wrap_content"
+                android:maxLines="@string/Button9"
+                android:ellipsize="end"
+                android:text="@string/order_id"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+            <TextView
+                android:layout_width="wrap_content" android:id="@+id/order_type"
+                android:layout_height="wrap_content"
+                android:maxLines="@string/Button9"
+                android:ellipsize="end"
+                android:text="@string/swiggy"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/customer_details"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/customer_nocircle_24dp" android:layout_toLeftOf="@+id/print_kot_bill"
+            android:contentDescription="Tab settings"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/actionBarItemBackground"
+            android:textStyle="bold"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <ImageButton
+            android:id="@+id/print_kot_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_print_black_24dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="Tab settings"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/actionBarItemBackground"
+            android:textStyle="bold"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+    </RelativeLayout>
+
+    ////////individual item layout for recycler view////
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="6dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent" android:id="@+id/text1"
+                android:layout_height="48dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/total"
+                    android:layout_margin="3dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/rs"/>
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/totalprice"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Button13"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content" android:id="@+id/arrow"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_drop_down_black_18dp"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:id="@+id/panel1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#5d5d5d"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Item total"
+                        android:layout_margin="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/subtotal"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Button13"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_margin="3dp"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Res. charges"
+                        android:layout_margin="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/res_charges"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Button13"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="end"
+                        android:layout_margin="3dp"
+                        android:drawableRight="@drawable/ic_info_black_24dp"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Total disc."
+                        android:layout_margin="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/disc_value"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="-0"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_margin="3dp"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Delivery fee"
+                        android:layout_margin="3dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/delivery_fee"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:text="@string/Button13" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#5d5d5d"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"/>
+
+
+            <ListView
+                android:id="@+id/items_listView" android:background="#ffffff"
+                android:layout_width="match_parent" android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:choiceMode="multipleChoice" android:focusable="true"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

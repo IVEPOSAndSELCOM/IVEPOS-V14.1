@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_REL_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_very_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:background="@drawable/approved"
+                android:clickable="false" />
+
+            <com.example.intuition.mswipecard.CustomTextView
+                android:id="@+id/preauthcompletion_approvalview_TXT_approved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/preauthcompletion_txtapprovalview_approved"
+                android:textColor="@color/green"
+                android:textSize="@dimen/textview_font_very_large" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height_normal"
+            android:layout_margin="@dimen/margin_normal"
+            android:background="@color/light_grey"></View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/preauthcompletion_approvalview_BTN_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_next_active" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/preauthcompletion_approvalview_RLT_print"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true">
+
+        <View
+            android:id="@+id/creditsale_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height_normal"
+            android:background="@color/light_grey"></View>
+
+        <LinearLayout
+            android:id="@+id/preauthcompletion_approvalview_LNR_print"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/preauthcompletion_approvalview_IMG_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/margin_small"
+                android:clickable="false"
+                android:src="@drawable/print_receipt" />
+
+            <com.example.intuition.mswipecard.CustomTextView
+                android:id="@+id/preauthcompletion_approvalview_LBL_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:paddingLeft="@dimen/padding_small"
+                android:text="@string/preauthcompletion_txtapprovalview_print"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/label_font" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

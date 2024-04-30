@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="320dp"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:background="#e6e6e6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="vertical"
+            android:layout_height="wrap_content" android:gravity="center_horizontal">
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="20dp"-->
+            <!--android:src="@drawable/ic_backup_success_green_48dp"/>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/ic_backup_success_green_48dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:src="@drawable/ic_backup_success_green_48dp"/>-->
+                <LinearLayout
+                    android:layout_width="wrap_content" android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp" android:paddingBottom="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sms_sent_successful"
+                            android:textSize="18sp" android:textStyle="bold"
+                            android:layout_marginLeft="0dp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#7f7f7f"/>-->
+
+
+            </LinearLayout>
+            <!--<Button-->
+            <!--android:layout_width="match_parent" android:layout_weight="@string/Button9"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="@string/e_mail_receipt" android:id="@+id/gomail"-->
+            <!--android:textStyle="bold"/>-->
+            <!--<Button-->
+            <!--android:layout_width="match_parent" android:layout_weight="@string/Button9"-->
+            <!--android:layout_height="wrap_content" -->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="@string/new_sale" android:id="@+id/donee"-->
+            <!--android:textStyle="bold"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/close"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="@string/Button9"
+                    android:background="@drawable/ok"
+                    android:padding="10dp"
+                    android:text="@string/close"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

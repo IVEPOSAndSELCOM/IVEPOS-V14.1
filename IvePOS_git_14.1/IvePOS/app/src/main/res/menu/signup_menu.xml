@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:menuCategory="system"-->
+<!--        android:icon="@drawable/ic_more_vert_black_24dp"-->
+<!--        android:orderInCategory="@string/Button9"-->
+<!--        android:title="More options"-->
+<!--        app:showAsAction="always" >-->
+<!--    <menu xmlns:android="http://schemas.android.com/apk/res/android">-->
+        <item android:id="@+id/linearLayout"
+            android:orderInCategory="102"
+            android:icon="@drawable/ic_settings_filter_red_24dp"
+            android:title="@string/new_store"/>
+
+        <item android:id="@+id/linearLayout_device"
+            android:orderInCategory="102"
+            android:icon="@drawable/ic_settings_filter_red_24dp"
+            android:title="@string/new_device"/>
+<!--    </menu>-->
+<!--    </item>-->
+</menu>

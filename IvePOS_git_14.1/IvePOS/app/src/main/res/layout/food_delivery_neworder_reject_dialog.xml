@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/back_activity"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="?android:attr/actionBarItemBackground"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back_activity"
+            android:layout_toEndOf="@+id/back_activity"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="@string/Button9"
+                android:ellipsize="end"
+                android:text="@string/reject"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="@string/Button9"
+                android:ellipsize="end"
+                android:text="order"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+/////////No stock////others////////////
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            app:cardBackgroundColor="@color/LightBlack">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent" android:id="@+id/reason_reject_order"
+                android:layout_height="48dp"
+                android:entries="@array/reason_reject_order">
+
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Other reason(Specify)"/>
+
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/DarkBlack"-->
+        <!--android:layout_marginLeft="6dp"-->
+        <!--android:layout_marginRight="6dp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent" android:id="@+id/cancel"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:gravity="center"
+            android:layout_weight="@string/Button9"
+            android:text="@string/subscription_prompt_cancel"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@color/ColorPrimaryDark" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/DarkBlack"
+            android:layout_margin="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent" android:id="@+id/reject_ord"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:gravity="center"
+            android:textColor="@color/ColorAccentDark"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_weight="@string/Button9"
+            android:text="@string/reject"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

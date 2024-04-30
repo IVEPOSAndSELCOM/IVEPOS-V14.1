@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="green">#00a99d</color>
+    <color name="red">#da4337</color>
+    <color name="itemedit">#e6e6e6</color>
+    <color name="black">#000000</color>
+
+    <color name="ColorPrimary">#00a99d</color>
+    <color name="ColorPrimaryDark">#00796B</color>
+    <color name="ColorAccent">#da4336</color>
+    <color name="ColorAccentLight">#e1695e</color>
+    <color name="ColorAccentDark">#a33229</color>
+    <color name="LightBlack">#e6e6e6</color>
+    <color name="MediumBlack">#d0cfd0</color>
+    <color name="DarkBlack">#5d5d5d</color>
+
+    <color name="colorGrey">#e0e0e0</color>
+    <color name="alert">#AC1600</color>
+    <color name="text_border_default">#303232</color>
+    <color name="text_border_selected">#4EA9DC</color>
+    <color name="button_default">#329AD6</color>
+
+    <!--mSwipe-->
+    <color name="title_red">#990000</color>
+    <color name="subtitle_red">#cc3311</color>
+    <color name="caption_blue">#1100dd</color>
+    <color name="hi">#cdcccd</color>
+    <color name="hii">#000000</color>
+
+    <color name="itemname">#000000</color>
+    <color name="price">#6a6a6d</color>
+    <color name="total">#6a000e</color>
+    <color name="six">#666666</color>
+
+    <color name="transparency_color">#ccffffff</color>
+    <color name="primaryColor">#FAFAFA</color>
+
+    <color name="textPrimaryColor">#828282</color>
+    <color name="textHintColor">#FAFAFA</color>
+
+    <color name="rippleEffectMaskColor">#FAFAFA</color>
+    <color name="rippleEffectWaveColor">#bbbbbb</color>
+
+    <color name="line">#7f7f7f</color>
+    <color name="line1">#dcdfd0</color>
+
+    <color name="clicked">#febd25</color>
+
+    <color name="btbackground">#ededed</color>
+
+    <color name="red1">#da4336</color>
+
+    <color name="light_green">#66cbc4</color>
+    <color name="dark_grey">#231F20</color>
+    <color name="grey">#606062</color>
+    <color name="menu_disable_color">#4B4B4D</color>
+
+    <color name="light_grey">#989799</color>
+    <color name="disable_grey">#BAC0C0</color>
+    <color name="disclaimer">#299BFC</color>
+
+    <color name="dlg_border_grey_color">#96989A</color>
+    <color name="dlg_fill_grey_color">#E6E7E8</color>
+    <color name="dlg_btn_text_color">#96989A</color>
+
+    <color name="divider_disable_grey">#D2D3D5</color>
+
+    <color name="blue">#4F93CF</color>
+    <color name="topbar_background">#299BFC</color>
+    <color name="primaryColorDark">#0D47A1</color>
+    <color name="semi_transparent">#77121212</color>
+    <color name="transparent">#00000000</color>
+    <color name="primary">#7AA4D5</color>
+    <color name="primary_dark">#165E8B</color>
+    <color name="accent">#7AA4D5</color>
+    <color name="persian_green_primary">#00a99d</color>
+    <color name="persian_green_dark">#0A927A</color>
+    <color name="persian_green_accent">#0A927A</color>
+    <color name="pink_primary">#EB1E63</color>
+    <color name="pink_dark">#C0175C</color>
+    <color name="pink_accent">#C0175C</color>
+    <color name="royal_blue_primary">#4C63E2</color>
+    <color name="royal_blue_dark">#4055BF</color>
+    <color name="royal_blue_accent">#4055BF</color>
+    <color name="purple_primary">#9C28B1</color>
+    <color name="purple_dark">#7A1FA2</color>
+    <color name="purple_accent">#7A1FA2</color>
+    <color name="orange_accent">#F3A62E</color>
+    <color name="indigo">#3E50AE</color>
+    <color name="pink">#FF427C</color>
+</resources>

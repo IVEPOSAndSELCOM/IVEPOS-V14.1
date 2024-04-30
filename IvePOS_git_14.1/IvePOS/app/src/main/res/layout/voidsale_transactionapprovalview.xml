@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_REL_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_small"
+            android:clickable="false"
+            android:layout_marginLeft="@dimen/margin_very_small"
+            android:background="@drawable/approved" />
+
+        <com.mswipetech.wisepos.demo.sdk.CustomTextView
+            android:id="@+id/voidsaletxtdetails_TXT_approved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/voidsale_transactionapprovalview_approved"
+            android:textSize="@dimen/textview_font_very_large"
+            android:textColor="@color/green"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:background="@color/light_grey" >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/voidsaletxtdetails_SCL_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true" >
+
+            <LinearLayout
+                android:id="@+id/voidsaletxtdetails_LNR_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_small"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.mswipetech.wisepos.demo.sdk.CustomTextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/voidsale_transactionapprovalview_status"
+                        android:textSize="17sp"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/voidsaletxtdetails_LBL_TxStatus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="25sp"
+                        android:typeface="sans" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal" >
+
+                    <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:text="@string/voidsale_transactionapprovalview_tx_date"
+                        android:textColor="@color/light_grey"
+                        android:textSize="@dimen/label_font_small"
+                        android:typeface="sans" />
+
+                    <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                        android:id="@+id/voidsaletxtdetails_LBL_TxDateTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:text=""
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/label_font_small"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/voidsaletxtdetails_LNR_lbllast4digits"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                        android:id="@+id/voidsaletxtdetails_LBL_lbllast4digits"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:text="@string/voidsale_transactionapprovalview_last_4_digits"
+                        android:textSize="@dimen/label_font_small"
+                        android:textColor="@color/light_grey"
+                        android:typeface="sans" />
+
+                    <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                        android:id="@+id/voidsaletxtdetails_LBL_last4digits"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:text=""
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/label_font_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal" >
+
+                    <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                        android:id="@+id/voidsaletxtdetails_LBL_lblAmtRs"
+                        android:layout_width="0dp"
+                        android:layout_weight="@string/Button9"
+                        android:layout_height="wrap_content"
+                        android:text="@string/voidsale_transactionapprovalview_total_amount"
+                        android:textSize="@dimen/label_font_small"
+                        android:textColor="@color/light_grey"
+                        android:typeface="sans" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9">
+
+                        <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                            android:id="@+id/creditsale_LBL_Amtprefix"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:text=""
+                            android:textSize="@dimen/label_font_small"
+                            android:textColor="@color/grey"
+                            android:typeface="sans" />
+
+                        <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                            android:id="@+id/voidsaletxtdetails_LBL_AmtRs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/label_font_small" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/voidsaletxtdetails_LNR_lblAuthNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                        android:id="@+id/voidsaletxtdetails_LBL_lblAuthNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:text="@string/voidsale_transactionapprovalview_auth_code"
+                        android:textSize="@dimen/label_font_small"
+                        android:textColor="@color/light_grey"
+                        android:typeface="sans" />
+
+                    <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                        android:id="@+id/voidsaletxtdetails_LBL_AuthNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/label_font_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/voidsaletxtdetails_LNR_lblRRNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                        android:id="@+id/voidsaletxtdetails_LBL_lblRRNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:text="@string/voidsale_transactionapprovalview_receipt_retrieval_no"
+                        android:textSize="@dimen/label_font_small"
+                        android:textColor="@color/light_grey"
+                        android:typeface="sans" />
+
+                    <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                        android:id="@+id/voidsaletxtdetails_LBL_RRNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:text=""
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/label_font_small" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/voidsaletxtdetails_BTN_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_next_active"
+            />
+        <ImageButton
+            android:id="@+id/voidsaletxtdetails_BTN_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_cancel_red"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

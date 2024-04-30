@@ -1,0 +1,183 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00a99d"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:stretchColumns="@string/Button9"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sendData"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/qr_code" />
+
+        <Button
+            android:id="@+id/QR_status"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/status_qr_code" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ok"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/otpData"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/otp" />
+
+        <Button
+            android:id="@+id/otpStatus"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/status_otp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/otp"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            />
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="_ _ _ _ _ _"
+            android:inputType="numberDecimal"
+            android:maxLength="@string/Button7"
+            android:maxLines="@string/Button9"
+            android:selectAllOnFocus="true"
+            android:textColor="#33397D"
+            android:textSize="50dp"
+
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <WebView
+            android:id="@+id/qrCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/ok" />
+    </RelativeLayout>
+    <!--<TableRow-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:text="@string/id"-->
+    <!--android:id="@+id/textView"-->
+    <!--android:layout_column="@string/Button13" />-->
+
+    <!--<EditText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:inputType="number"-->
+    <!--android:ems="10"-->
+    <!--android:id="@+id/txtId"-->
+    <!--android:layout_column="@string/Button9" />-->
+    <!--</TableRow>-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:text="@string/name_nospace"-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_column="@string/Button13" />-->
+
+    <!--<EditText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/txtName"-->
+    <!--android:layout_column="@string/Button9" />-->
+    <!--</TableRow>-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:text="Quantity  "-->
+    <!--android:id="@+id/textView3"-->
+    <!--android:layout_column="@string/Button13" />-->
+
+    <!--<EditText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:inputType="number"-->
+    <!--android:ems="10"-->
+    <!--android:id="@+id/txtQuantity"-->
+    <!--android:layout_column="@string/Button9" />-->
+    <!--</TableRow>-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent">-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Post"-->
+    <!--android:id="@+id/btnPost"-->
+    <!--android:layout_column="@string/Button9"-->
+    <!--android:onClick="onBtnPostClick"-->
+    <!--/>-->
+    <!--</TableRow>-->
+</TableLayout>

@@ -1,0 +1,1397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.intuition.ivepos"
+    android:installLocation="preferExternal">
+
+    <uses-sdk tools:overrideLibrary="com.microsoft.identity.msal" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" /> <!-- VERY IMPORTANT! Don't forget this permission, or in-app billing won't work. -->
+    <uses-permission android:name="com.android.vending.BILLING" /> <!-- <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_SCAN" /> -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_SCAN" /> -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_SCAN" /> -->
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- <uses-permission android:name="android.permission.BLUETOOTH" /> -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_SCAN" /> -->
+    <!-- &lt;!&ndash; Needed only if your app makes the device discoverable to Bluetooth -->
+    <!-- devices. &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" /> -->
+    <!-- &lt;!&ndash; Needed only if your app communicates with already-paired Bluetooth -->
+    <!-- devices. &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> -->
+    <!-- Before Android 12 (but still needed location, even if not requested) -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="33" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="33" /> <!-- From Android 12 -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BBPOS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="android.permission.SET_ACTIVITY_WATCHER"
+        android:protectionLevel="signature"
+        tools:ignore="ReservedSystemPermission" />
+
+    <application
+        android:name=".mSwipe.ApplicationData"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_ivepos"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:icon,android:theme"
+        android:supportsRtl="true">
+        <activity
+            android:name=".mosambee_login"
+            android:exported="false" />
+        <activity
+            android:name=".R_NewLogIn_BusinessType"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".worldline.WorldlineActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.phi.phiprintlib.PrintService"
+            android:exported="true" />
+        <service
+            android:name=".syncdb.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".syncdb.MyServiceApp"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".syncdb.MyServiceSales"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".syncdb.MyServiceAppData"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".syncdb.MyServiceAppData_local"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".syncdb.MyServiceAppData_local_Qsr"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".syncdb.MyServiceAppData_local_Retail"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".syncdb.MyServiceAppData_Retail_Home"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".syncdb.MyServiceApp_swiperefresh"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".syncdb.MyServiceApp_swiperefresh_sync"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".csv.ForegroundService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".csv.UpdateTaxeService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".deleteitems.ForegroundService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".deleteitems.ForegroundService1_update_tax"
+            android:enabled="true"
+            android:exported="true" /> <!-- <activity android:name=".LoginActivity" android:windowSoftInputMode="adjustPan" -->
+        <!-- android:configChanges="orientation|screenSize"> -->
+        <!-- <meta-data android:name="android.app.default_searchable" -->
+        <!-- android:value=".SearchResultsActivity"/> -->
+        <!-- </activity> -->
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="5.2.1" />
+
+        <activity
+            android:name=".SearchResultsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="Search Activity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".UpdateCategoryActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SearchBTActivity"
+            android:exported="true"
+            android:label=" USB/Bluetooth printer"
+            android:parentActivityName=".Connect_Counter"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Connect_Counter"
+            android:exported="true"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Connect_KOT1"
+            android:exported="true"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Connect_KOT2"
+            android:exported="true"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Connect_KOT3"
+            android:exported="true"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Connect_KOT4"
+            android:exported="true"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SearchIPActivity"
+            android:exported="true"
+            android:label=" Network printer"
+            android:parentActivityName=".Connect_Counter"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SearchIPActivity_KOT1"
+            android:exported="true"
+            android:label=" Network printer"
+            android:parentActivityName=".Connect_KOT1"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SearchIPActivity_KOT2"
+            android:exported="true"
+            android:label=" Network printer"
+            android:parentActivityName=".Connect_KOT2"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SearchIPActivity_KOT3"
+            android:exported="true"
+            android:label=" Network printer"
+            android:parentActivityName=".Connect_KOT3"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SearchIPActivity_KOT4"
+            android:exported="true"
+            android:label=" Network printer"
+            android:parentActivityName=".Connect_KOT4"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SearchIPActivity_counter"
+            android:exported="true"
+            android:label=" Network printer"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="stateHidden" /> <!-- <activity android:name=".ConnectUSBActivity" android:windowSoftInputMode="adjustPan" -->
+        <!-- android:configChanges="orientation|screenSize"/> -->
+        <!-- <service android:enabled="true" -->
+        <!-- android:name=".DrawerService"/> -->
+        <!-- <service android:enabled="true" -->
+        <!-- android:name=".DrawerService1"/> -->
+        <activity
+            android:name=".BeveragesMenuFragment_Dine"
+            android:configChanges="screenLayout|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".BeveragesMenuFragment_Dine_l"
+            android:configChanges="screenLayout|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".BeveragesMenuFragment_Qsr"
+            android:configChanges="screenLayout|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".BeveragesMenuFragment_Retail"
+            android:configChanges="screenLayout|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".paytmedc.PaytmEdcActivity"
+            android:configChanges="screenLayout|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.paytm.pos.payment.CALL_BACK_RESULT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme_NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity_Retail"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme_NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity_Assets"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme_NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".IVEPOS_Hardware_Activation_NoMAC"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme_NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".BarcodeBulkPrinting"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Customer_Feedback"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".A4.A4_Printer"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".A4.A4_Printer_Cancel"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".A4.A4_Printer_Refund_Wise"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".A4.A4_Printer_new"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".A4.A4_Printer_Cancel_new"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".A4.A4_Printer_Refund_Wise_new"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Inventory_Indent"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DatabaseModifiersActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Stock_Transfer"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Inventory_Indent_Processing"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Stock_Transfer_Processing"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Inventory_Indent_History"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Inventory_Indent_Vendor_list"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Inventory_Indent_Vendor_History"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Inventory_Indent_Items_History"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Stock_Transfer_Items_History"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Add_manage_ingredient_Activity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Tables_list_Activity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Add_Items_List1"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" /> <!-- <activity -->
+        <!-- android:name="com.intuition.ivepos.Add_Items_List2" -->
+        <!-- android:theme="@style/AppTheme" -->
+        <!-- android:windowSoftInputMode="adjustPan" -->
+        <!-- android:configChanges="orientation|screenSize"> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".Add_ingredient_to_item"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".New_OrderActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".New_OrderActivity_w"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Preparing_Orders_w"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Cancelledorders_w"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true"></activity>
+        <!--<activity
+            android:name=".Country_out_of_stock_w"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true"></activity>
+        <activity
+            android:name=".DataModel_w"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true"></activity>
+        <activity
+            android:name=".RecyclerViewAdapter_preparing_w"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true"></activity>
+        <activity
+            android:name=".RecyclerViewAdapter_w"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true"></activity>-->
+
+        <activity
+            android:name=".New_Individualorder_Itemview"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Preparing_Orders"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Online_deli_chan"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Micro_inventory_indent"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Micro_Inventory_Indent_Processing"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Micro_Inventory_Indent_History"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Micro_Inventory_Indent_Ingredients_History"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Micro_Inventory_Indent_Vendor_list"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Micro_Inventory_Indent_Vendor_History"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Customer_Info_Activity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Expenses_list"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Category_list"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".User_list"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".KOT_Cancel_list"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Table_cancel_kot_list"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".User_cancel_kot_list"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Cash_Card_Credit_Sales"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" /> <!-- <activity -->
+        <!-- android:name="com.intuition.ivepos.Taxes_List_Sales" -->
+        <!-- android:configChanges="orientation|screenSize" -->
+        <!-- android:theme="@style/AppTheme" -->
+        <!-- android:windowSoftInputMode="adjustPan"></activity> -->
+        <activity
+            android:name=".Taxes_List_Sales1"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Taxes_Multiselection_Items"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Modifier_Multiselection_Items"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".KOT_MultiSelection_items"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Cash_Card_Credit_Sales1"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Dinein_Takeawa_Homedeli_Sales"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".General_HomeDelivery_Sales"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Write_off_report"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Swiggy_Zomato_Foodpanda_Sales"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Itemwise_Saleslist"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Userwise_Saleslist"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Refundswise_Saleslist"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Discountwise_Saleslist"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EmailSetup_Google"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".KOT_Management"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UserPrivilege"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EmailSetup_Yahoo"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EmailSetup_Hotmail_Outlook"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EmailSetup_Office365_Exchange"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EmailSetup_Microsoft"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.microsoft.identity.client.BrowserTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Add in your scheme/host from registered redirect URI -->
+                <!-- By default, the scheme should be similar to 'msal[appId]' -->
+                <data
+                    android:host="auth"
+                    android:scheme="msal98bee6aa-be43-400f-a7f9-bf1a7306b686" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EmailSetup"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Weighing_Scale_Configuration"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Weighing_Scale_Configuration_Qsr"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Weighing_Scale_Configuration_Retail"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EmailSetup_Recipients"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" /> <!-- <activity -->
+        <!-- android:name=".IVEPOS_Hardware_Activation" -->
+        <!-- android:theme="@style/AppTheme_NoActionBar1" -->
+        <!-- android:label="@string/app_name" android:windowSoftInputMode="adjustPan" -->
+        <!-- android:configChanges="orientation|screenSize"> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".MenuActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock" />
+        <activity
+            android:name=".CancelActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MultiFragAdminActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Admin"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MultiFragUserActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="User"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock" />
+        <activity
+            android:name=".MultiFragCustomerActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="User"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock" />
+        <activity
+            android:name=".MultiFragCloudSubscrition"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="User"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock" />
+        <activity
+            android:name=".MultiFragDatabaseActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Product and tax"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".MultiFragOrderlistActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Reports"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MultiFragPreferenceActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Settings"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock" />
+        <activity
+            android:name=".MultiFragBackupActivity"
+            android:configChanges="screenLayout|screenSize"
+            android:exported="true"
+            android:label="Backup"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MultiFragIngredientsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="Ingredients"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock" />
+        <activity
+            android:name=".MultiFragExpensesActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="@string/title27"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MultiFragKotActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="@string/title29"
+            android:parentActivityName=".BeveragesMenuFragment_Dine"
+            android:theme="@style/AppTheme_sherlock"
+            android:windowSoftInputMode="adjustPan" /> <!-- <activity android:name=".MultiFragCancelorderActivity" android:windowSoftInputMode="adjustPan" -->
+        <!-- android:parentActivityName="com.intuition.ivepos.BeveragesMenuFragment_Dine" -->
+        <!-- android:label="Returns and Refunds" -->
+        <!-- android:configChanges="orientation|screenSize" -->
+        <!-- /> -->
+        <!-- <activity android:name=".AdminPassActivity" android:windowSoftInputMode="adjustPan" -->
+        <!-- android:parentActivityName="com.intuition.ivepos.BeveragesMenuFragment_Dine" -->
+        <!-- android:label="  @string/title33" -->
+        <!-- /> -->
+        <!-- <activity android:name=".UserPassActivity" android:windowSoftInputMode="adjustPan" -->
+        <!-- android:label="  User" -->
+        <!-- /> -->
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity_Signin"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity_Signin_OTPbased"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" /> <!-- <activity -->
+        <!-- android:name=".R_NewLogIn_BusinessType" -->
+        <!-- android:configChanges="orientation|screenSize" -->
+        <!-- android:exported="true" -->
+        <!-- android:theme="@style/AppTheme_NoActionBar2" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <activity
+            android:name=".MainActivity_Signin_OTPbased"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity_Signin_Email"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Checking_Store"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SignIn_OTP_Verify_Activity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity_Register"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivity_Register_OTPbased"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivity_subscription"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CloudSubscritionActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CloudSubscritionActivity_Retail"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Otp_checking"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ForgotPasswordActivity_cloud"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SignUpConfirmActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SignUpConfirmActivity_OTPbased"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UniversalLoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MasterLoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LocalLoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UniversalPassRetrievalActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MasterPassretrievalActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LadminPassRetrievalActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SubscriptionActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme_NoActionBar2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Tables_list"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Table_settings"
+            android:exported="true"
+            android:parentActivityName=".Tables_list"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Table_setup_configuration"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".paytm.Card_Wallets_Settings1"
+            android:exported="true" />
+        <activity
+            android:name=".paytm.Card_Wallets_Settings"
+            android:exported="true" />
+        <activity
+            android:name=".paytm.MobikwikSetting"
+            android:exported="true" />
+        <activity
+            android:name=".paytm.PaytmSetting"
+            android:exported="true" />
+        <activity
+            android:name=".razorpay.RazorPaySetting"
+            android:exported="true" />
+        <activity android:name=".EzeTapSetting"
+            android:exported="true" />
+        <activity
+            android:name=".razorpay.RazorPayQRCodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mSwipe.LoginView"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".EZetap_login"
+            android:exported="true"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".Ezetap_Payment" -->
+        <!-- android:windowSoftInputMode="stateHidden" -->
+        <!-- android:exported="true"/> -->
+        <activity
+            android:name=".Ezetap_Payment"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".Ezetap_UPI_Payment"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:exported="true"/>
+
+        <activity
+            android:name=".Ezetap_Pay_API"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:exported="true"/>
+
+        <activity
+            android:name=".Ezetap_UPI_QR_Payment"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:exported="true"/>
+
+        <activity android:name=".mSwipe.BaseTitleActivity" />
+        <activity
+            android:name=".mSwipe.MSWisepadView"
+            android:exported="true" />
+        <activity
+            android:name=".mSwipe.PaymentSDKTypeIntegration"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mSwipe.PaymentIntegrationTypeActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mSwipe.PaymentActivityTypeIntegration"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mSwipe.ChangePasswordView"
+            android:exported="true" />
+        <activity
+            android:name=".mSwipe.CashAtPosSaleTransactionView"
+            android:exported="true" />
+        <activity
+            android:name=".mSwipe.CreditSaleDeclineActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mSwipe.CreditSaleSignatureActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mSwipe.PreauthSaleTransactionView"
+            android:exported="true" />
+        <activity
+            android:name=".mSwipe.CardSaleTransactionView"
+            android:exported="true" />
+        <activity
+            android:name=".mSwipe.LastTransactionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mSwipe.VerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mSwipe.MswipeCardSaleActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".mSwipe.MswipeDeclineActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".mSwipe.MswipeSignatureActivity"
+            android:exported="true"
+            android:label="@string/app_name" /> <!-- <activity -->
+        <!-- android:name=".mSwipe.MswipeWisepadView" -->
+        <!-- android:label="@string/app_name" /> -->
+        <!-- &lt;!&ndash;<activity android:name=".paytm.Card_Wallets_Settings1"/>&ndash;&gt; -->
+        <activity
+            android:name=".paytm.Cash_Card_Credit_Sales2"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".paytm.Cash_Card_Credit_Sales3"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".paytm.Cash_Card_Credit_Sales4"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".paytmqr.DynamicQR"
+            android:exported="true" />
+
+        <receiver
+            android:name=".AlarmReceiver1"
+            android:exported="true"
+            android:process=":remote" />
+        <receiver
+            android:name=".Uploa_Task1"
+            android:exported="true"
+            android:process=":remote" />
+        <receiver
+            android:name=".AlarmReceiver2"
+            android:exported="true"
+            android:process=":remote" />
+        <receiver
+            android:name=".Schedule_send_mail"
+            android:exported="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreenActivity_Selection"
+            android:exported="true" />
+        <activity
+            android:name=".NewStoreActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NewDeviceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NewStoreActivity_OTP"
+            android:exported="true" />
+        <activity
+            android:name=".NewDeviceActivity_OTP"
+            android:exported="true" />
+
+        <service
+            android:name=".sync.AuthenticatorService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <provider
+            android:name=".sync.StubProvider"
+            android:authorities="com.intuition.ivepos.provider"
+            android:exported="false"
+            android:label="sales sync"
+            android:syncable="true" />
+
+        <service
+            android:name=".sync.SyncService"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+        <service
+            android:name=".syncapp.AuthenticatorServiceApp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticatorapp" />
+        </service>
+
+        <provider
+            android:name=".syncapp.StubProviderApp"
+            android:authorities="com.intuition.ivepos.syncapp.provider"
+            android:exported="false"
+            android:label="appdata sync"
+            android:syncable="true" />
+
+        <service
+            android:name=".syncapp.SyncServiceApp"
+            android:exported="true"
+            android:process=":syncapp">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapterapp" />
+        </service> <!-- <service android:name="com.intuition.ivepos.firebase.MyFirebaseMessagingService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <!-- <service android:name="com.intuition.ivepos.firebase.MyFirebaseInstanceIDService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".signup.DownloadService"
+            android:exported="true" />
+        <service
+            android:name=".signup.SyncHelperService"
+            android:exported="true" />
+        <service
+            android:name=".signup.DatabaseService"
+            android:exported="true" />
+        <service
+            android:name=".signup.DatabaseService_Retail"
+            android:exported="true" />
+        <service
+            android:name=".firebase.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".deleteitems.Restarter"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="restartservice" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.ezetap.sdk.EzetapFileProvider"
+            android:authorities="${applicationId}.EzetapFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

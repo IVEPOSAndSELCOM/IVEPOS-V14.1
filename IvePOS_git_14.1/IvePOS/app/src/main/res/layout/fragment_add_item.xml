@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="650px" android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+//Create
+    <LinearLayout
+        android:layout_width="360px"
+        android:layout_height="40px" android:id="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/addcategorybutton">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="157px" android:layout_marginTop="5px"
+            android:text="@string/create" android:textSize="15sp"/>
+    </LinearLayout>
+
+//Itemname
+    <LinearLayout
+        android:layout_width="360px" android:background="@drawable/addcategorybutton"
+        android:layout_height="525px"
+        android:layout_below="@id/linearLayout2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px" android:layout_marginTop="10px"
+            android:text="@string/item_name_star" android:textSize="15sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/linearLayout2" android:layout_toRightOf="@+id/linearLayout1" android:orientation="horizontal"
+        android:id="@+id/linearLayout4">
+        <EditText
+            android:layout_width="190px" android:id="@+id/editText1"
+            android:layout_height="34px" android:layout_marginTop="10px"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginLeft="150px" android:hint="Enter name" android:singleLine="true" />
+    </LinearLayout>
+
+
+//Price
+    <LinearLayout
+        android:layout_width="wrap_content" android:id="@+id/linearLayout5"
+        android:layout_height="wrap_content" android:layout_below="@+id/linearLayout4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:text="@string/price_star"/>
+        <EditText
+            android:layout_width="190px" android:id="@+id/editText2"
+            android:layout_height="34px"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginLeft="87px" android:hint="Enter price" android:singleLine="true" />
+    </LinearLayout>
+
+//Stock Quantity
+    <LinearLayout
+        android:layout_width="wrap_content" android:id="@+id/linearLayout6"
+        android:layout_height="wrap_content" android:layout_below="@+id/linearLayout5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:text="@string/stock_quantity"/>
+        <EditText
+            android:layout_width="190px" android:id="@+id/editText3"
+            android:layout_height="34px"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginLeft="36px" android:hint="Enter qty."  android:singleLine="true" />
+    </LinearLayout>
+
+//Category
+    <LinearLayout
+        android:layout_width="wrap_content" android:id="@+id/linearLayout7"
+        android:layout_height="wrap_content" android:layout_below="@+id/linearLayout6">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:text="@string/action_category"/>
+        <Spinner
+            android:id="@+id/chocolate_spinner"
+            android:layout_height="40px"
+            android:layout_width="190px"
+            android:background="@drawable/btn_dropdown"
+            android:layout_marginLeft="72px"/>
+    </LinearLayout>
+
+//ItemTax
+    <LinearLayout
+        android:layout_width="wrap_content" android:id="@+id/linearLayout8"
+        android:layout_height="wrap_content" android:layout_below="@+id/linearLayout7">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:text="@string/item_tax"/>
+        <Spinner
+            android:id="@+id/tax"
+            android:layout_height="40px"
+            android:layout_width="190px"
+            android:background="@drawable/btn_dropdown"
+            android:layout_marginLeft="79px"/>
+    </LinearLayout>
+
+
+
+//Adding Image
+    <LinearLayout
+        android:layout_width="wrap_content" android:layout_marginLeft="120px"
+        android:layout_height="wrap_content" android:id="@+id/linearLayout9" android:layout_below="@+id/linearLayout8">
+        <ImageButton
+            android:layout_width="120px"
+            android:layout_height="99px" android:src="@drawable/assign_image" android:background="#e6e6e6"
+            android:layout_below="@+id/linearLayout5"
+            android:layout_alignLeft="@+id/linearLayout9"
+            android:layout_alignStart="@+id/linearLayout9" />
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_marginTop="45px"
+            android:layout_height="wrap_content"
+            android:text="@string/size_116x95_px"/>
+
+    </LinearLayout>
+
+
+//Save and Cancel button
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/linearLayout9" android:layout_marginTop="167px">
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="30px" android:id="@+id/btnsave" android:layout_marginLeft="17px"
+            android:src="@drawable/savebutton" android:background="#da4336"/>
+
+        <ImageButton
+            android:layout_width="150px"
+            android:layout_height="30px" android:id="@+id/btncancel" android:layout_marginLeft="15px"
+             android:background="#da4336" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

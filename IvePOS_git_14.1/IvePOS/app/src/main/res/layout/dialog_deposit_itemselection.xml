@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/relativeLayout1"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="320dp" android:gravity="center_vertical"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#e6e6e6">
+
+        <ImageButton
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/light_black_click"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/subscription_prompt_cancel"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="1dp" android:id="@+id/ima"  android:layout_toRightOf="@+id/btncancel"
+            android:layout_height="match_parent"
+            android:background="#7f7f7f"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_toLeftOf="@+id/btnsave"
+            android:layout_height="wrap_content" android:layout_toRightOf="@+id/ima"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="2dp">
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:id="@+id/custombar_return_wrapper"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center">-->
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:id="@+id/custombar_return"-->
+            <!--android:contentDescription="back"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:background="@drawable/white_click"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_search_black_24dp" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="start|center_vertical">
+                <EditText
+                    android:id="@+id/custombar_text"
+                    android:layout_width="match_parent"
+                    android:textSize="15sp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/search_for_item_"
+                    android:textColor="#000000"
+                    android:singleLine="true"
+                    android:background="#00000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"  android:id="@+id/custombar_del_wrapper"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/searchicons_pressed">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:padding="12dp"
+                    android:contentDescription="clear text"
+                    android:background="@drawable/white_click"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_clear_grey_24dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/btn_redirect"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toLeftOf="@+id/btnsave"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:src="@drawable/ic_add_white_24dp"-->
+        <!--android:textStyle="bold"/>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toRightOf="@+id/btncancel"-->
+        <!--android:layout_toLeftOf="@+id/refill">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:visibility="visible">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/ingredient_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="@string/chicken"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="@string/usage_b"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="5dp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/usage_count"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="@string/Button9"-->
+        <!--android:textStyle="bold"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="@string/item_selected"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <ImageButton
+            android:id="@+id/btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_done_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ok"
+            android:textStyle="bold"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/submit"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7f7f7f"/>
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:isScrollContainer="false"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:background="@drawable/white_rounded_corners"-->
+    <!--android:elevation="2dp">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:paddingBottom="10dp">-->
+
+    <!--<CheckedTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/chicken_biryani"-->
+    <!--android:textStyle="bold"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:checkMark="?android:attr/listChoiceIndicatorMultiple"-->
+    <!--android:checked="true"/>-->
+
+    <!--<CheckedTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/chicken_gravy"-->
+    <!--android:textStyle="bold"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:checkMark="?android:attr/listChoiceIndicatorMultiple"/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--</ScrollView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="wrap_content" android:background="@drawable/light_black_click_shape_rounded_corners"
+        android:layout_marginLeft="10dp" android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent" android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content" android:orientation="vertical"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9">
+                <TextView
+                    android:layout_width="wrap_content" android:textSize="12sp"
+                    android:layout_height="wrap_content" style="@style/TextAppearance.Design.Hint"
+                    android:text="@string/items"/>
+                <TextView
+                    android:layout_width="wrap_content" android:textSize="15sp"
+                    android:layout_height="wrap_content" android:id="@+id/itemname_selected"
+                    android:text="@string/Button13" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent" android:orientation="vertical"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"
+                android:layout_alignParentRight="true"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content" android:textSize="12sp"
+                    android:layout_height="wrap_content" style="@style/TextAppearance.Design.Hint"
+                    android:text="@string/quantity"/>
+                <TextView
+                    android:layout_width="wrap_content" android:textSize="15sp"
+                    android:layout_height="wrap_content" android:id="@+id/quantity_selected"
+                    android:text="@string/Button13" android:textStyle="bold"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/text_admin"
+                android:layout_height="wrap_content" android:layout_toLeftOf="@+id/rs"
+                android:text="@string/total_amount_"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_toLeftOf="@+id/tot_amount"
+                android:layout_height="wrap_content" android:id="@+id/rs"
+                android:text="@string/Rs"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" android:id="@+id/tot_amount"
+                android:text="@string/Button13"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+    <ListView
+        android:id="@+id/list" android:background="@drawable/white_rounded_corners"
+        android:layout_width="match_parent" android:layout_margin="10dp"
+        android:layout_height="match_parent" android:elevation="2dp"
+        android:choiceMode="multipleChoice"/>
+
+
+
+</LinearLayout>

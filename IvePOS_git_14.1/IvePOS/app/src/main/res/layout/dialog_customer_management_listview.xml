@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="@string/Button6"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1.4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/date1"
+                    android:text="@string/_01_nov_16"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/time1"
+                    android:text="@string/_11_45_30_am"
+                    android:paddingTop="3dp"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/bill_no"
+                    android:paddingTop="3dp"
+                    android:text="@string/_20161130_00011"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="@string/Rs"
+                    android:textSize="14sp" android:id="@+id/rs_sale1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/sale1"
+                    android:text="@string/Button13"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="-" android:id="@+id/credit_minus"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/Rs" android:id="@+id/rs_credit1"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/credit1"
+                    android:text="@string/Button13"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/Button9"
+                android:orientation="vertical"
+                android:gravity="end">
+
+                <RelativeLayout
+                    android:id="@+id/refunds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/ri_text"
+                        android:text="@string/R"
+                        android:background="@drawable/light_black_rounded_corners"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"/>
+
+                    <LinearLayout
+                        android:layout_toLeftOf="@+id/ri_text"
+                        android:layout_width="wrap_content"
+                        android:minWidth="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="end">
+
+                        <TextView
+                            android:text="@string/Rs" android:id="@+id/rs_refunds_val"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/refunds_val"
+                            android:text="@string/Button13"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/charges1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/ci_text"
+                        android:text="@string/Button8"
+                        android:background="@drawable/light_black_rounded_corners"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:minWidth="36dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_toLeftOf="@+id/ci_text"
+                        android:gravity="end">
+
+                        <TextView
+                            android:text="@string/Rs" android:id="@+id/rs_charges_val"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/charges_val"
+                            android:text="@string/Button13"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/deposits1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/di_text"
+                        android:text="@string/D"
+                        android:background="@drawable/light_black_rounded_corners"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:minWidth="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_toLeftOf="@+id/di_text"
+                        android:gravity="end">
+
+                        <TextView
+                            android:text="@string/Rs" android:id="@+id/rs_deposits_val"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/deposits_val"
+                            android:text="@string/Button13"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/write_off1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/wr_text"
+                        android:text="@string/W"
+                        android:background="@drawable/light_black_rounded_corners"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:minWidth="36dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_toLeftOf="@+id/wr_text"
+                        android:gravity="end">
+
+                        <TextView
+                            android:text="@string/Rs" android:id="@+id/rs_write_off_val"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/write_off_val"
+                            android:text="@string/Button13"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@string/Button9"
+                android:orientation="vertical"
+                android:gravity="end">
+
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingTop="1dp"-->
+                <!--android:paddingBottom="1dp">-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:minWidth="36dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toLeftOf="@+id/mi_pi_text"
+                    android:gravity="end">
+
+                    <TextView
+                        android:text="-"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="@string/Rs" android:id="@+id/rs_cashout_val"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/cashout_val"
+                        android:text="@string/Button13"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/mi_pi_text">
+
+                    <TextView
+                        android:id="@+id/m_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/M"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/m_text"-->
+                    <!--android:text="@string/M"-->
+                    <!--android:background="@drawable/light_black_rounded_corners"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:visibility="visible"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_width="16dp"-->
+                    <!--android:layout_height="16dp"/>-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/p_text"-->
+                    <!--android:text="@string/P"-->
+                    <!--android:background="@drawable/light_black_rounded_corners"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_width="16dp"-->
+                    <!--android:layout_height="16dp"/>-->
+
+                </RelativeLayout>
+
+                <!--</RelativeLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/list_topic2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:weightSum="@string/Button6"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:paddingBottom="5dp">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_weight="1.4">-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:id="@+id/Date2"-->
+        <!--android:text="@string/_01_nov_16"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:id="@+id/Time2"-->
+        <!--android:text="@string/_11_45_30_am"-->
+        <!--android:paddingTop="3dp"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.8"-->
+        <!--android:orientation="horizontal">-->
+
+
+        <!--<TextView-->
+        <!--android:text="-"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.8"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:text="-"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="@string/Button9"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="end">-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/deposits1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="1dp"-->
+        <!--android:paddingBottom="1dp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/di_text"-->
+        <!--android:text="@string/D"-->
+        <!--android:background="@drawable/light_black_rounded_corners"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:textSize="12sp"-->
+        <!--android:gravity="center"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_width="16dp"-->
+        <!--android:layout_height="16dp"/>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/deposits_pane"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:minWidth="36dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_toLeftOf="@+id/di_text"-->
+        <!--android:gravity="end">-->
+
+        <!--<TextView-->
+        <!--android:text="@string/Rs"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/deposits_val"-->
+        <!--android:text="@string/_700"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--</RelativeLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="@string/Button9"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="end">-->
+
+
+        <!--<TextView-->
+        <!--android:text="-"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/list_topic3"-->
+        <!--android:layout_below="@+id/cust_pane_expand"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:weightSum="@string/Button6"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:paddingBottom="5dp">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_weight="1.4">-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:id="@+id/Date3"-->
+        <!--android:text="@string/_01_nov_16"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:id="@+id/Time3"-->
+        <!--android:text="@string/_11_45_30_am"-->
+        <!--android:paddingTop="3dp"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.8"-->
+        <!--android:orientation="horizontal">-->
+
+
+        <!--<TextView-->
+        <!--android:text="-"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.8"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:text="-"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="@string/Button9"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="end">-->
+
+
+        <!--<TextView-->
+        <!--android:text="-"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="@string/Button9"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="end">-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/cashout1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="1dp"-->
+        <!--android:paddingBottom="1dp">-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:id="@+id/mi_pi_text">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/m_text"-->
+        <!--android:text="@string/M"-->
+        <!--android:background="@drawable/light_black_rounded_corners"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:visibility="visible"-->
+        <!--android:textSize="12sp"-->
+        <!--android:gravity="center"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_width="16dp"-->
+        <!--android:layout_height="16dp"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/p_text"-->
+        <!--android:text="@string/P"-->
+        <!--android:background="@drawable/light_black_rounded_corners"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:visibility="gone"-->
+        <!--android:textSize="14sp"-->
+        <!--android:gravity="center"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_width="16dp"-->
+        <!--android:layout_height="16dp"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/cashout_pane"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:minWidth="36dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_toLeftOf="@+id/mi_pi_text"-->
+        <!--android:gravity="end">-->
+
+        <!--<TextView-->
+        <!--android:text="-"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--<TextView-->
+        <!--android:text="@string/Rs"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/cashout_val"-->
+        <!--android:text="300"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--</RelativeLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

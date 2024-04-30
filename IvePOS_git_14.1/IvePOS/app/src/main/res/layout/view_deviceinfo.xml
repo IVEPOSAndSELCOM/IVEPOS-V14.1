@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="12dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/topbar_LBL_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text=""
+            android:textSize="34sp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_bar" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <ViewFlipper
+                android:id="@+id/deviceinfo_VFL_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <!-- the widgets for the the swiper -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:keepScreenOn="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/deviceinfo_LBL_swipe_stepss"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/deviceinfo_LBL_swipe_steps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/deviceinfo_LBL_emvksndata"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:singleLine="false"
+                                    android:textSize="25sp"
+                                    android:typeface="sans" />
+
+                                <TextView
+                                    android:id="@+id/deviceinfo_LBL_emvksn"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:singleLine="false"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:text="@string/emv_ksn"
+                                    android:textSize="17sp"
+                                    android:typeface="sans" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/deviceinfo_LBL_ksndata"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:singleLine="false"
+                                    android:textSize="25sp"
+                                    android:typeface="sans" />
+
+                                <TextView
+                                    android:id="@+id/deviceinfo_LBL_ksn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:singleLine="false"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:text="@string/track_ksn"
+                                    android:textSize="17sp"
+                                    android:typeface="sans" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/deviceinfo_LBL_batteryleveldata"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:singleLine="false"
+                                    android:textSize="25sp"
+                                    android:typeface="sans" />
+
+                                <TextView
+                                    android:id="@+id/deviceinfo_LBL_batterylevel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:singleLine="false"
+                                    android:text="@string/battery_level"
+                                    android:textSize="17sp"
+                                    android:typeface="sans" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/deviceinfo_EDT_swipe_progmsg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/deviceinfo_LBL_swipe_steps"
+                            android:layout_below="@+id/deviceinfo_LBL_swipe_steps"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="left"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textSize="20sp"
+                            android:typeface="sans" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/deviceinfo_BTN_swipe"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="@string/device_info"
+                        android:background="@drawable/roundrectblue"
+                        android:textSize="25dp"
+                        android:typeface="sans"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+            </ViewFlipper>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

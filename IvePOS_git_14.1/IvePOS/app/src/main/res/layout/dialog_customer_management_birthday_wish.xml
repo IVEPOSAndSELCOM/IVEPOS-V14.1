@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="#e6e6e6">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/change_username_pic"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:padding="15dp"
+            android:text="@string/birthday_wish"/>
+        <FrameLayout
+            android:layout_width="match_parent" android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical">
+
+            <Switch
+                android:id="@+id/mySwitch" android:saveEnabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent" android:id="@+id/select_bday"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    style="@style/Widget.AppCompat.Spinner.Underlined">
+                    <ImageView
+                        android:id="@+id/calender_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/calendar_96"/>
+
+                    <TextView
+                        android:id="@+id/from_date"
+                        android:layout_toRightOf="@+id/calender_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:hint="select birth date..."/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/birthday_message"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="@string/dear"/>
+
+                    <TextView
+                        android:id="@+id/customer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="@string/display_customer_name"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text=" ,"/>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/message"
+                        android:textSize="15sp"
+                        android:maxLines="@string/Button6"
+                        android:text="@string/wish_you_a_happy_birthday_we_have_special_offers_for_you"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:hint="@string/company_name"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/search_content">
+                <Button
+                    android:layout_width="match_parent" android:id="@+id/cancel"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/Button9"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/ok"
+                    android:text="@string/subscription_prompt_cancel"
+                    android:layout_marginRight="1dp"/>
+                <Button
+                    android:layout_width="match_parent" android:id="@+id/savetime"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/Button9"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/ok"
+                    android:text="@string/save"
+                    android:layout_marginLeft="1dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

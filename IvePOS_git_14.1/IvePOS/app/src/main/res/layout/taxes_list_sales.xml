@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="#00a99d"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/back_activity"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content" android:id="@+id/back_button"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="?android:attr/actionBarItemBackground"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/back_activity"
+            android:clickable="true"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:minWidth="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cust_name"
+                    android:layout_height="wrap_content"
+                    android:maxLines="@string/Button9"
+                    android:ellipsize="end"
+                    android:text="@string/taxes"
+                    android:textSize="18sp"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/action_exportmail"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_send_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ok"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/submit"/>
+
+            <ImageButton
+                android:id="@+id/action_export"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_save_black_24dp"
+                android:layout_toLeftOf="@+id/action_exportmail"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ok"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/submit"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/list_header"-->
+    <!--android:layout_below="@+id/ascdesc"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:weightSum="@string/Button11"-->
+    <!--android:background="#e6e6e6">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_weight="@string/Button9" android:layout_gravity="center_vertical"-->
+    <!--android:paddingTop="4dp"-->
+    <!--android:paddingBottom="4dp"-->
+    <!--android:background="#e6e6e6">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="start|center_vertical"-->
+    <!--android:textStyle="bold"-->
+    <!--android:background="#e6e6e6"-->
+    <!--android:text="@string/action_tax"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="start|center_vertical"-->
+    <!--android:textStyle="bold"-->
+    <!--android:background="#e6e6e6"-->
+    <!--android:text="@string/hsn"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_weight="@string/Button9" android:layout_gravity="center_vertical"-->
+    <!--android:paddingTop="4dp"-->
+    <!--android:paddingBottom="4dp"-->
+    <!--android:background="#e6e6e6">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:paddingRight="5dp"-->
+    <!--android:gravity="start|center_vertical"-->
+    <!--android:textStyle="bold"-->
+    <!--android:text="@string/items"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:paddingRight="5dp"-->
+    <!--android:gravity="start|center_vertical"-->
+    <!--android:textStyle="bold"-->
+    <!--android:text="@string/qty"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_weight="@string/Button9"-->
+    <!--android:paddingTop="4dp"-->
+    <!--android:paddingBottom="4dp"-->
+    <!--android:background="#e6e6e6">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:paddingRight="5dp"-->
+    <!--android:gravity="start|center_vertical"-->
+    <!--android:textStyle="bold"-->
+    <!--android:text="@string/sale"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:paddingRight="5dp"-->
+    <!--android:gravity="start|center_vertical"-->
+    <!--android:textStyle="bold"-->
+    <!--android:text="@string/action_tax"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:paddingRight="5dp"-->
+    <!--android:gravity="start|center_vertical"-->
+    <!--android:textStyle="bold"-->
+    <!--android:text="@string/total"/>-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:paddingLeft="5dp" &ndash;&gt;-->
+    <!--&lt;!&ndash;android:paddingRight="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:paddingTop="8dp" &ndash;&gt;-->
+    <!--&lt;!&ndash;android:paddingBottom="8dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="start|center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="#e6e6e6"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/address"/>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <TableRow
+        android:layout_width="match_parent" android:id="@+id/list_header"
+        android:layout_height="wrap_content" android:background="#e6e6e6"
+        android:paddingLeft="16dp" android:paddingRight="16dp"
+        android:weightSum="@string/Button11">
+        <LinearLayout
+            android:layout_width="0dp" android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="@string/Button9"
+            android:paddingTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:id="@+id/tax"
+                android:text="@string/action_tax"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp" android:paddingBottom="5dp"
+                android:gravity="start|center_vertical"
+                android:id="@+id/hsn"
+                android:text="@string/hsn"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp" android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="@string/Button9"
+            android:paddingTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:id="@+id/items_qty"
+                android:text="@string/no_of_item_qty"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:paddingTop="5dp" android:paddingBottom="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:id="@+id/sale"
+                    android:text="@string/sale"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="("/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text=")"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp" android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="@string/Button9"
+            android:paddingTop="5dp">
+            <LinearLayout
+                android:layout_width="match_parent" android:gravity="right|center_vertical"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/tax_value"
+                    android:text="@string/action_tax"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="("/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn1"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text=")"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent" android:gravity="right|center_vertical"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:paddingTop="5dp" android:paddingBottom="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:gravity="right|center_vertical"
+                    android:id="@+id/total"
+                    android:text="@string/total"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="("/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn2"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text=")"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </TableRow>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent" android:id="@+id/list_header"-->
+    <!--android:visibility="visible" android:orientation="vertical"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<TableLayout-->
+    <!--android:id="@+id/lytpedido_header" android:background="#e6e6e6"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:orientation="vertical"/>-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:visibility="visible" android:orientation="vertical"
+        android:layout_height="match_parent">
+        <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/listView11"/>-->
+
+        <ScrollView
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:id="@+id/S"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/lytpedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+            </TableLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtTarget"
+            android:layout_marginBottom="10dp"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnModel"
+            android:gravity="left"
+            android:layout_marginBottom="5dp" />
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnLang"
+            android:gravity="left"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

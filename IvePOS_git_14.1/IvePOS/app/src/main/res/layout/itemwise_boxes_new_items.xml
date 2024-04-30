@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent" android:id="@+id/item_list"
+        android:layout_height="wrap_content" android:visibility="visible"
+        android:orientation="horizontal"
+        android:weightSum="8.5">
+        <TextView
+            android:layout_width="0dp" android:id="@+id/sno"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:text="@string/s_no"
+            android:paddingLeft="5dp" android:paddingRight="5dp"
+            android:paddingTop="8dp" android:paddingBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4.5"
+            android:paddingLeft="5dp" android:paddingRight="5dp"
+            android:paddingTop="8dp" android:paddingBottom="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/quantity"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qty_sold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" X "/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/num"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_name"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content" android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/itemname"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/selling_price"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content" android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/i_buying_price"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/buying_price_inventory"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content" android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/mi_buying_price"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/buying_price_mi"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3.3"
+            android:paddingLeft="5dp" android:paddingRight="5dp"
+            android:paddingTop="8dp" android:paddingBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn3"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/sales"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_sale"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/salesper"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sale"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" %"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn4"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/i_cost_value"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_cost_i"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/i_cost_percent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cost"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" %"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn5"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/mi_cost_value"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_cost_mi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/mi_cost_percent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cost"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" %"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/barcode_value"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/selling_price"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

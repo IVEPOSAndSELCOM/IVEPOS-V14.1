@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:id="@+id/linearLayout1"-->
+        <!--android:layout_width="wrap_content" android:layout_height="match_parent">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+            <!--<ImageView-->
+                <!--android:src="@drawable/general_orderlist_icon_small"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="15dp"-->
+                <!--android:layout_gravity="center"/>-->
+            <!--<TextView-->
+                <!--android:text="@string/general_nospace"-->
+                <!--android:textColor="#666666"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"/>-->
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="15dp">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="5dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="#00a99d"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:visibility="invisible"/>-->
+            <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical">-->
+            <!--<ImageView-->
+                <!--android:src="@drawable/bill_receipt_icon_small"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:padding="15dp"/>-->
+            <!--<TextView-->
+                <!--android:text="@string/subtitle13"-->
+                <!--android:textColor="#666666"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"/>-->
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="15dp">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="5dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="#00a99d"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:visibility="invisible"/>-->
+            <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical">-->
+            <!--<ImageView-->
+                <!--android:src="@drawable/quickaccess_pref_icon_small"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:padding="15dp"/>-->
+            <!--<TextView-->
+                <!--android:text="Speed dial"-->
+                <!--android:textColor="#666666"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"/>-->
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="15dp">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="5dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="#00a99d"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:visibility="invisible"/>-->
+            <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical">-->
+            <!--<ImageView-->
+                <!--android:src="@drawable/inventory_pref_icon_small"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:padding="15dp"/>-->
+            <!--<TextView-->
+                <!--android:text="Smart Inventory\n(experimental)"-->
+                <!--android:textColor="#666666"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"/>-->
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="15dp">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="5dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="#00a99d"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:visibility="visible"/>-->
+            <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_vertical">-->
+            <!--<ImageView-->
+                <!--android:src="@drawable/network_pref_icon_small"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:padding="15dp"/>-->
+            <!--<TextView-->
+                <!--android:text="Network"-->
+                <!--android:textColor="#666666"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"/>-->
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="15dp">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="5dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="#00a99d"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:visibility="invisible"/>-->
+            <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--<ImageView-->
+        <!--android:layout_width="2dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#7f7f7f"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f2f2f2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#666666"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" android:paddingRight="20dp"
+            android:paddingTop="15dp" android:paddingBottom="15dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/subtitle15"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"/>
+                <Switch
+                    android:id="@+id/mySwitch" android:saveEnabled="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:checked="false" />
+            </FrameLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:orientation="vertical"
+                android:layout_height="match_parent" android:id="@+id/newsmart"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="@string/Button9"
+                        android:padding="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingTop="0.5dp" android:paddingBottom="1dp"
+                                android:paddingLeft="1dp" android:paddingRight="1dp"
+                                android:background="#7f7f7f"
+                                android:visibility="visible">
+
+                                <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:background="#ffffff"-->
+                                <!--android:gravity="center_vertical"-->
+                                <!--android:weightSum="2.7"-->
+                                <!--android:paddingTop="5dp" android:paddingBottom="2dp"-->
+                                <!--android:paddingLeft="5dp" android:paddingRight="5dp">-->
+                                <!--<TextView-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="@string/item_name"-->
+                                <!--android:layout_weight="1.2"-->
+                                <!--android:paddingRight="5dp"/>-->
+                                <!--<LinearLayout-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_weight="1.5"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:background="#e6e6e6" android:id="@+id/click">-->
+                                <!--<RelativeLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent">-->
+                                <!--<TextView-->
+                                <!--android:id="@+id/chocolate_spinner"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:paddingLeft="10dp"-->
+                                <!--android:paddingTop="10dp" android:paddingBottom="10dp"-->
+                                <!--android:background="#e6e6e6" android:paddingRight="5dp"-->
+                                <!--android:hint="Select item..." android:drawableRight="@drawable/spinner_arrow"-->
+                                <!--android:textColor="#000000" android:ellipsize="end"-->
+                                <!--android:maxLines="@string/Button9" android:textSize="15sp"-->
+                                <!--android:singleLine="true" />-->
+                                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:id="@+id/down_arrow"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:src="@drawable/spinner_arrow"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:paddingLeft="5dp" android:paddingRight="5dp" />&ndash;&gt;-->
+                                <!--</RelativeLayout>-->
+                                <!--</LinearLayout>-->
+                                <!--</LinearLayout>-->
+                                <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:background="#ffffff"-->
+                                <!--android:gravity="center_vertical"-->
+                                <!--android:weightSum="2.7"-->
+                                <!--android:paddingTop="0dp" android:paddingRight="5dp"-->
+                                <!--android:paddingLeft="5dp" android:paddingBottom="2dp">-->
+                                <!--<TextView-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="@string/weekdays_reset_qty"-->
+                                <!--android:layout_weight="1.2"-->
+                                <!--android:paddingRight="5dp"/>-->
+                                <!--<LinearLayout-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_weight="1.5"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:background="#cccccc" android:id="@+id/click1">-->
+                                <!--<TextView-->
+                                <!--android:id="@+id/weekdaystock"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_toLeftOf="@+id/down_arrow"-->
+                                <!--android:paddingLeft="10dp"-->
+                                <!--android:paddingTop="10dp" android:paddingBottom="10dp"-->
+                                <!--android:background="#e6e6e6"-->
+                                <!--android:hint="Enter qty."-->
+                                <!--android:textColor="#000000" android:ellipsize="end"-->
+                                <!--android:maxLines="@string/Button9" android:textSize="15sp"-->
+                                <!--android:singleLine="true" />-->
+                                <!--</LinearLayout>-->
+                                <!--</LinearLayout>-->
+                                <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:background="#ffffff"-->
+                                <!--android:gravity="center_vertical"-->
+                                <!--android:weightSum="2.7"-->
+                                <!--android:paddingTop="0dp" android:paddingRight="5dp"-->
+                                <!--android:paddingLeft="5dp" android:paddingBottom="7dp">-->
+                                <!--<TextView-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="@string/weekends_reset_qty"-->
+                                <!--android:layout_weight="1.2"-->
+                                <!--android:paddingRight="5dp"/>-->
+                                <!--<LinearLayout-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_weight="1.5"-->
+                                <!--android:orientation="horizontal"-->
+                                <!--android:background="#cccccc" android:id="@+id/click2">-->
+                                <!--<TextView-->
+                                <!--android:id="@+id/weekdaysends"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_toLeftOf="@+id/down_arrow"-->
+                                <!--android:paddingLeft="10dp"-->
+                                <!--android:paddingTop="10dp" android:paddingBottom="10dp"-->
+                                <!--android:background="#e6e6e6"-->
+                                <!--android:hint="Enter qty."-->
+                                <!--android:textColor="#000000" android:ellipsize="end"-->
+                                <!--android:maxLines="@string/Button9" android:textSize="15sp"-->
+                                <!--android:singleLine="true" />-->
+                                <!--</LinearLayout>-->
+                                <!--</LinearLayout>-->
+                                <!--<ImageView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="1dp"-->
+                                <!--android:background="#7f7f7f"/>-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#ffffff"
+                                    android:text="@string/select_store_weekends"
+                                    android:padding="5dp"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:background="#ffffff"
+                                    android:weightSum="@string/Button1"
+                                    android:paddingTop="2dp" android:paddingBottom="2dp"
+                                    android:paddingLeft="2dp" android:paddingRight="2dp">
+                                    <TextView
+                                        android:layout_width="0dp" android:id="@+id/selectsunday"
+                                        android:layout_height="wrap_content"
+                                        android:background="#ffffff"
+                                        android:paddingTop="15dp" android:paddingBottom="15dp"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="@string/Button9"
+                                        android:clickable="true"
+                                        android:gravity="center"
+                                        android:text="@string/sun"/>
+                                    <TextView
+                                        android:layout_width="0dp" android:id="@+id/selectmonday"
+                                        android:layout_height="wrap_content"
+                                        android:background="#ffffff"
+                                        android:paddingTop="15dp" android:paddingBottom="15dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="@string/Button9"
+                                        android:clickable="true"
+                                        android:gravity="center"
+                                        android:text="@string/mon"/>
+                                    <TextView
+                                        android:layout_width="0dp" android:id="@+id/selecttuesday"
+                                        android:layout_height="wrap_content"
+                                        android:background="#ffffff"
+                                        android:paddingTop="15dp" android:paddingBottom="15dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="@string/Button9"
+                                        android:clickable="true"
+                                        android:gravity="center"
+                                        android:text="@string/tue" />
+                                    <TextView
+                                        android:layout_width="0dp" android:id="@+id/selectwednesday"
+                                        android:layout_height="wrap_content"
+                                        android:background="#ffffff"
+                                        android:paddingTop="15dp" android:paddingBottom="15dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="@string/Button9"
+                                        android:clickable="true"
+                                        android:gravity="center"
+                                        android:text="@string/wed"/>
+                                    <TextView
+                                        android:layout_width="0dp" android:id="@+id/selectthursday"
+                                        android:layout_height="wrap_content"
+                                        android:background="#ffffff"
+                                        android:paddingTop="15dp" android:paddingBottom="15dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:gravity="center"
+                                        android:clickable="true"
+                                        android:layout_weight="@string/Button9"
+                                        android:text="@string/thu"/>
+                                    <TextView
+                                        android:layout_width="0dp" android:id="@+id/selectfriday"
+                                        android:layout_height="wrap_content"
+                                        android:background="#ffffff"
+                                        android:paddingTop="15dp" android:paddingBottom="15dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_weight="@string/Button9"
+                                        android:clickable="true"
+                                        android:gravity="center"
+                                        android:text="@string/fri"/>
+                                    <TextView
+                                        android:layout_width="0dp" android:id="@+id/selectsatuday"
+                                        android:layout_height="wrap_content"
+                                        android:background="#ffffff"
+                                        android:paddingTop="15dp" android:paddingBottom="15dp"
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginRight="2dp"
+                                        android:layout_weight="@string/Button9"
+                                        android:clickable="true"
+                                        android:gravity="center"
+                                        android:text="@string/sat"/>
+                                </LinearLayout>
+                                <!--<LinearLayout-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:orientation="horizontal"-->
+                                    <!--android:background="#ffffff"-->
+                                    <!--android:weightSum="@string/Button5"-->
+                                    <!--android:gravity="center"-->
+                                    <!--android:paddingTop="5dp" android:paddingBottom="5dp">-->
+                                    <!--<TextView-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text="3rd"/>-->
+                                    <!--<TextView-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text=","/>-->
+                                    <!--<TextView-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text=" 1st"/>-->
+                                    <!--<TextView-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text=" and"/>-->
+                                    <!--<TextView-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text=" 2nd"/>-->
+                                    <!--<TextView-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text=" selected as weekends."/>-->
+                                <!--</LinearLayout>-->
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/item_qty"
+                                    android:background="#ffffff"
+                                    android:paddingTop="0dp" android:paddingBottom="5dp"
+                                    android:paddingLeft="10dp" android:paddingRight="10dp">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:background="#ffffff"
+                                        android:weightSum="@string/Button5"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_centerVertical="true"
+                                        android:gravity="center"
+                                        android:paddingTop="5dp" android:paddingBottom="5dp">
+                                        <TextView
+                                            android:layout_width="wrap_content" android:id="@+id/one"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content" android:id="@+id/two"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content" android:id="@+id/three"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content" android:id="@+id/four"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content" android:id="@+id/five"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content" android:id="@+id/six"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content" android:id="@+id/seven"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/are_selected"/>
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7f7f7f"/>
+                <TableLayout android:id="@+id/tabla_cuerpo"
+                    android:layout_height="wrap_content" android:layout_width="match_parent">
+                    <TableRow
+                        android:background="#e6e6e6"
+                        android:layout_width="match_parent" android:layout_height="wrap_content" >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="@string/Button9"
+                            android:weightSum="@string/Button5">
+                            <TextView
+                                android:id="@+id/sno"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.6"
+                                android:gravity="center_vertical"
+                                android:text="@string/item_name" android:background="#e6e6e6"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp" android:paddingRight="5dp"
+                                android:paddingTop="8dp" android:paddingBottom="8dp"/>
+                            <TextView
+                                android:id="@+id/num"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.2"
+                                android:gravity="center_vertical"
+                                android:text="@string/weekdays_reset_qty" android:background="#e6e6e6"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp" android:paddingRight="5dp"
+                                android:paddingTop="8dp" android:paddingBottom="8dp"/>
+                            <TextView
+                                android:id="@+id/itemname"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.2"
+                                android:gravity="center_vertical"
+                                android:text="@string/weekends_reset_qty" android:background="#e6e6e6"
+                                android:textStyle="bold"
+                                android:paddingLeft="5dp" android:paddingRight="5dp"
+                                android:paddingTop="8dp" android:paddingBottom="8dp"/>
+                        </LinearLayout>
+
+
+
+
+                    </TableRow>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#7f7f7f"/>
+
+
+                </TableLayout>
+                <ListView
+                    android:layout_width="match_parent" android:id="@+id/listView"
+                    android:layout_height="match_parent" android:background="#ffffff"/>
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

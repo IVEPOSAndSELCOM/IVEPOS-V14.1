@@ -1,0 +1,51 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_export"
+        android:icon="@drawable/ic_save_black_24dp"
+        android:title="@string/action_export"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_exportmail"
+        android:icon="@drawable/ic_send_black_24dp"
+        android:title="@string/action_email"
+        app:showAsAction="always"/>
+
+    <item
+        android:menuCategory="system"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        app:showAsAction="always" >
+
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!-- Search, should appear as action button -->
+
+
+            <item
+                android:orderInCategory="101" android:visible="false"
+                android:icon="@drawable/ic_customer_black_24dp"
+                android:title="@string/action_customerwise"/>
+            <item android:id="@+id/action_discountwise"
+                android:orderInCategory="102"
+                android:icon="@drawable/ic_local_offer_black_24dp"
+                android:title="@string/action_discountwise"/>
+            <item android:id="@+id/action_general"
+                android:orderInCategory="103"
+                android:icon="@drawable/ic_pie_chart_black_24dp"
+                android:title="@string/action_general"/>
+            <item android:id="@+id/action_itemwise"
+                android:orderInCategory="104"
+                android:icon="@drawable/ic_widgets_black_24dp"
+                android:title="@string/action_itemwise"/>
+            <item android:id="@+id/action_userwise"
+                android:orderInCategory="105"
+                android:icon="@drawable/ic_group_black_24dp"
+                android:title="@string/action_userwise"/>
+
+
+    <!-- Settings, should always be in the overflow -->
+    <!-- <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:showAsAction="never" /> -->
+
+</menu></item></menu>

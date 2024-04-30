@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightBlack">
+
+    <RelativeLayout
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/leftarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/ic_intuition_logo_green_72dp"
+            android:textStyle="bold"
+            android:paddingStart="4dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/gotomainpage"
+            android:layout_toRightOf="@+id/leftarrow"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/leftarrow"
+            android:layout_toStartOf="@+id/gotomainpage">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ivepos"
+                android:textSize="18sp" />
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"-->
+            <!--android:text="@string/recovery" />-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gotomainpage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:onClick="signUp"
+            android:padding="12dp"
+            android:visibility="gone"
+            android:text="@string/sign_up"
+            android:textColor="@color/ColorAccentDark"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action"
+        android:background="#e6e6e6"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!--            <RadioGroup-->
+            <!--                android:id="@+id/radioGroup1" android:layout_below="@+id/text1"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content" >-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="@string/select_business_type"-->
+            <!--                    android:paddingLeft="20dp"-->
+            <!--                    android:paddingTop="10dp"-->
+            <!--                    android:paddingBottom="10dp"/>-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_width="match_parent" android:id="@+id/layout_dine"-->
+            <!--                        android:layout_height="wrap_content" android:layout_weight="1"-->
+            <!--                        android:layout_margin="10dp" android:orientation="vertical"-->
+            <!--                        android:elevation="2dp"-->
+            <!--                        android:background="@drawable/white_rounded_corners"-->
+            <!--                        android:padding="15dp">-->
+
+            <!--                        <LinearLayout-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:orientation="horizontal">-->
+
+            <!--                            <RadioButton-->
+            <!--                                android:id="@+id/radio_dine"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content" />-->
+
+            <!--                            <ImageView-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:src="@drawable/ic_dine_logo" />-->
+
+            <!--                        </LinearLayout>-->
+
+            <!--                        <TextView-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:text="Restaurant"-->
+            <!--                            android:layout_gravity="center"/>-->
+
+            <!--                    </LinearLayout>-->
+
+
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_width="match_parent" android:id="@+id/layout_retail"-->
+            <!--                        android:layout_height="wrap_content" android:layout_weight="1"-->
+            <!--                        android:layout_margin="10dp" android:orientation="vertical"-->
+            <!--                        android:elevation="2dp"-->
+            <!--                        android:background="@drawable/white_rounded_corners"-->
+            <!--                        android:padding="15dp">-->
+
+            <!--                        <LinearLayout-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:orientation="horizontal">-->
+
+            <!--                            <RadioButton-->
+            <!--                                android:id="@+id/radio_retail"-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content" />-->
+
+            <!--                            <ImageView-->
+            <!--                                android:layout_width="wrap_content"-->
+            <!--                                android:layout_height="wrap_content"-->
+            <!--                                android:src="@drawable/ic_retail_logo" />-->
+
+            <!--                        </LinearLayout>-->
+
+            <!--                        <TextView-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:text="@string/_retail_nospace"-->
+            <!--                            android:layout_gravity="center"/>-->
+
+            <!--                    </LinearLayout>-->
+
+
+            <!--                </LinearLayout>-->
+
+            <!--            </RadioGroup>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/login"
+                android:textSize="21sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextUserId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_email"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/e_mail_id_username"
+                    android:inputType="textEmailAddress"
+                    android:nextFocusDown="@id/editText2"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:drawableStart="@drawable/ic_action_email" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_itemname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextUserPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_password"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@id/editText2"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:drawableStart="@drawable/ic_action_password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_password" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingLeft="7dp"
+                android:paddingTop="10dp"
+                android:text="@string/business_type"
+                android:paddingStart="7dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_dine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/dine"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_qsr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/qsr"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_retail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/retail"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/login1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/red_click_shape_rounded_corners"
+                android:minWidth="240dp"
+                android:onClick="logIn"
+                android:text="@string/log_in"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewUserForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:minWidth="240dp"
+                android:padding="12dp"
+                android:text="@string/forgot_password"
+                android:textColor="@color/ColorAccent"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_black_click_shape_rounded_corners"
+                android:minWidth="240dp"
+                android:onClick="signUp"
+                android:visibility="gone"
+                android:text="@string/sign_up"
+                android:textColor="@color/ColorAccentDark"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/progressbar1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#80000000"
+        android:elevation="6dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/circle"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/progress_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/white_shape_circle"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle"
+            android:layout_centerHorizontal="true"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

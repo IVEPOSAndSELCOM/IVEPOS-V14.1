@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/options_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:background="#e6e6e6">
+
+            <RelativeLayout
+                android:id="@+id/item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/Button9"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_item_black_24dp"
+                    android:text="@string/action_item"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/Button9"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_category_black_24dp"
+                    android:text="@string/action_category"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/modifier" android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/Button9"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_modifier_black_24dp"
+                    android:text="@string/action_modifier"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tax1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/Button9"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:id="@+id/image4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/green_shape_circle">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_tax_black_24dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_below="@+id/image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_tax"
+                    android:textColor="#00a99d"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/discount1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/Button9"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_local_offer_black_24dp"
+                    android:text="@string/subtitle14"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/options_frame"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:orientation="horizontal"
+                android:background="#e6e6e6"
+                android:paddingTop="5dp" android:paddingBottom="5dp"
+                android:paddingRight="5dp" android:paddingLeft="5dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/spin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/white_click_shape_rounded_corners"
+                    android:layout_margin="2dp"
+                    android:elevation="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="sort"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        style="@style/TextAppearance.Design.Hint"/>
+
+                    <Spinner
+                        android:id="@+id/chocolate_category"
+                        android:paddingTop="2dp" android:paddingBottom="0dp"
+                        android:paddingLeft="0dp" android:paddingRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="match_parent"
+                        android:layout_width="140dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/white_click_shape_rounded_corners"
+                    android:layout_margin="2dp"
+                    android:elevation="2dp"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/search_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_search_black_24dp"
+                        android:textSize="15sp"
+                        android:paddingLeft="5dp"
+                        android:paddingStart="5dp"
+                        android:paddingRight="3dp"
+                        android:paddingEnd="3dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        style="@style/ButtonText"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/searchView"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:inputType="text"
+                        android:layout_toRightOf="@+id/search_icon"
+                        android:layout_toEndOf="@+id/search_icon"
+                        android:layout_toLeftOf="@+id/delete_icon"
+                        android:layout_toStartOf="@+id/delete_icon"
+                        android:hint="Search tax"
+                        android:textSize="15sp"
+                        android:singleLine="true"/>
+                    <ImageView
+                        android:id="@+id/delete_icon"
+                        android:contentDescription="search icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_clear_black_18dp"
+                        android:background="@drawable/white_click_shape_rounded_corners"
+                        android:textSize="15sp"
+                        android:paddingLeft="10dp" android:paddingRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="visible"
+                        style="@style/ButtonText"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#7f7f7f"/>
+            ///start two reative layouts
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:gravity="center_vertical"
+                    android:background="#e6e6e6"
+                    android:orientation="horizontal"   >
+
+                    <TextView
+                        android:layout_width="100dp" android:id="@+id/code" android:text="@string/id"
+                        android:layout_height="wrap_content" android:padding="12dp" />
+
+                    <TextView
+                        android:id="@+id/name" android:text="Tax name"
+                        android:layout_width="match_parent" android:padding="12dp"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7f7f7f"/>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listView"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_white_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/closeadd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/line"
+            android:layout_toStartOf="@+id/line"
+            android:orientation="horizontal" />
+
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/relativeLayout1"
+            android:layout_toStartOf="@+id/relativeLayout1"
+            android:background="#7f7f7f" />
+
+        <LinearLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#e6e6e6"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="#e6e6e6"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btndelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/light_black_click_shape_rounded_corners"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:text="@string/subscription_prompt_cancel"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/add_tax"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnsave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/green_click_shape_rounded_corners"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_done_white_24dp"
+                    android:text="@string/save"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#e6e6e6"
+                android:isScrollContainer="false"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/layouttaxname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tex"
+                            android:layout_toStartOf="@+id/tex">
+
+                            <EditText
+                                android:id="@+id/editText1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Tax name*"
+                                android:digits="ABCDEFGHIJLKMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                                android:nextFocusDown="@id/editText1_HSN"
+                                android:selectAllOnFocus="true"
+                                android:singleLine="true"
+                                android:textSize="15sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="(" />
+
+                            <TextView
+                                android:layout_width="wrap_content" android:id="@+id/tax_value_watcher"
+                                android:layout_height="wrap_content"
+                                android:maxLength="@string/Button6"
+                                android:text="@string/_99_9" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="%)" />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/layoutvalue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/barcode_print"
+                            android:layout_toStartOf="@+id/barcode_print">
+
+                            <EditText
+                                android:id="@+id/editText2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Tax value"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:nextFocusDown="@id/discountvalue1"
+                                android:selectAllOnFocus="true"
+                                android:singleLine="true"
+                                android:textSize="15sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/barcode_print"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/light_black_click_shape_rounded_corners"
+                            android:gravity="center"
+                            android:text="%"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutHSNname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editText1_HSN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hsn_code"
+                            android:nextFocusDown="@id/editText2"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="true"
+                            android:textSize="15sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent" android:visibility="gone"
+                        android:orientation="vertical" android:id="@+id/select_items"
+                        android:layout_weight="@string/Button9"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:paddingLeft="4dp"
+                            android:textColor="#000000"
+                            android:hint="@string/item_tax"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/clicktax">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:textColor="#000000"
+                                    android:ellipsize="end"
+                                    android:maxLines="@string/Button9"
+                                    android:textSize="15sp"
+                                    android:layout_height="wrap_content"
+                                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                                    android:id="@+id/tax"/>
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="@string/type"
+                            android:paddingLeft="4dp"
+                            android:paddingStart="4dp"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/btnglobal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="@string/Button9"
+                                android:gravity="center_vertical"
+                                android:padding="15dp"
+                                android:text="@string/globaltax"
+                                android:textColor="#000000" />
+
+                            <RadioButton
+                                android:id="@+id/btnitem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="@string/Button9"
+                                android:gravity="center_vertical"
+                                android:padding="15dp"
+                                android:text="@string/itemtax"
+                                android:textColor="#000000" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tax_seletion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_click_shape_rounded_corners"
+                        android:elevation="2dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dp"
+                        android:paddingStart="6dp">
+                        <!--<CheckBox-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content" android:id="@+id/select_dine_in"-->
+                        <!--android:text="@string/dine_in_nospace"-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:checked="true"-->
+                        <!--android:gravity="right|center_vertical" />-->
+                        <CheckBox
+                            android:id="@+id/select_dine_in"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="4dp"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/dine_in_nospace"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <CheckBox
+                            android:id="@+id/select_take_away"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="4dp"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/dine_in_nospace"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/select_home_delivery"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="4dp"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/home_delivery_nospace"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_click_shape_rounded_corners"
+                        android:elevation="2dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/note_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/note_pic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="Note icon"
+                                android:padding="5dp"
+                                android:src="@drawable/ic_description_black_24dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_toEndOf="@+id/note_pic"
+                                android:layout_toRightOf="@+id/note_pic"
+                                android:text="@string/note" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_1_global_tax_is_added_to_the_entire_bill_n2_item_tax_can_also_be_added_to_modifiers" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:elevation="6dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyleLarge"/>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/products_nocircle_48dp"
+            android:background="@drawable/white_shape_circle"
+            android:padding="8dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/processing"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/circle"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

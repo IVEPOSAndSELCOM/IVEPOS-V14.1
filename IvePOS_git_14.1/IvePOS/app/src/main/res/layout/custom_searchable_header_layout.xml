@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="?android:attr/actionBarSize" android:gravity="center_vertical"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/custombar_return_wrapper"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:contentDescription="back"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:background="@drawable/white_click"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@+id/custombar_return_wrapper"
+            android:layout_toRightOf="@+id/custombar_return_wrapper"
+            android:layout_toLeftOf="@+id/custombar_del_wrapper"
+            android:layout_toStartOf="@+id/custombar_del_wrapper"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="start|center_vertical">
+            <EditText
+                android:id="@+id/custombar_text"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp" android:paddingBottom="15dp"
+                android:layout_height="match_parent"
+                android:hint="Search for item name and category"
+                android:textColor="#000000"
+                android:singleLine="true"
+                android:background="#00000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"  android:id="@+id/custombar_del_wrapper"
+            android:visibility="gone"
+            android:layout_height="match_parent" android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/searchicons_pressed">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:padding="12dp"
+                android:contentDescription="clear text"
+                android:background="@drawable/white_click"
+                android:layout_height="wrap_content" android:src="@drawable/ic_clear_grey_24dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7f7f7f"/>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:id="@+id/linearLayout" android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:layout_width="match_parent" android:id="@+id/listView"
+            android:layout_height="wrap_content" android:background="#ffffff"/>
+    </LinearLayout>
+
+</LinearLayout>

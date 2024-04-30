@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp" android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content" android:gravity="center_vertical" android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/custombar_return_wrapper"
+            android:layout_height="match_parent" android:gravity="center"
+            android:background="@drawable/white_click">
+            <ImageView
+                android:layout_width="wrap_content" android:padding="12dp"
+                android:id="@+id/custombar_return"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="264dp"
+            android:layout_height="match_parent" android:gravity="left|center_vertical">
+            <EditText
+                android:id="@+id/searchView" android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search vendor/phone no."
+                android:textColor="#000000" android:padding="15dp"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:background="#00000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"  android:id="@+id/custombar_del_wrapper"
+            android:layout_height="match_parent" android:gravity="center" android:background="@drawable/white_click">
+            <ImageView
+                android:layout_width="wrap_content" android:padding="10dp"
+                android:id="@+id/cancelletters"
+                android:layout_height="match_parent" android:src="@drawable/ic_clear_black_18dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#707070"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:id="@+id/linearLayout" android:background="#ffffff"
+        android:layout_height="wrap_content" android:minHeight="200dp"
+        android:orientation="vertical">
+        <ListView
+            android:layout_width="match_parent" android:id="@+id/listView5"
+            android:layout_height="wrap_content" android:background="#ffffff"/>
+    </LinearLayout>
+</LinearLayout>

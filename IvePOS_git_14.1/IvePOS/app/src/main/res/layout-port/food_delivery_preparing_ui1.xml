@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#ffffff"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/back_activity"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="?android:attr/actionBarItemBackground"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back_activity"
+            android:layout_toEndOf="@+id/back_activity"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="@string/Button9"
+                android:ellipsize="end"
+                android:text="Food delivery"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="@string/Button9"
+                android:ellipsize="end"
+                android:text="Preparing"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/action_exportmail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/settings_nocircle_24dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="Tab settings"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/actionBarItemBackground"
+            android:textStyle="bold"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        /////////All////swiggy/////zomato///uber eats///food panda
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="172dp" android:id="@+id/all_s_z_ue_fp"
+                android:layout_height="48dp"
+                android:entries="@array/food_delivery_names">
+
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+        </androidx.cardview.widget.CardView>
+
+        /////////Preparing///picked up///delivered///others
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            android:layout_alignParentRight="true">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="172dp" android:id="@+id/pre_deli_pu_oth"
+                android:layout_height="48dp"
+                android:entries="@array/food_delivery_options">
+
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    ////////individual item layout for recycler view////
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_below="@+id/recycle"-->
+    <!--android:layout_width="320dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:cardCornerRadius="6dp"-->
+    <!--android:layout_marginLeft="12dp"-->
+    <!--android:layout_marginRight="12dp"-->
+    <!--android:layout_marginTop="6dp"-->
+    <!--android:layout_marginBottom="6dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:text="@string/order_id"-->
+    <!--android:layout_margin="3dp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/title6"-->
+    <!--android:drawableRight="@drawable/ic_info_black_24dp"-->
+    <!--android:drawablePadding="4dp"-->
+    <!--android:layout_gravity="end|center_vertical"-->
+    <!--android:layout_margin="3dp"/>-->
+    <!--</FrameLayout>-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/channel"-->
+    <!--android:layout_margin="3dp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="deadline time"-->
+    <!--android:layout_gravity="end"-->
+    <!--android:layout_margin="3dp"/>-->
+    <!--</FrameLayout>-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:text="@string/time_title"-->
+    <!--android:layout_margin="3dp"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_gravity="end|center_vertical"-->
+    <!--android:layout_margin="3dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/total"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/rs"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/_580"-->
+    <!--android:drawableRight="@drawable/ic_info_black_24dp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</FrameLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#5d5d5d"-->
+    <!--android:layout_marginLeft="6dp"-->
+    <!--android:layout_marginRight="6dp"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="16dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/no.items"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="@string/Button11"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/items"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:drawableRight="@drawable/ic_info_black_24dp"-->
+    <!--android:drawablePadding="4dp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#5d5d5d"-->
+    <!--android:layout_marginLeft="6dp"-->
+    <!--android:layout_marginRight="6dp"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<CheckedTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="6dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_weight="@string/Button9"-->
+    <!--android:text="Prepare"-->
+    <!--android:checked="true"-->
+    <!--android:checkMark="@drawable/ic_success_green_32dp"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#5d5d5d"-->
+    <!--android:layout_margin="6dp"/>-->
+
+    <!--<CheckedTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="6dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_weight="@string/Button9"-->
+    <!--android:text="Pickup"-->
+    <!--android:checked="true"-->
+    <!--android:checkMark="@drawable/ic_success_green_32dp"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#5d5d5d"-->
+    <!--android:layout_margin="6dp"/>-->
+
+    <!--<CheckedTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="6dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_weight="@string/Button9"-->
+    <!--android:text="Deliver"-->
+    <!--android:checked="true"-->
+    <!--android:checkMark="@drawable/ic_success_green_32dp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#5d5d5d"-->
+    <!--android:layout_marginLeft="6dp"-->
+    <!--android:layout_marginRight="6dp"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="16dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Delivery by"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text=" Name"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text=" on progress/delivered"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:text="11:00Am(Current/delivered)"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_above="@+id/new_orders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="@string/Button9"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/new_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="24dp">
+
+            <LinearLayout
+                android:layout_width="172dp" android:id="@+id/new_orders1"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="New Orders "/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/new_orders_value"
+                    android:minWidth="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/white_shape_circle"
+                    android:visibility="visible"
+                    android:text="@string/Button13"
+                    android:paddingLeft="2dp" android:paddingRight="2dp"
+                    android:textSize="15sp" android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

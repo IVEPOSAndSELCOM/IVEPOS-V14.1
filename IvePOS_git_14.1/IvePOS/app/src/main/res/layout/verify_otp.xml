@@ -1,0 +1,314 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightBlack"
+    tools:showIn=".activities.RegisterUserActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/leftarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="16dp"
+            android:paddingTop="4dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="4dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/gotomainpage"
+            android:layout_toRightOf="@+id/leftarrow"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verify_otp"
+                android:textSize="18sp" />
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"-->
+            <!--android:text="@string/recovery" />-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/enter_otp_sent_to"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/phone_number"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/phone_number"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_margin="12dp"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/textViewRegUserCompanyLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"
+                    android:text=" "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewRegEmailLabel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/textViewUserRegCompanyMessage"
+                android:layout_centerHorizontal="true"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="15sp" />
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="3dp"
+                android:layout_margin="12dp" android:padding="6dp">
+
+
+                <EditText
+
+                    android:id="@+id/editTextConfirmCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter OTP"
+                    android:background="@drawable/r_new_login_style"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    android:drawablePadding="10dp"
+                    android:maxLines="@string/Button9"
+                    android:nextFocusDown="@id/et_email"
+                    android:maxLength="@string/Button7"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/resendotp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent" android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/tvv"
+                    android:text="@string/didn_t_received_code"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/resend_confirm_req"/>
+
+                <TextView
+                    android:id="@+id/resend_confirm_req"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="end"
+                    android:text="@string/resend_otp"
+                    android:textColor="@color/green"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent" android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/white_rounded_corners"
+                android:elevation="3dp"
+                android:layout_margin="12dp" android:padding="6dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/note"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/password_should_contain_minimum_8_characters_atleast_1_number_1_capital_letter_1_small_letter_1_special_character"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/confirm_button" android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:elevation="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/r_new_login_button2"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/verify"
+                android:textColor="#3C3B3B"
+                android:textStyle="normal"
+                android:textAllCaps="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:elevation="6dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar1"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/circle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyleLarge"/>
+
+        <ImageView
+            android:id="@+id/progress_image1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/white_shape_circle"
+            android:padding="8dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/progress_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/circle1"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:elevation="6dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar_register"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyleLarge"/>
+
+        <ImageView
+            android:id="@+id/progress_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/white_shape_circle"
+            android:padding="8dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/circle"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="" />
+    <!--<Button-->
+    <!--android:id="@+id/signUp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="@string/login"-->
+    <!--android:textColor="@color/white"/>-->
+</RelativeLayout>

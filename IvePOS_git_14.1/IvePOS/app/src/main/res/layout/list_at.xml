@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:mode="twoLine" android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/PrinterName" android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" android:text="@string/hi"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_wifi_black_24dp"/>
+
+    <TextView
+        android:id="@+id/p_name"
+        android:layout_width="wrap_content" android:paddingLeft="15dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PrinterName"
+        android:layout_below="@+id/PrinterName"
+        android:textColor="#000000" />
+
+    <TextView
+        android:text="  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PrinterName"
+        android:layout_below="@+id/PrinterName"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PrinterName"
+        android:layout_below="@+id/PrinterName"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content" android:text="@string/_9100"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PrinterName"
+        android:layout_below="@+id/PrinterName"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/Target" android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PrinterName"
+        android:layout_below="@+id/ip"
+        android:textColor="#000000" />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_export"
+        android:icon="@drawable/ic_save_black_24dp"
+        android:title="@string/action_export"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_exportmail"
+        android:icon="@drawable/ic_send_black_24dp"
+        android:title="@string/action_email"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:menuCategory="system"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:orderInCategory="@string/Button11"
+        android:title="More options"
+        app:showAsAction="always" >
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item android:id="@+id/action_promotions"
+                android:orderInCategory="101"
+                android:title="@string/action_promotions"/>
+            <item android:id="@+id/action_write_off"
+                android:orderInCategory="101"
+                android:title="@string/action_write_off"/>
+            <item android:id="@+id/action_def_credit"
+                android:orderInCategory="102"
+                android:checkable="true"
+                android:checked="true"
+                android:title="@string/action_credit"
+                android:visible="false"/>
+            <item android:id="@+id/action_download_csv"
+                android:orderInCategory="103"
+                android:icon="@drawable/ic_file_download_black_24dp"
+                android:title="@string/csv_download"/>
+            <item android:id="@+id/action_upload_csv"
+                android:orderInCategory="104"
+                android:icon="@drawable/ic_file_upload_black_24dp"
+                android:title="@string/csv_upload"/>
+            <item android:id="@+id/action_help"
+                android:orderInCategory="105"
+                android:icon="@drawable/ic_action_help_24dp"
+                android:title="@string/action_help"/>
+        </menu>
+    </item>
+
+
+    <!--<item android:id="@+id/action_additional"-->
+    <!--android:menuCategory="system"-->
+    <!--android:icon="@drawable/menu_overflow1"-->
+    <!--android:orderInCategory="@string/Button10"-->
+    <!--app:showAsAction="always" >-->
+    <!--<menu xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--&gt;-->
+    <!--&lt;!&ndash; Search, should appear as action button &ndash;&gt;-->
+
+    <!--<item android:id="@+id/action_promotions"-->
+    <!--android:orderInCategory="101"-->
+    <!--android:icon="@drawable/ic_local_offer_black_24dp"-->
+    <!--android:title="@string/action_email"/>-->
+    <!--<item android:id="@+id/action_def_credit"-->
+    <!--android:orderInCategory="102"-->
+    <!--android:icon="@drawable/logout_icon_new"-->
+    <!--android:title="@string/action_logout"/>-->
+
+
+
+    <!--&lt;!&ndash; Settings, should always be in the overflow &ndash;&gt;-->
+    <!--&lt;!&ndash; <item android:id="@+id/action_settings"-->
+    <!--android:title="@string/action_settings"-->
+    <!--android:showAsAction="never" /> &ndash;&gt;-->
+
+    <!--</menu></item>-->
+
+</menu>

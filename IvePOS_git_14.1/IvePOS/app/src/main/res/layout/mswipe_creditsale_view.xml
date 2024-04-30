@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:keepScreenOn="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar_REL_content"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/topbar_background">
+
+        <LinearLayout
+            android:id="@+id/topbar_LNR_topbar_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:id="@+id/topbar_IMG_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mswipe_cancel" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topbar_LBL_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/title35"
+            android:textColor="@color/white"
+            android:textSize="29sp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/creditsale_totalamountview_LBL_totalamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:ellipsize="@string/start"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:hint="00.00"
+        android:imeOptions="actionNext"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:textColor="@color/grey"
+        android:textSize="30sp"/>
+
+
+    <TextView
+        android:id="@+id/creditsale_swiperview_EDT_swipe_progmsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:singleLine="false"
+        android:text="@string/device_disconnected"
+        android:textColor="@color/grey"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/creditsale_swiperview_BTN_swipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creditsale_amountview_REl_swipe_actiosn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/mswipe_button_next"
+        android:gravity="center"/>
+
+</LinearLayout>

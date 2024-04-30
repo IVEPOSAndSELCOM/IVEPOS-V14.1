@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:id="@+id/tabla_cuerpo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="8.5">
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="0.8"-->
+<!--                android:textSize="12sp"-->
+<!--                android:paddingLeft="5dp" android:paddingRight="5dp"-->
+<!--                android:paddingTop="6dp" android:paddingBottom="6dp"-->
+<!--                android:gravity="start|center_vertical"-->
+<!--                android:id="@+id/sno"-->
+<!--                android:text="@string/textview"/>-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingTop="6dp" android:paddingBottom="6dp"
+                android:layout_weight="2.1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp"
+                    android:gravity="start|center_vertical"
+                    android:id="@+id/date"
+                    android:text="@string/textview"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp"
+                    android:gravity="start|center_vertical"
+                    android:id="@+id/time"
+                    android:text="@string/textview"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.1"
+                android:textSize="12sp"
+                
+                android:paddingLeft="5dp" android:paddingRight="5dp"
+                android:paddingTop="6dp" android:paddingBottom="6dp"
+                android:gravity="start|center_vertical"
+                android:id="@+id/billno"
+                android:text="@string/textview"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:textSize="12sp"
+                android:paddingLeft="5dp" android:paddingRight="5dp"
+                android:paddingTop="6dp" android:paddingBottom="6dp"
+                android:gravity="start|center_vertical"
+                android:id="@+id/discountcode"
+                android:text="@string/textview"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@string/Button9"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp" android:paddingRight="3dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"
+                    android:gravity="start|center_vertical"
+                    android:id="@+id/discountpercent"
+                    android:text="@string/_99_9"/>
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content" android:layout_height="match_parent"-->
+                    <!--android:paddingRight="5dp"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:paddingTop="6dp" android:paddingBottom="6dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="%"/>-->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp" android:paddingRight="3dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/insert"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"
+                    android:gravity="start|center_vertical"
+                    android:id="@+id/billamount"
+                    android:text="@string/bill"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@string/Button9">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn1"
+                    android:layout_height="match_parent" android:visibility="gone"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp" android:paddingRight="3dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/insert"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"
+                    android:gravity="end|center_vertical"
+                    android:id="@+id/discountrs"
+                    android:text="@string/subtitle14"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

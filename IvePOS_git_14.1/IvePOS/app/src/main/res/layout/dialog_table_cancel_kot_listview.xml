@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:id="@+id/tabla_cuerpo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TableRow
+            android:layout_width="match_parent" android:weightSum="@string/Button3"
+            android:layout_height="wrap_content" android:paddingLeft="10dp"
+            android:background="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingTop="6dp" android:paddingBottom="6dp"
+                android:layout_weight="2.2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/date"
+                    android:text="@string/textview"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/time"
+                    android:text="@string/textview"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="6dp" android:paddingBottom="6dp"
+                android:layout_weight="2.4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp" android:paddingRight="5dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/itemname"
+                    android:text="@string/textview"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+
+                android:textSize="12sp"
+                android:paddingLeft="5dp" android:paddingRight="5dp"
+                android:paddingTop="6dp" android:paddingBottom="6dp"
+                android:gravity="center_vertical"
+                android:id="@+id/qty"
+                android:text="@string/textview"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+
+                android:textSize="12sp"
+                android:paddingLeft="5dp" android:paddingRight="5dp"
+                android:paddingTop="6dp" android:paddingBottom="6dp"
+                android:gravity="center_vertical"
+                android:id="@+id/price"
+                android:text="@string/textview"/>
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

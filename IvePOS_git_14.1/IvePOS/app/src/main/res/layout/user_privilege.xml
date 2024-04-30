@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="#00a99d"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/back_activity"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="?android:attr/actionBarItemBackground"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/back_activity"
+            android:clickable="true"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:minWidth="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cust_name"
+                    android:layout_height="wrap_content"
+                    android:maxLines="@string/Button9"
+                    android:ellipsize="end"
+                    android:text="@string/user_privileges_console"
+                    android:textSize="18sp"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="2dp"
+        android:background="@drawable/white_rounded_corners">
+        <LinearLayout
+            android:id="@+id/user1" android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent" android:orientation="horizontal"
+            android:layout_height="wrap_content" android:padding="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content" android:id="@+id/ima1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_nocircle_48dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content" android:paddingLeft="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/user1_name" android:textSize="15sp"
+                    android:layout_height="wrap_content" android:textStyle="bold"
+                    android:text="@string/user_privileges_console"/>
+                <TextView
+                    android:layout_width="wrap_content" android:layout_below="@+id/user1_name"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:text="@string/manage_user_permissions"
+                    android:id="@+id/user1_permission"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/MediumBlack"/>
+
+        <LinearLayout
+            android:id="@+id/user2" android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent" android:orientation="horizontal"
+            android:layout_height="wrap_content" android:padding="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content" android:id="@+id/ima2"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_nocircle_48dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content" android:paddingLeft="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/user2_name" android:textSize="15sp"
+                    android:layout_height="wrap_content" android:textStyle="bold"
+                    android:text="@string/user_privileges_console"/>
+                <TextView
+                    android:layout_width="wrap_content" android:layout_below="@+id/user2_name"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:text="@string/manage_user_permissions"
+                    android:id="@+id/user2_permission"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/MediumBlack"/>
+
+        <LinearLayout
+            android:id="@+id/user3" android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent" android:orientation="horizontal"
+            android:layout_height="wrap_content" android:padding="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content" android:id="@+id/ima3"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_nocircle_48dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content" android:paddingLeft="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/user3_name" android:textSize="15sp"
+                    android:layout_height="wrap_content" android:textStyle="bold"
+                    android:text="@string/user_privileges_console"/>
+                <TextView
+                    android:layout_width="wrap_content" android:layout_below="@+id/user3_name"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:text="@string/manage_user_permissions"
+                    android:id="@+id/user3_permission"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/MediumBlack"/>
+
+        <LinearLayout
+            android:id="@+id/user4" android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent" android:orientation="horizontal"
+            android:layout_height="wrap_content" android:padding="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content" android:id="@+id/ima4"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_nocircle_48dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content" android:paddingLeft="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/user4_name" android:textSize="15sp"
+                    android:layout_height="wrap_content" android:textStyle="bold"
+                    android:text="@string/user_privileges_console"/>
+                <TextView
+                    android:layout_width="wrap_content" android:layout_below="@+id/user4_name"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:text="@string/manage_user_permissions"
+                    android:id="@+id/user4_permission"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/MediumBlack"/>
+
+        <LinearLayout
+            android:id="@+id/user5" android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent" android:orientation="horizontal"
+            android:layout_height="wrap_content" android:padding="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content" android:id="@+id/ima5"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_nocircle_48dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content" android:paddingLeft="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/user5_name" android:textSize="15sp"
+                    android:layout_height="wrap_content" android:textStyle="bold"
+                    android:text="@string/user_privileges_console"/>
+                <TextView
+                    android:layout_width="wrap_content" android:layout_below="@+id/user5_name"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:text="@string/manage_user_permissions"
+                    android:id="@+id/user5_permission"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/MediumBlack"/>
+
+        <LinearLayout
+            android:id="@+id/user6" android:background="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent" android:orientation="horizontal"
+            android:layout_height="wrap_content" android:padding="10dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_nocircle_48dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content" android:paddingLeft="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/user6_name" android:textSize="15sp"
+                    android:layout_height="wrap_content" android:textStyle="bold"
+                    android:text="@string/user_privileges_console"/>
+                <TextView
+                    android:layout_width="wrap_content" android:layout_below="@+id/user6_name"
+                    android:layout_height="wrap_content" android:textSize="12sp"
+                    android:text="@string/manage_user_permissions"
+                    android:id="@+id/user6_permission"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

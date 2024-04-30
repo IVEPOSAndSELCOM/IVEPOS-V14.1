@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:gravity="center_vertical"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#e6e6e6">
+        <ImageButton
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/light_black_click"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/subscription_prompt_cancel"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/cust_name"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content" android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnadd"
+            android:text="@string/variants"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btncancel"
+            android:ellipsize="end"
+            android:maxLines="@string/Button9" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btnsave"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@drawable/ok"-->
+        <!--android:textStyle="bold"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:paddingRight="20dp"-->
+        <!--android:text="OK"/>-->
+
+        <ImageView
+            android:layout_width="wrap_content" android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnadd" android:padding="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ok"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7f7f7f"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#e6e6e6">
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/one"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true"
+            android:layout_margin="10dp">
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:id="@+id/two" android:layout_below="@+id/one"
+            android:layout_height="wrap_content" android:layout_above="@+id/three"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:background="@drawable/white_rounded_corners">
+
+
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/variants_null"
+                android:layout_height="40dp" android:gravity="center"
+                android:text="@string/no_variants_to_display"/>
+
+            <ListView
+                android:id="@+id/listView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content" android:id="@+id/three"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/Button9"
+                android:text="@string/save"
+                android:textStyle="bold"
+                android:background="@drawable/ok"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

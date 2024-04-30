@@ -1,0 +1,128 @@
+<LinearLayout
+    android:layout_width="320dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:padding="14dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/light_black_click"
+            android:id="@+id/closetext"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" android:id="@+id/text"
+            android:text="@string/action_promotions"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/closetext"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/sms"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/email"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_action_sms"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:title="@string/sms"/>
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_action_email"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:title="EMail"/>
+
+        <ImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/sms"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_action_share"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:title="Whatsapp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/linear">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="@string/message"
+                android:lines="@string/Button9"
+                android:maxLines="@string/Button5"
+                android:maxLength="30"
+                style="@android:style/Widget.DeviceDefault.Light.EditText"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/messageedit"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content" android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" android:id="@+id/linear"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="("/>
+            <TextView
+                android:layout_width="wrap_content" android:id="@+id/sms_length"
+                android:layout_height="wrap_content"
+                android:text="@string/Button13"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_30"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=")"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

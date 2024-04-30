@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_REL_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/top_bar">
+
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/back_activity"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/actionBarItemBackground"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/back_activity"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:minWidth="120dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="eZetap Setting" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/merchant" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_BTN_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/red_click"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/register"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!--<EditText-->
+            <!--android:id="@+id/login_TXT_merchantid"-->
+            <!--android:layout_width="253dip"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:background="@drawable/edittext_modified_states"-->
+            <!--android:ems="10"-->
+            <!--android:hint="User Id"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLength="10"-->
+            <!--android:paddingLeft="6dp"-->
+            <!--android:textSize="22dp" />-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/login_TXT_merchantid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textsale"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="10"
+                    android:ems="10"
+                    android:hint="User ID">
+
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--<EditText-->
+            <!--android:id="@+id/login_TXT_merchantpassword1"-->
+            <!--android:layout_width="253dip"-->
+            <!--android:layout_height="40dp"-->
+            <!---->
+            <!--android:background="@drawable/edittext_modified_states"-->
+            <!--android:hint="@string/password"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:maxLength="10"-->
+            <!--android:paddingLeft="6dp"-->
+            <!--android:textSize="22dp" />-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_mobile"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/login_TXT_merchantpassword111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:maxLength="10"
+                    android:visibility="gone"
+                    android:hint="@string/password">
+
+
+                    <!--android:selectAllOnFocus="true"-->
+
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/login_TXT_merchantpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:id="@+id/prod_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_TXT_merchantpassword"
+                android:layout_centerHorizontal="true"
+                android:hint="Prod Key"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:id="@+id/orgcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prod_key"
+                android:layout_centerHorizontal="true"
+                android:hint="Org Code"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:id="@+id/login_TXT_timeout"
+                android:layout_width="253dip"
+                android:layout_height="40dp"
+                android:layout_below="@+id/input_layout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_modified_states"
+                android:ems="10"
+                android:hint="Time Out"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="6dp"
+                android:textSize="22dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_TXT_merchantpassword"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/login_BTN_signin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_below="@+id/login_TXT_timeout"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundrectblue"
+                    android:gravity="center"
+                    android:text="Sign in"
+                    android:visibility="gone"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/login_CHK_remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_TXT_merchantpassword"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="0dp"
+                android:text="Remember me"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:background="@color/ColorAccent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btnreset_pane"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/reset"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

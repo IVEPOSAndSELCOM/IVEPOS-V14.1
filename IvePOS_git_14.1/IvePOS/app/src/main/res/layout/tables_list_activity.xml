@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:gravity="center_vertical"
+        android:layout_height="?android:attr/actionBarSize" android:id="@+id/relativeLayout"
+        android:background="@color/green"
+        android:elevation="4dp">
+        <ImageButton
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:background="?android:attr/actionBarItemBackground"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:layout_toRightOf="@+id/btncancel"
+            android:layout_toEndOf="@+id/btncancel"
+            android:layout_toLeftOf="@+id/linearLayout_settings"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content" android:id="@+id/user"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/table_management"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content" android:id="@+id/linearLayout_settings"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/ic_settings_black_96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/linearLayout_overflow"/>
+
+        <ImageView
+            android:layout_width="wrap_content" android:id="@+id/linearLayout_overflow"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+<!--    <com.google.android.material.appbar.AppBarLayout android:visibility="gone"-->
+<!--        android:id="@+id/appbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:tabGravity="@string/start"-->
+<!--            app:tabIndicatorColor="@android:color/white"-->
+<!--            app:tabIndicatorHeight="4dp"-->
+<!--            app:tabMode="scrollable"-->
+<!--            app:tabTextColor="@android:color/white">-->
+<!--            &lt;!&ndash;            <com.google.android.material.tabs.TabLayout&ndash;&gt;/*middle*/-->
+<!--            &lt;!&ndash;                android:id="@+id/tabs"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_toLeftOf="@+id/linearLayout_settings"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:tabMode="scrollable"/>&ndash;&gt;-->
+
+<!--            //start-->
+<!--            <com.google.android.material.tabs.TabLayout-->
+<!--                android:id="@+id/tabs" android:visibility="invisible"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:tabGravity="fill"-->
+<!--                app:tabIndicatorHeight="4dp"-->
+<!--                app:tabMode="scrollable"-->
+<!--                android:layout_toLeftOf="@+id/linearLayout_settings"/>-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btncancel"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:clickable="true"-->
+<!--                android:background="?android:attr/actionBarItemBackground"-->
+<!--                android:src="@drawable/abc_ic_ab_back_material"-->
+<!--                android:paddingLeft="16dp"-->
+<!--                android:paddingRight="16dp"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingLeft="16dp"-->
+<!--                android:layout_toRightOf="@+id/btncancel"-->
+<!--                android:layout_toEndOf="@+id/btncancel"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content" android:id="@+id/user"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@string/title_activity_settings"-->
+<!--                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content" android:id="@+id/user"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@string/tab_management"-->
+<!--                    android:maxLines="@string/Button9"-->
+<!--                    android:ellipsize="end"-->
+<!--                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>-->
+
+<!--            </LinearLayout>-->
+<!--            -->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content" android:id="@+id/linearLayout_settings"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingLeft="12dp"-->
+<!--                android:paddingRight="12dp"-->
+<!--                android:paddingTop="15dp"-->
+<!--                android:paddingBottom="15dp"-->
+<!--                android:src="@drawable/ic_settings_black_96dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_toLeftOf="@+id/linearLayout_overflow"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content" android:id="@+id/linearLayout_overflow"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingLeft="12dp"-->
+<!--                android:paddingRight="12dp"-->
+<!--                android:paddingTop="15dp"-->
+<!--                android:paddingBottom="15dp"-->
+<!--                android:src="@drawable/ic_more_vert_black_24dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_centerVertical="true"/>-->
+
+<!--        </RelativeLayout>-->
+
+
+
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/spin" android:layout_below="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/white_click_shape_rounded_corners"
+        android:elevation="2dp"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/section"
+            android:layout_marginLeft="10dp"
+            style="@style/TextAppearance.Design.Hint"/>
+
+        <Spinner
+            android:id="@+id/chocolate_category"
+            android:paddingTop="2dp" android:paddingBottom="0dp"
+            android:paddingLeft="0dp" android:paddingRight="0dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="140dp"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridviewitems" android:layout_below="@+id/spin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:horizontalSpacing="6dp"
+        android:numColumns="@string/Button5"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:verticalSpacing="6dp"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_floor" android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content" android:id="@+id/add_item"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_toLeftOf="@+id/line"
+                android:layout_height="match_parent" android:id="@+id/closeadd"
+                android:layout_alignParentLeft="true" android:orientation="horizontal"/>
+
+            <ImageView
+                android:layout_width="1dp" android:id="@+id/line"
+                android:layout_height="match_parent" android:layout_toLeftOf="@+id/relativeLayout2"
+                android:background="#7f7f7f"/>
+            <LinearLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:background="#e6e6e6"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:background="#e6e6e6"
+                    android:layout_marginBottom="5dp">
+                    <Button
+                        android:id="@+id/btndelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/light_black_click_shape_rounded_corners"
+                        android:src="@drawable/ic_arrow_back_black_24dp"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/subscription_prompt_cancel"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/add_floor"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:id="@+id/btnsave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ic_done_white_24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/green_click_shape_rounded_corners"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:text="@string/save"/>
+                </RelativeLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/layout_expensename"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/editText_floor_name"
+                                        android:selectAllOnFocus="true"
+                                        android:hint="@string/add_floor"
+                                        android:textSize="15sp"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_-()@. "/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

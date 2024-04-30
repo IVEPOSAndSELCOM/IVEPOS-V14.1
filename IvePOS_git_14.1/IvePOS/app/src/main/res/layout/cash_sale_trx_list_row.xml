@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" 
+    android:padding="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cashsaletrx_LBL_TrxDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/trx_date"
+            android:textColor="#777777"
+            android:textSize="17dp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/cashsaletrx_TXT_TrxDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="@string/Button9"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cashsaletrx_LBL_TxAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/amt"
+            android:textColor="#777777"
+            android:textSize="17dp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/cashsaletrx_TXT_TxAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="@string/Button9"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cashsaletrx_LBL_InvoiceNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/invoice_no"
+            android:textColor="#777777"
+            android:textSize="17dp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/cashsaletrx_TXT_InvoiceNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="@string/Button9"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cashsaletrx_LBL_VoucherNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/voucher_no"
+            android:textColor="#777777"
+            android:textSize="17dp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/cashsaletrx_TXT_VoucherNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="@string/Button9"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+</LinearLayout>

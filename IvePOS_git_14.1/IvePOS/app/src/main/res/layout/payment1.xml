@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <FrameLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/wait_processing" />
+    
+       <ListView
+            android:id="@+id/application_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#95000000"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="vertical"
+            android:scrollbars="vertical"
+            android:soundEffectsEnabled="true"
+            android:animateLayoutChanges="true"
+            android:visibility="gone" />
+        
+           </FrameLayout>
+
+</RelativeLayout>

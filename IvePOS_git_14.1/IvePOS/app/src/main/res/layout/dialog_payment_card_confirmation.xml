@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="320dp"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:background="#e6e6e6">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="vertical"
+            android:layout_height="wrap_content" android:gravity="center_horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/ic_backup_success_green_48dp"/>
+                <ImageButton
+                    android:id="@+id/feedback_rating" android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/light_black_click"
+                    android:src="@drawable/ic_feedback1"
+                    android:padding="15dp"
+                    android:text="@string/feedback"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp" android:paddingBottom="5dp">
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:src="@drawable/ic_backup_success_green_48dp"/>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/payment_successful"
+                    android:textSize="18sp" android:textStyle="bold"
+                    android:layout_marginLeft="0dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"  android:elevation="2dp"
+                android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp" android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/sale_comments"
+                    android:layout_height="44dp" android:paddingLeft="5dp" android:paddingRight="55dp"
+                    android:lines="@string/Button9"
+                    android:ellipsize="end"
+                    android:maxLines="@string/Button9"
+                    android:background="@drawable/white_rounded_corners"
+                    android:hint="Comments"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent" android:id="@+id/comments_valid"-->
+                <!--android:layout_height="wrap_content" android:layout_toLeftOf="@+id/comments_save"-->
+                <!--android:layout_centerVertical="true" android:gravity="center_vertical">-->
+                <!---->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <ImageButton
+                    android:layout_width="wrap_content" android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" android:id="@+id/comments_save"
+                    android:src="@drawable/ic_pen_96"
+                    android:layout_centerVertical="true" android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="10dp" android:paddingBottom="10dp"
+                    android:background="@drawable/white_click_shape_rounded_corners"/>
+            </RelativeLayout>
+
+            <!--<Button-->
+            <!--android:layout_width="match_parent" android:layout_weight="@string/Button9"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="@string/e_mail_receipt" android:id="@+id/gomail"-->
+            <!--android:textStyle="bold"/>-->
+            <!--<Button-->
+            <!--android:layout_width="match_parent" android:layout_weight="@string/Button9"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:text="@string/new_sale" android:id="@+id/donee"-->
+            <!--android:textStyle="bold"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/smssend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="@string/Button9"
+                    android:background="@drawable/red_click"
+                    android:padding="10dp"
+                    android:text="@string/sms"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/gomail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="@string/Button9"
+                    android:background="@drawable/red_click"
+                    android:padding="10dp"
+                    android:text="@string/min_stock"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/donee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="@string/Button9"
+                    android:background="@drawable/red_click"
+                    android:padding="10dp"
+                    android:text="@string/new_sale"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/billa" android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="wrap_content" android:id="@+id/include"
+                    android:layout_height="wrap_content">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <include android:id="@+id/f_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            layout="@layout/bill_copy_home"/>
+                    </ScrollView>
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content" android:id="@+id/splitempty"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ScrollView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<include android:id="@+id/f_viewsplitempty"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/split_bill_empty"/>-->
+                <!--</ScrollView>-->
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content" android:id="@+id/imageview"
+                    android:layout_height="wrap_content">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imageViewPicture"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </ScrollView>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

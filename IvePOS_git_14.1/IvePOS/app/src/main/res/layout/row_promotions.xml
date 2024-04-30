@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:id="@+id/relativeLayout1"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/label" android:text="@string/hii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="15sp">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content" android:layout_below="@+id/label">
+        <TextView
+            android:id="@+id/label1" android:text="@string/asd"
+            android:layout_width="match_parent" android:layout_toLeftOf="@+id/check"
+            android:layout_height="wrap_content" android:paddingTop="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/check" android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            style="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        </CheckBox>
+    </RelativeLayout>
+
+</RelativeLayout>

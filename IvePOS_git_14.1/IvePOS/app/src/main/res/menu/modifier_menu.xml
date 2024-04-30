@@ -1,0 +1,68 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:id="@+id/action_category"-->
+    <!--android:orderInCategory="101"-->
+    <!--android:icon="@drawable/ic_category_black_24dp"-->
+    <!--android:title="  Category"-->
+    <!--app:showAsAction="always|withText"/>-->
+    <!--<item android:id="@+id/action_modifier"-->
+    <!--android:orderInCategory="102"-->
+    <!--android:icon="@drawable/ic_modifier_black_24dp"-->
+    <!--android:title="  Modifier"-->
+    <!--app:showAsAction="always|withText"/>-->
+    <!--<item android:id="@+id/action_tax"-->
+    <!--android:orderInCategory="103"-->
+    <!--android:icon="@drawable/ic_tax_black_24dp"-->
+    <!--android:title="  Tax"-->
+    <!--app:showAsAction="always|withText"/>-->
+
+    <item
+        android:menuCategory="system"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:orderInCategory="@string/Button11"
+        android:title="More options"
+        app:showAsAction="always" >
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item android:id="@+id/action_modifier_printing"
+                android:orderInCategory="102"
+                android:icon="@drawable/ic_print_black_24dp"
+                android:title="@string/modifier_printing"/>
+        </menu>
+    </item>
+
+    <!--<item android:id="@+id/action_menu"-->
+    <!--android:menuCategory="system"-->
+    <!--android:icon="@drawable/menu_overflow1"-->
+    <!--android:showAsAction="always" >-->
+
+    <!--<menu xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+
+    <!--&lt;!&ndash; Search, should appear as action button &ndash;&gt;-->
+    <!--<item android:id="@+id/action_category"-->
+    <!--android:orderInCategory="101"-->
+    <!--android:icon="@drawable/category_icon_small"-->
+    <!--android:title="@string/action_category"/>-->
+    <!--<item android:id="@+id/action_modifier"-->
+    <!--android:orderInCategory="102"-->
+    <!--android:icon="@drawable/modifier_icon_small"-->
+    <!--android:title="@string/action_modifier"/>-->
+    <!--<item android:id="@+id/action_tax"-->
+    <!--android:orderInCategory="103"-->
+    <!--android:icon="@drawable/tax_icon_small"-->
+    <!--android:title="@string/action_tax"/>-->
+
+
+    <!--&lt;!&ndash; Settings, should always be in the overflow &ndash;&gt;-->
+    <!--&lt;!&ndash; <item android:id="@+id/action_settings"-->
+    <!--android:title="@string/action_settings"-->
+    <!--android:showAsAction="never" /> &ndash;&gt;-->
+
+    <!--</menu>-->
+
+
+
+    <!--</item>-->
+</menu>

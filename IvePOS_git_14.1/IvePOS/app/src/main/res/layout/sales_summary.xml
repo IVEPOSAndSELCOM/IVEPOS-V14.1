@@ -1,0 +1,574 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="#e6e6e6">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:gravity="center_vertical"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:background="#e6e6e6">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" android:gravity="center_vertical"
+            android:padding="15dp" android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="18sp" android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:text="@string/Sales_summary"  />
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent" android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_clear_black_18dp" android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/light_black_click"
+                android:id="@+id/closetext"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/white_rounded_corners"
+            android:layout_margin="6dp"
+            android:elevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="12dp"
+                android:background="?android:attr/selectableItemBackground">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/gs_2"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sales_gross_24dp"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gross_sales"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gs_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="18dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"/>
+
+                    <TextView
+                        android:id="@+id/gross_sale"
+                        android:layout_toRightOf="@+id/op_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_5000"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/MediumBlack"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="12dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/refunds_2"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/refund_24dp"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtitle10"
+                        android:textColor="@color/ColorAccentDark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/refunds_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="18dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"
+                        android:textColor="@color/ColorAccentDark"/>
+
+                    <TextView
+                        android:id="@+id/refunds"
+                        android:layout_toRightOf="@+id/op_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_5000"
+                        android:textColor="@color/ColorAccentDark"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="12dp" android:visibility="gone"
+                android:background="?android:attr/selectableItemBackground">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/gs_21"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tax_color_18dp" android:visibility="invisible"
+                        android:padding="6dp"/>
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/ColorAccentLight"
+                        android:text="@string/action_tax"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gs_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="18dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"
+                        android:textSize="12sp"
+                        android:textColor="@color/ColorAccentLight" />
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_toRightOf="@+id/op_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_5000"
+                        android:textSize="12sp"
+                        android:textColor="@color/ColorAccentLight" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="12dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toLeftOf="@+id/disc_2"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/discount1_24dp"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtitle14"
+                        android:textColor="@color/ColorAccentDark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/disc_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingRight="18dp"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn3"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"
+                        android:textColor="@color/ColorAccentDark"/>
+
+                    <TextView
+                        android:id="@+id/discount"
+                        android:layout_toRightOf="@+id/op_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_5000"
+                        android:textColor="@color/ColorAccentDark"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/MediumBlack"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="12dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toLeftOf="@+id/ns_2"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sale2_24dp"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/net_sales"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ns_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingRight="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn4"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"/>
+
+                    <TextView
+                        android:id="@+id/amount_after_tax"
+                        android:layout_toRightOf="@+id/op_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_5000"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="12dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="wrap_content" android:id="@+id/arrow"
+                    android:layout_height="wrap_content" android:visibility="invisible"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp" android:rotation="180"
+                    android:src="@drawable/ic_arrow_drop_down_black_18dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/t_2"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tax_color_24dp"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/taxes"
+                        android:textColor="@color/ColorAccentDark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/t_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toLeftOf="@+id/arrow"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn5"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"
+                        android:textColor="@color/ColorAccentDark"/>
+
+                    <TextView
+                        android:id="@+id/tax_amount"
+                        android:layout_toRightOf="@+id/op_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_5000"
+                        android:textColor="@color/ColorAccentDark"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="48dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="6dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/MediumBlack"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="12dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toLeftOf="@+id/nst_2"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sale2_24dp"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/net_sales_after_taxes"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nst_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="18dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn6"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"/>
+
+                    <TextView
+                        android:id="@+id/amount_before_tax"
+                        android:layout_toRightOf="@+id/op_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_5000"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/MediumBlack"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="12dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/np_2"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_profit_color_24dp"
+                        android:padding="12dp"/>
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/net_profit"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/np_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="18dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn7"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"/>
+
+                    <TextView
+                        android:id="@+id/np_value"
+                        android:layout_toRightOf="@+id/op_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_5000"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="@string/Button9"
+            android:text="@string/Ok"
+            android:textStyle="bold"
+            android:background="@drawable/ok"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+

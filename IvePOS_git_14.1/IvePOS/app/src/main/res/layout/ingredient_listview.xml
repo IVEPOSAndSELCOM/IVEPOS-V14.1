@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/list_topic"
+        android:layout_below="@+id/cust_pane_expand"
+        android:layout_width="match_parent"
+        android:weightSum="@string/Button11"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/ingredient_name"
+                android:text="@string/ingredient"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content" android:visibility="gone"
+                android:id="@+id/ingredient_barcode"
+                android:text="@string/barcode"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/unit"
+                android:text="@string/_unit"
+                android:paddingTop="3dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.8"
+            android:gravity="end">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/min"
+                android:text="@string/min_stock"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content" android:visibility="gone"
+                android:text="@string/opt_required"
+                android:paddingTop="3dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/max"
+                android:text="@string/max_stock"
+                android:paddingTop="3dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.8"
+            android:gravity="end">
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:id="@+id/requirement"-->
+            <!--android:text="@string/requirement"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_height="wrap_content"/>-->
+            <TextView
+                android:id="@+id/current"
+                android:text="@string/current_stock"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/Button9"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/avg_unit_price"
+                    android:text="@string/avg_price"
+                    android:paddingTop="3dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,273 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn=".activities.RegisterUserActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/leftarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp" android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/gotomainpage"
+            android:layout_toRightOf="@+id/leftarrow"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_store"
+                android:textSize="18sp" />
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"-->
+            <!--android:text="@string/recovery" />-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/red_click"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/confirm"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action">
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:orientation="vertical"
+                android:background="@drawable/white_rounded_corners"
+                android:elevation="3dp">
+
+                <RelativeLayout
+                    android:id="@+id/storelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    android:padding="6dp"
+                    android:layout_marginBottom="4dp">
+
+                    <EditText
+                        android:id="@+id/et_store"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:digits="0123456789*,qwertzuiopasdfghjklyxcvbnm"
+                        android:drawableLeft="@drawable/ic_action_store"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/r_new_login_edittextstyle"
+                        android:hint="@string/store_name"
+                        android:paddingStart="10dp"
+                        android:inputType="text"
+                        android:maxLines="@string/Button9"
+                        android:nextFocusDown="@id/spinner1" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+          <CheckBox
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_margin="12dp"
+              style="@style/CustomCheckboxStyle"
+              android:text="@string/use_store_specific_email_id"
+              android:id="@+id/ch_storespecific"
+              />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/white_rounded_corners"
+                android:elevation="3dp"
+                android:layout_margin="12dp" android:padding="6dp"
+                android:id="@+id/ll_storespecific"
+                android:visibility="gone"
+                >
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:visibility="visible"
+                    android:drawableLeft="@drawable/ic_action_email"
+                    android:drawablePadding="10dp"
+                    android:maxLines="@string/Button9"
+                    android:nextFocusDown="@id/editTextRegPassword"/>
+
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <TextView
+                    android:id="@+id/textViewRegEmailMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/alert"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/textViewRegUserPasswordLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/textViewRegEmailMessage"
+                    android:layout_centerHorizontal="true"
+                    android:text=" "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:visibility="visible"
+                    android:drawableLeft="@drawable/ic_action_password"
+                    android:drawablePadding="10dp"
+                    android:maxLines="@string/Button9"
+                    android:nextFocusDown="@id/editTextRegconfirmPassword"/>
+
+
+                <TextView
+                    android:id="@+id/textViewUserRegPasswordMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextRegPassword"
+                    android:layout_centerHorizontal="true"
+                    android:text=" "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/alert"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textViewRegUserconfirmPasswordLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/textViewRegEmailMessage"
+                    android:layout_centerHorizontal="true"
+                    android:text=" "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_confirmpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:visibility="visible"
+                    android:drawableLeft="@drawable/ic_action_password"
+                    android:drawablePadding="10dp"
+                    android:maxLines="@string/Button9"/>
+
+
+                <TextView
+                    android:id="@+id/textViewUserRegconfirmPasswordMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextRegPassword"
+                    android:layout_centerHorizontal="true"
+                    android:text=" "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/alert"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:elevation="6dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar_register"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyleLarge"/>
+
+        <ImageView
+            android:id="@+id/progress_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/white_shape_circle"
+            android:padding="8dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/circle"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

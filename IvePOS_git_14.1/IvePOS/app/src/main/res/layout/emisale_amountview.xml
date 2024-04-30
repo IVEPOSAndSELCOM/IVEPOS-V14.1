@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="fill_parent"
+        android:padding="12dp"
+        android:background="#f2f2f2" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fadeScrollbars="false"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/creditsale_REL_saledetails"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/emisale_LNR_firstsixdigit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_normal"
+                            android:orientation="horizontal" >
+
+                            <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                                android:id="@+id/emisale_TXT_LBL_firstsixdigit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="@string/first_six_digit"
+                                android:textSize="28sp"
+                                android:visibility="gone" />
+
+                            <com.mswipetech.wisepos.demo.sdk.CustomEditTextView
+                                android:id="@+id/emisale_TXT_cardsixdigit"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/edittext_modified_states"
+                                android:ellipsize="@string/start"
+                                android:gravity="right|center_vertical"
+                                android:hint="Card first six digits"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="@string/Button7"
+                                android:paddingRight="6dp"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@null"
+                                android:textSize="28sp"
+                                android:typeface="sans" >
+
+                                <requestFocus />
+                            </com.mswipetech.wisepos.demo.sdk.CustomEditTextView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <com.mswipetech.wisepos.demo.sdk.CustomCurrencyTextView
+                                android:id="@+id/emisale_TXT_emicurrency"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="right|center_vertical"
+                                android:textSize="28sp" />
+
+                            <com.mswipetech.wisepos.demo.sdk.DecAmtEditText
+                                android:id="@+id/emisale_TXT_emiamount"
+                                android:layout_width="200dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/edittext_modified_states"
+                                android:ellipsize="@string/start"
+                                android:gravity="right|center_vertical"
+                                android:hint="@string/base_amount"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:maxLength="10"
+                                android:paddingRight="6dp"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@null"
+                                android:layout_marginBottom="@dimen/margin_normal"
+                                android:textSize="28sp" >
+                            </com.mswipetech.wisepos.demo.sdk.DecAmtEditText>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:gravity="center_horizontal">
+
+                            <ImageButton
+                                android:id="@+id/emisale_BTN_next"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/button_next_active" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

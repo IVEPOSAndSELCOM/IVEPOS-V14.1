@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="320dp" android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6"
+        android:layout_marginBottom="5dp">
+
+        <ImageButton
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/light_black_click"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/subscription_prompt_cancel"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/subtitle14"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btncancel"
+            android:layout_toLeftOf="@+id/btndelete"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/clear_discount"
+            android:layout_toLeftOf="@+id/btnsave"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="@string/Button25"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/red_click"/>
+
+        <ImageButton
+            android:id="@+id/btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_done_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ok"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/submit"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutpriorityname"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_weight="@string/Button11"
+                        android:textColor="#000000"
+                        android:selectAllOnFocus="true"
+                        android:id="@+id/discountvalue1"
+                        android:hint="Discount value"
+                        android:textSize="15sp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:gravity="bottom">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:id="@+id/rspercent"
+                            android:entries="@array/discount_type"
+                            android:prompt="@string/choose_discount"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:textSize="15sp"
+                            android:paddingLeft="0dp" android:paddingRight="0dp"
+                            android:paddingBottom="5dp" android:paddingTop="6dp"
+                            android:textColor="#000000" android:ellipsize="end"
+                            android:maxLines="@string/Button9"
+                            android:layout_height="wrap_content"
+                            android:text="%"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/discountcode1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/discount_code"
+                    android:selectAllOnFocus="true"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_-()@. "/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Spinner
+                    android:id="@+id/disc_select"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="@string/Button9"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingTop="12dp"
+                    android:singleLine="true"
+                    android:text="%"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/cardhistorylist_LNR_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.mswipetech.wisepos.demo.sdk.CustomTextView
+            android:id="@+id/cardhistorylist_LBL_lblamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_small"
+            android:text="@string/Rs_"
+            android:textSize="@dimen/label_font_large"
+            android:typeface="sans" />
+
+        <com.mswipetech.wisepos.demo.sdk.CustomTextView
+            android:id="@+id/cardhistorylist_LBL_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+            android:textSize="@dimen/label_font_large"
+            android:typeface="sans" >
+        </com.mswipetech.wisepos.demo.sdk.CustomTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardhistorylist_LNR_date"
+        android:layout_margin="@dimen/margin_small"
+        android:orientation="horizontal" >
+
+        <com.mswipetech.wisepos.demo.sdk.CustomTextView
+            android:id="@+id/cardhistorylist_LBL_date"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/hello"
+            android:textSize="@dimen/label_font_small"
+            android:typeface="sans" >
+        </com.mswipetech.wisepos.demo.sdk.CustomTextView>
+
+        <com.mswipetech.wisepos.demo.sdk.CustomTextView
+            android:id="@+id/cardhistorylist_LBL_cardtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+            android:textSize="@dimen/label_font_small"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:typeface="sans" >
+        </com.mswipetech.wisepos.demo.sdk.CustomTextView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/title_header"
+        android:layout_above="@+id/footer">
+
+        <LinearLayout
+            android:id="@+id/title_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            android:weightSum="@string/Button5"
+            android:paddingBottom="3dp"
+            android:layout_below="@+id/header_action"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/date_time"
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="12dp">
+
+                <TextView
+                    android:layout_width="match_parent" android:id="@+id/date_his"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_04_sep_2017"/>
+
+                <TextView
+                    android:layout_width="match_parent" android:id="@+id/time_his"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_10_00_am"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.6"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/paid_pending"
+                android:layout_toRightOf="@+id/date_time"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:layout_width="match_parent" android:id="@+id/supplier_his"
+                    android:layout_height="wrap_content"
+                    android:text="@string/supplier"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent" android:id="@+id/invoice_his"
+                    android:layout_height="wrap_content"
+                    android:text="@string/invoice_no"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/paid_pending"
+                android:layout_width="0dp"
+                android:layout_weight="1.3"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:paddingRight="12dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"/>
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/total_amount_his"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_10000"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"/>
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/paid_his"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_4000"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" / "
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/inn2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs"/>
+                    <TextView
+                        android:layout_width="wrap_content" android:id="@+id/pending_his"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_6000"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Search, should appear as action button -->
+
+    <item android:id="@+id/action_floor_table"
+        android:title="@string/action_table"
+        app:showAsAction="always|withText"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="@string/Button9"
+        app:showAsAction="always"
+        android:imeOptions="actionGo"
+        android:title="@string/search"/>
+
+    <item android:id="@+id/action_conntrue"
+        android:menuCategory="system"
+        android:icon="@drawable/ic_printer_not_connected_black_24dp"
+        android:orderInCategory="@string/Button10"
+        android:title="Printer"
+        app:showAsAction="always" >
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            >
+            <!-- Search, should appear as action button -->
+            <item android:id="@+id/action_connusbbt"
+                android:orderInCategory="101"
+                android:icon="@drawable/ic_off_status_24dp"
+                android:title="@string/action_counter"/>
+            <item android:id="@+id/action_connnetwork"
+                android:orderInCategory="102"
+                android:icon="@drawable/ic_off_status_24dp"
+                android:title="@string/action_kot1"/>
+            <item android:id="@+id/action_connnetwork2"
+                android:orderInCategory="103"
+                android:icon="@drawable/ic_off_status_24dp"
+                android:title="@string/action_kot2"/>
+            <item android:id="@+id/action_connnetwork3"
+                android:orderInCategory="104"
+                android:icon="@drawable/ic_off_status_24dp"
+                android:title="@string/action_kot3"/>
+            <item android:id="@+id/action_connnetwork4"
+                android:orderInCategory="105"
+                android:icon="@drawable/ic_off_status_24dp"
+                android:title="@string/action_kot4"/>
+        </menu>
+    </item>
+
+
+    <item
+        android:menuCategory="system"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:orderInCategory="@string/Button11"
+        android:title="More options"
+        app:showAsAction="always" >
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            >
+
+            <item android:id="@+id/action_cancelorder"
+                android:orderInCategory="102"
+                android:icon="@drawable/ic_returns_refunds_black_24dp"
+                android:title="@string/action_cancellation1"/>
+            <item android:id="@+id/action_resetquantity"
+                android:orderInCategory="105"
+                android:icon="@drawable/ic_smart_inventory_black_24dp" android:visible="false"
+                android:actionMenuTextAppearance ="@color/white"
+                android:title="@string/action_reset"/>
+            <item android:id="@+id/server_ip"
+                android:orderInCategory="106"
+                android:icon="@drawable/ic_wifi_black_24dp"
+                android:title="@string/action_server"/>
+            <item android:id="@+id/action_logout"
+                android:orderInCategory="107"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="@string/action_logout"/>
+            <item android:id="@+id/action_help"
+                android:orderInCategory="108"
+                android:icon="@drawable/ic_action_help_24dp"
+                android:title="@string/action_help"/>
+
+            <item android:id="@+id/action_neworder"
+                android:orderInCategory="108"
+                android:icon="@drawable/ic_delivery_back_96"
+                android:visible="false"
+                android:title="@string/action_neworder"/>
+
+            <item android:id="@+id/action_neworder1"
+                android:orderInCategory="108"
+                android:icon="@drawable/ic_delivery_back_96"
+                android:title="@string/action_neworder1"/>
+
+        </menu>
+    </item>
+
+</menu>

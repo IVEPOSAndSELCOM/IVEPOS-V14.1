@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:menuCategory="system"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:orderInCategory="@string/Button11"
+        android:title="More options"
+        app:showAsAction="always" >
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@+id/linearLayout_availablity"
+                android:orderInCategory="102"
+                android:icon="@drawable/ic_settings_filter_red_24dp"
+                android:title="@string/availablity"/>
+            <item android:id="@+id/linearLayout"
+                android:orderInCategory="102"
+                android:icon="@drawable/ic_settings_filter_red_24dp"
+                android:title="@string/out_of_stock"/>
+
+            <item android:id="@+id/linearLayout_menu_upload"
+                android:orderInCategory="102"
+                android:icon="@drawable/ic_settings_filter_red_24dp"
+                android:title="@string/menu_upload"/>
+
+            <!--<item android:id="@+id/linearLayout_menu_mapping"
+                android:orderInCategory="102"
+                android:visible="false"
+                android:icon="@drawable/ic_settings_filter_red_24dp"
+                android:title="@string/menu_mapping"/>-->
+        </menu>
+    </item>
+</menu>

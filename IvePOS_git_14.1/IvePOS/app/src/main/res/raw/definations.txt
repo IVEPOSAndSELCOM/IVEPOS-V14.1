@@ -1,0 +1,5 @@
+ListView- An arrangement of icons in a My Computer or Explorer window that uses small icons and alphabetizes down the window
+
+API- Generally speaking, an application programming interface (API) is a specification of how some software components should interact with each other
+
+AndroidStudio- An Android development IDE

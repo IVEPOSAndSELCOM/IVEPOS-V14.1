@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/search_item_icon"
+        android:layout_width="wrap_content"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:visibility="gone"
+        android:contentDescription="@string/action_item"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_item_grey_24dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_toLeftOf="@+id/select"
+        android:layout_toRightOf="@+id/search_item_icon"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical">
+            <TextView
+                android:id="@+id/iddd" android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="#6a6a6d"
+                android:paddingTop="10dp" android:paddingBottom="10dp"
+                android:paddingLeft="10dp" android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:minWidth="40dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_9999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical">
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#00a99d"-->
+            <!--android:text="("/>-->
+            <TextView
+                android:id="@+id/customer" android:textSize="13sp"
+                android:textStyle="bold" android:textColor="#00a99d"
+                android:paddingTop="10dp" android:paddingBottom="10dp"
+                android:maxWidth="100dp"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wwwwwwwwwmzzzzzzzzzz" />
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#00a99d"-->
+            <!--android:text=")"/>-->
+            <TextView
+                android:id="@+id/name" android:textSize="13sp"
+                android:textStyle="bold"
+                android:paddingTop="10dp" android:paddingBottom="10dp"
+                android:paddingRight="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="100dp"
+                android:text="@string/zzzzzzzzzzzzzzzzzzzz" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/item_cate"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="@string/Button11"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="left|center_vertical">-->
+        <!--<TextView-->
+        <!--android:id="@+id/cate" android:textSize="15sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:paddingTop="15dp" android:paddingBottom="15dp"-->
+        <!--android:paddingLeft="10dp" android:paddingRight="10dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/textview" />-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical">
+            <TextView
+                android:layout_width="wrap_content" android:text=" ("
+                android:textSize="12sp"
+                android:paddingTop="10dp" android:paddingBottom="10dp"
+                android:paddingLeft="0dp"
+                android:layout_height="wrap_content" android:textColor="#6a6a6d"
+                android:textStyle="normal"/>
+            <TextView
+                android:id="@+id/qty_value"
+                android:layout_width="wrap_content" android:textSize="12sp"
+                android:textStyle="normal"
+                android:paddingTop="10dp" android:paddingBottom="10dp"
+                android:layout_height="wrap_content" android:textColor="#6a6a6d"
+                android:text="@string/_9999" />
+            <TextView
+                android:layout_width="wrap_content" android:text=") "
+                android:textSize="12sp"
+                android:paddingTop="10dp" android:paddingBottom="10dp"
+                android:paddingLeft="0dp"
+                android:layout_height="wrap_content" android:textColor="#6a6a6d"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right|center_vertical"
+
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/Rs"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="@string/_9999_99" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"
+            android:textColor="#6a6a6d"
+            android:text="@string/_9999_99" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_launch_grey_24dp"
+        android:padding="15dp"/>
+
+</RelativeLayout>

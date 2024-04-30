@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "390023141837",
+    "project_id": "ivepos-168405",
+    "storage_bucket": "ivepos-168405.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390023141837:android:7621210843e594e48b0c84",
+        "android_client_info": {
+          "package_name": "com.intuition.ivepos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390023141837-6kp93ft72h6jq09dsojev9jj5g4v3i84.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.intuition.ivepos",
+            "certificate_hash": "0ac3150cb1619344613d02e43d44149ae98e82c0"
+          }
+        },
+        {
+          "client_id": "390023141837-ej2nufc3kcdtqlk3p8tmf5bgpp6mlqtd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmLzGQezeJxJ2PPAz2T-QUwjYhKhlhNvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390023141837-ej2nufc3kcdtqlk3p8tmf5bgpp6mlqtd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

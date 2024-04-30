@@ -1,0 +1,491 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbtn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="25dp"
+                    android:text="@string/third_party_card_machine" />
+
+                <RadioButton
+                    android:id="@+id/rbtn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:text="@string/integrated_card_swiper" />
+
+                <LinearLayout
+                    android:id="@+id/linearcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:id="@+id/configbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/rounded_medium_black_click"
+                        android:clickable="true"
+                        android:layout_gravity="left"
+                        android:foregroundGravity="left"
+                        android:gravity="left"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/image"
+                            android:layout_centerHorizontal="true"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/paynear"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/configured"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_credit_card_black_48dp" />
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_toRightOf="@+id/text"-->
+                            <!--android:drawableLeft="@drawable/ic_settings_black_24dp"-->
+                            <!--android:drawablePadding="5dp"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:paddingLeft="15dp"-->
+                            <!--android:paddingTop="3dp" />-->
+
+                        <TextView
+                            android:id="@+id/notconfig"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_failure_red_32dp"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/not_configured"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/configured"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_success_green_32dp"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/configured"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+                    <RelativeLayout
+                        android:id="@+id/configbtn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:background="@drawable/rounded_medium_black_click"
+                        android:clickable="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/image2"
+                            android:layout_centerHorizontal="true"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/mSwipe"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/configured2"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_credit_card_black_48dp" />
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_toRightOf="@+id/text2"-->
+                            <!--android:drawableLeft="@drawable/ic_settings_black_24dp"-->
+                            <!--android:drawablePadding="5dp"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:paddingLeft="15dp"-->
+                            <!--android:paddingTop="3dp" />-->
+
+                        <TextView
+                            android:id="@+id/notconfig2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_failure_red_32dp"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/not_configured"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/configured2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_success_green_32dp"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/configured"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RadioGroup>
+
+
+            <!--<Switch-->
+                <!--android:id="@+id/switch1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:layout_marginRight="55dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:checked="false"-->
+                <!--android:text="@string/digital_wallets" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:visibility="visible">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/layout_paytm"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/paytm_image"-->
+                    <!--android:layout_width="60dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginLeft="85dp"-->
+                    <!--android:layout_marginTop="13dp"-->
+                    <!--android:src="@drawable/paytm" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/text_paytm"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/paytm_image"-->
+                    <!--android:layout_marginLeft="165dp"-->
+                    <!--android:layout_marginTop="-33dp"-->
+                    <!--android:text="@string/paytm"-->
+                    <!--android:textSize="18sp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/configured_paytm"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:drawableLeft="@drawable/ic_success_green_32dp"-->
+                        <!--android:drawablePadding="5dp"-->
+                        <!--android:gravity="right|center_vertical"-->
+                        <!--android:visibility="invisible"-->
+                        <!--android:layout_marginRight="15dp"-->
+                        <!--android:layout_marginEnd="15dp"-->
+                        <!--android:layout_alignBaseline="@+id/text_paytm"-->
+                        <!--android:layout_alignBottom="@+id/text_paytm"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_alignParentEnd="true" />-->
+
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/layout_mobikwik"-->
+                    <!--android:layout_below="@+id/layout_paytm"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/mobikwik_image"-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:background="@null"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_marginLeft="85dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:src="@drawable/mobikwik" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text_mobi"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="160dp"-->
+                        <!--android:layout_marginTop="18dp"-->
+                        <!--android:text="mobikwik!"-->
+                        <!--android:textSize="18sp" />-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/configured_mobikwik"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:drawableLeft="@drawable/ic_success_green_32dp"-->
+                        <!--android:drawablePadding="5dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:visibility="invisible"-->
+                        <!--android:layout_alignBaseline="@+id/text_mobi"-->
+                        <!--android:layout_alignBottom="@+id/text_mobi"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_marginRight="14dp"-->
+                        <!--android:layout_marginEnd="14dp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/layout_freecharge"-->
+                    <!--android:layout_below="@+id/layout_mobikwik"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/freecharge_image"-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:background="@null"-->
+                        <!--android:layout_marginLeft="85dp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:src="@drawable/freechargee" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/text_freecharge"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/freecharge_image"-->
+                        <!--android:layout_marginLeft="165dp"-->
+                        <!--android:layout_marginTop="-33dp"-->
+                        <!--android:text="@string/freecharge"-->
+                        <!--android:textSize="18sp" />-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/configured_freecharge"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:drawableLeft="@drawable/ic_success_green_32dp"-->
+                        <!--android:drawablePadding="5dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:visibility="invisible"-->
+                        <!--android:layout_alignTop="@+id/freecharge_image"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_marginRight="14dp"-->
+                        <!--android:layout_marginEnd="14dp" />-->
+
+                <!--</RelativeLayout>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<Switch-->
+                <!--android:id="@+id/switch2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:layout_marginRight="55dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:checked="false"-->
+                <!--android:text="Cash Coupons" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/cashlayout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:visibility="invisible">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edit_sodexo"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="85dp"-->
+                    <!--android:layout_marginRight="35dp"-->
+                    <!--android:text="sodexo" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edit_empty"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/edit_sodexo"-->
+                    <!--android:layout_marginLeft="85dp"-->
+                    <!--android:layout_marginRight="35dp"-->
+                    <!--android:text="" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edittext"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/edit_empty"-->
+                    <!--android:layout_marginRight="35dp"-->
+                    <!--android:layout_marginLeft="85dp"-->
+                    <!--android:text="" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:orientation="horizontal" android:id="@+id/relativeLayout7"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" android:layout_weight="1.0">-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent" android:layout_weight="@string/Button9"-->
+            <!--android:paddingTop="8dp" android:paddingBottom="4dp"-->
+            <!--android:paddingLeft="8dp" android:paddingRight="4dp"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/btnglobalpref"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/rounded_medium_black_click"-->
+            <!--android:layout_height="match_parent" android:gravity="center_vertical"-->
+            <!--android:onClick="gotoAdmin">-->
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:src="@drawable/global_pref_icon_medium"-->
+            <!--android:layout_height="wrap_content" android:id="@+id/imageView"-->
+            <!--android:layout_centerHorizontal="true" />-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content" android:text="@string/general_nospace"-->
+            <!--android:layout_below="@+id/imageView"-->
+            <!--android:layout_height="wrap_content" android:paddingTop="20dp"-->
+            <!--android:layout_centerHorizontal="true" />-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent" android:layout_weight="@string/Button9"-->
+            <!--android:paddingTop="8dp" android:paddingBottom="4dp"-->
+            <!--android:paddingLeft="4dp" android:paddingRight="4dp"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/btndevicepref"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/rounded_medium_black_click"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical" android:onClick="gotoUser">-->
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:src="@drawable/bill_receipt_icon_medium"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageView1"-->
+            <!--android:layout_centerHorizontal="true" />-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content" android:text="@string/bill"-->
+            <!--android:layout_below="@+id/imageView1"-->
+            <!--android:layout_height="wrap_content" android:paddingTop="20dp"-->
+            <!--android:layout_centerHorizontal="true" />-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent" android:layout_weight="@string/Button9"-->
+            <!--android:paddingTop="8dp" android:paddingBottom="4dp"-->
+            <!--android:paddingLeft="4dp" android:paddingRight="8dp"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/btnquickaccess"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/rounded_medium_black_click"-->
+            <!--android:layout_height="match_parent" android:gravity="center_vertical"-->
+            <!--android:onClick="gotoDatabase">-->
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:src="@drawable/quickaccess_pref_icon_medium"-->
+            <!--android:layout_height="wrap_content" android:id="@+id/imageView2"-->
+            <!--android:layout_centerHorizontal="true" />-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content" android:text="Speed dial"-->
+            <!--android:layout_below="@+id/imageView2"-->
+            <!--android:layout_height="wrap_content" android:paddingTop="20dp"-->
+            <!--android:layout_centerHorizontal="true" />-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout android:orientation="horizontal" android:id="@+id/relativeLayout8"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" android:layout_weight="1.0">-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent" android:layout_weight="@string/Button9"-->
+            <!--android:paddingTop="4dp" android:paddingBottom="8dp"-->
+            <!--android:paddingLeft="8dp" android:paddingRight="4dp"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/btninventory"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/rounded_medium_black_click"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:onClick="gotoPreference">-->
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:src="@drawable/ic_smart_inventory_48dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageView4" android:layout_centerHorizontal="true" />-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="Smart inventory\n(Experimental)"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_below="@+id/imageView4"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="20dp" android:layout_centerHorizontal="true" />-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_weight="@string/Button9"-->
+            <!--android:paddingTop="4dp" android:paddingBottom="8dp"-->
+            <!--android:paddingLeft="4dp" android:paddingRight="4dp"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/btnnetworkpref"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/rounded_medium_black_click"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical" android:onClick="gotoPreference">-->
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:src="@drawable/network_pref_icon_medium"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageView4" android:layout_centerHorizontal="true" />-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="Network" android:layout_below="@+id/imageView4"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="20dp" android:layout_centerHorizontal="true" />-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent" android:layout_weight="@string/Button9"-->
+            <!--android:paddingTop="4dp" android:paddingBottom="8dp"-->
+            <!--android:paddingLeft="4dp" android:paddingRight="8dp"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

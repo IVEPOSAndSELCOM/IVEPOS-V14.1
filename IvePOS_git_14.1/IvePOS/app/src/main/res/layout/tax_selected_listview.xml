@@ -1,0 +1,94 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="#e6e6e6">
+
+    <RelativeLayout
+        android:layout_width="320dp" android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6"
+        android:layout_marginBottom="5dp">
+
+        <ImageButton
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/light_black_click"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:id="@+id/tax_name"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/print"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btncancel"
+            android:layout_toLeftOf="@+id/refill"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingTop="20dp"-->
+    <!--android:paddingBottom="20dp">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_centerHorizontal="true"-->
+    <!--android:layout_height="wrap_content" android:orientation="vertical">-->
+    <!--<TableLayout-->
+    <!--android:id="@+id/lytpedidooo"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:orientation="vertical"/>-->
+    <!--&lt;!&ndash;<ScrollView android:orientation="horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">&ndash;&gt;-->
+    <!--&lt;!&ndash;<TableLayout android:layout_gravity="right" android:orientation="vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/lytpedidooo" android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content" android:paddingBottom="20dp">&ndash;&gt;-->
+    <!--&lt;!&ndash;</TableLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;</ScrollView>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:visibility="visible" android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp">
+        <TextView
+            android:layout_width="match_parent" android:text="" android:textSize="1sp"
+            android:layout_height="wrap_content" />
+        <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/listView11"/>-->
+
+        <ScrollView
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:id="@+id/S"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/lytpedidooo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

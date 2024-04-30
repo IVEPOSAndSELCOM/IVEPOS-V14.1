@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <com.mswipetech.wisepos.demo.sdk.CustomTextView
+        android:id="@+id/topbar_LBL_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/top_bar"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:typeface="sans"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/emi_CHK_i_agree"
+        android:layout_below="@id/top_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <com.mswipetech.wisepos.demo.sdk.CustomBoldTextView
+                android:id="@+id/sponsorbankname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/axis"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/label_font_large" />
+
+            <com.mswipetech.wisepos.demo.sdk.CustomBoldTextView
+                android:id="@+id/mearchant_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/label_font_small" />
+
+            <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                android:id="@+id/mearchant_other_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/label_font_small" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_height_normal"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_grey" />
+
+            <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/SALE"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/label_font_large" />
+
+            <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                android:id="@+id/transaction_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:paddingTop="6dp"
+                android:textSize="@dimen/label_font_small"
+                android:textColor="@color/grey"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_height_normal"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_grey" />
+
+            <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                android:id="@+id/emi_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:paddingTop="6dp"
+                android:textSize="@dimen/label_font_small"
+                android:textColor="@color/grey"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_height_normal"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_grey" />
+
+            <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                android:id="@+id/terms_conditions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:paddingTop="6dp"
+                android:text="@string/emi_termconditionview_emi_term_condition"
+                android:textSize="@dimen/label_font_small"
+                android:textColor="@color/grey"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_height_normal"
+                android:layout_marginTop="6dp"
+                android:background="@color/light_grey" />
+
+            <com.mswipetech.wisepos.demo.sdk.CustomTextView
+                android:id="@+id/final_transction_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:gravity="center_vertical"
+                android:paddingTop="6dp"
+                android:textSize="@dimen/label_font_small"
+                android:textColor="@color/grey"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.mswipetech.wisepos.demo.sdk.CustomCheckBox
+        android:id="@+id/emi_CHK_i_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emi_BTN_next"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_small"
+        android:button="@drawable/checkbox_img_selector"
+        android:drawableRight="@null"
+        android:gravity="center_vertical"
+        android:text="@string/emi_termconditionview_i_agree"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/label_font"
+        android:checked="false" />
+
+    <ImageButton
+        android:id="@+id/emi_BTN_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/button_arrownext_img_selector"
+        android:enabled="false" />
+
+</RelativeLayout>

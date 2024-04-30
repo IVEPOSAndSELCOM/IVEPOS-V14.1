@@ -1,0 +1,3223 @@
+<resources>
+
+    <string name="app_name">IVEPOS</string>
+    <string name="search">Tafuta</string>
+    <string name="enter">Ingiza</string>
+    <string name="action_general">Taarifa ya mauzo</string>
+    <string name="action_itemwise">Taarifa ya bidhaa</string>
+    <string name="action_userwise">Taarifa ya muuzaji</string>
+    <string name="action_customerwise">Orodha ya wateja</string>
+    <string name="action_discountwise">Orodha ya punguzo</string>
+    <string name="action_cancellation">Taarifa ya marejesho ya fedha</string>
+    <string name="action_syncsales">Oanisha Mauzo</string>
+
+    <string name="title_err_code">Nambari ya Hitilafu </string>
+    <string name="title_err_method">Njia</string>
+    <string name="title_msg_result">Matokeo</string>
+    <string name="title_msg_description">Maelezo</string>
+
+    <string name="action_export">Hifadhi kama excel</string>
+    <string name="action_email">Tuma taarifa</string>
+
+    <string name="action_table">Meza</string>
+
+    <string name="action_schedule">Ratiba ya backup</string>
+
+    <string name="action_cancellation1">Marejesho/Marejesho ya fedha</string>
+
+    <string name="barcode_printing">Chapisha barcode</string>
+    <string name="item_printing">Chapisha bidhaa</string>
+    <string name="modifier_printing">marekebisho</string>
+
+    <string name="min_stock">Idadi ya chini </string>
+    <string name="csv">CSV</string>
+    <string name="mail">Barua pepe</string>
+
+    <string name="vendors">Wachuuzi</string>
+    <string name="indent">Indent</string>
+
+    <string name="out_of_stock">Hakuna bidhaa</string>
+    <string name="menu_upload">menyu ya kupakia</string>
+    <string name="availablity">Restaurant availability</string>
+
+    <string name="csv_download">Pakua CSV(Data)</string>
+    <string name="csv_upload">Pakia CSV(Data)</string>
+    <string name="inventory_indent">Indent ya idadi</string>
+    <string name="stock_transfer">Hamisha bidhaa</string>
+
+    <string name="action_logout">Ondoka</string>
+    <string name="action_reset">Ongeza</string>
+    <string name="action_server">IP ya POS</string>
+    <string name="action_syncnow">Oanisha</string>
+    <string name="action_help">Video ya maelekezo</string>
+    <string name="action_neworder">Oda za mtandaoni</string>
+    <string name="action_neworder1">Oda za mtandaoni</string>
+
+    <string name="action_promotions">Promosheni</string>
+    <string name="action_write_off">Taarifa za hasara</string>
+    <string name="action_credit">Lipa Baadae</string>
+
+    <string name="action_usbbt">Printa ya bluetooth</string>
+    <string name="action_network">Network/Wifi printer(KOT)</string>
+    <string name="action_network2">Network/Wifi printer(Counter)</string>
+
+    <string name="action_counter">Counter</string>
+    <string name="action_kot1">KOT1</string>
+    <string name="action_kot2">KOT2</string>
+    <string name="action_kot3">KOT3</string>
+    <string name="action_kot4">KOT4</string>
+
+    <string name="action_enter_manually">Ingiza IP</string>
+
+    <string name="dialog_action_dismiss">Sawa</string>
+
+    <string name="action_general_pref">Zote</string>
+    <string name="action_billsettings_pref">Setting za bili</string>
+    <string name="action_speeddial_pref">Nambari ya Haraka </string>
+    <string name="action_smartinventory_pref">Stoo Janja </string>
+    <string name="action_network_pref">Mtandao</string>
+
+    <string name="linkterm">By continuing, you are indicating that you accept our <a href="https://ivepos.com/terms-and-conditions/"> terms and conditions </a> ,  and <a href="https://ivepos.com/privacy-policy/">privacy policy</a>
+    </string>
+
+
+    <string name="Button25">Futa</string>
+
+    <string name="Rs">\u20B9</string>
+
+    <string name="insert">TZS. </string>
+
+    <string name="cafe_latte">Cafe latte</string>
+    <string name="cafe_mocha">Cafe mocha</string>
+    <string name="cappuchino">Cappuchino</string>
+    <string name="chocolate_shake">Chocolate shake</string>
+    <string name="coke">Coke 300ml</string>
+    <string name="cold_coffee">Cold coffee</string>
+    <string name="espresso">Espresso</string>
+    <string name="filter_coffee">Filter coffee</string>
+    <string name="grape_juice">Grape juice</string>
+    <string name="green_tea">Green tea</string>
+    <string name="hot_chocolate">Hot chocolate</string>
+    <string name="iced_tea">Iced tea</string>
+    <string name="mango_juice">Juisi ya Embe</string>
+    <string name="mixed_fruitpunch">Mixed fruitpunch</string>
+    <string name="orange_punch">Orange punch</string>
+    <string name="strawberry_punch">Strawberry punch</string>
+    <string name="tea">Chai </string>
+    <string name="vanilla_shake">Vanilla shake</string>
+
+    <string name="idly">Kaimati</string>
+    <string name="dosa">Dosa</string>
+    <string name="masala_dosa">Masala dosa</string>
+
+    <string name="qest_mark">"?"</string>
+
+    <string name="handlingmsg_warn_receipt_near_end">Karatasi inakaribia kuisha.\n</string>
+    <string name="handlingmsg_warn_battery_near_end">Battery level of printer is low.\n</string>
+    <string name="handlingmsg_err_no_response">Please check the connection of the printer and the mobile terminal.\nConnection get lost.\n</string>
+    <string name="handlingmsg_err_cover_open">Tafadhali funga mfuniko wa karatasi.\n</string>
+    <string name="handlingmsg_err_receipt_end">Tafadhali angalia karatasi.\n</string>
+    <string name="handlingmsg_err_paper_feed">Please release a paper feed switch.\n</string>
+    <string name="handlingmsg_err_autocutter">Please remove jammed paper and close roll paper cover.\nRemove any jammed paper or foreign substances in the printer, and then turn the printer off and turn the printer on again.\n</string>
+    <string name="handlingmsg_err_need_recover">Then, If the printer doesn\'t recover from error, please cycle the power switch.\n</string>
+    <string name="handlingmsg_err_unrecover">Please cycle the power switch of the printer.\nIf same errors occurred even power cycled, the printer may out of order.</string>
+    <string name="handlingmsg_err_overheat">Please wait until error LED of the printer turns off. \n</string>
+    <string name="handlingmsg_err_head">Print head of printer is hot.\n</string>
+    <string name="handlingmsg_err_motor">Motor Driver IC of printer is hot.\n</string>
+    <string name="handlingmsg_err_battery">Battery of printer is hot.\n</string>
+    <string name="handlingmsg_err_wrong_paper">Tafadhali weka karatasi vizuri.\n</string>
+    <string name="handlingmsg_err_battery_real_end">Please connect AC adapter or change the battery.\nBattery of printer is almost empty.\n</string>
+    <string name="handlingmsg_err_offline">Printer is offline.\n</string>
+
+    <string name="printerseries_t82">TM-T82 Series</string>
+    <string name="lang_ank">ANK</string>
+
+
+    <string-array name="food_delivery_names">
+        <item>All</item>
+        <item>Swiggy</item>
+        <item>Zomato</item>
+        <item>Uber eats</item>
+        <item>Food panda</item>
+    </string-array>
+
+    <string-array name="reason_reject_order">
+        <item>No Stock</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="food_delivery_options">
+        <item>Preparing</item>
+        <item>picked up</item>
+        <item>delivered</item>
+        <item>others</item>
+    </string-array>
+
+    <string name="choose_category">Choose Category</string>
+    <string-array name="category">
+        <item>Numerically</item>
+        <item>Alphabetically</item>
+    </string-array>
+
+    <string name="choose_discount">Choose Discount</string>
+    <string-array name="discount_type">
+        <item>%</item>
+        <item>\u20B9</item>
+    </string-array>
+
+    <string name="choose_unit">Choose Unit</string>
+    <string-array name="unit_type">
+        <item>Kg</item>
+        <item>gm</item>
+        <item>mg</item>
+        <item>pound</item>
+        <item>L</item>
+        <item>ml</item>
+        <item>gallon</item>
+        <item>no.</item>
+        <item>teaspoon</item>
+        <item>tablespoon</item>
+        <item>dozen</item>
+    </string-array>
+
+    <string name="choose_email">Choose Email</string>
+    <string-array name="email_type">
+        <item>Gmail</item>
+        <item>Yahoo</item>
+        <item>Hotmail and Outlook</item>
+        <item>Office365</item>
+    </string-array>
+
+    <string name="choose_orderlist">Choose Orderlist</string>
+    <string-array name="orderlist">
+        <item>Descending</item>
+        <item>Ascending</item>
+        <item>Cash/card sales</item>
+        <item>Dine-in/TA/Gen/HD</item>
+    </string-array>
+
+    <string name="choose_cancellation">Choose Cancellation</string>
+    <string-array name="cancellation">
+        <item>Descending</item>
+        <item>Ascending</item>
+    </string-array>
+
+    <string name="choose_cancellation1">Choose Cancellation</string>
+    <string-array name="cancellation1">
+        <item>All</item>
+        <item>Cash</item>
+        <item>Card</item>
+        <item>Pay Later</item>
+    </string-array>
+
+    <string-array name="cancellation4">
+        <item>All</item>
+        <item>Paytm</item>
+        <item>Mobikwik</item>
+        <item>Freecharge</item>
+    </string-array>
+    <string-array name="cancellation5">
+        <item>UPI QR</item>
+    </string-array>
+    <string-array name="cancellation6">
+        <item>All</item>
+        <item>Sodexo</item>
+        <item>Zeta</item>
+        <item>Ticket</item>
+    </string-array>
+    <string-array name="cancellation7">
+        <item>All</item>
+        <item>Cheque</item>
+    </string-array>
+
+    <string name="choose_cancellation2">Choose Cancellation</string>
+    <string-array name="cancellation2">
+        <item>All</item>
+        <item>Dine-in</item>
+        <item>Takeaway</item>
+        <item>Home delivery</item>
+    </string-array>
+
+    <string name="choose_cancellation22">Choose Cancellation</string>
+    <string-array name="cancellation22">
+        <item>All</item>
+        <item>General</item>
+        <item>Home delivery</item>
+    </string-array>
+
+
+    <string name="choose_cancellation21">Choose Cancellation</string>
+    <string-array name="cancellation21">
+        <item>All</item>
+        <item>Swiggy</item>
+        <item>Zomato</item>
+        <item>Food Panda</item>
+    </string-array>
+
+    <string-array name="country_selection21">
+        <item>Dine-in</item>
+        <item>Takeaway</item>
+        <item>Home delivery</item>
+    </string-array>
+
+    <string-array name="country_selection21_retail">
+        <item>General</item>
+        <item>Home delivery</item>
+    </string-array>
+
+    <string name="choose_cancellation3">Choose Cancellation</string>
+    <string-array name="cancellation3">
+        <item>Items</item>
+        <item>Category</item>
+    </string-array>
+
+
+    <string-array name="billing">
+        <item>Fast food</item>
+        <item>Fine dine</item>
+        <item>Retail</item>
+    </string-array>
+
+    <string-array name="taxesss">
+        <item>All</item>
+        <item>Globaltax</item>
+        <item>Itemtax</item>
+    </string-array>
+
+    <string name="choose_itemwmodifier">Choose ItemModifier Perform</string>
+    <string-array name="itemmodifier_perform">
+        <item>Items</item>
+        <item>Modifiers</item>
+    </string-array>
+
+    <string name="choose_itemwiseperform">Choose Itemwise Perform</string>
+    <string-array name="itemwise_perform">
+        <item>High to low</item>
+        <item>Low to high</item>
+    </string-array>
+
+    <string name="choose_cancelwise_filter">Choose Cancelwise Perform</string>
+    <string-array name="cancelwise_fliter">
+        <item>All</item>
+        <item>Damaged/Spoiled</item>
+        <item>Delayed</item>
+        <item>Changed mind</item>
+        <item>Accidental charge</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="choose_menuwise">Choose Menuwise</string>
+    <string-array name="menuwise">
+        <item>Beverages</item>
+        <item>Breakfast</item>
+        <item>Chinese</item>
+        <item>Desserts</item>
+        <item>Ind non-veg Curry</item>
+        <item>Italian</item>
+        <item>Pizza</item>
+    </string-array>
+
+    <string name="choose_tax">Choose Tax</string>
+    <string-array name="tax">
+        <item>Spl. tax       6.55% </item>
+        <item>None</item>
+    </string-array>
+
+    <string name="update_emp">Sasisha Kipengele</string>
+    <string name="update">Sasisha</string>
+    <string name="cancel">Ghairi</string>
+
+    <string-array name="stockk">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+
+    <string-array name="stockkk">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
+    <string-array name="auto_stockk">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="tabl_kot_manag">
+        <item>Lite</item>
+        <item>Pro</item>
+    </string-array>
+
+    <string-array name="select_language">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+
+
+    <string-array name="working_hours_today">
+        <item>Leo</item>
+    </string-array>
+
+    <string-array name="working_hours">
+        <item>Leo</item>
+        <item>Kesho</item>
+    </string-array>
+
+    <string-array name="sort">
+        <item>Sort by Date added</item>
+        <item>Sort Alphabetically</item>
+        <item>Sort by Price(L -> H)</item>
+        <item>Sort by Price(H -> L)</item>
+        <item>Sort by Qty.(L -> H)</item>
+        <item>Sort by Qty.(H -> L)</item>
+    </string-array>
+
+    <string-array name="billingg">
+        <item>Fine dine</item>
+    </string-array>
+
+    <string-array name="country_selection1">
+        <item>Shilling (TZS)</item>
+        <!--<item>Rupee (\u20B9)</item>-->
+        <!--<item>Pound (\u00a3)</item>
+        <item>Euro (\u20ac)</item>
+        <item>Dollar (\u0024)</item>
+        <item>Dinar (D)</item>-->
+        <!--<item>Ringitt (RM)</item>
+        <item>Rial (OR)</item>
+        <item>Yen (\u00a5)</item>
+        <item>Papua New Guinean (K)</item>
+        <item>UAE (DH)</item>
+        <item>South African Rand (R)</item>
+        <item>Congolese Franc (FC)</item>
+        <item>Dirhams (AED)</item>-->
+        <!--<item>Shilling (TZS)</item>-->
+    </string-array>
+
+    <string-array name="printertype">
+        <item>Generic</item>
+        <item>Sunmi</item>
+        <item>Epson/others</item>
+        <item>POS</item>
+        <item>Pax</item>
+        <item>pinelabs</item>
+        <item>wiseposplus</item>
+        <item>bijlipay</item>
+    </string-array>
+
+    <string-array name="print_size">
+        <item>Standard</item>
+        <item>Compact</item>
+    </string-array>
+
+    <string name="my_url">"www.intuitionsoftwares.com?prova&amp;reg=bis"</string>
+
+    <string name="underline"><u>Muhtasari</u></string>
+
+    <string name="copyrights">Copyright © 2016 Intuition. Haki zote zimehifadhiwa. tolea 14.0 </string>
+
+    <!--    <resources>-->
+    <string name="privacy">Sampuli</string>
+    <string name="messageWithLink"><a href="https://ivepos.com/privacy-policy/">Bonyeza Hapa!!</a></string>
+    <!--    </resources>-->
+
+    <string-array name="barcodetype">
+        <item>UPC A code</item>
+        <item>UPC E code</item>
+        <item>EAN 13 code</item>
+        <item>EAN 8 code</item>
+        <item>CODE 39 code</item>
+        <item>ITF code</item>
+        <item>CODEBAR code</item>
+        <item>CODE 93 code</item>
+        <item>CODE 128 code</item>
+    </string-array>
+    <string-array name="barcodestartorgx">
+        <item>Usifanye indent</item>
+        <item>Indent tarakimu 1</item>
+        <item>Indent tarakimu 2</item>
+        <item>Indent tarakimu 3</item>
+        <item>Indent tarakimu 4</item>
+        <item>Indent tarakimu 5</item>
+        <item>Indent tarakimu 6</item>
+        <item>Indent tarakimu 7</item>
+        <item>Indent tarakimu 8</item>
+        <item>Indent tarakimu 9</item>
+        <item>Indent tarakimu 10</item>
+        <item>Indent tarakimu 11</item>
+        <item>Indent tarakimu 12</item>
+        <item>Indent tarakimu 13</item>
+        <item>Indent tarakimu 14</item>
+        <item>Indent tarakimu 15</item>
+        <item>Indent tarakimu 16</item>
+    </string-array>
+    <string-array name="barcodewidth">
+        <item>Upana wa barcode 2</item>
+        <item>Upana wa barcode 3</item>
+        <item>Upana wa barcode 4</item>
+        <item>Upana wa barcode 5</item>
+        <item>Upana wa barcode 6</item>
+    </string-array>
+    <string-array name="barcodeheight">
+        <item>Urefu wa barcode pointi 24</item>
+        <item>Urefu wa barcode pointi 48</item>
+        <item>Urefu wa barcode pointi 72</item>
+        <item>Urefu wa barcode pointi 96</item>
+        <item>Urefu wa barcode pointi 120</item>
+        <item>Urefu wa barcode pointi 144</item>
+        <item>Urefu wa barcode pointi 168</item>
+        <item>Urefu wa barcode pointi 192</item>
+    </string-array>
+    <string-array name="barcodefonttype">
+        <item>Fonti ya kawaida</item>
+        <item>Kubana fonti</item>
+        <item>Haijabainishwa</item>
+    </string-array>
+    <string-array name="barcodefontposition">
+        <item>Maandishi ya barcode hayajachapishwa</item>
+        <item>Juu ya barcode</item>
+        <item>Inachapishwa chini ya barcode</item>
+        <item>Barcode, chini ya chapisho</item>
+    </string-array>
+    <string name="title_activity_settings">Mipangilio</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Jumla</string>
+
+    <string name="pref_title_social_recommendations">Wezesha mapendekezo ya kijamii</string>
+    <string name="pref_description_social_recommendations">Mapendekezo ya watu wa kuwasiliana nao
+        Kulingana na historia ya ujumbe wako
+    </string>
+
+    <string name="pref_title_display_name">Jina la kuonyesha</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Ongeza marafiki kwenye ujumbe</string>
+    <string-array name="pref_example_list_titles">
+        <item>Kila mara</item>
+        <item>Inapowezekana</item>
+        <item>Kamwe</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; Usawazishaji</string>
+
+    <string name="pref_title_sync_frequency">Masafa ya kusawazisha</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>Dakika 15</item>
+        <item>Dakika 30</item>
+        <item>Lisaa 1</item>
+        <item>Masaa 3</item>
+        <item>Masaa 6</item>
+        <item>kamwe</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Ingizo 1</item>
+        <item>Ingizo 2</item>
+        <item>Ingizo 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">Mipangilio ya usawazishaji wa mfumo</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Taarifa</string>
+
+    <string name="pref_title_new_message_notifications">Ujumbe mpya wa taarifa</string>
+
+    <string name="pref_title_ringtone">Sauti ya kupigiwa</string>
+    <string name="pref_ringtone_silent">Kimya</string>
+
+
+    <string name="pref_title_vibrate">Tetemesha</string>
+
+    <string name="subscription_period_monthly11">Boresha hadi Pro(TZS.4999)//Kwa mwaka</string>//yearly
+
+    <string name="subscription_period_prompt">Chagua kipindi chako cha usajili</string>
+    <string name="online_order_prompt">Chagua idadi ya oda zako</string>
+    <string name="subscription_resignup_prompt">Kuwezesha upya usajili wako, chagua kipindi chako cha usajili</string>
+    <string name="subscription_update_prompt">Kubadilisha usajili wako, chagua kipindi chako kipya cha usajili</string>
+    <string name="subscription_period_monthly">Mwezi 1(TZS.999)</string>
+    <string name="subscription_period_threemonth">Miezi Mitatu $4.99</string>
+    <string name="subscription_period_sixmonth">Miezi 6(TZS.4999)</string>
+    <string name="subscription_period_yearly">Usajili wa mwaka(TZS.8999)</string>
+    <string name="subscription_coupon">Msimbo wa kuponi</string>
+
+    <string name="subscription_period_monthly_new">Mwezi 1</string>
+    <string name="subscription_period_sixmonth_new">Miezi 6(Okoa 15%)</string>
+    <string name="subscription_period_yearly_new">Mwaka 1(Okoa 25%)</string>
+
+    <string name="subscription_period_weekly_dashboard">Majaribio Siku 7 Bure</string>
+    <string name="subscription_period_monthly_dashboard">Mwezi Mmoja TZS.1500</string>
+    <string name="subscription_period_threemonth_dashboard">Miezi Mitatu TZS.4200</string>
+    <string name="subscription_period_sixmonth_dashboard">Miezi Sita TZS.7200</string>
+    <string name="subscription_period_yearly_dashboard">Usajili wa mwaka(TZS.14400)</string>
+
+    <string name="subscription_prompt_continue">Endelea</string>
+    <string name="subscription_prompt_cancel">Sitisha</string>
+    <string name="content_description_app_loading_image">App inapakia picha</string>
+    <string name="content_description_title_image">80\'s Video Game Style Car Logo</string>
+    <string name="content_desc_gas_gauge_indicator">Gas gauge indicator</string>
+    <string name="content_desc_free_vs_premium_indicator">Free or Premium Image Indicator</string>
+
+
+    <string name="subscription_period_monthly1">Ujumbe 500(TZS.180)</string>
+    <string name="subscription_period_yearly1">Ujumbe 1000(TZS.360)</string>
+    <string name="subscription_period_threemonth1">Ujumbe 2500(TZS.825)</string>
+    <string name="subscription_period_sixmonth1">Ujumbe 5000(TZS.1650)</string>
+    <string name="subscription_period_ninemonth1">Ujumbe 10000(TZS.3000)</string>
+
+
+    <string name="subscription_period_onlineorder1">Oda 500(TZS.425)</string>
+    <string name="subscription_period_onlineorder2">Oda 1000(TZS.800)</string>
+    <string name="subscription_period_onlineorder3">Oda 5000(TZS.3750)</string>
+
+
+    <string name="subscription_period_pro_demo">Onyesho la bure</string>
+    <string name="subscription_period_pro_yearly1">Boresha hadi Pro(TZS.4999)</string>
+    <string name="subscription_period_pro_coupon">Msimbo wa kuponi</string>
+
+    <!--<string name="subscription_prompt_continue">Continue</string>-->
+    <!--<string name="subscription_prompt_cancel">Cancel</string>-->
+    <!--<string name="content_description_app_loading_image">App loading image</string>-->
+    <!--<string name="content_description_title_image">80\'s Video Game Style Car Logo</string>-->
+    <!--<string name="content_desc_gas_gauge_indicator">Gas gauge indicator</string>-->
+    <!--<string name="content_desc_free_vs_premium_indicator">Free or Premium Image Indicator</string>-->
+
+    <!--mSwipe-->
+
+
+    <!--mswipe-->
+    <string name="err_msg_mobile">Ingiza namba yako ya simu</string>
+    <string name="err_msg_email">Ingiza barua pepe halali</string>
+
+    <string name="action_menu">Menyu</string>
+
+
+    <string name="action_additional_menu">Menyu ya nyongeza</string>
+
+    <string name="action_settings">Mipangilio</string>
+
+    <string name="action_admin">Admin</string>
+
+    <string name="action_user">Mtumiaji</string>
+
+    <string name="action_database">Bidhaa na kodi</string>
+
+    <string name="action_orderlist">Taarifa</string>
+
+    <string name="action_preferences">Mipangilio</string>
+
+    <string name="action_sync">Sawazisha</string>
+
+    <string name="action_restore">Rejesha</string>
+
+    <string name="action_cancelorder">Sitisha oda</string>
+
+    <string name="action_item">Bidhaa</string>
+
+    <string name="action_category">Kipengele</string>
+
+    <string name="action_modifier">Kirekebishaji</string>
+
+    <string name="action_tax">Kodi</string>
+
+    <string name="action_devices">Vifaa</string>
+
+    <string name="add_item">Ongeza bidhaa</string>
+
+    <string name="add_bill_settings">Mipangilio ya risiti za bili</string>
+
+    <string name="Button1">7</string>
+
+    <string name="Button10">2</string>
+
+    <string name="Button11">3</string>
+
+    <string name="Button12">CE</string>
+
+    <string name="Button13">0</string>
+
+    <string name="Button14">.</string>
+
+    <string name="Button15">Ingiza</string>
+
+
+    <string name="Button26">Malipo</string>
+
+    <string name="Button27">Rudisha Zote</string>
+
+    <string name="Button28">Chagua kutoka kwa Gallery</string>
+
+    <string name="Button2">8</string>
+
+    <string name="Button3">9</string>
+
+    <string name="Button4">X</string>
+
+    <string name="Button5">4</string>
+
+    <string name="Button6">5</string>
+
+    <string name="Button7">6</string>
+
+    <string name="Button8">C</string>
+
+    <string name="Button9">1</string>
+
+    <string name="Button16">Admin</string>
+
+    <string name="submit">Wasilisha</string>
+
+    <string name="save">Hifadhi</string>
+
+    <string name="buttondot">.</string>
+
+
+    <string name="Rs1">TZS</string>
+
+
+    <string name="Sales">Mauzo</string>
+    <string name="Sales_summary">Muhtasari wa mauzo</string>
+
+
+    <string name="rss">Jumla(TZS)</string>
+    <string-array name="country_arrays">
+        <item>Sodexso</item>
+
+    </string-array>
+    <string name="title_activity_mobikwik_setting">Mipangilio ya Mobikwik</string>
+    <string name="title_activity_freecharge_setting">Mipangilio ya Freecharge</string>
+
+    <string name="waiting_for_card">Tafadhali ingiza au telezesha kadi.</string>
+    <string name="no_card_detected">Hakuna kadi iliyogunduliwa. Tafadhali ingiza au telezesha kadi tena na bonyeza angalia kadi</string>
+    <string name="icc_card_inserted">Kadi ya ICC imeingizwa</string>
+    <string name="card_inserted">Tafadhali tumia kadi ya mag</string>
+    <string name="pin_entered">PIN imeingizwa</string>
+    <string name="pin_bypassed">PIN imepitwa</string>
+    <string name="pin_canceled">PIN imesitishwa</string>
+    <string name="pin_timeout">Muda wa PIN umekwisha</string>
+    <string name="key_error">Hitilafu kuu</string>
+    <string name="pin_wrong_pin_length">Urefu wa PIN sio sahihi</string>
+
+    <string name="nfc_waiting_for_card">Kadi inasubiriwa</string>
+    <string name="nfc_waiting_for_card_removal">Kadi kutolewa kunasubiriwa</string>
+    <string name="nfc_card_removed">Kadi imetolewa</string>
+    <string name="nfc_timeout">Muda umekwisha</string>
+    <string name="nfc_card_not_supported">Kadi haitumiki</string>
+    <string name="nfc_multiple_card_detected">Kadi nyingi zimegunduliwa</string>
+    <string name="nfc_card_detected">Kadi imegunduliwa</string>
+
+    <string name="no_pin">Hakuna PIN</string>
+    <string name="bad_swipe">Imetelezeshwa vibaya. Tafadhali telezesha tena.</string>
+    <string name="card_swiped">Kadi imetelezeshwa: </string>
+    <string name="mag_head_fail">Kichwa cha sumaku kimeshindwa</string>
+    <string name="card_no_response">Angalia kadi hakuna majibu</string>
+    <string name="card_swiped_track2_only">Kadi imetelezeshwa(Track 2 pekee):\n</string>
+    <string name="nfc_track2">Kadi imegusishwa(Track 2 Emulation):\n</string>
+    <string name="use_icc_card">Tafadhali tumia kadi ya ICC</string>
+    <string name="format_id">Format ID: </string>
+    <string name="masked_pan">Masked PAN: </string>
+    <string name="expiry_date">Tarehe ya mwisho ya matumizi:  </string>
+    <string name="cardholder_name">Jina la mwenye kadi:  </string>
+    <string name="ksn">KSN: </string>
+    <string name="pin_ksn">PIN ya KSN: </string>
+    <string name="track_ksn">Track ya KSN: </string>
+    <string name="emv_ksn">EMV ya KSN: </string>
+    <string name="uid">UID:</string>
+    <string name="service_code">Service Code: </string>
+    <string name="track_1_length">Urefu wa Track 1: </string>
+    <string name="track_2_length">Urefu wa Track 2: </string>
+    <string name="track_3_length">Urefu wa Track 3: </string>
+    <string name="encrypted_tracks">Encrypted Tracks: </string>
+    <string name="encrypted_track_1">Encrypted Track ya 1: </string>
+    <string name="encrypted_track_2">Encrypted Track ya 2: </string>
+    <string name="encrypted_track_3">Encrypted Track ya 3: </string>
+    <string name="partial_track">Sehemu ya Track: </string>
+    <string name="card_data">Data ya Kadi: </string>
+    <string name="start_emv_fail">Kuanza EMV imeshindwa</string>
+    <string name="start_emv_success">Kuanza EMV imefanikiwa</string>
+    <string name="app_version">Toleo la App: </string>
+    <string name="bootloader_version">Toleo la Bootloader: </string>
+    <string name="firmware_version">Toleo la Firmware: </string>
+    <string name="usb">USB: </string>
+    <string name="charge">Chaji: </string>
+    <string name="battery_level">Kiwango cha Betri: </string>
+    <string name="hardware_version">Toleo la Hardware: </string>
+    <string name="supported_track">Track Inayokubaliwa: </string>
+    <string name="track_1_supported">Track 1 Inakubaliwa: </string>
+    <string name="track_2_supported">Track 2 Inakubaliwa: </string>
+    <string name="track_3_supported">Track 3 Inakubaliwa: </string>
+    <string name="unknown">Haijulikani</string>
+    <string name="set_amount">Weka Kiasi</string>
+    <string name="amount_confirmed">Kiasi kimethibitishwa</string>
+    <string name="amount_canceled">Kiasi kimesitishwa</string>
+    <string name="please_confirm_amount">Tafadhali thibitisha kiasi kwenye WisePad</string>
+    <string name="enter_pin">Tafadhali ingiza PIN kwenye WisePad</string>
+    <string name="online_process_requested">Mchakato wa mtandaoni umeombwa.</string>
+    <string name="request_data_to_server">Omba data kwa seva</string>
+    <string name="replied_connected">Imejibu imeunganishwa.</string>
+    <string name="replied_success">Imejibu imefanikishwa.</string>
+    <string name="replied_failed">Imejibu haijafanikishwa.</string>
+    <string name="batch_data">Data ya kundi:\n</string>
+    <string name="transaction_log">Jarida la miamala:\n</string>
+    <string name="reversal_data">Data za marejesho:\n</string>
+    <string name="please_select_app">Tafadhali chagua app</string>
+    <string name="transaction_result">Majibu ya Muamala</string>
+    <string name="transaction_approved">Imepitishwa</string>
+    <string name="transaction_terminated">Imeachishwa</string>
+    <string name="transaction_declined">Offline Declined</string>
+    <string name="transaction_cancel">Sitisha</string>
+    <string name="transaction_capk_fail">Imeshindwa (CAPK fail)</string>
+    <string name="transaction_not_icc">Tafadhali tumia kadi ya mag</string>
+    <string name="transaction_app_fail">Kizuizi cha kadi</string>
+    <string name="transaction_device_error">Hitilafu ya kifaa</string>
+    <string name="transaction_application_blocked">application ya muamala imezuiwa</string>
+    <string name="transaction_icc_card_removed">kadi ya icc ya muamala imetolewa</string>
+    <string name="transaction_card_blocked">kadi ya muamala imetolewa</string>
+    <string name="transaction_condition_not_satisfied">hali ya muamala haijaridhishwa</string>
+    <string name="transaction_invalid_icc_data">muamala batili data za icc</string>
+    <string name="transaction_card_not_supported">kadi ya muamala haikubaliwi</string>
+    <string name="transaction_missing_mandatory_data">muamala unakosa data za lazima</string>
+    <string name="transaction_no_emv_apps">muamala hakuna emv apps</string>
+    <string name="tlv_list">List ya TLV:\n</string>
+    <string name="advice_process">Mchakato wa ushauri</string>
+    <string name="call_your_bank">Tafadhali pigia simu benki yako</string>
+    <string name="request_terminal_time">Ombi la Muda wa Kituo. Limejibiwa. </string>
+    <string name="confirm_amount">Thibitisha kiasi</string>
+    <string name="amount">Kiasi</string>
+    <string name="amount_ok">Kiasi Sawa?</string>
+    <string name="approved">Imepitishwa</string>
+    <string name="cancel_or_enter">Sitisha au Ingia</string>
+    <string name="card_error">Hitilafu kwenye kadi</string>
+    <string name="declined">Nje ya mtandao imekataliwa</string>
+    <string name="enter_amount">Tafadhali ingiza kiasi</string>
+    <string name="incorrect_pin">PIN sio sahihi</string>
+    <string name="insert_card">Tafadhali ingiza kadi</string>
+    <string name="not_accepted">Imekataliwa</string>
+    <string name="pin_ok">PIN Sawa</string>
+    <string name="wait">Tafadhali subiri&#8230;</string>
+    <string name="processing_error">Hitilafu kwenye mchakato</string>
+    <string name="remove_card">Tafadhali ondoa kadi</string>
+    <string name="use_chip_reader">Tafadhali tumia chip reader</string>
+    <string name="use_mag_stripe">Tafadhali tumia mag stripe</string>
+    <string name="try_again">Tafadhali jaribu tena</string>
+    <string name="refer_payment_device">Tafadhali rejea kifaa chako cha malipo</string>
+    <string name="try_another_interface">Tafadhali tumia interface nyingine</string>
+    <string name="online_required">Mtandaoni inahitajika</string>
+    <string name="processing">Inachanganua&#8230;</string>
+    <string name="welcome">Karibu</string>
+    <string name="present_one_card">Tafadhali wasilisha kadi moja pekee</string>
+    <string name="capk_failed">CAPK imeshindwa kupakia</string>
+    <string name="last_pin_try">Jaribio la PIN la mwisho</string>
+    <string name="select_account">chagua akaunti</string>
+    <string name="battery_low">Betri ya kifaa iko chini, tafadhali chaji</string>
+    <string name="battery_critically_low">Betri ya kifaa iko chini sana na imezima</string>
+    <string name="no_device_detected">Hakuna kifaa kimegunduliwa</string>
+    <string name="device_plugged">Kifaa kimechomekwa</string>
+    <string name="device_unplugged">Kifaa kimechomolewa</string>
+    <string name="command_not_available">Amri haipatikani</string>
+    <string name="device_no_response">Kifaa hakitoi majibu</string>
+    <string name="device_reset">Kifaa kimewekwa upya</string>
+    <string name="unknown_error">Hitilafu isiyojulikana</string>
+    <string name="device_busy">Kifaa kinatumika</string>
+    <string name="out_of_range">Input nje ya masafa</string>
+    <string name="invalid_format">Input format batili</string>
+    <string name="zero_values">Input ni sifuri</string>
+    <string name="input_invalid">Input batili.</string>
+    <string name="cashback_not_supported">Pesa taslimu haikubaliwi.</string>
+    <string name="crc_error">Hitilafu ya CRC.</string>
+    <string name="comm_error">Hitilafu ya Mawasiliano.</string>
+    <string name="fail_to_start_bluetooth_v2">Imeshindwa kuunganishwa kwenye WisePad, tafadhali hakiki WisePad imewashwa.</string>
+    <string name="invalid_function">Function batili</string>
+    <string name="comm_link_uninitialized">Link ya mawasiliano haijaanzishwa</string>
+    <string name="bluetooth_already_started">Bluetooth tayari imeanzishwa</string>
+    <string name="fail_to_start_audio">Imeshindikana kuanzisha sauti</string>
+    <string name="fail_to_start_bluetooth_v4">Imeshindikana kuanzisha bluetooth 4.0</string>
+    <string name="bluetooth_4_not_supported">Bluetooth 4.0 haikubaliwi</string>
+    <string name="device_off">Kifaa kimezimwa.</string>
+    <string name="get_info">Pata taarifa za kifaa</string>
+    <string name="clear_log">Futa Kumbukumbu</string>
+    <string name="check_card">Anza</string>
+    <string name="start_emv">Anzisha EMV</string>
+    <string name="pin">PIN</string>
+    <string name="cashback_amount">Pesa Taslimu</string>
+    <string name="confirm">Hakiki</string>
+    <string name="bypass">Pitisha kando PIN</string>
+    <string name="decline">Kataa</string>
+    <string name="getting_info">Taarifa za kifaa zinachukuliwa&#8230;</string>
+    <string name="starting">Inaanza&#8230;</string>
+    <string name="power_on_icc">Washa ICC</string>
+    <string name="power_off_icc">Zima ICC</string>
+    <string name="send_apdu">Tuma APDU</string>
+    <string name="power_on_icc_success">Kuwasha ICC Kumefanikiwa</string>
+    <string name="power_on_icc_failed">Kuwasha ICC Hakujafanikiwa</string>
+    <string name="power_off_icc_success">Kuzima ICC Kumefanikiwa</string>
+    <string name="power_off_icc_failed">Kuzima ICC Hakujafanikiwa</string>
+    <string name="apdu_result">Majibu ya APDU:</string>
+    <string name="atr">ATR:</string>
+    <string name="apdu_failed">APDU Haijafanikiwa</string>
+    <string name="sending">Inatuma:</string>
+    <string name="atr_length">Urefu wa ATR:</string>
+    <string name="get_ksn">Chukua KSN</string>
+    <string name="getting_ksn">KSN Inachukuliwa&#8230;</string>
+    <string name="powering_on_icc">ICC Inawashwa&#8230;</string>
+    <string name="powering_off_icc">ICC Inazimwa&#8230;</string>
+    <string name="card_not_supported">Kadi haikubaliwi</string>
+    <string name="missing_mandatory_data">Data za lazima hazionekani</string>
+    <string name="card_blocked_or_no_evm_apps">Tafadhali tumia kadi ya magneti</string>
+    <string name="invalid_icc_data">Data za ICC batili</string>
+    <string name="power_on_nfc">Washa NFC</string>
+    <string name="power_off_nfc">Zima NFC</string>
+    <string name="data_exchange">Kubadilishana data</string>
+    <string name="power_on_nfc_success">Kuwasha NFC Kumepifanikiwa</string>
+    <string name="power_on_nfc_failed">Kuwasha NFC Hakujafanikiwa</string>
+    <string name="power_off_nfc_success">Kuzima NFC Kumefanikiwa</string>
+    <string name="power_off_nfc_failed">Kuzima NFC Hakujafanikiwa</string>
+    <string name="data_received">Data zimepokelewa:</string>
+    <string name="data_length">Urefu wa data:</string>
+    <string name="data_exchange_failed">Kubadilishana data hakujafanikiwa</string>
+    <string name="response">Majibu:</string>
+    <string name="card_emulation">Uigaji wa Kadi</string>
+    <string name="card_emulation_result">Majibu ya uigaji wa kadi:</string>
+    <string name="card_emulation_failed">Uigaji wa kadi haujafanikiwa</string>
+    <string name="performing_card_emulation">Inatakeleza uigaji wa kadi&#8230;</string>
+    <string name="app_name_paused">aLogcat (imesubirishwa) </string>
+    <string name="app_prefs">aLogcat - Mapendeleo</string>
+    <string name="ok">Sawa</string>
+    <string name="fatal_title">Mbaya</string>
+    <string name="error_title">Hitilafu</string>
+    <string name="warn_title">Onyo</string>
+    <string name="info_title">Taarifa</string>
+    <string name="verbose_title">Verbose</string>
+    <string name="debug_title">Debug</string>
+    <string name="filter_menu">Chuja (%s)</string>
+    <string name="filter_dialog_title">Chuja Kumbukumbu</string>
+    <string name="filter_menu_empty">Chuja</string>
+    <string name="filter_dialog_text">Chujio la kumbukumbu linaweza likawa substring rahisi au ni Java-conforming regular expression.</string>
+    <string name="pattern_error_text">Regular expression batili</string>
+    <string name="clear">Futa</string>
+    <string name="brief_title">Kifupi</string>
+    <string name="process_title">Mchakato</string>
+    <string name="tag_title">Tag</string>
+    <string name="thread_title">Thread</string>
+    <string name="raw_title">Raw</string>
+    <string name="time_title">Muda</string>
+    <string name="long_title">Ndefu</string>
+    <string name="reading_logs">Inasoma kumbukumbu, tafadhali subiri.</string>
+    <string name="share_menu">Gawa</string>
+    <string name="play_menu">Chezesha</string>
+    <string name="pause_menu">Sitisha</string>
+    <string name="jump_start_menu">Juu</string>
+    <string name="jump_end_menu">Chini</string>
+    <string name="main_title">Kuu</string>
+    <string name="events_title">Matukio</string>
+    <string name="radio_title">Redio</string>
+    <string name="small_title">Ndogo</string>
+    <string name="medium_title">Ya Kati</string>
+    <string name="large_title">Kubwa</string>
+    <string name="clear_menu">Futa</string>
+    <string name="save_menu">Hifadhi</string>
+    <string name="prefs_menu">Mapendeleo</string>
+    <string name="saving_log">Inahifadhi kumbukumbu kwenye:%s, tafadhali subiri</string>
+    <string name="threadtime_title">Muda wa Thread</string>
+    <string name="black_title">Nyeusi</string>
+    <string name="white_title">Nyeupe</string>
+    <string name="gray_title">Kijivu</string>
+    <string name="apply_as_regexp">Weka kama maelezo ya mara kwa mara?</string>
+    <string name="title_activity_set_gate_way">SetGateWay</string>
+    <!--<string name="action_settings">Settings</string>-->
+    <!--<string name="hello_world">Hello world!</string>-->
+
+    <string name="device_comm_error">hitilafu ya mawasiliano ya kifaa </string>
+    <string name="failed">imeshindwa</string>
+    <string name="no_update_required">hakuna sasisho linalohitajika </string>
+    <string name="server_comm_error">kosa la mawasiliano ya seva </string>
+    <string name="setup_error">hitilafu ya kuanzisha </string>
+    <string name="stopped">kusimamishwa</string>
+    <string name="canceled_please_try_again"> imeghairiwa, tafadhali jaribu tena </string>
+
+    <string name="bluetooth_permission_denied">ruhusa ya bluetooth imekataliwa </string>
+    <string name="channel_buffer_full">ruhusa kamili ya akiba ya kituo imekataliwa </string>
+
+    <string name="swipe">telezesha kidole </string>
+
+    <!-- Credit Sale View -->
+    <string name="wisepad_pairing_in_process_press_back_key_twice_in_succession_to_terminate_the_transaction">uoanishaji wa wisepad unaendelea&#8230; bonyeza kitufe cha nyuma mara mbili mfululizo ili kusitisha muamala.</string>
+    <string name="processing_card_in_progress_press_back_key_twice_in_succession_to_terminate_the_transaction">usindikaji wa kadi unaendelea&#8230; bonyeza kitufe cha nyuma mara mbili mfululizo ili kusitisha muamala.</string>
+    <string name="transaction_canceled">muamala umeghairiwa </string>
+    <string name="do_you_wish_to_cancel_the_transaction">ungependa kughairi muamala?</string>
+    <string name="no">Hapana</string>
+    <string name="connecting">kuunganisha</string>
+    <string name="connect">kuunganisha</string>
+    <string name="press_start">bonyeza kuanza </string>
+    <string name="connecting_device">kifaa cha kuunganisha</string>
+    <string name="device_not_connected">kifaa hakijaunganishwa </string>
+    <string name="device_connected">kifaa kimeunganishwa </string>
+    <string name="Paired_devices">Vifaa vilivyooanishwa</string>
+    <string name="connect_device">kuunganisha kifaa </string>
+    <string name="press_start_to_connect">bonyeza anza kuunganisha&#8230;</string>
+    <string name="no_paired_wisePad_found_please_pair_the_wisePad_from_your_phones_bluetooth_settings_and_try_again">hakuna wisePad iliyooanishwa iliyopatikana !! tafadhali unganisha wisePad kutoka kwa mipangilio ya bluetooth ya simu yako na ujaribu tena</string>
+    <string name="additional_cardholder_details_are_not_required">maelezo ya ziada ya mwenye kadi hayahitajiki </string>
+    <string name="additional_cardholder_details_will_have_to_be_entered">maelezo ya ziada ya mwenye kadi yatalazimika kuingizwa </string>
+    <string name="processing_transaction">usindikaji shughuli&#8230;</string>
+    <string name="invalid_tlv_data_format">Fomati ya data ya tlv ni batili</string>
+    <string name="select_the_Currency_for_the_transaction">chagua sarafu ya muamala </string>
+    <string name="application_on_the_card_expired">muda wa maombi kwenye kadi umeisha.</string>
+    <string name="auto_reversal_successful">ugeuzaji kiotomatiki umefaulu</string>
+    <string name="acknowledging_auto_reversal">kukiri ugeuzaji otomatiki&#8230;</string>
+    <string name="amex_card">kadi ya amex</string>
+    <string name="please_enter_security_pin_of_your_amex_card">tafadhali weka siri ya usalama ya kadi yako ya amex</string>
+    <string name="invalid_pin_input_should_be_4_digits_in_length">Ingizo batili ya pin, inapaswa kuwa na tarakimu 4 kwa urefu</string>
+    <string name="card_sale">Uuzaji wa Kadi</string>
+    <string name="emi">Emi</string>
+    <string name="preauth">preauth</string>
+    <string name="cash_at_pos">Pesa kwenye Pos</string>
+    <string name="processing_receipt"> risiti ya usindikaji&#8230;</string>
+    <string name="ic_card_inserted_please_wait">kadi ya ic imeingizwa, tafadhali subiri&#8230;</string>
+    <string name="please_remove_the_card">tafadhali ondoa kadi</string>
+    <string name="approved_online_card_declined_transaction">iliyoidhinishwa mtandaoni, muamala umekataliwa kwa kadi</string>
+    <string name="please_enter_pin_on_wisepad_or_press_enter_green_key_to_bypass_pin">tafadhali ingiza pini kwenye wisepad au bonyeza enter (kitufe cha kijani) ili kukwepa kipini</string>
+    <string name="unable_to_detect_the_wisepad_restart_the_device_and_try_reconnecting">imeshindwa kugundua wisepad, anzisha tena kifaa na ujaribu kuunganisha tena</string>
+    <string name="device_not_found">kifaa hakijapatikana</string>
+    <string name="device_disconnected">kifaa kimekatishwa.</string>
+    <string name="device_disconnected_please_ensure_the_connecting_device_is__a_wisepad">kifaa kimekatishwa, tafadhali hakikisha kuwa kifaa cha kuunganisha ni wisepad</string>
+    <string name="unable_to_process_last_transaction">imeshindwa kuchakata muamala wa mwisho</string>
+    <string name="host_connecting">mwenyeji kuunganisha</string>
+    <string name="host_online">mwenyeji mtandaoni</string>
+    <string name="host_offline">mwenyeji nje ya mtandao</string>
+    <string name="next">ijayo</string>
+    <string name="receipt">risiti</string>
+    <string name="express_checkout">malipo ya haraka</string>
+    <string name="transaction_total">jumla ya shughuli</string>
+    <string name="start">kuanza</string>
+    <string name="start_mag">kuanza-Mag</string>
+    <string name="initializing_the_swiper">kuanzisha swiper</string>
+    <string name="please_swipe_insert_chip_card">tafadhali telezesha kidole/weka kadi ya chipu</string>
+    <string name="stop">acha</string>
+    <string name="card_holder">mwenye kadi</string>
+    <string name="last_4_digits">tarakimu 4 za mwisho</string>
+    <string name="include">ni pamoja na</string>
+    <!--<string name="submit">submit</string>-->
+    <string name="print">chapa</string>
+    <string name="Press_start">Bonyeza kuanza&#8230;</string>
+    <string name="start_1_pairing">anza 1 kuoanisha</string>
+    <string name="base_amount">kiasi cha msingi</string>
+    <string name="tip_amount">kiasi cha ncha</string>
+    <string name="sale_cash">pesa taslimu</string>
+    <string name="total_amount">Jumla</string>
+    <string name="cardholder_mobile_no">mwenye kadi ya simu ya mkononi.</string>
+    <string name="email_optional">barua pepe (ya hiari)</string>
+    <string name="receipt_optional">risiti (si lazima)</string>
+    <string name="notes_optional">madokezo (ya hiari)</string>
+    <string name="close">karibu</string>
+    <string name="acknowledging_card_sale">kukiri mauzo ya kadi</string>
+    <string name="processing_auto_reversal_transaction">inachakata muamala wa kubadilisha kiotomatiki</string>
+    <string name="approved_online_card_declined_transaction_press_ok_for_autoreversal">iliyoidhinishwa mtandaoni, muamala umekataliwa kwa kadi, bonyeza sawa ili ubadilishe kiotomatiki</string>
+    <string name="press_connect">bonyeza kuunganisha&#8230;</string>
+    <string name="please_use_chip_card">tafadhali tumia chip card</string>
+    <string name="card_transaction_status">hali ya shughuli ya kadi</string>
+    <string name="authorisation_code">nambari ya idhini</string>
+    <string name="receipt_retrieval_no">urejeshaji wa risiti no</string>
+    <string name="device_detected">kifaa kimegunduliwa</string>
+    <string name="please_wait">Tafadhali subiri&#8230;</string>
+    <string name="emi_term_condition">RIDHAA YA MTEJA KWA EMI\n\n#.Nimepewa chaguo la kawaida na pia EMI kwa ununuzi huu na nimechagua EMI\n#.Nimeelewa na kukubali sheria na masharti ya mpango wa EMI na ada zinazotumika zilizotajwa katika hii. hati ya malipo\n#.EMI ubadilishaji kulingana na uamuzi wa benki\n#.Kodi ya Huduma inatumika kwa ada za riba na usindikaji</string>
+    <string name="i_agree">nakubali kulipa kulingana na makubaliano ya mtoaji kadi</string>
+    <string name="filter_amex_pin">0123456789</string>
+
+
+    <string name="creditsaleswiperfragment_enable_bluetooth">wezesha bluetooth</string>
+    <string name="creditsaleswiperfragment_status">hali</string>
+    <string name="creditsale_swiperview_lable_enter_pin">ingiza pini</string>
+    <string name="creditsale_swiperview_str_or">au</string>
+    <string name="creditsale_swiperview_pin_bypass_disabled">pin bypass imezimwa</string>
+
+    <!--MSWisepadView-->
+    <string name="mswisepadview_wisepad_not_connected_please_make_sure_that_the_wisepad_is_switched_on">kifaa hakijaunganishwa. tafadhali hakikisha kuwa kifaa kimewashwa.</string>
+    <string name="mswisepadview_wisepad_not_connected_please_try_to_reconnect_the_device">kifaa kuwa na muunganisho otomatiki kwa serial.</string>
+    <string name="mswisepadview_connecting_to_wisepad_if_its_taking_longer_than_usual_please_restart_the_wisepad_and_try_reconnecting">kuunganisha kwenye kifaa, ikiwa inachukua muda mrefu kuliko kawaida, tafadhali zima upya kifaa na ujaribu kuunganisha upya.</string>
+    <string name="mswisepadview_select_wisepad">chagua kifaa</string>
+
+    <!--creditsale_cardholderdetailsview-->
+
+    <string name="creditsale_cardholderdetailsview_authorising">kuidhinisha</string>
+    <string name="creditsale_cardholderdetailsview_card_holder">mwenye kadi</string>
+    <string name="creditsale_cardholderdetailsview_expiry_date">tarehe ya mwisho wa matumizi</string>
+    <string name="creditsale_cardholderdetailsview_last_4_digits">tarakimu 4 za mwisho</string>
+
+
+    <!--CreditSaleSaleCashFragment-->
+    <string name="creditsalesalecashfragment_amount_or_sale_cash_is_mandatory_for_this_transaction">kiasi au pesa taslimu ya mauzo ni lazima kwa muamala huu.</string>
+    <string name="creditsalesalecashfragment_you_need_to_enter_a_minimum_amount_of_at_least_inr_001_to_proceed">kiasi batili! kiasi cha chini kinapaswa kuwa %s 1.00 ili kuendelea.</string>
+    <string name="creditsalesalecashfragment_Invalid_sale_cash_amount_amount_can_not_exceed_INR_1000" formatted="false">pesa taslimu ya mauzo batili! kiasi hakiwezi kuzidi %s %s.</string>
+
+
+    <!--CreditSaleDeclineActivity-->
+    <string name="creditsaledeclineactivity_decline">imekataa</string>
+    <string name="mswipe">mswipe</string>
+
+    <!--creditsale_singnatureview-->
+    <string name="creditsale_singnatureview_transaction_approved">kupitishwa</string>
+    <string name="creditsale_singnatureview_please_remove_the_card">tafadhali ondoa kadi</string>
+    <string name="creditsale_singnatureview_clear">wazi</string>
+    <string name="creditsale_singnatureview_print">chapa</string>
+
+    <!--CreditSaleSignatureActivity-->
+    <string name="creditsalesignatureactivity_card_swiped_successfully">kadi imetelezeshwa kwa mafanikio</string>
+    <string name="creditsalesignatureactivity_please_remove_the_card">tafadhali ondoa kadi</string>
+    <string name="creditsalesignatureactivity_processing_chargeslip">hati ya malipo ya usindikaji</string>
+    <string name="creditsalesignatureactivity_please_sign_the_receipt_to_proceed">tafadhali saini risiti ili kuendelea.</string>
+    <string name="creditsalesignatureactivity_paired_devices">Vifaa vilivyooanishwa</string>
+    <string name="signature">Sahihi</string>
+
+    <!--creditsale_amexcardpinentryview-->
+    <string name="creditsale_amexcardpinentryview_enter_pin_of_amex">tafadhali weka PIN ya usalama ya kadi yako ya amex.</string>
+
+
+    <!--EmiOptionSelectionFragment-->
+    <string name="emioptionselectionfragment_please_select_emi_option">tafadhali chagua chaguo la emi.</string>
+    <string name="emioptionselectionfragment_emi_tenure">emi umiliki</string>
+    <string name="emioptionselectionfragment_bank_interest_rate">riba ya benki</string>
+    <string name="emioptionselectionfragment_total_payable_amount">jumla inayolipwa amt</string>
+    <string name="emioptionselectionfragment_cash_back_rate">kiwango cha kurudishiwa pesa</string>
+    <string name="emioptionselectionfragment_cash_back_amt">pesa taslimu amt</string>
+
+    <!--emisale_amountview-->
+    <string name="emisale_amountview_amount">kiasi</string>
+    <string name="emisale_amountview_first_6_digts">tarakimu 6 za kwanza</string>
+
+    <!--EmiSaleAmountFragment-->
+    <string name="emisaleamountfragment_first_6_digits_of_card_required">tarakimu 6 za kwanza za kadi zinahitajika.</string>
+    <string name="emisaleamountfragment_you_need_to_enter_a_minimum_amount_of_at_least_inr_001_to_proceed">kiasi batili! kiasi cha chini kinapaswa kuwa %s 1.00 ili kuendelea.</string>
+
+    <!--emi_termconditionview-->
+    <string name="emi_termconditionview_emi_term_condition">RIDHAA YA MTEJA KWA EMI\n\n1.Nimepewa chaguo la kawaida na pia EMI kwa ununuzi huu na nimechagua EMI\n2.Nimeelewa na kukubali sheria na masharti ya mpango wa EMI na ada zinazotumika zilizotajwa katika malipo haya- hati\n3.EMI ubadilishaji kulingana na uamuzi wa benki\n4. Kodi ya Huduma inatozwa kwenye ada za riba na usindikaji</string>
+    <string name="emi_termconditionview_i_agree">nakubali kulipa kulingana na makubaliano ya mtoaji kadi</string>
+    <string name="emi_termconditionview_emi">emi</string>
+
+
+    <!--LAST TRANSACTION-->
+
+    <!--lasttransaction_view-->
+    <string name="lasttransaction_view_status">hali</string>
+    <string name="lasttransaction_date">tarehe</string>
+    <string name="lasttransaction_total_amount">Jumla</string>
+    <string name="lasttransaction_type">aina</string>
+    <string name="lasttransaction_card_holder">mwenye kadi</string>
+    <string name="lasttransaction_last_4_digits">tarakimu 4 za mwisho</string>
+    <string name="lasttransaction_auth_code">nambari ya uthibitishaji</string>
+    <string name="lasttransaction_rr_no">rr hapana.</string>
+    <string name="lasttransaction_stan_id">kitambulisho cha kusimama</string>
+    <string name="lasttransaction_voucher">vocha</string>
+    <string name="lasttransaction_transaction_message">trx ujumbe</string>
+    <string name="lasttransaction_print">chapa</string>
+    <string name="lasttransaction_notes">maelezo</string>
+    <string name="lasttransaction_resend_receipt">ungependa kutuma tena risiti?</string>
+
+
+    <!--LastTransactionActivity-->
+    <string name="lasttransactionactivity_last_tx">shughuli ya mwisho</string>
+    <string name="lasttransactionactivity_would_you_like_to_resend_the_receipt_for_the_selected_transaction">ungependa kutuma tena risiti ya shughuli iliyochaguliwa?</string>
+    <string name="lasttransactionactivity_unable_to_process_last_transaction">imeshindwa kuchakata muamala wa mwisho. </string>
+    <string name="lasttransactionactivity_the_receipt_was_successfully_resent">risiti ilitumwa kwa mafanikio.</string>
+    <string name="lasttransactionactivity_paired_devices">Vifaa vilivyooanishwa</string>
+
+
+    <!--VOID SALE-->
+
+    <!--voidsale_amountview-->
+    <string name="voidsale_amountview_amount">kiasi</string>
+    <string name="voidsale_amountview_last_4_digits">tarakimu 4 za mwisho</string>
+
+    <!--VoidSaleAmountFragment-->
+    <string name="voidsaleamountfragment_you_need_to_enter_a_minimum_amount_of_at_least_inr_001_to_proceed">kiasi batili! kiasi cha chini kinapaswa kuwa %s 1.00 ili kuendelea.</string>
+    <string name="voidsaleamountfragment_invalid_last_4_digits">tarakimu 4 za mwisho zisizo sahihi.</string>
+    <string name="voidsaleamountfragment_the_void_sale_transaction_was_not_processed_successfully_please_try_again">muamala wa mauzo batili haukuchakatwa kwa ufanisi. tafadhali jaribu tena.</string>
+
+    <!--voidsale_transactionapprovalview-->
+    <string name="voidsale_transactionapprovalview_approved">kupitishwa</string>
+    <string name="voidsale_transactionapprovalview_status">hali</string>
+    <string name="voidsale_transactionapprovalview_tx_date">tarehe tx</string>
+    <string name="voidsale_transactionapprovalview_last_4_digits">tarakimu 4 za mwisho</string>
+    <string name="voidsale_transactionapprovalview_total_amount">Total Amount</string>
+    <string name="voidsale_transactionapprovalview_auth_code">nambari ya uthibitishaji</string>
+    <string name="voidsale_transactionapprovalview_receipt_retrieval_no">urejeshaji wa risiti no</string>
+
+    <!--voidsale_transactiondetailsview-->
+    <string name="voidsale_transactiondetailsview_confirm_void_transaction">kuthibitisha shughuli batili?</string>
+    <string name="voidsale_transactiondetailsview_status">hali</string>
+    <string name="voidsale_transactiondetailsview_tx_date">tarehe tx</string>
+    <string name="voidsale_transactiondetailsview_last_4_digits">tarakimu 4 za mwisho</string>
+    <string name="voidsale_transactiondetailsview_total_amount">Jumla</string>
+    <string name="voidsale_transactiondetailsview_auth_code">nambari ya uthibitishaji</string>
+    <string name="voidsale_transactiondetailsview_receipt_retrieval_no">urejeshaji wa risiti no</string>
+
+    <!--VoidSaleActivity-->
+    <string name="void_sale">uuzaji tupu</string>
+    <string name="void_transaction">shughuli batili</string>
+    <string name="voidsaleactivity_the_void_sale_transaction_was_not_processed_successfully_please_try_again">muamala wa mauzo batili haukuchakatwa kwa ufanisi. tafadhali jaribu tena.</string>
+
+    <!--GetVoidSaleDetailsController-->
+    <string name="the_void_sale_transaction_was_not_processed_successfully_please_try_again">muamala wa mauzo batili haukuchakatwa kwa ufanisi. tafadhali jaribu tena.</string>
+
+    <!--deviceinfo_view-->
+    <string name="deviceinfo_view_emv_ksn">emv ksn:</string>
+    <string name="deviceinfo_view_track_ksn">wimbo ksn:</string>
+    <string name="deviceinfo_view_battery_level">kiwango cha betri: </string>
+    <string name="deviceinfo_view_firm_ware">toleo la firmware: </string>
+    <string name="deviceinfo_view_connecting_device">kifaa cha kuunganisha</string>
+
+    <!--DeviceInfoActivity-->
+    <string name="deviceinfoactivity_info">habari</string>
+    <string name="deviceinfoactivity_device_info">habari ya kifaa</string>
+
+
+    <!-- PRINTER -->
+    <string name="connecting_to_printer_if_its_taking_longer_than_usual_please_restart_the_printer_and_try_reconnecting">kuunganisha kwenye kichapishi, ikiwa inachukua muda mrefu kuliko kawaida, tafadhali zima upya kichapishi na ujaribu kuunganisha upya.</string>
+    <string name="no_paired_printer_found_please_pair_the_printer_from_your_phones_bluetooth_settings_and_try_again">hakuna printa iliyooanishwa iliyopatikana !! tafadhali unganisha kichapishi kutoka kwa mipangilio ya bluetooth ya simu yako na ujaribu tena.</string>
+    <string name="unable_to_connect_to_the_bluetooth_printer">haiwezi kuunganisha kwenye kichapishi cha bluetooth.</string>
+    <string name="printer_not_connected_please_make_sure_that_the_printer_is_switched_on">printa haijaunganishwa. tafadhali hakikisha kuwa kichapishi kimewashwa.</string>
+    <string name="printing_in_process">uchapishaji unaendelea</string>
+
+    <string name="product_id">kitambulisho cha bidhaa:</string>
+    <!--<string name="bootloader_version">bootloader version: </string>-->
+    <!--<string name="hardware_version">gardware version: </string>-->
+    <!--<string name="usb">USB: </string>-->
+    <!--<string name="charge">charge: </string>
+    <string name="battery_level">battery level: </string>-->
+
+    <string name="printer_command_success">mafanikio ya amri ya kichapishi</string>
+    <string name="no_paper">hakuna karatasi</string>
+    <string name="wrong_printer_cmd">amri mbaya ya kichapishi</string>
+    <string name="printer_overheat">printer overheat</string>
+
+    <string name="printer_battery_low">betri ya kifaa iko chini, tafadhali chaji</string>
+    <string name="printer_battery_critically_low">betri ya kifaa iko chini sana na imezimwa</string>
+    <string name="printer_unknown_error">kosa lisilojulikana</string>
+    <string name="printer_command_not_available">amri haipatikani</string>
+    <string name="printer_device_no_response">hakuna jibu kutoka kwa kifaa</string>
+    <string name="printer_device_busy">kifaa kina shughuli nyingi</string>
+    <string name="printer_out_of_range">pembejeo nje ya masafa</string>
+    <string name="printer_input_invalid">ingizo ni batili</string>
+    <string name="printer_crc_error">Hitilafu ya CRC</string>
+    <string name="printer_fail_to_start_bluetooth">kushindwa kuanza bluetooth.</string>
+    <string name="printer_comm_link_uninitialized">kiungo cha comm hakijaanzishwa</string>
+    <string name="printer_bluetooth_already_started">bluetooth tayari imeanza</string>
+
+    <string name="request_printer_data">omba data ya kichapishi:</string>
+    <string name="request_reprint_data">omba data ya kuchapisha upya:</string>
+    <string name="fail_to_start_bluetooth">kushindwa kuanza bluetooth.</string>
+
+    <string name="no_paired_printer_device_found">hakuna kifaa cha kichapishi kilichooanishwa kilichopatikana.</string>
+    <string name="no_than_one_paried_printer_found">hakuna printa zaidi ya moja iliyoorodheshwa iliyopatikana.</string>
+
+
+    <!--PREAUTH COMPLETION-->
+
+    <string name="preauth_menu">Menyu ya Preauth</string>
+    <string name="preauthcompletion_auth_code">nambari ya uthibitishaji</string>
+
+    <string name="preauthcompletion_proceed_to_preauth_completion" formatted="false">kuendelea na ukamilishaji wa awali wa %s %s kwa msimbo wa kuthibitisha muamala %s ?</string>
+    <string name="preauthcompletion_fetching_transaction_details">kutafuta maelezo ya muamala&#8230;</string>
+    <string name="preauthcompletion_invalid_authcode">Tafadhali weka Kitambulisho halali cha Msimbo</string>
+    <string name="preauthcompletion_invalid_amount">kiasi batili! kiasi cha chini kinapaswa kuwa %s 1.00 ili kuendelea</string>
+    <string name="preauthcompletion_please_enter_valid_amount">tafadhali weka kiasi halali. Kiasi cha kukamilika kwa preauth hakiwezi kuzidi kiasi cha mauzo ya awali</string>
+    <string name="preauthcompletion_selected_transaction_dated" formatted="false">ungependa kutumia kukamilika kwa preauth kwa shughuli iliyochaguliwa ya tarehe %s ya %s %s kwa msimbo wa kuthibitisha muamala %s ?</string>
+    <string name="preauthcompletion_unable_to_show_the_preauth_data_please_contact_support">haiwezi kuonyesha data ya PreAuth, tafadhali wasiliana na usaidizi</string>
+    <string name="preauthcompletion_processing_preauth_completion">uchakataji kukamilika kwa preauth</string>
+    <string name="preauthcompletion_error_processing_preauth_completion">mauzo ya awali hayakuchakatwa kwa ufanisi tafadhali jaribu tena</string>
+
+
+    <!--preauthcompletion_inputdetailsview-->
+    <string name="preauthcompletion_inputdetailsview_amount">kiasi</string>
+    <string name="preauthcompletion_inputdetailsview_last_4_digits">tarakimu 4 za mwisho</string>
+
+    <!--PreauthCompletionInputDetailsFragment-->
+    <string name="preauthcompletioninputdetailsfragment_you_need_to_enter_a_minimum_amount_of_at_least_inr_001_to_proceed">kiasi batili! kiasi cha chini kinapaswa kuwa %s 1.00 ili kuendelea</string>
+    <string name="preauthcompletioninputdetailsfragment_invalid_last_4_digits">tarakimu 4 za mwisho zisizo sahihi</string>
+
+    <!--preauthcompletion_txtapprovalview-->
+    <string name="preauthcompletion_txtapprovalview_approved">kupitishwa</string>
+    <string name="preauthcompletion_txtapprovalview_print">chapa</string>
+
+    <!--PreauthCompletionTxtApprovalFragment-->
+    <string name="preauthcompletiontxtapprovalfragment_paired_devices">Vifaa vilivyooanishwa</string>
+
+    <!--preauthcompletion_txtdetailsview-->
+    <string name="preauthcompletion_txtdetailsview_amount">kiasi</string>
+    <string name="preauthcompletion_txtdetailsview_last_4_digits"> tarakimu 4 za mwisho</string>
+    <string name="preauthcompletion_txtdetailsview_auth_code">nambari ya uthibitishaji</string>
+    <string name="preauthcompletion_txtdetailsview_receipt_retrieval_no">urejeshaji wa risiti no</string>
+    <string name="preauthcompletion_txtdetailsview_invoice_no">ankara ya prizm no.</string>
+    <string name="preauthcompletion_txtdetailsview_tx_date">tarehe tx</string>
+
+    <!--PreauthCompletionTxtDetailsFragment-->
+    <string name="preauthcompletiontxtdetailsfragment_you_need_to_enter_a_minimum_amount_of_at_least_inr_001_to_proceed">kiasi batili! kiasi cha chini kinapaswa kuwa %s 1.00 ili kuendelea</string>
+    <string name="preauthcompletiontxtdetailsfragment_please_enter_a_valid_amount_the_preauth_amount_cannot_exceed_the_preauth_sale_amount">tafadhali weka kiasi halali. kiasi cha preauth hakiwezi kuzidi kiasi cha mauzo ya awali</string>
+    <string name="preauthcompletiontxtdetailsfragment_the_preauth_sale_was_not_processed_successfully_please_try_again">mauzo ya awali hayakuchakatwa kwa ufanisi. tafadhali jaribu tena</string>
+
+    <!--PreauthCompletionActivity-->
+    <string name="preauth_completion">utangulizi umekamilika</string>
+    <string name="preauthcompletionactivity_the_preauth_sale_was_not_processed_successfully_please_try_again">mauzo ya awali hayakuchakatwa kwa ufanisi. tafadhali jaribu tena</string>
+    <string name="preauthcompletionactivity_unable_to_show_the_preAuth_data_please_contact_support">haiwezi kuonyesha data ya PreAuth, tafadhali wasiliana na usaidizi</string>
+
+    <!--GetPreAuthDetailsController-->
+    <string name="the_preauth_sale_was_not_processed_successfully_please_try_again">mauzo ya awali hayakuchakatwa kwa ufanisi. tafadhali jaribu tena</string>
+
+
+    <string name="menu_pre_auth_transaction">preauth</string>
+    <string name="menu_preauth_completion">kukamilika kwa utangulizi</string>
+
+    <!-- CASH SALE or Banksale -->
+    <string name="please_enter_valid_client_id">Tafadhali weka Kitambulisho halali cha Mteja.</string>
+    <string name="cash_sale">mauzo ya fedha</string>
+    <string name="bank_sale">mauzo ya benki</string>
+
+    <!--cashsale_singnature-->
+    <string name="cashsale_singnature_transaction_approved">kupitishwa</string>
+    <string name="cashsale_singnature_card_swiped_successfully">kadi imetelezeshwa kwa mafanikio</string>
+    <string name="cashsale_singnature_clear">wazi</string>
+    <string name="cashsale_singnature_print">chapa</string>
+
+    <!--CashSaleSignatureActivity-->
+    <string name="cashsalesignatureactivity_please_sign_the_receipt_to_proceed">tafadhali saini risiti ili kuendelea.</string>
+    <string name="cashsalesignatureactivity_receipt_uploaded_successfully">risiti imepakiwa.</string>
+    <string name="cashsalesignatureactivity_paired_devices">Vifaa vilivyooanishwa</string>
+    <string name="error_in_uploading_the_receipt_to_server">hitilafu katika kupakia risiti kwenye seva ya mswipe.</string>
+
+
+    <string name="loginactivity_disclaimer_message">Inabidi uingie mara moja tu na utumie tena maelezo ya kikao yaliyopokelewa kwa jibu la kufikia sehemu nyingine iliyoangaziwa ya SDK, Kipindi na Reference_id inaweza kuhifadhiwa kwa upendeleo na kutumika tena, maelezo haya hayangeisha muda wake hadi uingie au ubadilishe neno la siri kwa kifaa hiki, na ni cha kipekee kwa kila kifaa.</string>
+    <string name="cardsaleactivity_disclaimer_msg">Unaweza kutumia chaguo linalopatikana kwenye skrini kwa muunganisho wa Gateway wakati huo huo unapoweka data ya muamala, hii itaharakisha ucheleweshaji wote wa mchakato wa muamala kote</string>
+    <string name="cardsaleactivity_wisepadamountset_msg"> Ikiwa Muunganisho Otomatiki umewekwa kuwa ndivyo kifaa tayari kimeunganishwa kitaita checkCard, kama sivyo itaanzisha muunganisho kwanza kwa kupiga simu StartSerial na ikiwa checkCardAfterConnection imewekwa kuwa kweli(kupitia initiateWisepadConnection) basi SDK itaita checkCard ndani.</string>
+
+    <string name="cardsaleactivity_cardswiperead_msg_CreditSaleActivity">Skrini ya Shughuli ya CreditSale \n\n telezesha kidole kwa kadi imefaulu, chagua sawa ili kuchapisha maelezo mtandaoni</string>
+    <string name="cardsaleactivity_cardinsertinsert_msg_CreditSaleActivity">Skrini ya Shughuli ya CreditSale \n\n uwekaji wa kadi umefaulu, chagua sawa ili kuchapisha maelezo mtandaoni </string>
+
+    <string name="cardsaleactivity_cardswiperead_msg_CreditSaleSwiperFragment">Skrini ya CreditSaleSwiperFragment \n\n kutelezesha kidole kwa kadi imefaulu, chagua sawa ili kuchapisha maelezo mtandaoni</string>
+    <string name="cardsaleactivity_cardinsertinsert_msg_CreditSaleSwiperFragment">CreditSaleSwiperFragment Skrini \n\n uwekaji wa kadi umefaulu, chagua sawa ili kuchapisha maelezo mtandaoni</string>
+
+    <string name="spinner_title"> android:layout_margin 20dp</string>
+    <string name="paymentoptioncode">msimbo wa chaguo la malipo</string>
+    <string name="radio_bluetooth">Bluetooth</string>
+    <string name="radio_usb">USB</string>
+
+    <string name="failed1">Imeshindwa</string>
+    <string name="failed1_title">Muamala haukufaulu</string>
+
+
+    <string name="merchant_key">Ufunguo wa mfanyabiashara</string>
+    <string name="activate">Washa</string>
+    <string name="partner_key">Ufunguo wa mshirika</string>
+    <string name="bluetooth_printers">Printa ya bluetooth</string>
+    <string name="ip_address">Anwani ya IP</string>
+    <string name="_192_168_1_87">192.168.1.87</string>
+    <string name="port">Bandari</string>
+    <string name="_9100">:\u00209100</string>
+    <string name="no_devices_connected">Hakuna vifaa vilivyounganishwa</string>
+    <string name="available_devices">Vifaa vinavyopatikana</string>
+    <string name="hello">Habari</string>
+    <string name="forgot_your_password">Umesahau neno la siri ?</string>
+    <string name="set_your_new_password_with_the_verification_code_that_was_sent_to_you">Weka neno la siri  jipya na namba za uthibitisho ulizotumiwa</string>
+    <string name="password">Neno la siri</string>
+    <string name="confirm_password">Hakiki neno la siri</string>
+    <string name="verification_code">Namba za uthibitisho</string>
+    <string name="set_password">Weka neno la siri</string>
+    <string name="enter_your_pin">Ingiza PIN yako</string>
+    <string name="wrong_pin">PIN sio sahihi!</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_0">0</string>
+    <string name="forgot_password_need_help">Umesahaua neno la siri? Unahitaji msaada.</string>
+    <string name="recovery_settings">Kurejesha</string>
+    <string name="default_pin_0000">PIN ya mfumo 0000</string>
+    <string name="test">Jaribu</string>
+    <string name="loading">Inapakia...</string>
+    <string name="downloading_and_initializing_pos">Inapakua na kuanzisha POS</string>
+
+    <string name="_0Per">0%</string>
+    <string name="sales_data">Taarifa za mauzo</string>
+    <string name="paynear_payment_sdk_demo_version">Paynear Payment SDK Demo Version</string>
+    <string name="sale">Mauzo</string>
+    <string name="select_paired_device">Chagua kifaa kilichounganishwa</string>
+    <string name="prepaid_card">Kadi ya malipo</string>
+    <string name="remote_process">Mchakato wa mbali</string>
+    <string name="make_sale">Fanya Mauzo</string>
+    <string name="status">Mustakabali</string>
+    <string name="setting">Mpangilio</string>
+    <string name="click">Bofya</string>
+    <string name="enter_referancenuber">Ingiza kumbukumbu namba</string>
+    <string name="pre_auth">Pre Auth</string>
+    <string name="cash_back">Cash back</string>
+    <string name="cash_pos">CASH @ POS</string>
+    <string name="emi_with_payment_option_code">Emi with payment option code</string>
+    <string name="get_transaction_status">Get transaction status</string>
+    <string name="ivepos">IVEPOS</string>
+    <string name="sign_up">Jiunge </string>
+    <string name="login">Ingia</string>
+    <string name="show_password">Onyesha neno la siri</string>
+    <string name="business_type">Aina ya biashara</string>
+    <string name="dine">\u0020\u0020Kula</string>
+    <string name="dine_nospace">Kula</string>
+    <string name="qsr">\u0020\u0020Qsr</string>
+    <string name="qsr_nospace">Qsr</string>
+    <string name="retail">\u0020\u0020Rejareja</string>
+    <string name="retail_nospace">Rejareja</string>
+    <string name="log_in">Ingia</string>
+    <string name="forgot_password">Umesahau neno la siri?</string>
+    <string name="login_with_e_mail">Ingia na barua pepe?</string>
+    <string name="privacy_policy">Sera ya usiri</string>
+    <string name="mobikwik_settings">Mipangilio ya Mobikwik</string>
+    <string name="merchant">Mfanyabiashara</string>
+    <string name="register">Kujiandikisha</string>
+    <string name="enter_merchant_name">Ingiza Jina la Mfanyabiashara</string>
+    <string name="mid_otp">MID OTP</string>
+    <string name="secret_key_for_otp">Namba ya siri kwaajili ya OTP</string>
+    <string name="mid_debit">MID Debit</string>
+    <string name="secret_key_debit">Nambaya siri ya kutoa </string>
+    <string name="reset">Fanya upya</string>
+    <string name="new_device">Kifaa Kipya</string>
+    <string name="new_store">Duka jipya</string>
+    <string name="store_name">Jina la duka</string>
+    <string name="use_store_specific_email_id">Tumia barua pepe ya duka</string>
+    <string name="email">Barua pepe</string>
+    <string name="button">Kitufe</string>
+    <string name="verify_otp_to_sent">Thibitisha kutumiwa OTP</string>
+    <string name="enter_otp_code_here">Ingiza  namba za OTP hapa</string>
+    <string name="verify">Thibitisha</string>
+    <string name="new_company">Kampuni Mpya</string>
+    <string name="backup">Backup</string>
+    <string name="add_floor">Weka kikomo</string>
+    <string name="floor_name">Jina la orofa</string>
+    <string name="receipt_order_no">Risiti/Na. ya oda</string>
+    <string name="verify_trx">Thibitisha trx</string>
+    <string name="barcode_no">Na. ya Barcode</string>
+    <string name="do_you_want_to_add">Je, unataka kuongeza</string>
+    <string name="to">Kwenda</string>
+    <string name="this_will_add_the_number_as_barcode_id">Hii itaongeza namba kama id ya barcode</string>
+    <string name="add">Ongeza</string>
+    <string name="chicken">Kuku</string>
+    <string name="usage_unit">(Matumizi/Kitengo)</string>
+    <string name="current_stock">Idadi ya bidhaa zilizopo</string>
+    <string name="kg">kg</string>
+    <string name="ingredients">Viungo</string>
+    <string name="add_delete_ingredients">Ongeza/Futa Viungo</string>
+    <string name="table">Meza</string>
+    <string name="do_you_want_to_add_an_extra_table">Je, unataka kuongeza meza ya ziada?</string>
+    <string name="this_will_add_an_extra_table_to_the_already_nexisting_tables">Hii itaongeza meza ya ziada kwenye meza ambazo tayari zipo.</string>
+    <string name="master_admin">Admini Mkuu</string>
+    <string name="local_admin">Admini </string>
+    <string name="master_admin_n_control_panel">Master Admin\nControl Panel</string>
+    <string name="full_name">Jina kamili</string>
+    <string name="change_username">Badilisha jina la mtumiaji</string>
+    <string name="change_password">Badilisha neno la siri</string>
+    <string name="user_privileges_console">Sehemu ya haki za mtumiaji</string>
+    <string name="manage_user_permissions">Dhibiti ruhusa za mtumiaji</string>
+    <string name="_1_password_must_contain_4_digits_n2_username_and_password_can_be_changed_separately_and_independent_n3_if_you_forgot_your_login_credentials_contact_software_developer_for_recovery">1)Neno la siri linatakiwa liwe na tarakimu 4\n2)2)Jina la mtumiaji na neno la siri vinaweza kubadilishwa kwa tofauti na kujitegemea\n3) Kama umesahau taarifa za kuingia wasiliana na software developer kwa ajili ya kurejesha</string>
+    <string name="note">Kumbuka:</string>
+    <string name="local_admin_n_control_panel">Paneli ya Udhibiti ya Admini</string>
+    <string name="_1_password_must_contain_4_digits_n2_username_and_password_can_be_changed_separately_and_independent_n3_if_you_forgot_your_login_credentials_contact_your_manager_owner_for_recovery">1)Neno la siri linatakiwa liwe na tarakimu 4\n2)Jina la mtumiaji na neno la siri vinaweza kubadilishwa kwa tofauti na kujitegemea\n3) Kama umesahau taarifa za kuingia wasiliana na software developer kwa ajili ya kurejesha</string>
+    <string name="admin">Admini</string>
+    <string name="user">Mtumiaji</string>
+    <string name="product_and_tax">Bidhaa na kodi</string>
+    <string name="reports">Taarifa</string>
+    <string name="settings">Mipangilio</string>
+    <string name="customer">Mteja</string>
+    <string name="textview">Maandishi</string>
+    <string name="no_of_item_qty">Idadi ya bidhaa/kiasi</string>
+    <string name="app_data_and_settings">Taarifa za App na Mipangilio</string>
+    <string name="backup_now">Fanya Backup</string>
+    <string name="restore">Rejesha</string>
+    <string name="backup_point">Hatua ya Backup</string>
+    <string name="enter_item_name">Ingiza jina la bidhaa...</string>
+    <string name="_14_11_2014_03_30_pm">14-11-2014_03-30-PM</string>
+    <string name="restore_now">Rejesha sasa</string>
+    <string name="cheque_no">Namba ya hundi</string>
+    <string name="cheque_date">Tarehe ya hundi</string>
+    <string name="set">Kuweka</string>
+    <string name="_91">(+91)</string>
+    <string name="mobile_no">Na. ya simu ya mkononi</string>
+    <string name="invoice_no">Na. ya ankara</string>
+    <string name="notes">Maelezo</string>
+    <string name="email_id">Barua pepe</string>
+    <string name="extra1_optional">Ziada1(optional)</string>
+    <string name="extra2_optional">Ziada2(optional)</string>
+    <string name="extra3_optional">Ziada3(optional)</string>
+    <string name="extra4_optional">Ziada4(optional)</string>
+    <string name="extra5_optional">Ziada5(optional)</string>
+    <string name="extra6_optional">Ziada6(optional)</string>
+    <string name="extra7_optional">Ziada7(optional)</string>
+    <string name="extra8_optional">Ziada8(optional)</string>
+    <string name="extra9_optional">Ziada9(optional)</string>
+    <string name="extra10_optional">Ziada10(optional)</string>
+    <string name="select_all">Chagua zote</string>
+    <string name="search_item">Tafuta bidhaa</string>
+    <string name="press_scan">Bonyeza Scan</string>
+    <string name="scan">Scan</string>
+    <string name="company_name">Jina la kampuni</string>
+    <string name="address_line_1">Mstari wa anwani1</string>
+    <string name="address_line_2">Mstari wa anwani2</string>
+    <string name="address_line_3">Mstari wa anwani3</string>
+    <string name="phone_no">Na. ya simu</string>
+    <string name="website">Tovuti</string>
+    <string name="tax_license_nos">Namba ya kodi/leseni</string>
+    <string name="bill_no">Namba ya bili</string>
+    <string name="_20151019_000661">20151019_000661</string>
+    <string name="_30_sep_15">30 Sep 15</string>
+    <string name="_12_58_pm">12:58 PM</string>
+    <string name="take_away">Ya kufunga</string>
+    <string name="cash">\u0020\u0020Fedha Taslimu</string>
+    <string name="cash_nospace">Fedha Taslimu</string>
+    <string name="name">\u0020\u0020Jina</string>
+    <string name="name_nospace">Jina</string>
+    <string name="qty">Kiasi</string>
+    <string name="item">Bidhaa</string>
+    <string name="price">Bei</string>
+    <string name="sub_total">Jumla ndogo</string>
+    <string name="tax">Kodi</string>
+    <string name="discount">Punguzo</string>
+    <string name="savings">Akiba</string>
+    <string name="rounded">Imekadiriwa</string>
+    <string name="total">Jumla</string>
+    <string name="thank_you_come_again_soon">Asante! Njoo tena hivi karibuni.</string>
+    <string name="kot">KOT</string>
+    <string name="_30_sep_15_12_58_pm">30 Sep 15, 12:58 PM</string>
+    <string name="smart_inventory">bidhaa kwenye stoo janja </string>
+    <string name="general_settings">Mipangilio ya jumla</string>
+    <string name="bill_copy">Nakala ya bili</string>
+    <string name="bill_id">Kitambulisho cha bili</string>
+    <string name="footer">Chini ya kurasa</string>
+    <string name="send">Tuma</string>
+    <string name="date">Tarehe</string>
+    <string name="time">Muda</string>
+    <string name="bill_count">Hesabu ya bili</string>
+    <string name="refund">Rejesha fedha</string>
+    <string name="reason">Sababu</string>
+    <string name="third_party_card_machine">Mashine ya kadi ya mhusika wa tatu</string>
+    <string name="integrated_card_swiper">Swiper ya kadi jumuishi</string>
+    <string name="paynear">Paynear</string>
+    <string name="not_configured">Haijaanzishwa</string>
+    <string name="configured">Imeanzishwa</string>
+    <string name="mSwipe">mSwipe</string>
+    <string name="_1_of_20">1 ya 20</string>
+    <string name="tx_date">Tarehe ya Tx</string>
+    <string name="type">Aina</string>
+    <string name="auth_code">Namba ya kuidhinisha</string>
+    <string name="rr_no">Na. ya RR</string>
+    <string name="stan_id">Id ya Stan</string>
+    <string name="voucher">Vocha</string>
+    <string name="tx_message">Ujumbe wa Tx</string>
+    <string name="press_refresh_for_latest_data">Bonyeza Onyesha upya kwa data za sasa</string>
+    <string name="refresh">Refreshi</string>
+    <string name="rs">TZS.</string>
+    <string name="message">Ujumbe</string>
+    <string name="Authcode">Namba ya kuidhinisha:</string>
+    <string name="authcode">Namba ya kuidhinisha:</string>
+    <string name="rr_no_">na. ya rr</string>
+    <string name="reason_string">sababu</string>
+    <string name="Ok">Sawa</string>
+    <string name="select_date_of_transaction">Chagua tarehe ya muamala</string>
+    <string name="transaction_date">Tarehe ya muamala</string>
+    <string name="card_amount">Kiasi cha kadi</string>
+    <string name="void_amount">Kiasi tupu</string>
+    <string name="no_of_swipes">Na. ya swipes</string>
+    <string name="no_of_voids">Na. ya tupu</string>
+    <string name="total_swipes_and_voids">Jumla ya swipes na tupu</string>
+
+    <string name="sales">Mauzo</string>
+    <string name="from">Kutoka</string>
+    <string name="hiiii">Hiii</string>
+    <string name="hiii">Hiii</string>
+    <string name="go">Nenda</string>
+    <string name="search_bill_no">Tafuta na. ya bili</string>
+    <string name="product">Bidhaa</string>
+    <string name="seller">Muuzaji</string>
+    <string name="pay_later">\u0020\u0020Lipa baadae</string>
+    <string name="pay_later_nospace">Lipa baadae</string>
+    <string name="card">\u0020\u0020Kadi</string>
+    <string name="card_nospace">Kadi</string>
+    <string name="To">Kwenda</string>
+    <string name="date_time">Tarehe/Muda</string>
+    <string name="amount_tendered">Kiasi cha zabuni</string>
+    <string name="exact">Halisi</string>
+    <string name="due">Inatakiwa:</string>
+    <string name="_10">10</string>
+    <string name="_20">20</string>
+    <string name="_50">50</string>
+    <string name="_100">100</string>
+    <string name="_500">500</string>
+    <string name="_2000">2000</string>
+    <string name="done">Imefanyika.</string>
+    <string name="proceed_for_cash_payment_and_print">Endelea na malipo ya fedha na chapisha...</string>
+    <string name="trx_date">Tarehe ya Trx</string>
+    <string name="amt">Kiasi</string>
+    <string name="voucher_no">Na. ya vocha</string>
+    <string name="cash_amount">Kiasi cha fedha</string>
+    <string name="merchant_invoice">Nakala ya mfanyabiashara</string>
+    <string name="invoiceno">Na. ya Ankara</string>
+    <string name="_1111">1111</string>
+    <string name="hii">Hii</string>
+    <string name="category">Kipengele</string>
+    <string name="no_of_transactions">Idadi ya miamala</string>
+    <string name="transactions">Miamala</string>
+    <string name="add_expense">Ongeza gharama</string>
+    <string name="expense_name">Jina la gharama</string>
+    <string name="price_star">Bei*</string>
+    <string name="favourite">Unayopendelea</string>
+    <string name="_30000">30000</string>
+    <string name="s_no">na. ya S</string>
+    <string name="item_name">Jina la bidhaa</string>
+    <string name="qty_sold">Idadi.(Zilizouzwa)</string>
+    <string name="percentage">Asilimia</string>
+    <string name="percent">%</string>
+    <string name="No_">Na.</string>
+    <string name="store">Duka</string>
+    <string name="enter_password">Ingiza neno la siri</string>
+    <string name="run_business_smoothly">Endesha biashara vizuri</string>
+    <string name="get_dashboard_app">Pata programu ya Dashibodi</string>
+    <string name="integrated_billing_and_payment">Malipo Jumuishi</string>
+    <string name="easy_to_use_interface_send_bill_email_or_sms">Rahisi kutumia, tuma bili kwa barua pepe au sms</string>
+    <string name="all_in_one_pos_system">Yote Katika Mfumo Mmoja Wa Mashine ya Mauzo</string>
+    <string name="accept_all_type_of_payments_like_card_and_digital_wallets">Kubali aina zote za malipo kama vile kadi na waleti za kidijitali.</string>
+    <string name="product_and_inventory_management">Usimamizi wa Bidhaa </string>
+    <string name="complete_flexibility">Ibadilikayo kirahisi</string>
+    <string name="never_run_out_of_stock">Usiishiwe bidhaa </string>
+    <string name="intelligent_one_place_dashboard_to_manage_stock">Dashibodi yenye uwezo wa kusimamia zote bidhaa sehemu moja.</string>
+    <string name="in_marketing_and_customer_management">Masoko ya ndani na Usimamizi wa Wateja</string>
+    <string name="get_more_business_from_your_customers">Pata biashara zaidi kutoka kwa wateja wako</string>
+    <string name="promotions">Matangazo</string>
+    <string name="send_discount_and_offers_to_your_customers">Tuma punguzo na ofa kwa wateja wako.</string>
+    <string name="cloud_storage_and_ai_analytics">Hifadhi ya kimtandao na Uchanganuzi wa AI</string>
+    <string name="download_the_dashboard_and_get_on_with_your_business">Pakua dashibodi na uendelee na biashara yako</string>
+    <string name="meaning_insights">Taarifa muhimu</string>
+    <string name="run_your_business_smoothly">Endesha biashara yako vizuri</string>
+    <string name="admin_and_user_priveleges">Haki za Admini na Mtumiaji</string>
+    <string name="control_the_usage_of_other_users">Dhibiti matumizi ya watumiaji wengine.</string>
+    <string name="secured_encryption">Ulinzi madhubuti</string>
+    <string name="don_t_worry_about_data_loss_theft_or_misuse">Fanya usijali kuhusu kupoteza taarifa, wizi au matumizi mabaya.</string>
+    <string name="table_and_order_ticket_management">Usimamizi wa tiketi za Meza na Oda</string>
+    <string name="manage_tables_and_order_ticket">Dhibiti meza na tiketi za oda</string>
+    <string name="multi_store_management">Usimamizi wa maduka mengi</string>
+    <string name="manage_all_stores_seamlessly">Simamia maduka yote kwa urahisi.</string>
+    <string name="subscriptions">Usajili</string>
+    <string name="ivepos_lite">IVEPOS Lite</string>
+    <string name="artificial_intelligence_algorithms_for_inventory_insights_and_profitability">Algorithimu zenye akili za kisasa kwa ajili ya taarifa za bidhaa na faida</string>
+    <string name="buy">Nunua</string>
+    <string name="valid_till">Inatumika hadi</string>
+    <string name="dd_mm_yyyy">dd/mm/yyyy</string>
+    <string name="ivepos_cloud_analytics">IVEPOS Cloud Analytics</string>
+    <string name="access_your_business_real_time_sales_analytics_and_inventory_anytime">Pata taarifa za mauzo ya biashara, uchanganuzi na orodha wakati wowote.</string>
+    <string name="online_channel_integration">Unganisha njia za kimtandao </string>
+    <string name="get_orders_from_swiggy_zomato_and_uber_eats">Pata Oda kutoka Swiggy, Zomato na Uber Eats </string>
+    <string name="BUY">NUNUA</string>
+    <string name="orders">Oda</string>
+    <string name="ivepos_pro">IVEPOS Pro</string>
+    <string name="inventory">Bidhaa </string>
+    <string name="micro_inventory">Hesabu ndogo ya bidhaa</string>
+    <string name="not_activated">Haijawezeshwa</string>
+    <string name="ivepos_messaging">IVEPOS Messaging</string>
+    <string name="messages">Ujumbe</string>
+    <string name="merge_bill">Unganisha bili</string>
+    <string name="merge">Unganisha</string>
+    <string name="merge_bill_to">Unganisha bili kwa</string>
+    <string name="_table">\u0020\u0020Meza</string>
+    <string name="_table_nospace">Meza </string>
+    <string name="company_details">Maelezo ya Kampuni</string>
+    <string name="device_name">Jina la kifaa</string>
+    <string name="companyname">Jina la kampuni</string>
+    <string name="check">Angalia</string>
+    <string name="add_store">Ongeza duka</string>
+    <string name="add_device">Ongeza Kifaa</string>
+    <string name="password_must_contain_at_least_one_special_character_uppercase_letter_lower_case_letter_and_number">Neno la siri lazima liwe na angalau herufi moja maalum, herufi kubwa, herufi ndogo na nambari</string>
+    <string name="confirmpassword">Thibitisha neno la siri</string>
+    <string name="enter_marchant_account_details">Weka Maelezo ya Akaunti ya Mfanyabiashara</string>
+    <string name="enter_marchant_guid">Ingiza Mwongozo wa Mfanyabiashara </string>
+    <string name="enter_merchant_id">Weka Kitambulisho cha Mfanyabiashara </string>
+    <string name="enter_merchant_key">Ingiza ufunguo wa Muuzaji</string>
+    <string name="enter_industrytype_retail">Ingiza Aina ya Sekta -Reja Reja </string>
+    <string name="enter_platform_name">Ingiza Jina la mfumo </string>
+    <string name="enter_posid">Ingiza Kitambulisho cha POS</string>
+    <string name="enter_currencycode">Weka Namba ya Sarafu</string>
+    <string name="enter_operation_type_for_otp">Ingiza aina ya Operesheni ya OTP</string>
+    <string name="enter_channel">Ingiza Njia </string>
+    <string name="enter_ipaddress">Ingiza Anuani ya IP</string>
+    <string name="enter_version">Ingiza toleo</string>
+    <string name="register_merchant">Sajili mfanyabiashara</string>
+    <string name="payment">Malipo</string>
+    <string name="select_business_type">Chagua aina ya biashara</string>
+    <string name="phone_number">Nambari ya simu</string>
+    <string name="password_should_contain_minimum_8_characters_atleast_1_number_1_capital_letter_1_small_letter_1_special_character">Neno la siri linapaswa kuwa na angalau herufi 8 angalau nambari 1, herufi kubwa 1, herufi 1 ndogo, herufi 1 maalum.</string>
+    <string name="e_mail_id">Kitambulisho cha Barua pepe</string>
+    <string name="signup_with_e_mail">Jisajili kwa Barua Pepe</string>
+    <string name="_dine">\u0020\u0020Kula</string>
+    <string name="_dine_nospace">Kula</string>
+    <string name="_qsr">\u0020\u0020Qsr</string>
+    <string name="_qsr_nospace">Qsr</string>
+    <string name="_retail">\u0020\u0020Rejareja</string>
+    <string name="_retail_nospace">Rejareja</string>
+    <string name="send_otp">Tuma OTP</string>
+    <string name="already_customer">Je, tayari ni Mteja?</string>
+    <string name="sign_in">Ingia </string>
+    <string name="confirm_your_account">Thibitisha akaunti yako</string>
+    <string name="a_confirmation_code_was_sent">Nambari ya kuthibitisha ilitumwa.</string>
+    <string name="please_enter_the_code_below_to_confirm_your_account">Tafadhali weka msimbo ulio hapa chini ili kuthibitisha akaunti yako.</string>
+    <string name="confirmation_code">Uthibitisho kificho</string>
+    <string name="resend_code">Tuma tena msimbo</string>
+    <string name="coupon">Kuponi</string>
+    <string name="_10000">10000</string>
+    <string name="phone_no_10_digits">Na. ya simu(tarakimu 10)</string>
+    <string name="customer_id">ID ya Mteja</string>
+    <string name="customer_name">Jina la Mteja</string>
+    <string name="credit_amount">Kiasi cha Mkopo</string>
+    <string name="cheque_number">Nambari ya Cheki</string>
+    <string name="address">Anuani</string>
+    <string name="pincode">Namba ya PIN</string>
+    <string name="loyalty_points">Pointi za uaminifu</string>
+    <string name="Rs_">TZS.</string>
+    <string name="redeem">Komboa</string>
+    <string name="applied_nclick_tick_button_to_continue">Rejareja</string>
+    <string name="username">Jina la mtumiaji</string>
+    <string name="connect_gateway">Unganisha Gateway</string>
+    <string name="_0_00">0.00</string>
+    <string name="connect_bluetooth">Unganisha Bluetooth</string>
+    <string name="card_pay">Malipo ya kadi</string>
+    <string name="close_sale">Funga Mauzo</string>
+    <string name="transaction_id">Utambulisho cha muamala :</string>
+    <string name="a">a</string>
+    <string name="card_type">Aina ya Kadi:</string>
+    <string name="b">b</string>
+    <string name="transaction_amount">Kiasi cha Muamala :</string>
+    <string name="c">c</string>
+    <string name="card_number">Namba ya kadi :</string>
+    <string name="d">d</string>
+    <string name="rrn">RRN :</string>
+    <string name="f">f</string>
+    <string name="conv_fee">Ada ya ubadilishaji</string>
+    <string name="_0_0">0.0</string>
+    <string name="gst">gst :</string>
+    <string name="csv_screening">Uchunguzi wa CSV</string>
+    <string name="action_s_needed">Hatua zinahitajika:</string>
+    <string name="id_is_empty">Hakuna Namba ya Kitambulisho </string>
+    <string name="itemname_is_empty">Hakuna Jina La Bidhaa </string>
+    <string name="id_has_more_commas">Kitambulisho kina koma zaidi</string>
+    <string name="id_special_characters">Herufi Maalum za Kitambulisho</string>
+    <string name="id_has_exponential_values">Kitambulisho Kina Namba Maradufu </string>
+    <string name="note_number_only_fields">Kumbuka: Sehemu za nambari pekee</string>
+    <string name="price_qty_update_qty_tax_value_1_2_3_4_5_disc_value_variant_price_1_2_3_4_5">Bei, Kiasi, Usasishaji wa Kiasi, thamani_ya_kodi(1,2,3,4,5), thamani_ya_diski, bei_Lahaja(1,2,3,4,5)</string>
+    <string name="date_of_birth">Tarehe ya kuzaliwa</string>
+    <string name="customer_details">Maelezo ya mteja</string>
+    <string name="phone_no_name_and_address_are_nmandatory">Nambari ya simu., Jina na Anwani ni lazima.</string>
+    <string name="_01_nov_2016">01 Nov 2016</string>
+    <string name="_11_45_36_am">11:45:36 AM</string>
+    <string name="ambience">Mazingira</string>
+    <string name="service">Huduma</string>
+    <string name="product_quality">Ubora wa bidhaa</string>
+    <string name="experience">Uzoefu</string>
+    <string name="comment">Maoni</string>
+    <string name="search_for_item_name_and_category">Tafuta jina la bidhaa na kipengele</string>
+    <string name="search_for_category">Search for category</string>
+    <string name="clear_text">Futa neno</string>
+    <string name="back">Nyuma</string>
+    <string name="bank">Benki</string>
+    <string name="min_amount">Kiasi cha chini</string>
+    <string name="RR_No">Nambari ya RR</string>
+    <string name="custom">Ya Pekee</string>
+    <string name="more_options">Chaguzi Zaidi</string>
+    <string name="customer_feedback">Maoni ya Wateja</string>
+    <string name="overall_experience">Ulivyojisikia Kiujumla</string>
+    <string name="s_no_">Nambari ya S.</string>
+    <string name="cust_id">Kitambulisho cha Mteja </string>
+    <string name="itemname">Jina la Bidhaa </string>
+    <string name="_9999">9999</string>
+    <string name="wwwwwwwwwmzzzzzzzzzz">WWWWWWWWWMZZZZZZZZZZZ</string>
+    <string name="zzzzzzzzzzzzzzzzzzzz">zzzzzzzzzzzzzzzzzz</string>
+    <string name="_9999_99">9999.99</string>
+    <string name="select_device">Chagua kifaa</string>
+    <string name="last_remembered_device">Kifaa kilichokumbukwa mara ya mwisho</string>
+    <string name="paired_devices">Vifaa vilivyooanishwa</string>
+    <string name="devices">Vifaa</string>
+    <string name="auto_connect">Unganisha kiutomatiki</string>
+    <string name="checkcard">Kadi ya Hundi</string>
+    <string name="delete">Futa</string>
+    <string name="do_you_want_to_delete_the_expense_n">Je, unataka kufuta gharama?\n</string>
+    <string name="this_will_be_deleted_immediately_nyou_can_t_undo_this_action">Hii itafutwa mara moja. Hautaweza kutengua kitendo hiki.</string>
+    <string name="do_you_want_to_delete_the_item_items_n">Je, unataka kufuta bidhaa?\n</string>
+    <string name="do_you_want_to_delete_the_category_categories_n">Je, ungependa kufuta Kipengele/Vipengele?\n</string>
+    <string name="this_will_immediately_delete_categories_along_with_its_items_and_modifiers_nyou_can_t_undo_this_action">Hii itafuta mara moja vipengele pamoja na bidhaa zake na virekebishaji. Huwezi kutengua kitendo hiki.</string>
+    <string name="do_you_want_to_delete_the_discount_discounts">Je, ungependa kufuta Punguzo/Punguzo?</string>
+    <string name="do_you_want_to_delete_the_modifier_modifiers_n">Je, unataka kufuta kirekebishaji/virekebishaji?\n</string>
+    <string name="do_you_want_to_delete_the_tax_taxes_n">Je, ungependa kufuta Ushuru/Kodi?\n</string>
+    <string name="credit">Mikopo</string>
+    <string name="digital_wallets">Waleti za kidijitali</string>
+    <string name="ii">II</string>
+    <string name="remove">Ondoa</string>
+    <string name="item_name_star">Jina la kitu*</string>
+    <string name="item_tax">Kodi ya bidhaa</string>
+    <string name="add_section">Ongeza kipengele</string>
+    <string name="enter_section_name">Ingiza jina la kipengele</string>
+    <string name="enter_number_of_tables">Ingiza idadi ya meza</string>
+    <string name="scheduled_backup">Panga muda wa kufanya backup</string>
+    <string name="days">Siku</string>
+    <string name="S">S</string>
+    <string name="M">M</string>
+    <string name="T">T</string>
+    <string name="W">W</string>
+    <string name="F">F</string>
+    <string name="selected">iliyochaguliwa</string>
+    <string name="_10_00_am">10:00 AM</string>
+    <string name="auto_generate">Uzalishaji otomatiki</string>
+    <string name="delete_barcodes">Futa barcode</string>
+    <string name="warning">Onyo:</string>
+    <string name="_1_clicking_on_will_generate_barcode_for_items_without_deleting_current_barcodes">1. Kubofya ON kutatengeneza barcode za bidhaa bila kufuta barcode zilizopo.</string>
+    <string name="_2_checking_delete_barcodes_will_delete_all_your_barcode_no_s_permanently_and_generate_new_ones">2. Kuchagua Futa barcode kutafuta namba ya barcode na kuzalisha mpya.</string>
+    <string name="on">Washa</string>
+    <string name="_1_clicking_off_will_deactivate_auto_generation_of_new_barcodes"> 1. Kubofya ZIMA kutazima utengenezaji wa kiotomatiki wa barcode mpya.</string>
+    <string name="_2_checking_delete_barcodes_will_delete_all_your_barcode_no_s_permanently"> 2. Kuangalia Futa misimbo pau itafuta nambari yako yote ya pau.\'s kabisa.</string>
+    <string name="off">Imezimwa</string>
+    <string name="universal_no_of_prints">Jumla ya namba za chapa </string>
+    <string name="apply">Tumia</string>
+    <string name="_21">21</string>
+    <string name="selected_items"> Bidhaa zilizochaguliwa</string>
+    <string name="selected_category"> Selected category</string>
+    <string name="selected_tax_items"> Selected tax items</string>
+    <string name="not_found">Haipatikani</string>
+    <string name="search_manually">Tafuta wewe mwenyewe</string>
+    <string name="add_to_existing_item">Ongeza kwa bidhaa iliyopo</string>
+    <string name="add_as_new_item">Ongeza kama bidhaa mpya </string>
+    <string name="enter_no_of_prints">Weka nambari. ya chapa </string>
+    <string name="this_will_delete_the_barcodes_permanently_n">Hii itafuta misimbopau kabisa.\n</string>
+    <string name="you_can_t_undo_this_process">Unaweza si kutendua mchakato huu.</string>
+    <string name="enter_bill_count">Ingiza hesabu ya bili</string>
+    <string name="edit">Hariri</string>
+    <string name="remove_logo">Ondoa nembo</string>
+    <string name="address_line1">Mstari wa anwani1</string>
+    <string name="address_line2">Mstari wa anwani2</string>
+    <string name="address_line3">Mstari wa 3 wa anwani</string>
+    <string name="bill_footer">Bili chini ya ukurasa</string>
+    <string name="receipt_width">Upana wa risiti</string>
+    <string name="_2_inch">2 inchi</string>
+    <string name="_3_inch">inchi 3</string>
+    <string name="a4">A4</string>
+    <string name="add_logo">Ongeza nembo</string>
+    <string name="device">Kifaa</string>
+    <string name="enter_merchant_id_">Weka kitambulisho cha mfanyabiashara</string>
+    <string name="reconfigure">Pangilia upya </string>
+    <string name="configure">Sanidi</string>
+    <string name="enter_partner_key_">Weka namba ya siri ya Mshirika...</string>
+    <string name="enter_merchant_key_">Weka namba ya siri ya Mfanyabiashara....</string>
+    <string name="proceed_for_card_payment">Endelea kulipa kwa kadi...</string>
+    <string name="_255">255</string>
+    <string name="amount_customer_wants_to_pay_by_card">Kiasi ambacho Mteja anataka kulipa kwa Kadi</string>
+    <string name="enter_amount_">Weka Kiasi...</string>
+    <string name="proceed_to_the_device_for_payment_processing">Nenda kwenye kifaa cha mauzo kwa ajili ya kuchakata malipo...</string>
+    <string name="transaction_details">Maelezo ya muamala</string>
+    <string name="transaction_approved_">Muamala Umeidhinishwa!!!</string>
+    <string name="transaction_failed_">Muamala Umefeli.</string>
+    <string name="amount_pending">Kiasi (inasubiri)</string>
+    <string name="_123">123</string>
+    <string name="bill_amount">Kiasi cha bili</string>
+    <string name="Default">Iliyowekwa na mfumo</string>
+    <string name="card_no">Namba ya kadi.</string>
+    <string name="vat_5">Vat @ 5%</string>
+    <string name="transaction_no">Namba ya muamala.</string>
+    <string name="send_sms_email">Tuma sms/Barua pepe</string>
+    <string name="Void">Tupu</string>
+    <string name="items">Bidhaa</string>
+    <string name="modifiers">Virekebishaji</string>
+    <string name="nothing_sold">Hakuna kilichouzwa</string>
+    <string name="enter_old_password">Weka neno la siri la zamani</string>
+    <string name="enter_new_password">Weka neno la siri jipya</string>
+    <string name="confirm_new_password">Thibitisha neno la siri jipya</string>
+    <string name="enter_old_username">Ingiza jina la mtumiaji la zamani</string>
+    <string name="enter_new_username">Ingiza jina jipya la mtumiaji</string>
+    <string name="confirm_new_username">Thibitisha jina jipya la mtumiaji</string>
+    <string name="select_card_option">Chagua Kadi</string>
+    <string name="payswiff">PaySwiff</string>
+    <string name="epaisa">ePaisa</string>
+    <string name="verifone">Verifone</string>
+    <string name="oxigen">Oksijeni</string>
+    <string name="upi_qr">\u0020\u0020UPI QR</string>
+    <string name="upi_qr_nospace">UPI QR</string>
+    <string name="pay">LIPA</string>
+    <string name="enter_mobile_number">Weka Nambari ya Simu</string>
+    <string name="generate_otp">Tengeneza OTP</string>
+    <string name="otp">OTP</string>
+    <string name="manual">Mwongozo</string>
+    <string name="do_you_want_to_clear_items_from_nthe_orderlist_nthis_will_clear_the_items_for_which_kot_is_not_printed">Je, ungependa kufuta bidhaa kwenye orodha ya kuagiza? Hii itafuta bidhaa zote ambazo KOT haijachapishwa.</string>
+    <string name="No">Hapana</string>
+    <string name="you_cannot_clear_the_items_from_table_because_kot_is_printed_for_the_items_nto_clear_items_in_table_long_press_kot_icon_and_clear_items_from_kot_page">Huwezi kufuta bidhaa kwenye jedwali kwa sababu KOT imechapishwa kwa ajili ya bidhaa hizi. Ili kufuta bidhaa kwenye jedwali bonyeza kwa muda mrefu alama ya KOT na uondoe bidhaa kwenye ukurasa wa KOT.</string>
+    <string name="do_you_want_to_clear_pax_value">Je, ungependa kufuta thamani ya PAX?</string>
+    <string name="prepare">Tayarisha</string>
+    <string name="do_you_want_to_mark_the_order_as_prepared">Je, ungependa kuweka alama kwenye oda kuwa imetayarishwa?</string>
+    <string name="mark">Weka alama</string>
+    <string name="_12650_0">12650.0</string>
+    <string name="_200">200</string>
+    <string name="refunds">Marejesho ya fedha</string>
+    <string name="charges">Malipo</string>
+    <string name="deposits">Kuweka fedha</string>
+    <string name="write_off">Futa</string>
+    <string name="cashout">Kutoa fedha</string>
+    <string name="_1000">1000</string>
+    <string name="P">P</string>
+    <string name="balance">Salio</string>
+    <string name="R">R</string>
+    <string name="C">C</string>
+    <string name="D">D</string>
+    <string name="_700">700</string>
+    <string name="deposit">Kuweka fedha</string>
+    <string name="feedback">Maoni</string>
+    <string name="customer_history">Customer history</string>
+    <string name="edit_info">Hariri habari</string>
+    <string name="filter">Chuja</string>
+    <string name="pBracket1">(</string>
+    <string name="pBracket2">)</string>
+    <string name="authenticate_pin">Thibitisha pini</string>
+    <string name="confirm_pin">Hakiki PIN</string>
+    <string name="forgot_change_pin">Umesahau/Badilisha pini</string>
+    <string name="_1234">1234</string>
+    <string name="phone_no_6_digits">namba ya simu. tarakimu 6</string>
+    <string name="change">Badilika</string>
+    <string name="otp_code">Msimbo wa OTP</string>
+    <string name="if_mail_sms_is_not_sent">Ikiwa barua/SMS haitatumwa.</string>
+    <string name="_1_checking_your_network_connection_n2_go_to_your_email_settings_and_enable_allow_less_secure_apps">1. Kuangalia hali ya mtandao. \n2. Nenda kwenye mipangilio yako ya barua pepe na uwashe \'ruhusu programu zisizo salama zaidi\'.</string>
+    <string name="fill">Jaza</string>
+    <string name="enter_email">Weka barua pepe</string>
+    <string name="confirm_email">Thibitisha Barua pepe</string>
+    <string name="birthday_wish">Salamu ya siku ya kuzaliwa</string>
+    <string name="select_birth_date">chagua tarehe ya kuzaliwa...</string>
+    <string name="birthday_message">Ujumbe wa siku ya kuzaliwa</string>
+    <string name="dear">Mpendwa </string>
+    <string name="display_customer_name">(onyesha jina la Mteja)</string>
+    <string name="wish_you_a_happy_birthday_we_have_special_offers_for_you">Nakutakia heri ya siku ya kuzaliwa. Tuna matoleo maalum kwa ajili yako.</string>
+    <string name="cashout_rs">Toa pesa (TZS)</string>
+    <string name="balance_">Salio:</string>
+    <string name="cashout_amount">Kiasi cha pesa</string>
+    <string name="comments">Maoni</string>
+    <string name="product_items">Bidhaa</string>
+    <string name="money">Hela</string>
+    <string name="charges_rs">Gharama (TZS)</string>
+    <string name="do_you_want_to_delete_the_customer">Je, unataka kumfuta mteja?</string>
+    <string name="this_will_delete_all_the_info_related_to_the_customer_you_can_t_undo_this_process">Hii itafuta maelezo yote yanayohusiana na mteja. Huwezi kutengua mchakato huu.</string>
+    <string name="pay_later_rs">Lipa Baadae (TZS)</string>
+    <string name="date_filter">Kichujio cha tarehe</string>
+    <string name="all_time">Muda wote</string>
+    <string name="from_date">Kuanzia tarehe</string>
+    <string name="to_date">Mpaka leo</string>
+    <string name="deposit_rs">Weka hela (TZS)</string>
+    <string name="deposit_amount">Kiasi cha kuweka</string>
+    <string name="cusotmer_authentication_pin">Pini ya Uthibitishaji wa Mteja</string>
+    <string name="you_can_t_edit_deposit_cashout_after_saving">Hauwezi kuhariri muamala wa kuweka pesa/kutoa pesa baada ya kuhifadhi </string>
+    <string name="approval_rating">Ukadiriaji wa  jinsi unavyokubalika</string>
+    <string name="_87">87</string>
+    <string name="_01_nov_16">01 Nov 16</string>
+    <string name="_11_45_30_am">11:45:30 AM</string>
+    <string name="_20161130_00011">20161130-00011</string>
+    <string name="customername">Jina la Mteja</string>
+    <string name="credit_by_default">Weka hela kimfumo </string>
+    <string name="will_apply_to_all_bills">Itatumika kwa bili zote</string>
+    <string name="pay_later_limit_present_limit">Kikomo cha malipo ya baadae (Kikomo kilichopo)</string>
+    <string name="no_limit">Hakuna Kikomo</string>
+    <string name="commission_charges">Gharama za kamisheni</string>
+    <string name="authentication_pin">PIN ya uthibitishaji</string>
+    <string name="not_set">haijawekwa</string>
+    <string name="select_date">Chagua tarehe</string>
+    <string name="default_discount">Punguzo la msingi</string>
+    <string name="taxes_override">Kuhodhi ushuru </string>
+    <string name="all">Zote</string>
+    <string name="taxes_selected">kodi zilizochaguliwa</string>
+    <string name="of_bill_amount">Ya kiasi cha bili</string>
+    <string name="discount_default">Punguzo (Iliyowekwa na mfumo)</string>
+    <string name="discount_eligibility_in_amount">Ustahiki wa punguzo kwa kiasi</string>
+    <string name="if_eligibility_amount_is_0_or_none_discount_will_be_applied_to_all_the_customer_bills">Ikiwa kiasi cha kukidhi ni 0 au hakuna, punguzo litatumika kwa bili zote za mteja.</string>
+    <string name="search_tax">Tafuta kodi </string>
+    <string name="write_off_rs">Ondoa (TZS)</string>
+    <string name="write_off_amount">Andika kiasi cha kuondoa</string>
+    <string name="home_delivery">\u0020\u0020Uwasilishaji nyumbani</string>
+    <string name="home_delivery_nospace">Uwasilishaji nyumbani</string>
+    <string name="total_tax">Jumla ya kodi</string>
+    <string name="loyalty">Uaminifu(</string>
+    <string name="location">Mahali</string>
+    <string name="bank_details">Taarifa za benki</string>
+    <string name="account_no">Namba ya akaunti.</string>
+    <string name="ifsc_code">Namba ya IFSC</string>
+    <string name="account_holder_name">Jina la mmiliki wa akaunti</string>
+    <string name="bank_name">jina la benki</string>
+    <string name="sms">SMS</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="_30">30</string>
+    <string name="schedule_delete">Ratiba ya kufuta</string>
+    <string name="do_you_want_to_activate_schedule_sales_data_delete_n">Je, ungependa kuwezesha ufutaji wa taarifa za mauzo ya ratiba?\n</string>
+    <string name="remove_table">Ondoa meza</string>
+    <string name="warning_items_may_be_in_the_tables_n">Onyo: Vitu vinaweza kuwa kwenye meza.\n</string>
+    <string name="do_you_want_to_remove">Je, ungependa kuondoa?</string>
+    <string name="scheduled_delete">Ufutaji uliopangwa</string>
+    <string name="counter">Kaunta</string>
+    <string name="search_for_item_">Tafuta bidhaa...</string>
+    <string name="quantity">Kiasi</string>
+    <string name="total_amount_">Jumla :</string>
+    <string name="enter_no_of_quantity">Weka namba ya kiasi</string>
+    <string name="network_wifi_printers">Network/Wifi printers</string>
+    <string name="connected_devices">Connected devices</string>
+    <string name="no_devices_paired">No devices paired</string>
+    <string name="hi">HII</string>
+    <string name="no_devices_found">No devices found</string>
+    <string name="discount_value">Thamani ya punguzo</string>
+    <string name="discount_code">Msimbo wa punguzo</string>
+    <string name="by_percent">Kwa %</string>
+    <string name="enter_percent">Weka %</string>
+    <string name="by_amount">Kwa kiasi</string>
+    <string name="edit_unit_price">Badilisha bei ya bidhaa moja </string>
+    <string name="refresh_required">Inahitajika kuonyesha upya</string>
+    <string name="press_ok_to_refresh">Bonyeza sawa ili kuonyesha upya.</string>
+    <string name="do_you_want_to_delete_the_configured_e_mail_id">Je, unataka kufuta kitambulisho cha barua pepe kilichohakikiwa?</string>
+    <string name="this_will_delete_all_the_info_related_to_the_e_mail_you_can_t_undo_this_process">Hii itafuta taarifa zote zinazohusiana na barua pepe. Hautaweza kutengua mchakato huu.</string>
+    <string name="enter_ip_address">Weka Anwani ya IP</string>
+    <string name="activation_successful_n">Activation successful.\n</string>
+    <string name="loading_please_wait_for_a_while">Inapakia.... tafadhali subiri kwa muda...</string>
+    <string name="ivepos_activation">IVEPOS Activation</string>
+    <string name="enter_activation_code">Weka namba ya kuwezesha </string>
+    <string name="activation_failed">Imeshindwa kuwezesha.</string>
+    <string name="subscription_over_n_ncontact_www_intuitionsoftwares_com">Subscription over...\n\nContact www.intuitionsoftwares.com</string>
+    <string name="enter_min_qty">Ingiza kiasi cha chini</string>
+    <string name="warning_ingredient_will_be_deleted_n">Onyo: Kiungo kitafutwa.\n</string>
+    <string name="do_you_want_to_delete">Je, ungependa kufuta?</string>
+    <string name="_12">12</string>
+    <string name="usage">Matumizi</string>
+    <string name="_195">195</string>
+    <string name="opt">Chagua.</string>
+    <string name="mon">Jumatatu</string>
+    <string name="tue">Jumanne</string>
+    <string name="wed">Jumatano</string>
+    <string name="thu">Alhamisi</string>
+    <string name="fri">Ijumaa</string>
+    <string name="sat">Jumamosi</string>
+    <string name="sun">Jumapili</string>
+    <string name="max_">Cha juu </string>
+    <string name="ingredient_name">Jina la kiungo</string>
+    <string name="barcode_id_no">Barcode/namba ya kitambulisho</string>
+    <string name="requirement_star">Mahitaji*</string>
+    <string name="min">cha chini</string>
+    <string name="max">cha juu</string>
+    <string name="unit">kipimo</string>
+    <string name="items_used">Vitu vilivyotumika</string>
+    <string name="avg_unit_price">Wastani wa bei kwa bidhaa </string>
+    <string name="current_requirement">Mahitaji ya sasa</string>
+    <string name="individual_price">Bei ya bidhaa moja</string>
+    <string name="refill">(Jaza tena)</string>
+    <string name="requirement">Mahitaji</string>
+    <string name="is_current_stock">Hesabu ya bidhaa zilizopo</string>
+    <string name="question_mark">\?</string>
+    <string name="yes">Ndiyo</string>
+    <string name="exact_current_stock">Hesabu halisi ya bidhaa zilizopo</string>
+    <string name="total_cost">Jumla ya gharama zote</string>
+    <string name="adjust">(Rekebisha)</string>
+    <string name="enter_actual_current_stock">Weka hesabu halisi ya bidhaa zilizopo</string>
+    <string name="items_use">Matumizi ya bidhaa</string>
+    <string name="add_delete_items">Ongeza/Futa bidhaa </string>
+    <string name="usage_b">(Matumizi)</string>
+    <string name="item_selected">Bidhaa iliyochaguliwa</string>
+    <string name="search_for_ingredient">Tafuta kiungo...</string>
+    <string name="search_for_item">Tafuta bidhaa...</string>
+    <string name="chicken_biryani">Biryani ya kuku</string>
+    <string name="enter_usage_amount">Weka kiasi cha matumizi</string>
+    <string name="alphabetically">Kialfabeti</string>
+    <string name="date_added">Tarehe iliyoongezwa</string>
+    <string name="date_modified">Tarehe iliyorekebishwa</string>
+    <string name="chicken_gravy">Mchuzi wa kuku</string>
+    <string name="_0_1">0.1</string>
+    <string name="set_min_qty">Weka kiwango cha chini </string>
+    <string name="search_item_barcode">Tafuta bidhaa/barcode</string>
+    <string name="enter_universal_min_qty">Ingiza kiwango cha chini</string>
+    <string name="do_you_want_to_add_the_invoice">Je, ungependa kuongeza ankara?</string>
+    <string name="listings">Orodha</string>
+    <string name="avg_price">Bei ya wastani</string>
+    <string name="total_qty">Jumla ya kiasi</string>
+    <string name="wastage_qty">Kiasi cha upotevu </string>
+    <string name="wastage_cost">Gharama ya upotevu</string>
+    <string name="vendor_name">jina la mchuuzi</string>
+    <string name="x"> x </string>
+    <string name="_15_0">15.0</string>
+    <string name="Pay">Lipa</string>
+    <string name="date_and_time">Tarehe na wakati</string>
+    <string name="_01nov17">01Nov17</string>
+    <string name="_12_00_am">12:00 AM</string>
+    <string name="enter_other_reason">Weka sababu nyingine...</string>
+    <string name="working_hours">Saa za kazi</string>
+    <string name="custom_time">Muda maalum</string>
+    <string name="pending_only">Inasubiri pekee</string>
+    <string name="paid_only">Imelipiwa</string>
+    <string name="based_on_due_dates_n_expired_till_today">Kulingana na tarehe za mwisho (Imeisha hadi leo)</string>
+    <string name="_09_00am">09:00 Asubuhi</string>
+    <string name="intuition_payment_systems_llp">Intuition Payment Systems LLP</string>
+    <string name="_tax">+ Kodi (</string>
+    <string name="disc_adj">- Punguzo./Rekebisha. (</string>
+    <string name="pending">Inasubiri</string>
+    <string name="due_on">Italipwa </string>
+    <string name="paid">Imelipwa</string>
+    <string name="add_qty">Ongeza kiasi</string>
+    <string name="_unit"> kiasi</string>
+    <string name="vendor">Mchuuzi</string>
+    <string name="gstin_reg_no">GSTIN/Reg No.</string>
+    <string name="clear_all">Futa zote</string>
+    <string name="do_you_want_to_clear_all_the_saved_data">Je, ungependa kufuta data zote ziliyohifadhiwa?</string>
+    <string name="this_will_clear_all_the_info_related_to_this_activity_you_can_t_undo_this_process">Hii itafuta maelezo yote yanayohusiana na shughuli hii. Hautaweza kutengua mchakato huu.</string>
+    <string name="select_vendor">Chagua mchuuzi</string>
+    <string name="gstin">gstin</string>
+    <string name="no_of_items">Idadi ya vitu</string>
+    <string name="due_date">Tarehe ya kukamilisha</string>
+    <string name="email_sms">barua pepe/SMS</string>
+    <string name="successfully_saved">Imefanikiwa kuhifadhiwa </string>
+    <string name="invoice">Ankara</string>
+    <string name="_123456789">123456789</string>
+    <string name="added_successfully">Imefaikiwa Kuongezwa</string>
+    <string name="categories">Vipengele</string>
+    <string name="taxes">Kodi</string>
+    <string name="before_deleting_check_in_kitchen_whether_food_is_prepared_or_not">Kabla ya kufuta angalia jikoni ikiwa chakula kimetayarishwa au la.</string>
+    <string name="selected_item">Bidhaa iliyochaguliwa</string>
+    <string name="barcode">Barcode</string>
+    <string name="amount_to_point">Kiasi cha pointi</string>
+    <string name="equal_to"> = </string>
+    <string name="point"> Hatua</string>
+    <string name="redeems">Redeems @</string>
+    <string name="merchant_id">Kitambulisho cha Mfanyabiashara</string>
+    <string name="new_order">Oda Mpya</string>
+    <string name="enter_online_delivery_channel_merchant_id_in_settings">Weka njia ya uwasilishaji mtandaoni(Kitambulisho cha Mfanyabiashara) katika Mipangilio</string>
+    <string name="modifier_name">Jina la kirekebishi</string>
+    <string name="modifiername">Jina la kirekebishi</string>
+    <string name="modifierquan">kirekebisha kiasi </string>
+    <string name="remove_modifier">Ondoa kirekebishi</string>
+    <string name="home_delivery_prints">Chapa za kuhusu kuletewa hadi nyumbani </string>
+    <string name="company_copy">Nakala ya kampuni</string>
+    <string name="customer_copy">Nakala ya mteja</string>
+    <string name="online_order_subscription_completed_nto_continue_purchase_from_subscriptions">Usajili wa oda za mtandaoni umekamilika. Ili kuendelea nunua kutoka kwenye huduma za usajili.</string>
+    <string name="_01_nov_17">01 Nov 17</string>
+    <string name="_12_09_am">12:09 Am</string>
+    <string name="limit">Kikomo</string>
+    <string name="clear_selection">Futa chaguzi</string>
+    <string name="_122334566678">122334566678</string>
+    <string name="_20151523_00011">20151523-00011</string>
+    <string name="split">Gawanya</string>
+    <string name="cash_payment">Malipo ya Fedha</string>
+    <string name="cheque">\u0020\u0020Angalia</string>
+    <string name="cheque_nospace">Angalia</string>
+    <string name="coupons">\u0020\u0020Kuponi</string>
+    <string name="coupons_nospace">Kuponi</string>
+    <string name="_1999_0">1999.0</string>
+    <string name="_999_0">999.0</string>
+    <string name="_10999_0">10999.0</string>
+    <string name="dine_in">\u0020\u0020Lia-ndani</string>
+    <string name="dine_in_nospace">Lia-ndani</string>
+    <string name="takeaway">\u0020\u0020Kuchukua</string>
+    <string name="takeaway_nospace">Kuchukua</string>
+    <string name="enter_card_no">Weka Namba ya Kadi.</string>
+    <string name="general">\u0020\u0020Mkuu</string>
+    <string name="general_nospace">Mkuu</string>
+    <string name="payment_successful">Malipo yamefaulu.</string>
+    <string name="e_mail">Barua pepe</string>
+    <string name="new_sale">Mauzo mapya</string>
+    <string name="Return">Rudi</string>
+    <string name="to_the_customer">kwa mteja.</string>
+    <string name="no_of_prints">Idadi ya chapa </string>
+    <string name="printer_not_connected">Printa haijaunganishwa</string>
+    <string name="do_you_wish_to_continue_payment_without_printing_receipt">Je, ungependa kuendelea na malipo bila kuchapisha risiti?</string>
+    <string name="connect_your_printer_for_kot_receipt">Unganisha printa yako kupata risiti ya KOT.</string>
+    <string name="do_you_wish_to_cancel_remove_items_from_kot_without_printing_receipt">Je, ungependa kughairi/kuondoa  bidhaa kwenye KOT bila uchapishaji wa risiti?</string>
+    <string name="connect_your_printer_for_printing_receipt">Unganisha printa yako ili kuchapisha risiti. </string>
+    <string name="select_subscription_period">Chagua kipindi cha usajili</string>
+    <string name="free_demo">Jaribu bure </string>
+    <string name="upgrade_to_pro_rs_4999">Boresha hadi Pro(TZS.4999)</string>
+    <string name="coupon_code">Namba wa kuponi</string>
+    <string name="Continue">Endelea</string>
+    <string name="search_name_email">Tafuta jina/barua pepe</string>
+    <string name="e_mail_receipt">Risiti ya barua pepe</string>
+    <string name="do_you_want_to_return_the_item_nitems">Je, ungependa Kurejesha bidhaa/bidhaa?</string>
+    <string name="returns">Zilizorudishwa</string>
+    <string name="you_can_t_undo_this_action">Unaweza si kutengua kitendo hiki.</string>
+    <string name="select_the_options_which_you_want_to_restore">Chagua machaguo unayotaka kurejesha</string>
+    <string name="do_you_want_to_restore">Je, unataka kurejesha</string>
+    <string name="_23jul16_025748pm"> 23Jul16_025748PM</string>
+    <string name="this_will_delete_your_existing_data_immediately_nyou_can_t_undo_this_action">Hii itafuta taarifa zako zilizopo mara moja. Hauwezi kutengua kitendo hiki.</string>
+    <string name="scheduled_mail">Barua iliyoratibiwa </string>
+    <string name="select_period">Chagua kipindi</string>
+    <string name="working_hours_n_today">Saa za Kazi (Leo)</string>
+    <string name="this_week">Wiki hii</string>
+    <string name="this_month">Mwezi huu</string>
+    <string name="this_year">Mwaka huu</string>
+    <string name="recipient">Mpokeaji</string>
+    <string name="do_you_want_to_delete_the_recipient">Je, ungependa kufuta mpokeaji?</string>
+    <string name="email_provider">Mtoa huduma wa barua pepe</string>
+    <string name="email_setup">Mpangilio wa barua pepe</string>
+    <string name="opening_hours">Saa za kufungua </string>
+    <string name="closing_hours">Saa za kufunga</string>
+    <string name="_11_59_pm">11:59 PM</string>
+    <string name="weekdays_reset_qty">Siku za wiki  weka upya kiasi </string>
+    <string name="enter_qty">Ingiza kiasi </string>
+    <string name="weekends_reset_qty">Wikendi weka weka upya kiasi </string>
+    <string name="item_no">Bidhaa Namba </string>
+    <string name="do_you_want_to_activate_smart_inventory_n">Je, ungependa kuwezesha hesabu janja za bidhaa \n</string>
+    <string name="this_will_switch_on_inventory_control_automatically_if_not">Hii itawasha Kidhibiti cha hesabu za bishaa kiotomatiki ikiwa sivyo.</string>
+    <string name="sms_sent_successful">SMS imetumwa.</string>
+    <string name="variants">Lahaja</string>
+    <string name="no_variants_to_display">Hakuna vibadala vya kuonyesha</string>
+    <string name="enter_split1">Ingiza mgawanyo 1</string>
+    <string name="enter_split2">Ingiza mgawanyo 2</string>
+    <string name="split_bill_by_2">Gawanya bili kwa 2</string>
+    <string name="split_bill_by_3">Gawanya bili kwa 3</string>
+    <string name="stock_transferred_successfully">Bidhaa zimehamishwa.</string>
+    <string name="do_you_want_to_transfer_the_stock">Je, ungependa kuhamisha bidhaa?</string>
+    <string name="transfer">Uhamisho</string>
+    <string name="keep_company_credential">Weka Kitambulisho cha Kampuni</string>
+    <string name="enter_universal_pax_limit">Weka kikomo cha pax kwa wote</string>
+    <string name="set_pax_limit">Weka kikomo cha pax</string>
+    <string name="tableid">Kitambulisho cha maza</string>
+    <string name="tables_can_t_exceed_99">Meza hazitakiwi kuzidi 99.</string>
+    <string name="you_already_added_maximum_no_of_tables_possible">Tayari umeongeza idadi ya juu zaidi ya meza iwezekanavyo.</string>
+    <string name="default_taxes">Kodi zilizopo kimfumo</string>
+    <string name="tax_amount">Kiasi cha kodi</string>
+    <string name="do_you_want_to_set_pax_limit_for_all_the_tables_in_this_section_nthis_will_set_pax_limit_for_all_the_tables_in_this_section">Je, ungependa kuweka kikomo cha pax kwa meza  zote katika sehemu hii? Hii itaweka kikomo cha pax kwa meza zote katika sehemu hii.</string>
+    <string name="authenticate">Thibitisha</string>
+    <string name="returns_refunds_access">Marejesho/Ruhusa ya kurejesha pesa</string>
+    <string name="product_and_tax_access">Ruhusa za bidhaa na ushuru</string>
+    <string name="reports_access">Ruhusa za taarifa</string>
+    <string name="settings_access">Ruhusa za mipangilio</string>
+    <string name="backup_access">Ruhusa za Backup</string>
+    <string name="customer_access">Ruhusa za  mteja</string>
+    <string name="ingredient_access">Ruhusa za viungo</string>
+    <string name="subscription_access">Ruhusa za  usajili</string>
+    <string name="search_vendor_phone_no">Tafuta mchuuzi/namba ya simu.</string>
+    <string name="select_wallet_option">Chagua Chaguo la Waleti</string>
+    <string name="paytm">Paytm</string>
+    <string name="mobikwik">Mobikwik</string>
+    <string name="sona_masoori_steam_rice_loose_25kg">sona masoori mvuke mchele huru 25kg</string>
+    <string name="weight">Uzito</string>
+    <string name="_10_00">10.00</string>
+    <string name="order_no">Nambari ya oda:</string>
+    <string name="_0000">0000</string>
+    <string name="bill">Bill</string>
+    <string name="_99_9">99.9</string>
+    <string name="discount_not_applied">Haujaomba punguzo </string>
+    <string name="apply_discount_and_continue">Omba punguzo na uendelee.</string>
+    <string name="n_nincomplete_discount_details_n_n">\n\nMaelezo ya punguzo hayajakamilika!\n\n</string>
+    <string name="search_bill_no_discount_code">Tafuta namba ya bili/namba ya punguzo</string>
+    <string name="total_discount">Jumla ya Punguzo:</string>
+    <string name="code">Namba</string>
+    <string name="dis_percent">Punguzo. %</string>
+    <string name="dis">Punguzo.</string>
+    <string name="email_setup_pending">Upangiliaji wa barua pepe (unasubiri)</string>
+    <string name="sender_email">Barua pepe ya mtumaji</string>
+    <string name="setup">Mpangilio</string>
+    <string name="recipient_email">Barua pepe ya mpokeaji</string>
+    <string name="recipients">Wapokeaji</string>
+    <string name="recipients_list">Orodha ya wapokeaji</string>
+    <string name="no_recipients_to_display">Hakuna wapokeaji wa kuonyesha</string>
+    <string name="google">Google</string>
+    <string name="office_365_and_exchange">Ofisi 365 na Exchange</string>
+    <string name="hotmail_and_outlook">Hotmail na Outlook</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="configured_mail">Barua iliyohakikiwa</string>
+    <string name="axis">AXIS</string>
+    <string name="SALE">MAUZO</string>
+    <string name="emi_tenure">Umiliki wa EMI</string>
+    <string name="interest_rate">Kiwango cha Riba</string>
+    <string name="monthly_installment">Malipo ya mwezi</string>
+    <string name="no_emi_options">no_emi_chaguo</string>
+    <string name="first_six_digit">Tarakimu sita za kwanza</string>
+    <string name="card_first_six_digits">Tarakimu sita za kwanza za kadi</string>
+    <string name="item_selection">Uteuzi wa bidhaa</string>
+    <string name="_0_selected">0 imechaguliwa</string>
+    <string name="store_s">Duka,</string>
+    <string name="device_s">Kifaa</string>
+    <string name="expenses">Gharama</string>
+    <string name="avg_sales">Wastani wa mauzo |</string>
+    <string name="top_category">Kipengele bora</string>
+    <string name="top_user">Mtumiaji bora</string>
+    <string name="no_data_to_display_chart">Hakuna data ya kuonyesha Chati</string>
+    <string name="total_expenses">\u0020\u0020Jumla ya gharama:</string>
+    <string name="total_expenses_nospace">Jumla ya gharama:</string>
+    <string name="reject">Kataa</string>
+    <string name="order">oda</string>
+    <string name="other_reason_specify">Sababu nyingine (Taja)</string>
+    <string name="food_delivery">Utoaji wa chakula</string>
+    <string name="new_orders">Oda mpya</string>
+    <string name="preparing">Kuandaa</string>
+    <string name="order_id">Kitambulisho cha oda</string>
+    <string name="swiggy">Swiggy</string>
+    <string name="item_total">Jumla ya bidhaa</string>
+    <string name="res_charges">Res. mashtaka</string>
+    <string name="total_disc">Jumla ya diski.</string>
+    <string name="delivery_fee">Ada ya utoaji</string>
+    <string name="create">Unda</string>
+    <string name="enter_name">Ingiza jina</string>
+    <string name="enter_price">Weka bei</string>
+    <string name="stock_quantity">Kiasi cha hisa</string>
+    <string name="size_116x95_px">ukubwa 116x95 px</string>
+    <string name="zxjhcvzxvchjzxbhj">zxjhcvzxvchjzxbhj</string>
+    <string name="admin_password">Neno la siri la Admin</string>
+    <string name="font_size">Ukubwa wa maandishi</string>
+    <string name="bill_preview">Onyesho la kukagua bili</string>
+    <string name="phone">Simu:</string>
+    <string name="yyyymmdd_000tn">yyyMMdd_000TN</string>
+    <string name="name_t">jina(T)</string>
+    <string name="mode">Hali</string>
+    <string name="bill_content">Vilivyomo kwenye bili</string>
+    <string name="token_no">Namba ya  tokeni</string>
+    <string name="listing">Kuorodhesha</string>
+    <string name="overview">Muhtasari</string>
+    <string name="total_sales">Jumla ya mauzo</string>
+    <string name="crasher">Haribifu</string>
+    <string name="na">NA</string>
+    <string name="sale_refund">Mauzo/Rejesha</string>
+    <string name="returns_refunds">Marejesho/Marejesho</string>
+    <string name="current_bill_amount">Kiasi cha bili ya sasa</string>
+    <string name="enter_bill_no">Weka namba ya bili...</string>
+    <string name="subtotal">jumla ndogo</string>
+    <string name="disc">Punguzo</string>
+    <string name="return_all">Rudisha vyote</string>
+    <string name="revert">Rudisha</string>
+    <string name="search_category">Tafuta kwenye kipengele</string>
+    <string name="category_name_star">Jina la kipengele*</string>
+    <string name="priority">Kipaumbele</string>
+    <string name="modifier">Kirekebishaji</string>
+    <string name="id">Kitambulisho</string>
+    <string name="category_name">Jina la kipengele</string>
+    <string name="add_category">Ongeza Kipengele</string>
+    <string name="customers">Wateja</string>
+    <string name="search_name_or_phone_no_or_customer_id">Tafuta Jina au Nambari ya simu au kitambulisho cha Mteja</string>
+    <string name="search_name_phone_cust_id">Tafuta Jina/simu/Cust. kitambulisho</string>
+    <string name="search_discount">Tafuta punguzo</string>
+    <string name="discount_code_star">Namba ya punguzo*</string>
+    <string name="value_star">thamani*</string>
+    <string name="value">thamani</string>
+    <string name="add_discount">Ongeaza Punguzo</string>
+    <string name="dis_rs">Dis. TZS</string>
+    <string name="_123456789000">123456789000</string>
+    <string name="bills">Bili</string>
+    <string name="goods_cost">Gharama ya bidhaa</string>
+    <string name="net_profit">Faida halisi</string>
+    <string name="payments">Malipo</string>
+    <string name="primary">Msingi</string>
+    <string name="_9999999">9999999</string>
+    <string name="digital">Dijitali</string>
+    <string name="rs_99">TZS.99</string>
+    <string name="freecharge">Malipo ya bure</string>
+    <string name="sodexo">Sodexo</string>
+    <string name="zeta">Zeta</string>
+    <string name="ticket">Tikiti</string>
+    <string name="others">Nyingine</string>
+    <string name="delivery">Uwasilishaji</string>
+    <string name="zomato">Zomato</string>
+    <string name="food_panda">Panda ya chakula</string>
+    <string name="rs_9999999">TZS.9999999</string>
+    <string name="top_selling_products">Bidhaa Zinazouzwa Zaidi</string>
+    <string name="top_3_items">Bidhaa 3 Bora</string>
+    <string name="item_name1">Jina la bidhaa1</string>
+    <string name="item_name2">Jina la bidhaa2</string>
+    <string name="item_name3">Jina la bidhaa3</string>
+    <string name="top_3_category">Vipengele 3 bora</string>
+    <string name="category_name1">Jina la kipengele1</string>
+    <string name="category_name2">Jina la kipengele2</string>
+    <string name="category_name3">Jina la kipengele3</string>
+    <string name="top_sellers_users">Wauzaji/Watumiaji wa juu</string>
+    <string name="seller_name1">Jina la muuzaji1</string>
+    <string name="seller_name2">Jina la muuzaji2</string>
+    <string name="seller_name3">Jina la muuzaji3</string>
+    <string name="refunds_returns_report">Ripoti ya Marejesho/Marejesho</string>
+    <string name="top_crasher">Mwangamizi wa Juu</string>
+    <string name="top_reason">Sababu ya Juu</string>
+    <string name="customer_report">Ripoti ya Wateja</string>
+    <string name="total_customers">Jumla ya Wateja</string>
+    <string name="top_customer">Mteja wa Juu</string>
+    <string name="_0_0Per">0.0%</string>
+    <string name="discount_report">Ripoti ya punguzo</string>
+    <string name="discounted_bills">Bili zilizopunguzwa</string>
+    <string name="inventory_report">Ripoti ya Malipo</string>
+    <string name="item_indent">Ujongezaji wa bidhaa</string>
+    <string name="suppliers">Wasambazaji</string>
+    <string name="low_stock">Hifadhi ya chini</string>
+    <string name="cost">Gharama</string>
+    <string name="micro_inventory_report">Ripoti ya Mali ndogo</string>
+    <string name="_123456789000577777">123456789000577777</string>
+    <string name="no_of_tabs">Idadi ya vichupo</string>
+    <string name="bill_id_tag">Kitambulisho cha bili</string>
+    <string name="pos_settings">Mipangilio ya POS</string>
+    <string name="billing_mode">Hali ya bili</string>
+    <string name="billing_type_default">Aina ya bili (chaguo-msingi)</string>
+    <string name="currency_selection">Uteuzi wa Sarafu</string>
+    <string name="bill_count_start">Kuhesabu bili kuanza</string>
+    <string name="bill_id_tag_adds_before_bill_count_start">Lebo ya kitambulisho cha bili (huongezwa kabla ya kuanza kwa hesabu ya bili)</string>
+    <string name="round_off">Zungusha</string>
+    <string name="online_delivery_channel_swiggy_and_zomato">Chaneli ya uwasilishaji mtandaoni (swiggy na zomato)</string>
+    <string name="item_sorting_home">Upangaji wa Bidhaa (Nyumbani)</string>
+    <string name="scheduled_sales_data_delete">Kufuta data ya mauzo iliyoratibiwa</string>
+    <string name="today">Leo</string>
+    <string name="table_and_kot_management">Usimamizi wa Meza na KOT</string>
+    <string name="print_and_barcode_settings">Mipangilio ya kuchapisha na barcode</string>
+    <string name="_2_prints">2 chapa</string>
+    <string name="estimate_slip_print">Kadiria hati iliyoandikwa</string>
+    <string name="bluetooth_printer_auto_connect">Kuunganisha kichapishaji cha bluetooth kiotomatiki</string>
+    <string name="printer_type">Aina ya kichapishaji</string>
+    <string name="barcode_auto_generation">Uzalishaji otomatiki wa barcode</string>
+    <string name="OFF">IMEZIMWA</string>
+    <string name="weighing_scale_settings">Mipangilio ya Mizani ya Kupima</string>
+    <string name="weighing_scale_configure">Weka mzani wa uzito </string>
+    <string name="not_connected">Haijaunganishwa</string>
+    <string name="inventory_settings">Mipangilio ya hesabu za bidhaa </string>
+    <string name="inventory_control">Udhibiti wa hesabu za bidhaa</string>
+    <string name="payment_settings">Mipangilio ya Malipo</string>
+    <string name="card_payment">Malipo ya kadi</string>
+    <string name="upi_payment">Upi malipo</string>
+    <string name="customer_settings">Mipangilio ya wateja</string>
+    <string name="customer_loyalty_points">Pointi za uaminifu za wateja</string>
+    <string name="_1_point">Pointi 1</string>
+    <string name="redeems_1_point">( Hukomboa @ 1 Point =</string>
+    <string name="sync">Sawazisha</string>
+    <string name="last_synced">Mara ya mwisho kusawazishwa: --</string>
+    <string name="communication_and_alert_settings">Mipandilio ya mawasiliano na tahadhari</string>
+    <string name="sender_email_setup">Weka barua pepe ya mtumaji</string>
+    <string name="recipient_email_setup">Weka barua pepe ya mpokeaji</string>
+    <string name="inventory_sync">Usawazishaji wa hesabu za bidhaa </string>
+    <string name="sync_inventory_to_cloud">Sawazisha orodha kwenye mtandao</string>
+    <string name="sync_inventory_to_app">Sync inventory from cloud to app</string>
+    <string name="sign_out">Toka</string>
+    <string name="call_gmail_api">Ita API ya Gmail</string>
+    <string name="online_delivery_channel_merchant_id">Njia ya uwasilishaji mtandaoni (Kitambulisho cha Mfanyabiashara)</string>
+    <string name="kot_print_with_bill">Chapisha KOT na bili</string>
+    <string name="estimate_slip">Kadiria kuingizwa</string>
+    <string name="select_store_weekends">Chagua duka wikiendi </string>
+    <string name="are_selected">zimechaguliwa.</string>
+    <string name="unit_type">Aina ya kipimo</string>
+    <string name="syncing_now">Inasawazisha sasa...</string>
+    <string name="select">Chagua</string>
+    <string name="sort">Panga</string>
+    <string name="top_product_1">Bidhaa kuu 1</string>
+    <string name="top_product_2">Bidhaa kuu 2</string>
+    <string name="top_product_3">Bidhaa bora 3</string>
+    <string name="sale_percent">mauzo(%)</string>
+    <string name="sale_rs">Mauzo₹</string>
+    <string name="add_modifier">Ongeza Kirekebishaji</string>
+    <string name="single_select_items">Chagua bidhaa kwa maramoja</string>
+    <string name="search_modifier">Kirekebishaji cha utafutaji</string>
+    <string name="modifier_set_star">Seti ya kirekebishaji*</string>
+    <string name="tax_name_star">Jina la ushuru*</string>
+    <string name="tax_value">Thamani ya ushuru</string>
+    <string name="hsn_code">Msimbo wa HSN</string>
+    <string name="tax_name">Jina la ushuru</string>
+    <string name="add_tax">Ongeaza Kodi</string>
+    <string name="globaltax">Kodi ya kimataifa</string>
+    <string name="itemtax">Kodi ya bidhaa</string>
+    <string name="_1_global_tax_is_added_to_the_entire_bill_n2_item_tax_can_also_be_added_to_modifiers">1) Kodi ya kimataifa imeongezwa kwenye bili yote\n2) Kodi ya bidhaa pia inaweza kuongezwa kwenye virekebishaji.</string>
+    <string name="admin_user_password">Neno la siri la Admin/User</string>
+    <string name="top_seller_1">Muuzaji bora 1</string>
+    <string name="top_seller_2">Muuzaji bora 2</string>
+    <string name="top_seller_3">Muuzaji bora 3</string>
+    <string name="category_no">Kipengele nambari.</string>
+    <string name="ingredient">Kiungo</string>
+    <string name="modifier_name_star">Jina la kirekebishaji*</string>
+    <string name="modifier_tax">Kodi ya kurekebisha</string>
+    <string name="modifier_no">Nambari ya kurekebisha.</string>
+    <string name="delivery_charges">Gharama za uwasilishaji</string>
+    <string name="packing_charges">Malipo ya kufungasha</string>
+    <string name="loyalty_bracket">Uaminifu(</string>
+    <string name="returns_cancel">Kurejesha/Kughairi:</string>
+    <string name="_19_sep_2017_00_00_00_am">(19 Sep 2017, 00:00:00 AM)</string>
+    <string name="tax_info">Maelezo ya ushuru</string>
+    <string name="bill_settings">Mipangilio ya bili</string>
+    <string name="textview_hi">Muonekano wa maandishi HI</string>
+    <string name="device1">kifaa1</string>
+    <string name="_1219">1219</string>
+    <string name="discount_bracket">Punguzo (</string>
+    <string name="products">Bidhaa</string>
+    <string name="orderlist">Orodha ya oda</string>
+    <string name="_11">11</string>
+    <string name="dot">.</string>
+    <string name="plus_sign">+</string>
+    <string name="saving">Inahifadhi...</string>
+    <string name="opt_required">Chagua. inahitajika</string>
+    <string name="max_stock">Kiwango cha juu zaidi cha bidhaa </string>
+    <string name="search_ingredient_barcode">Tafuta kiungo/barcode</string>
+    <string name="items_selection">Uchaguzi wa bidhaa</string>
+    <string name="ingredient_s">Viungo</string>
+    <string name="report">Ripoti</string>
+    <string name="bill_history">Historia ya Bill</string>
+    <string name="min_qty">Idadi ya chini zaidi</string>
+    <string name="current_qty">Idadi iliyopo</string>
+    <string name="item_">Bidhaa |</string>
+    <string name="qty_">kiasi |</string>
+    <string name="_04_sep_2017">04 Sep 2017</string>
+    <string name="supplier">Msambazaji</string>
+    <string name="_4000">4000</string>
+    <string name="_6000">6000</string>
+    <string name="_09_00pm">09:00 Jioni</string>
+    <string name="min_price">bei ya chini zaidi</string>
+    <string name="max_price">Bei ya juu zaidi</string>
+    <string name="total_price">Jumla ya gharama zote</string>
+    <string name="_disc_adj">-Punguzoi./Adj. (</string>
+    <string name="add_vendor">Ongeza mchuuzi</string>
+    <string name="_2500">2500</string>
+    <string name="search_for_item_name">Tafuta jina la bidhaa...</string>
+    <string name="_999">999</string>
+    <string name="punjabi_khanna_special_butter_chicken">Punjabi khanna kuku maalum ya siagi</string>
+    <string name="_223">223</string>
+    <string name="X"> X </string>
+    <string name="selling_price">Bei ya kuuzia</string>
+    <string name="buying_price_inventory">Bei ya kununua (Mali)</string>
+    <string name="buying_price_mi">Bei ya kununua (MI)</string>
+    <string name="total_sale">Jumla ya mauzo</string>
+    <string name="total_cost_i">Jumla ya Gharama(I)</string>
+    <string name="total_cost_mi">Jumla ya Gharama(MI)</string>
+    <string name="search_item_name_barcode">Tafuta jina la bidhaa/barcode</string>
+    <string name="cost_percent">Gharama %</string>
+    <string name="cost_i">Gharama(I)</string>
+    <string name="cost_mi">Gharama(MI)</string>
+    <string name="_00">00</string>
+    <string name="kot_s_cancelled">KOT Imeghairiwa</string>
+    <string name="top_table">Meza bora</string>
+    <string name="order_management">Usimamizi wa oda</string>
+    <string name="table99">Meza 99</string>
+    <string name="print_all">Chapisha zote</string>
+    <string name="no_"> Hapana.:</string>
+    <string name="print_again">Chapisha tena</string>
+    <string name="mod_name">jina la mod</string>
+    <string name="KOT">KOT</string>
+    <string name="dept_name">Jina la kitengo</string>
+    <string name="dept_name1">idara. jina 1</string>
+    <string name="printer_selection_wifi_network">Uchaguzi wa printa (Wifi/mtandao)</string>
+    <string name="wifi_network">Wifi/network</string>
+    <string name="printer_name">Jina la printa</string>
+    <string name="none">Hakuna</string>
+    <string name="recover">Pata nafuu</string>
+    <string name="go_to_login">Nenda kwenye Kuingia</string>
+    <string name="user_1">Mtumiaji 1</string>
+    <string name="user_2">Mtumiaji 2</string>
+    <string name="user_3">Mtumiaji 3</string>
+    <string name="user_4">Mtumiaji 4</string>
+    <string name="user_5">Mtumiaji 5</string>
+    <string name="user_6">Mtumiaji 6</string>
+    <string name="contact_your_manager_admin_for_recovery">Wasiliana na msimamizi/msimamizi wako ili upate urejeshwaji.</string>
+    <string name="_192_168_1_100">192.168.1.100</string>
+    <string name="_8080">8080</string>
+    <string name="child">Mtoto</string>
+    <string name="recovery">urejeshwaji</string>
+    <string name="help">Msaada</string>
+    <string name="ezetap_setting">Mpangilio wa eZetap</string>
+    <string name="user_id">Kitambulisho cha Mtumiaji</string>
+    <string name="client_code">Client code</string>
+    <string name="remember_me">Nikumbuke</string>
+    <string name="exit">Toka</string>
+    <string name="log_off">Ondoka</string>
+    <string name="do_you_want_to_log_off">Je, ungependa kuondoka?</string>
+    <string name="this_will_end_your_session_immediately_make_nsure_to_complete_your_billing">Hii itamaliza kipindi chako mara moja. Hakikisha umekamilisha bili zako.</string>
+    <string name="enter_admin_password">Weka neno la siri la admin</string>
+    <string name="kot_management">Usimamizi wa KOT</string>
+    <string name="logout">Ondoka</string>
+    <string name="max_qty">Kiasi cha juu zaidi</string>
+    <string name="req_qty">Kiasi kinachohitajika</string>
+    <string name="act_qty">Kiasi cha shughuli</string>
+    <string name="waste_qty">Kiasi cha upotevu</string>
+    <string name="wastage">Upotevu</string>
+    <string name="search_supplier_invoice">Tafuta muuzaji/ ankara</string>
+    <string name="search_invoice">Tafuta ankara</string>
+    <string name="search_vendor_phone">Tafuta muuzaji/simu</string>
+    <string name="getting_graph_data">Inapata Data ya Grafu....</string>
+    <string name="send_mail">kutuma barua</string>
+    <string name="status_otp_order">HALI - ODA ya OTP</string>
+    <string name="dash_values">_ _ _ _ _ _</string>
+    <string name="status_will_be_displayed_here">Hali itaonyeshwa hapa</string>
+    <string name="generate_mobikwik_otp">Tengeneza Mobikwik OTP</string>
+    <string name="pay_mobikwik_otp">LIPA-Mobikwik OTP</string>
+    <string name="modifier_set">Seti ya kirekebishaji</string>
+    <string name="modifier_option">Chaguo la kurekebisha</string>
+    <string name="name1111">jina 1111</string>
+    <string name="move_to">Hamisha kwenda</string>
+    <string name="do_you_want_to_move_the_item_items_to">Je, ungependa kuhamisha bidhaa/vitu kwenda </string>
+    <string name="nthis_will_be_moved_immediately">\nHii itahamishwa mara moja.</string>
+    <string name="move">Sogeza</string>
+    <string name="do_you_want_to_move_the_modifier_modifiers_to">Je! unataka kuhamishia Kirekebishaji/Virekebishaji hadi</string>
+    <string name="_00_00">00.00</string>
+    <string name="powered_by_intuition_systems">Inaendeshwa na: Intuition Systems.</string>
+    <string name="ivepos_payment">MALIPO YA IVEPOS</string>
+    <string name="accepts_master_visa_amex_credit_and_debit_cards_using_mswipe_terminal">Inakubali Master, Visa, AMEX, Kadi za Mkopo na Debit kwa kutumia terminal ya mSwipe.</string>
+    <string name="ezetap">eZetap</string>
+    <string name="accepts_master_visa_amex_credit_and_debit_cards_using_payswiff_terminal">Inakubali Mastercard, Visa, AMEX, Kadi za Mkopo na Debit kwa kutumia terminal ya Payswiff.</string>
+    <string name="pine_labs">Pine Labs</string>
+    <string name="accepts_master_visa_amex_cards_using_terminal">Inakubali kadi za Master, Visa, AMEX kwa kutumia terminal.</string>
+    <string name="accepts_master_visa_amex_credit_and_debit_cards_using_paytm_terminal">Inakubali Master, Visa, AMEX, Kadi za Mkopo na Debit kwa kutumia terminal ya Paytm.</string>
+    <string name="card_swiper">Ya kuswaipu Kadi</string>
+    <string name="accept_paytm_payments_from_customers">Kubali malipo ya Paytm kutoka kwa wateja.</string>
+    <string name="razor_pay">Razor Pay</string>
+    <string name="accept_mobikwik_payments_from_customers">Kubali malipo ya Mobikwik kutoka kwa wateja.</string>
+    <string name="pinelabs">Pinelabs</string>
+    <string name="accept_upi_payments_from_customers">Kubali malipo ya UPI kutoka kwa wateja.</string>
+    <string name="razorpay">Razorpay</string>
+    <string name="channel">Kituo</string>
+    <string name="_580">580</string>
+    <string name="accept">Kubali</string>
+    <string name="nfc_card_type_">Aina ya Kadi ya NFC :</string>
+    <string name="nfc_write">NFC Andika</string>
+    <string name="start_nfc_detection">Anzisha utambuzi wa NFC</string>
+    <string name="stop_nfc_detection">Simamisha utambuzi wa NFC</string>
+    <string name="nfc_authenticate">Uthibitisho wa NFC</string>
+    <string name="nfc_read_1st">NFC Soma 1</string>
+    <string name="nfx_read_next">NFX Soma inayofuata</string>
+    <string name="nfccard_type">Aina ya NFCcard</string>
+    <string name="smart_refill">Jaza tena kijanja </string>
+    <string name="this_will_restock_your_items_immediately_you_ncan_t_undo_this_action">Hii itahifadhi tena bidhaa zako mara moja. Hautaweza kutengua kitendo hiki.</string>
+    <string name="online_delivery_channel">Njia ya uwasilishaji mtandaoni</string>
+    <string name="date_of_order">Tarehe ya Oda</string>
+    <string name="restaurant_name">Jina la Mgahawa</string>
+    <string name="restaurant_address">Anwani ya Mgahawa</string>
+    <string name="restaurant_no">Mgahawa Na.</string>
+    <string name="restaurant_email_id">Kitambulisho cha Barua Pepe cha Mgahawa</string>
+    <string name="gst_no">Nambari ya GST.</string>
+    <string name="owner_s_name">Jina la Mmiliki</string>
+    <string name="owner_s_number">Nambari ya Mmiliki</string>
+    <string name="owner_s_email_id">Kitambulisho cha Barua Pepe ya Mmiliki</string>
+    <string name="zomato_relationship_manager_email_id">Kitambulisho cha Barua pepe cha Meneja Uhusiano wa Zomato</string>
+    <string name="merchant_registered_email_id_with_zomato">Kitambulisho cha Barua Pepe Iliyosajiliwa na Muuzaji na Zomato</string>
+    <string name="zomato_ordering_url">URL ya Kuagiza Zomato</string>
+    <string name="menu_timings_yes_no">Muda wa Menyu (Ndiyo/Hapana)</string>
+    <string name="delivery_charges_if_any">Gharama za Uwasilishaji, ikiwa zipo</string>
+    <string name="packing_charges_if_any">Gharama za Ufungashaji, ikiwa zipo</string>
+    <string name="gst_if_any">GST, kama ipo</string>
+    <string name="contact_no_of_concerned_person_for_details"> Namba ya mawasiliano ya mhusika kwa maelezo</string>
+    <string name="swiggy_relationship_manager_email_id">Kitambulisho cha Barua pepe ya meneja uhusiano wa Swiggy</string>
+    <string name="swiggy_ordering_url_restaurant_id">URL ya uagizaji ya Swiggy / Kitambulisho cha Mgahawa</string>
+    <string name="printer">Printa</string>
+    <string name="enter_otp">Ingiza OTP</string>
+    <string name="wait_processing">Subiri usindikaji.......</string>
+    <string name="refill_stock_to_continue_or_deactivate_stock_control_in_general_settings">Jaza bidhaa tena ili uendelee! (au) kusimamisha udhibiti wa bidhaa katika mipangilio ya jumla.</string>
+    <string name="first_6_digits">Nambari 6 za kwanza</string>
+    <string name="tip">kidokezo</string>
+    <string name="activity_integration">Ujumuishaji wa Shughuli</string>
+    <string name="qr_code">Namba ya QR</string>
+    <string name="status_qr_code">STATUS Namba ya QR </string>
+    <string name="status_otp">OTP ya STATUS</string>
+    <string name="pay_using_any_upi_app">Lipa kwa kutumia Programu yoyote ya UPI</string>
+    <string name="get_status">Pata Status</string>
+    <string name="paytm_settings">Mipangilio ya Paytm</string>
+    <string name="pickup">Chukua</string>
+    <string name="deliver">Wasilisha</string>
+    <string name="delivery_by">Uwasilishaji na</string>
+    <string name="on_progress_delivered">Inaendelea / iliyowasilishwa</string>
+    <string name="_11_00am_current_delivered">11:00Am(Current/delivered)</string>
+    <string name="printer_support">msaada wa printa</string>
+    <string name="printer_signature">saini ya printa</string>
+    <string name="enter_discount">Weka punguzo</string>
+    <string name="enter_note">Weka dokezo</string>
+    <string name="_99999_00">99999.00</string>
+    <string name="_90">90</string>
+    <string name="remove_item">Ondoa bidhaa</string>
+    <string name="contact_n_nemail_intuitionsoftwares_gmail_com_nphone_91_9620980651">Anwani:\n\nBarua pepe: intuitionsoftwares@gmail.com\nSimu : +91-9620980651</string>
+    <string name="razorpay_settings">Mipangilio ya Razorpay</string>
+    <string name="enter_account_id">Weka Kitambulisho cha Akaunti</string>
+    <string name="reason_for_refund">Sababu ya kurejeshewa pesa</string>
+    <!--    <string name="continue">Continue</string>-->
+    <string name="damaged_spoiled">Imeharibika/Imeharibika</string>
+    <string name="delayed">Imechelewa</string>
+    <string name="changed_mind">Alibadilisha mawazo</string>
+    <string name="accidental_charge">Malipo ya ajali</string>
+    <string name="other">Nyingine</string>
+    <string name="search_bill_number">Tafuta namba ya bili</string>
+    <string name="card_reader_regd">Udhibiti wa Kisoma Kadi</string>
+    <string name="tab_name">Jina la kichupo</string>
+    <string name="tab_no">Namba ya kichupo.</string>
+    <string name="_25">25</string>
+    <string name="restaurant_charges">Gharama za Mgahawa</string>
+    <string name="restored_successfully">Imefanikiwa kurejeshwa.</string>
+    <string name="go_home">Rudi nyumbani</string>
+    <string name="asd">asd</string>
+    <string name="modifier_option_star">Chaguo la kurekebisha*</string>
+    <string name="sales_summary">Muhtasari wa mauzo</string>
+    <string name="gross_sales">Mauzo ya Jumla</string>
+    <string name="_5000">5000</string>
+    <string name="net_sales">Uuzaji wa jumla</string>
+    <string name="net_sales_after_taxes">Mauzo Halisi (baada ya kodi)</string>
+    <string name="sync_now">Sawazisha sasa</string>
+    <string name="signout">Toka</string>
+    <string name="e_mail_id_username">Kitambulisho cha Barua pepe / Jina la mtumiaji</string>
+    <string name="abcd">abcd</string>
+    <string name="mobile_number">Namba ya simu ya mkononi.</string>
+    <string name="enter_text_here">Ingiza maandishi hapa.</string>
+    <string name="send_e_invoice">Tuma ankara ya kielektroniki</string>
+    <string name="hiiiiiiiiii">hiiiiiiiiii</string>
+    <string name="transfer_qty">Kiasi cha kuhamisha</string>
+    <string name="sent">Imetumwa</string>
+    <string name="receivables">Zinazopokelewa</string>
+    <string name="to_store">Kuhifadhi</string>
+    <string name="to_device">Kwa kifaa</string>
+    <string name="free_trial">Jaribio la bure</string>
+    <string name="buy_ivepos">Nunua IVEPOS</string>
+    <string name="admin_and_user_privileges">Haki za Admini na Mtumiaji</string>
+    <string name="section">Sehemu</string>
+    <string name="no_of_pax_star">Nambari ya pax*</string>
+    <string name="tab1">Kichupo 1</string>
+    <string name="tab1_name">Tab1 jina</string>
+    <string name="pax">Pax</string>
+    <string name="table_name1">Jina la meza 1</string>
+    <string name="tab_management">Usimamizi wa tab </string>
+    <string name="_99">99</string>
+    <string name="no_of_tables">Idadi ya meza</string>
+    <string name="table_configuration">Mpangilio wa meza</string>
+    <string name="edit_table_name_and_pax_value">Badilisha jina la Jedwali na thamani ya PAX</string>
+    <string name="section_name">Jina la sehemu</string>
+    <string name="enter_no_of_tabs">Weka namba ya vichupo</string>
+    <string name="pax_limit">Kikomo cha Pax</string>
+    <string name="tab_setup">Mpangilio wa kichupo</string>
+    <string name="tab2_name">Jina la kichupo 2</string>
+    <string name="tab3_name">Jina la kichupo 3</string>
+    <string name="enter_default_limit">Weka kikomo kimfumo</string>
+    <string name="default_pax_limit">Kikomo cha kimfumo cha pax </string>
+    <string name="table_id">Kitambulisho cha meza</string>
+    <string name="clear_pax">Futa PAX</string>
+    <string name="table_name">Jina la meza</string>
+    <string name="table_management">Usimamizi wa meza</string>
+    <string name="floorname">Jina la sakafu</string>
+    <string name="hsn">HSN</string>
+    <string name="terms_and_conditions">Vigezo na Masharti</string>
+    <string name="camera_to_take_the_picture_of_the_items_etc_to_be_attached_with_products_and_to_scan_the_barcodes_n">Kamera: Kupiga picha ya bidhaa n.k ili kuambatanishwa na bidhaa na kuchanganua barcode.\n</string>
+    <string name="contacts_this_app_collects_contact_information_like_number_of_contacts_on_the_device_with_a_phone_number_for_sending_bills_invoices_to_customers_and_without_a_phone_number_n">Anwani: Programu hii hukusanya taarifa za mawasiliano kama vile idadi ya watu unaowasiliana nao kwenye kifaa na nambari ya simu ya kutuma bili/ankara kwa wateja na bila nambari ya simu.\n</string>
+    <string name="storage_this_app_collects_storage_permission_for_saving_reports_in_local_device_storage_n">Hifadhi: Programu hii inakusanya ruhusa ya kuhifadhi kwa ajili ya kuhifadhi ripoti katika hifadhi ya kifaa cha ndani.\n</string>
+    <string name="location_this_app_collects_location_details_to_verify_your_location_and_current_address_to_ensure_serviceability_and_to_identify_unusual_activity_to_prevent_against_any_fraud_n">Mahali: Programu hii hukusanya maelezo ya eneo ili kuthibitisha eneo lako na anwani ya sasa, ili kuhakikisha utumishi na kutambua shughuli isiyo ya kawaida ili kuzuia dhidi ya ulaghai wowote.\n</string>
+    <string name="sms_this_app_collects_sms_data_like_sender_names_sms_body_received_time_to_understand_your_income_spending_patterns_and_automatically_fetch_your_expenses_bills_credits_we_do_not_read_any_personal_or_otp_messages_n">SMS: Programu hii hukusanya taarifa SMS kama vile majina ya watumaji, mwili wa SMS, muda uliopokea wa kuelewa mapato yako, mifumo ya matumizi na kuleta gharama, bili, mikopo kiotomatiki. Hatusomi ujumbe wowote wa kibinafsi au wa OTP. \n</string>
+    <string name="apps_aws_mobileclient_sdk_collects_details_of_your_installed_applications_to_validate_and_authenticate_user_n">Programu: AWS MobileClient SDK hukusanya maelezo ya programu ulizosakinisha ili kuthibitisha na kuthibitisha mtumiaji.\n</string>
+    <string name="calendar_this_app_collects_event_data_on_your_calendar_for_saving_customer_s_date_of_birth_etc_n">Kalenda: Programu hii inakusanya data ya matukio kwenye kalenda yako ili kuhifadhi Tarehe ya Kuzaliwa ya mteja n.k..\n</string>
+    <string name="agree">Kubali</string>
+    <string name="developer">Msanidi</string>
+    <string name="backup_data">Hifadhi nakala ya data</string>
+    <string name="sale_completion">Kukamilika kwa Uuzaji</string>
+    <string name="transaction_failed">Muamala Umefeli.</string>
+    <string name="send_void_transaction">kutuma/batilisha muamala</string>
+    <string name="success">UMEFANIKIWA</string>
+    <string name="see_details">Tazama Maelezo</string>
+    <string name="order_invoice_no">Nambari ya ankara ya oda:</string>
+    <string name="amount_paid_by_cash">akiasi kilicholipwa na Fedha:</string>
+    <string name="card_holder_name">jina la mmiliki wa kadi:</string>
+    <string name="card_brand">chapa ya kadi:</string>
+    <string name="payment_id">kitambulisho cha malipo:</string>
+    <string name="trx_id">kitambulisho cha trx:</string>
+    <string name="tdr_percentage">Asilimia ya tdr:</string>
+    <string name="enter_transaction_id">Weka kitambulisho cha muamala</string>
+    <string name="enter_merchant_ref_no">Weka Ref ya Muuzaji. Hapana.</string>
+    <string name="result">Matokeo:</string>
+    <string name="user_1_ncontrol_panel">Mtumiaji 1 Jopo kudhibiti</string>
+    <string name="_1_password_must_contain_4_digits_n2_username_and_password_can_be_changed_separately_and_independent_n3_if_you_forgot_login_credentials_contact_your_manager_for_recovery">1)Neno la siri lazima liwe na tarakimu 4.\n2)Jina la mtumiaji na neno la siri vinaweza kubadilishwa tofauti na huru. \n3) Ikiwa umesahau kitambulisho cha kuingia wasiliana na meneja wako ili kurejesha</string>
+    <string name="user_2_ncontrol_panel">Mtumiaji 2 Jopo kudhibiti</string>
+    <string name="user_3_ncontrol_panel">Mtumiaji 3 Jopo kudhibiti</string>
+    <string name="user_4_ncontrol_panel">Mtumiaji 4 Jopo kudhibiti</string>
+    <string name="user_5_ncontrol_panel">Mtumiaji 5 Jopo kudhibiti</string>
+    <string name="user_6_ncontrol_panel">Mtumiaji 6 Jopo kudhibiti</string>
+    <string name="_1_you_do_not_have_recovery_login_n_n2_contact_your_manager_for_recovery">1) Hauna taarifa za ingia kwa urejeshaji.\n\n2)Wasiliana na meneja wako kwa ajili ya urejeshaji.</string>
+    <string name="_99_99">99.99</string>
+    <string name="search_item_name">Tafuta jina la bidhaa</string>
+    <string name="enter_variant_name">Weka bei mbadala</string>
+    <string name="enter_variant_price">Weka bei mbadala</string>
+    <string name="add_modify_variants">Ongeza/rekebisha mibadala</string>
+    <string name="didn_t_received_code">Haujapokea namba ya uthibitisho?</string>
+    <string name="resend_otp">Tuma tena OTP</string>
+    <string name="verify_otp">Thibitisha OTP</string>
+    <string name="enter_otp_sent_to">Ingiza OTP iliyotumwa kwa</string>
+    <string name="new_password">Neno la siri jipya</string>
+    <string name="retype_password">Rudia neno la siri</string>
+    <string name="device_info">Maelezo ya Kifaa</string>
+    <string name="gateway_vertical">Lango wima</string>
+    <string name="labs_vertical">Maabara wima</string>
+    <string name="network_source">Chanzo cha mtandao</string>
+    <string name="wi_fi_mac_add">Wi-Fi Mac Ongeza</string>
+    <string name="sim_imei">Sim - IMEI</string>
+    <string name="ethernet">Ethaneti</string>
+    <string name="help_line">Namba ya Msaada</string>
+    <string name="to_reach_mswipe_technical_support_please_call_toll_free_no">Ili kufikia msaada wa kiufundi wa Mswipe tafadhali piga simu bila malipo</string>
+    <string name="_1800_1022699">1800 1022699</string>
+    <string name="w300_sdk_v1_0_6_3_3_0">W300 SDK V1.0.6 (3.3.0)</string>
+    <string name="cardholder">Mwenye kadi</string>
+    <string name="mid">MID</string>
+    <string name="tid">TID</string>
+    <string name="batchno">KundiNa.</string>
+    <string name="time_out">Muda umeisha</string>
+    <string name="mswipe_setting">Mpangilio wa mSwipe </string>
+    <string name="_12_jan_2001">12 Jan 2001</string>
+    <string name="set_date">Weka Tarehe</string>
+    <string name="trx_date_time">Muda wa Tarehe ya Trx</string>
+    <string name="credit_card_num">Nambari ya Kadi ya Mkopo</string>
+    <string name="prisminvoiceno">PrismInvoiceNo</string>
+    <string name="weighing_scale">Mizani ya vipimo</string>
+    <string name="search_name_phone_no">Tafuta jina/namba ya simu.</string>
+    <string name="write_off_reports">Taarifa za hasara</string>
+
+
+    <string name="settext0">UPI QR</string>
+    <string name="settext1">Upiqr</string>
+    <string name="settext2">Kuu</string>
+    <string name="settext3">Inasasisha bidhaa</string>
+    <string name="settext4">Usasishaji wa ushuru wa bidhaa</string>
+    <string name="settext5">Idhaa ya Huduma ya Utangulizi</string>
+    <string name="settext6">Bidhaa</string>
+    <string name="settext7">Jina la bidhaa</string>
+    <string name="settext8">Bei</string>
+    <string name="settext9">Stockquan</string>
+    <string name="settext10">Kipengele</string>
+    <string name="settext11">Kodi ya bidhaa</string>
+    <string name="settext12">Hakuna</string>
+    <string name="settext13">Thamani ya siku za wiki</string>
+    <string name="settext14">Thamani ya wikendi</string>
+    <string name="settext15">Thamani ya hisa</string>
+    <string name="settext16">Weka upya thamani ya hisa kiotomatiki</string>
+    <string name="settext17">Idadi ya mibofyo</string>
+    <string name="settext18">vipendwa</string>
+    <string name="settext19">Wote</string>
+    <string name="settext20">Inafuta vitu</string>
+    <string name="settext21">Una uhakika ?</string>
+    <string name="settext22">Jibu batili kutoka kwa seva ya Mswipe, tafadhali wasiliana na usaidizi</string>
+    <string name="settext23">Lite</string>
+    <string name="settext24">Pro</string>
+    <string name="settext25">Kiasi</string>
+    <string name="settext26">Kiasi</string>
+    <string name="settext27">Mswada Na.</string>
+    <string name="settext28">Hesabu ya Bill</string>
+    <string name="settext29">Jumla ndogo</string>
+    <string name="settext30">Kodi</string>
+    <string name="settext31">Akiba</string>
+    <string name="settext32">Idadi ya vitu</string>
+    <string name="settext32_1">Idadi ya vitu/Kiasi</string>
+    <string name="settext33">Kitambulisho cha bili</string>
+    <string name="settext34">Mzunguko Mbali</string>
+    <string name="settext35">Punguzo</string>
+    <string name="settext36">Null</string>
+    <string name="settext37">Ndiyo</string>
+    <string name="settext38">Washa</string>
+    <string name="settext39">KOT</string>
+    <string name="settext39_1">KOT1</string>
+    <string name="settext39_2">KOT2</string>
+    <string name="settext39_3">KOT3</string>
+    <string name="settext39_4">KOT4</string>
+    <string name="settext40">Tiketi ya Kuagiza Jikoni</string>
+    <string name="settext41">Imewashwa</string>
+    <string name="settext42">Wengine</string>
+    <string name="settext43">Nenda kwa Mipangilio, Jisajili</string>
+    <string name="settext44">Kikomo</string>
+    <string name="settext45">Hakuna Kikomo</string>
+    <string name="settext46">Uaminifu</string>
+    <string name="settext47">Pointi</string>
+    <string name="settext48">Mteja</string>
+    <string name="settext49">Kusafisha</string>
+    <string name="settext50">Kuhifadhi</string>
+    <string name="settext51">Inapakia</string>
+    <string name="settext52">Nakala ya Bill</string>
+    <string name="settext53">MAFANIKIO</string>
+    <string name="settext54">KUSHINDWA</string>
+    <string name="settext55">Jumapili</string>
+    <string name="settext56">Jumatatu</string>
+    <string name="settext57">Jumanne</string>
+    <string name="settext58">Jumatano</string>
+    <string name="settext59">Alhamisi</string>
+    <string name="settext60">Ijumaa</string>
+    <string name="settext61">Jumamosi</string>
+    <string name="settext62">Hujasajiliwa</string>
+    <string name="settext63">Umejisajili</string>
+    <string name="settext64">Weka</string>
+    <string name="settext65">haijawekwa</string>
+    <string name="settext66">Infinity</string>
+    <string name="settext67">Pesa</string>
+    <string name="settext68">Inafuta</string>
+    <string name="settext69">Kusonga</string>
+    <string name="settext70">Ushuru 0 umechaguliwa</string>
+    <string name="settext71">Kiolezo cha CSV si sahihi</string>
+    <string name="settext72">Katika safu mlalo koma haziruhusiwi</string>
+    <string name="settext73">Katika safu mlalo koma haziruhusiwi</string>
+    <string name="settext74">Katika Safu ya bidhaa ni tupu</string>
+    <string name="settext75">Kitambulisho cha safu Mlalo hakina kitu</string>
+    <string name="settext76">Katika Safu barcode imeingia Nukuu ya kisayansi. Tafadhali fungua laha yako ya CSV na umbizo safu wima ya barcode hadi Tex</string>
+    <string name="settext77">Katika Safu kuna maandishi/ herufi maalum(!?*$#) katika sehemu za nambari pekee</string>
+    <string name="settext78">Regula</string>
+    <string name="settext79">Sehemu</string>
+    <string name="settext80">Mipangilio ya bili</string>
+    <string name="settext81">Jina la kampuni</string>
+    <string name="settext82">Anwani</string>
+    <string name="settext83">Namba ya simu.</string>
+    <string name="settext84">Barua pepe</string>
+    <string name="settext85">Tovuti</string>
+    <string name="settext86">Kodi/Nambari za leseni</string>
+    <string name="settext87">Bill Footer</string>
+    <string name="settext88">Wiki hii</string>
+    <string name="settext89">Mwezi huu</string>
+    <string name="settext90">Mwaka huu</string>
+    <string name="settext91">Muda wote</string>
+    <string name="settext92">Desturi</string>
+    <string name="settext93">Kodisha</string>
+    <string name="settext94">Usafiri</string>
+    <string name="settext95">Huduma</string>
+    <string name="settext96">Matengenezo</string>
+    <string name="settext97">Mbalimbali</string>
+    <string name="settext98">Matibabu</string>
+    <string name="settext99">Imeunganishwa</string>
+    <string name="settext100">haijaunganishwa</string>
+    <string name="settext101">Nakala ya kampuni</string>
+    <string name="settext102">Nakala ya mteja</string>
+    <string name="settext103">hakuna chapa</string>
+    <string name="settext104">Mara ya mwisho kusawazishwa</string>
+    <string name="settext105">Leo</string>
+    <string name="settext106">Kesho</string>
+    <string name="settext107">Hifadhi ya chini</string>
+    <string name="settext108">Hifadhi zote</string>
+    <string name="settext109">Kujiandikisha kumeshindwa</string>
+    <string name="settext110">Omba OTP baada ya sekunde</string>
+    <string name="settext111">Chagua aina ya biashara</string>
+    <string name="settext112">Gharama za Ufungaji</string>
+    <string name="settext113">GST</string>
+    <string name="confi">Thibitisha neno la siri si sawa na neno la siri</string>
+    <string name="confi1">Nambari ya kuthibitisha ilitumwa kwa</string>
+    <string name="confi2">Nambari ya kuthibitisha ilitumwa</string>
+    <string name="confi3">Omba nambari ya kuthibitisha au uthibitishe na msimbo ambao tayari unao.</string>
+    <string name="confi4">Imeshindwa kuthibitisha!</string>
+    <string name="confi5">Thibitisha akaunti yako</string>
+    <string name="confi6">Imeshindwa kutuma tena nambari ya kuthibitisha</string>
+    <string name="tab">Kichupo</string>
+    <string name="warning1">Jina la mtumiaji au neno la siri havilingani</string>
+    <string name="look">Inatafuta vifaa</string>
+    <string name="look1">Tafadhali chagua kifaa kimoja hapa chini ili kuunganisha</string>
+    <string name="enter_value">Weka thamani</string>
+    <string name="error">Jina la kiungo tayari linatumika</string>
+    <string name="error1">Weka jina la kiungo</string>
+    <string name="error2">Uga tupu</string>
+    <string name="error3">Jina jipya la mtumiaji halilingani</string>
+    <string name="error4">Jina la mtumiaji lisilo sahihi</string>
+    <string name="error5">Weka tarakimu 4</string>
+    <string name="error6">Weka neno la siri tofauti</string>
+    <string name="error7">Neno la siri jipya halilingani</string>
+    <string name="error8">Neno la siri si sahihi</string>
+    <string name="error9">Jina la bidhaa tayari linatumika</string>
+    <string name="error10">Jaza jina la bidhaa</string>
+    <string name="error11">Jaza bei</string>
+    <string name="error12">Weka neno la siri halali</string>
+    <string name="error13">Weka kiasi sahihi</string>
+    <string name="error14">Weka msimbo wa punguzo</string>
+    <string name="error15">Weka thamani ya punguzo</string>
+    <string name="error16">Weka chini ya 100%</string>
+    <string name="error17">Weka chini ya jumla ndogo</string>
+    <string name="error18">Ingiza chini ya</string>
+    <string name="error19">Weka Jina Sahihi</string>
+    <string name="error20">Weka kiasi cha Mkopo</string>
+    <string name="error21">Salio chini ya kiasi cha bili</string>
+    <string name="error22">Weka Nambari ya Cheki</string>
+    <string name="error23">Weka Nambari Sahihi</string>
+    <string name="error24">Ingiza jina</string>
+    <string name="error25">Weka nambari ya simu</string>
+    <string name="error26">Weka anwani</string>
+    <string name="error27">Weka pincode</string>
+    <string name="error28">Kitambulisho cha Mteja tayari kimetumika</string>
+    <string name="error29">Weka maoni halali</string>
+    <string name="error30">Anwani ya barua pepe si sahihi</string>
+    <string name="error31">Kiasi cha zabuni ni chini ya 9</string>
+    <string name="error32">Kiasi cha zabuni ni chini ya 10</string>
+    <string name="error33">Kiasi cha zabuni ni chini 11</string>
+    <!--    <string name="error34">Bill number doesn't exist</string>-->
+    <string name="error35">Weka bei halali</string>
+    <string name="error36">Jaza jina la gharama</string>
+    <string name="error37">Jaza bei ya gharama</string>
+    <string name="error38">Weka namba ya IFSC</string>
+    <string name="error39">Weka Nambari ya Akaunti.</string>
+    <string name="error40">Weka jina la mteja</string>
+    <string name="error41">Weka nambari ya simu ya mteja</string>
+    <string name="error42">Nambari ya simu tayari iko kwenye orodha</string>
+    <string name="error43">Kitambulisho cha mtumiaji tayari katika orodha</string>
+    <string name="error44">Weka nambari halali.</string>
+    <string name="error45">Weka nambari halali</string>
+    <string name="error46">Ingiza kidogo kuliko</string>
+    <string name="error47">Weka pin yenye tarakimu 4</string>
+    <string name="error48">Weka kitambulisho halali cha barua pepe</string>
+    <string name="error49">Kitambulisho cha barua pepe hakilingani</string>
+    <string name="error50">Bandiko lisilolingana</string>
+    <string name="error51">OTP batili</string>
+    <string name="error52">Nambari ya simu isiyo sahihi.</string>
+    <string name="error53">Weka chini ya kiasi cha bili</string>
+    <string name="error54">Weka chini ya kiasi cha mkopo</string>
+    <string name="error55">Jina la kipengele tayari linatumika</string>
+    <string name="error56">Jaza jina la kipengele</string>
+    <string name="error57">endelea na kipaumbele</string>
+    <string name="error58">Nambari ya punguzo tayari inatumika</string>
+    <string name="error59">Jaza msimbo wa Punguzo</string>
+    <string name="error60">Jaza Thamani ya Punguzo</string>
+    <string name="error61">Ingiza jina la kibadala</string>
+    <string name="error62">Weka bei ya kibadala</string>
+    <string name="error63">Weka jina lingine la kibadala</string>
+    <string name="error64">Jina lahaja tayari limetumika</string>
+    <string name="error65">Weka vibambo dak 2</string>
+    <string name="error66">thamani ya barcode tayari kutumika</string>
+    <string name="error67">Ingiza chini ya 100</string>
+    <string name="error68">Weka chini ya bei</string>
+    <string name="error69">Seti ya kurekebisha tayari imetumika</string>
+    <string name="error70">Jina la ushuru tayari linatumika</string>
+    <string name="error71">Jaza jina la Kodi</string>
+    <string name="error72">Jaza Thamani ya Kodi</string>
+    <string name="error73">Ingiza jina la mtumiaji</string>
+    <string name="error74">Weka neno la siri</string>
+    <string name="error75">Weka jina la mtumiaji halali</string>
+    <string name="error76">Tafadhali weka neno la siri jipya sahihi</string>
+    <string name="error77">Weka Kiasi</string>
+    <string name="error78">Ingiza Point</string>
+    <string name="error79">Weka chini ya 99</string>
+    <string name="error80">Jaza wingi</string>
+    <string name="error81">Jaza bei</string>
+    <string name="error82">Namba ya simu. tayari imeingia</string>
+    <string name="error83">Weka chini ya kiasi kinachosubiri</string>
+    <string name="error84">Weka nambari</string>
+    <string name="error85">Imeshindwa kuwezesha</string>
+    <string name="error86">Msimbo batili wa kuwezesha</string>
+    <string name="error87">Weka sababu halali</string>
+    <string name="error88">Weka neno la siri tofauti</string>
+    <string name="error89">Neno la siri jipya halilingani</string>
+    <string name="error90">Weka Jina la Kampuni Yako</string>
+    <string name="error91">Ingiza neno la siri</string>
+    <string name="error92">Ingia dukani</string>
+    <string name="error93">Ingiza kifaa</string>
+    <string name="error94">Tafadhali ingiza jina la mtumiaji</string>
+    <string name="error95">Tafadhali weka neno la siri</string>
+    <string name="error96">Nenosiri linapaswa kuwa na zaidi ya herufi 6</string>
+    <string name="error97">Weka Nambari yako ya Simu</string>
+    <string name="error98">Weka Barua Pepe Yako</string>
+    <string name="error99">Weka Kitambulisho Sahihi cha Barua Pepe</string>
+    <string name="error100">Ingiza neno la siri la uthibitisho</string>
+    <string name="error101">Ingia dukani</string>
+    <string name="error102">Ingiza kifaa</string>
+    <string name="error103">Neno la siri na neno la siri la uthibitisho havilingani</string>
+    <string name="error104">Tafadhali weka Barua pepe/Jina la Mtumiaji</string>
+    <string name="error105">Ingiza Kitambulisho chako cha Barua pepe</string>
+    <string name="error106">userid haiwezi kuwa tupu</string>
+    <string name="error107">Tafadhali weka nambari ya simu</string>
+    <string name="error108">Ingiza hisa ya sasa</string>
+    <string name="error109">Ingiza qty.</string>
+    <string name="error110">Weka bei</string>
+    <string name="error111">Tafadhali weka jina la kifaa</string>
+    <string name="error112">Tafadhali weka jina la duka</string>
+    <string name="error113">Tafadhali weka barua pepe</string>
+    <string name="error114">Tafadhali weka neno la siri</string>
+    <string name="error115">Tafadhali thibitisha neno la siri</string>
+    <string name="error116">Ingiza jina la Kampuni</string>
+    <string name="error117">Weka jina la Duka</string>
+    <string name="error118">Weka jina la Kifaa</string>
+    <string name="error119">Ingiza OTP</string>
+    <string name="error120">Tafadhali Ingiza OTP Sahihi</string>
+    <string name="error121">Tafadhali Ingiza OTP</string>
+    <string name="error122">Weka angalau jedwali 1</string>
+    <string name="error123">Ingiza jina la sehemu</string>
+    <string name="error124">Jina la sehemu tayari limetumika</string>
+    <string name="error125">Weka jina halali la jedwali</string>
+    <string name="error126">Weka kikomo cha pax</string>
+    <string name="error127">Weka kikomo cha Universal Pax</string>
+    <string name="error128">Weka jina sahihi la Sehemu</string>
+    <string name="error129">Weka Jina halali la Biashara</string>
+    <string name="error130">Weka MID-OTP halali</string>
+    <string name="error131">Weka Ufunguo wa Siri-OTP halali</string>
+    <string name="error132">Weka MID-Debit halali</string>
+    <string name="error133">Weka Malipo ya Ufunguo wa Siri halali</string>
+    <string name="error134">Weka MID halali</string>
+    <string name="error135">Weka Ufunguo halali wa Merchant/AES</string>
+    <string name="error136">Weka kitambulisho halali cha POS</string>
+    <string name="error137">Weka Kitambulisho halali cha Akaunti</string>
+
+    <string name="subtitle1">Msimamizi</string>
+    <string name="subtitle2">Msimamizi wa eneo</string>
+    <string name="subtitle3">Mtumiaji</string>
+    <string name="subtitle4">bidhaa</string>
+    <string name="subtitle5">Mauzo</string>
+    <string name="subtitle6">Mkuu</string>
+    <string name="subtitle7">Data</string>
+    <string name="subtitle8">Usimamizi</string>
+    <string name="subtitle9">Msimamizi mkuu</string>
+    <string name="subtitle10">Marejesho</string>
+    <string name="subtitle11">Kipengele</string>
+    <string name="subtitle12">Kodi</string>
+    <string name="subtitle13">Mipangilio ya bili</string>
+    <string name="subtitle14">Punguzo</string>
+    <string name="subtitle15">Stoo janja</string>
+    <string name="subtitle16">Bidhaa</string>
+    <string name="subtitle17">Mtumiaji 1</string>
+    <string name="subtitle18">Mtumiaji 2</string>
+    <string name="subtitle19">Mtumiaji 3</string>
+    <string name="subtitle20">Mtumiaji 4</string>
+    <string name="subtitle21">Mtumiaji 5</string>
+    <string name="subtitle22">Mtumiaji 6</string>
+    <string name="title1">Jopo kudhibiti</string>
+    <string name="title2">Bidhaa</string>
+    <string name="title3">Ripoti</string>
+    <string name="title4">Mipangilio</string>
+    <string name="title5">Hifadhi nakala</string>
+    <string name="title6">Mteja</string>
+    <string name="title7">Kipengele cha Pro</string>
+    <string name="title8">Imeshindwa</string>
+    <string name="title9">Tahadhari</string>
+    <string name="title10">habari</string>
+    <string name="title11">Chagua aina ya Kuponi</string>
+    <string name="title12">Tafadhali subiri</string>
+    <string name="title13">MSIMBO WA KUPON</string>
+    <string name="title14">Maoni:</string>
+    <string name="title15">Faili za CSV pekee ndizo zinazoruhusiwa</string>
+    <string name="title16">Hariri</string>
+    <string name="title17">Una uhakika ?</string>
+    <string name="title18">Chagua kipindi</string>
+    <string name="title19">Onyo</string>
+    <string name="title20">Je, kweli unataka kuondoka?</string>
+    <string name="title21">Sawazisha Idadi</string>
+    <string name="title22">Msaada</string>
+    <string name="title23">Chagua Hifadhi</string>
+    <string name="title24">Kituo cha Usaidizi</string>
+    <string name="title25">IVEPOS</string>
+    <string name="title26">Usajili wa Wingu</string>
+    <string name="title27">Gharama</string>
+    <string name="title28">Viungo</string>
+    <string name="title29">Usimamizi wa KOT</string>
+    <string name="title30">Bluetooth printers</string>
+    <string name="title31">Network/Wifi printers</string>
+    <string name="title32">Seva</string>
+    <string name="title33">Badilisha neno la siri</string>
+    <string name="title34">Una uhakika ?</string>
+    <string name="title35">uuzaji wa kadi</string>
+    <string name="title36">Tahadhari</string>
+    <string name="title37">Weka upya</string>
+    <string name="title38">Washa</string>
+    <string name="title39">Je, una uhakika, unataka kufuta akaunti?</string>
+    <string name="title40">Tafadhali subiri!!</string>
+    <string name="title41">Mafanikio</string>
+    <string name="title42">Hali ya malipo</string>
+    <string name="title43">Chagua</string>
+    <string name="sdm1">Kujiandikisha kumeshindwa</string>
+    <string name="sdm2">Jina la Kampuni tayari lipo</string>
+    <string name="sdm3">barua pepe tayari ipo</string>
+    <string name="sdm4">Jina la Kampuni na Barua pepe tayari zipo</string>
+    <string name="sdm5">Akaunti tayari ipo</string>
+    <string name="sdm6">Maelezo batili</string>
+    <string name="sdm7">kifaa kipya kimeshindwa</string>
+    <string name="sdm8">Kifaa kimeundwa</string>
+    <string name="sdm9">kifaa kipya kimeundwa</string>
+    <string name="sdm10">Hifadhi imeundwa</string>
+    <string name="sdm11">duka jipya limeundwa</string>
+    <string name="sdm12">duka jipya limeshindwa</string>
+    <string name="sdm13">Mafanikio! imethibitishwa!</string>
+    <string name="sdm14">Imeshindwa kuthibitisha</string>
+    <string name="sdm15">Nambari ya kuthibitisha imetumwa.</string>
+    <string name="sdm16">Msimbo umetumwa kwa</string>
+    <string name="sdm17">Ombi la nambari ya uthibitishaji halijafaulu</string>
+    <string name="setmessage1">Pata toleo jipya la Pro</string>
+    <string name="setmessage2">Inarejesha...Tafadhali subiri kwa dakika chache..</string>
+    <string name="setmessage3">Inahifadhi nakala...Tafadhali subiri...</string>
+    <string name="setmessage4">Inatuma barua pepe...</string>
+    <string name="setmessage5">Muamala Umeshindwa</string>
+    <string name="setmessage6">Muamala umeghairiwa</string>
+    <!--    <string name="setmessage7">Your device android version won't support this feature. Kindly upgrade it to enjoy this feature.</string>-->
+    <string name="setmessage8">Inaunganisha.â€¦</string>
+    <string name="setmessage9">Inawasiliana na Seva ya Paytm</string>
+    <string name="setmessage10">Inazalisha OTP</string>
+    <string name="setmessage11">Inawasiliana na Seva ya Mobikwik</string>
+    <string name="setmessage12">Tafadhali subiri kwa muda</string>
+    <string name="setmessage13">Inahamisha ripoti...</string>
+    <string name="setmessage14">Inatuma...</string>
+    <string name="setmessage15">Weka msimbo wa kuponi</string>
+    <string name="setmessage16">Inapigia Gmail API...</string>
+    <string name="setmessage17">Inahamisha hifadhidata...</string>
+    <string name="setmessage18">Muda wa leseni yako ya programu ya IVEPOS umekwisha. Lakini unaweza kuunda hadi bili 1000 bila malipo. Tafadhali isasishe ili ufurahie vipengele kamili.</string>
+    <string name="setmessage19">Mtandao haupatikani, angalia muunganisho wako wa intaneti kisha ujaribu tena</string>
+    <string name="setmessage20">Uchunguzi.</string>
+    <string name="setmessage21">Inapakia data ya CSV... Huenda ikachukua sekunde chache hadi dakika chache kulingana na saizi ya data.</string>
+    <string name="setmessage23">Inasawazisha...</string>
+    <string name="setmessage24">Je, ungependa kuweka upya kituo cha uwasilishaji mtandaoni (Kitambulisho cha Muuzaji)?</string>
+    <string name="setmessage25">Je, ungependa kusawazisha idadi kwenye wingu?</string>
+    <string name="setmessage25_1">Do you want to sync inventory from cloud to app?</string>
+    <string name="setmessage26">Je, ungependa kuweka upya saa chaguomsingi za kazi (12:01 AM hadi 11:59 PM)?</string>
+    <string name="setmessage27">Inasasisha</string>
+    <string name="setmessage28">Kuhifadhi</string>
+    <string name="setmessage29">Muda wa leseni yako ya programu ya IVEPOS utaisha baada ya siku 7.\nIsasishe ili ufurahie huduma isiyokatizwa.</string>
+    <string name="setmessage30">Jaribu baada ya muda fulani</string>
+    <string name="setmessage31">Muunganisho wa mtandao ni wa polepole sana. Tafadhali jaribu tena baadae</string>
+    <string name="setmessage32">Inajitayarisha...</string>
+    <string name="setmessage33">Matengenezo ya Seva</string>
+    <string name="setmessage34">mabadiliko katika userid au neno la siri lililogunduliwa kwa uthibitishaji, ungependa kuendelea na kitambulisho kipya cha kuingia?</string>
+    <string name="setmessage35">bluetooth should be enabled to perform cardsale</string>
+    <string name="setmessage36">Razorpay tayari imesajiliwa. Weka upya Razorpay ili kuwezesha Paytm</string>
+    <string name="setmessage37">Paytm tayari imesajiliwa. Weka upya Paytm ili kuwezesha Razorpay</string>
+    <string name="setmessage38">Je, ungependa kuwezesha malipo ya kadi ya Pinelabs??</string>
+    <string name="setmessage39">Je, ungependa kuwezesha malipo ya kadi ya Pinelabs?</string>
+    <string name="setmessage40">Je, ungependa kuzima malipo ya kadi ya paytm?</string>
+    <string name="setmessage41">Je, ungependa kuwezesha malipo ya kadi ya paytm?</string>
+    <string name="setmessage42">Data iliyopo itafutwa.</string>
+    <string name="setmessage43">Inafuta Akaunti...</string>
+    <string name="setmessage44">inakagua vitambulisho...</string>
+    <string name="setmessage45">Akaunti Imesajiliwa kwa mafanikio</string>
+    <string name="setmessage46">Usajili umeshindikana</string>
+    <string name="language_settings">Mipangilio ya lugha</string>
+    <string name="language">Lugha</string>
+    <string name="english">Kiingereza</string>
+
+
+    <string name="download">Pakua</string>
+    <string name="download_and_send">Pakua na tuma</string>
+    <string name="upload">Pakia</string>
+    <string name="vendor_history">Historia ya muuzaji</string>
+
+    <string name="no_internet_connection">Hakuna muunganisho wa intaneti</string>
+    <string name="please_check_your_network">Tafadhali angalia mtandao wako</string>
+    <string name="oops">OOPS!</string>
+    <string name="please_check_your_internet_connection">Tafadhali angalia muunganisho wako wa intaneti</string>
+    <string name="retry">Jaribu tena</string>
+    <string name="no_network">Hakuna mtandao</string>
+    <string name="data_service_not_available">Huduma ya data haipatikani, tafadhali angalia muunganisho wako wa Wifi au muunganisho wa data ya simu.</string>
+
+    <string name="transaction_approve">Muamala umeidhinishwa</string>
+    <string name="transaction_decline">Muamala umekataliwa</string>
+    <string name="loading_please_wait">Inapakia. Tafadhali subiri...</string>
+
+    <string name="time_vs_sale">Muda vs Uuzaji</string>
+    <string name="time_vs_expenses">Muda vs Gharama</string>
+
+    <string name="login_successfull">Kuingia kumefaulu</string>
+    <string name="coming_soon">Inakuja hivi karibuni</string>
+    <string name="no_sales_to_see">Hakuna mauzo ya kuona</string>
+    <string name="export_successful">Uhamishaji umefaulu</string>
+    <string name="export_failed">Uhamishaji haujafaulu</string>
+    <string name="no_report_to_export">Hakuna taarifa ya kuhamisha</string>
+    <string name="no_report_to_mail">Hakuna taarifa ya kutuma</string>
+    <string name="expense_added">Gharama imeongezwa</string>
+
+    <string name="search_item_name_category">Tafuta jina la bidhaa na kipengele</string>
+    <string name="enter_valid_phoneno">Ingiza nambari ya simu halali</string>
+    <string name="category_saved">Kipengele kimehifadhiwa</string>
+    <string name="tax_saved">Ushuru umehifadhiwa</string>
+    <string name="discount_saved">Punguzo limehifadhiwa</string>
+
+    <string name="tax_invoice">TAX INVOICE</string>
+
+    <string name="_name">Jina:\u0020</string>
+    <string name="customer_phone_number">Customer phone number</string>
+    <string name="customer_E_mail">Customer E-mail</string>
+    <string name="refill_n">Refill</string>
+
+</resources>

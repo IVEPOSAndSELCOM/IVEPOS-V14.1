@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/relativeLayout1" android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_barcode_black_24dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/auto_generate"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btncancel"
+            android:layout_toLeftOf="@+id/refill"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/closetext"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_clear_black_18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/greenglow"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/clear_barcode"
+            android:text="@string/delete_barcodes"
+            android:textSize="15sp"
+            android:checked="false"
+            android:gravity="right|center_vertical" />
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_click_shape_rounded_corners"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:elevation="2dp"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/warning"
+                android:textColor="@color/red"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_clicking_on_will_generate_barcode_for_items_without_deleting_current_barcodes"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2_checking_delete_barcodes_will_delete_all_your_barcode_no_s_permanently_and_generate_new_ones"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp" android:layout_weight="@string/Button9" android:background="@drawable/ok"
+            android:id="@+id/cancel"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/subscription_prompt_cancel" android:layout_marginRight="1dp"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="0dp" android:layout_weight="@string/Button9" android:background="@drawable/ok"
+            android:id="@+id/ok"
+            android:layout_height="wrap_content"
+            android:padding="10dp" android:text="@string/settext38"
+            android:layout_marginLeft="1dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

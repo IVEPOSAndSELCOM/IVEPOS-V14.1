@@ -1,0 +1,409 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <ProgressBar
+        android:layout_width="match_parent" android:visibility="gone"
+        android:layout_height="wrap_content" android:id="@+id/proceed_button"
+        android:layout_below="@+id/imageView"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="154dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:onClick="gotoAdmin">
+
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/admin_nocircle_48dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/action_admin"
+                            android:lines="@string/Button10"
+                            android:layout_below="@+id/imageView"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:onClick="gotoUser">
+
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/user_nocircle_48dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView1"
+                        android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/action_user"
+                            android:lines="@string/Button10"
+                            android:layout_below="@+id/imageView1"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="gotoDatabase">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/products_nocircle_48dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView2"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/action_database"
+                            android:layout_below="@+id/imageView2"
+                            android:drawablePadding="10dp"
+                            android:layout_height="wrap_content"
+                            android:lines="@string/Button10"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="gotoOrderlist">
+
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/reports_nocircle_48dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/action_orderlist"
+                            android:layout_below="@+id/imageView3"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:lines="@string/Button10"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="154dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="gotoPreference">
+
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/settings_nocircle_48dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4"
+                        android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/title_activity_settings"
+                            android:layout_below="@+id/imageView4"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:lines="@string/Button10"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:onClick="gotoBackup">
+
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/backup_nocircle_48dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView6"
+                        android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/backup"
+                            android:layout_below="@+id/imageView6"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:lines="@string/Button10"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:visibility="visible"
+                        android:onClick="gotoCustomer">
+
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/customer_nocircle_48dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView7"
+                        android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/title6"
+                            android:layout_below="@+id/imageView7"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:lines="@string/Button10"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:visibility="visible"
+                        android:onClick="gotoIngredients">
+
+                        <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ingredients_micro_inventory_nocircle_48dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView8"
+                        android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/title28"
+                            android:layout_below="@+id/imageView8"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:lines="@string/Button10"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="154dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:onClick="gotocloud_subscription">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/subscriptions_48dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView9"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/subscriptions"
+                            android:lines="@string/Button10"
+                            android:layout_below="@+id/imageView9"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:onClick="gotoExpenses">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_cost_48dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView10"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/title27"
+                            android:lines="@string/Button10"
+                            android:layout_below="@+id/imageView10"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:onClick="gotoKot">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ic_kot_48dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView11"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/title29"
+                            android:lines="@string/Button10"
+                            android:layout_below="@+id/imageView11"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

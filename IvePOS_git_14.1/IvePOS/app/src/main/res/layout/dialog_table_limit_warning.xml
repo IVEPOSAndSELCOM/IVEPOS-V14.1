@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_warning_yellow_48dp"/>
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="vertical"
+            android:paddingLeft="15dp" android:paddingRight="15dp"
+            android:layout_height="wrap_content">
+            <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/tables_can_t_exceed_99" android:textColor="#000000"
+            android:textStyle="bold" android:gravity="center_vertical"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/you_already_added_maximum_no_of_tables_possible" android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent" android:gravity="center" android:textColor="#000000"-->
+        <!--android:layout_height="wrap_content" android:text="@string/size_116x95_px" android:singleLine="true"/>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="match_parent"
+            android:background="@drawable/ok"
+            android:id="@+id/cancel"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/Ok" android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

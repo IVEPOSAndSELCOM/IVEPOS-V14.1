@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_time"
+    android:layout_width="match_parent"
+    android:layout_weight="@string/Button9"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:id="@+id/itemname"
+        android:text="@string/hiiiiiiiiii"/>
+
+    <TextView
+        android:layout_width="match_parent" android:id="@+id/date"
+        android:layout_height="wrap_content"
+        android:text="@string/date"/>
+
+    <TextView
+        android:layout_width="match_parent" android:id="@+id/time"
+        android:layout_height="wrap_content"
+        android:text="@string/time_title"/>
+
+
+</LinearLayout>

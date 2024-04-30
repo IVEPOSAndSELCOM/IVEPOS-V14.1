@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_weight="@string/Button9"
+        android:layout_height="match_parent" android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="8dp" android:paddingBottom="4dp"
+            android:paddingLeft="8dp" android:paddingRight="4dp"
+            android:layout_weight="@string/Button9">
+            <RelativeLayout
+                android:layout_width="match_parent" android:background="@drawable/rounded_medium_black_click"
+                android:layout_height="match_parent" android:gravity="center_vertical"
+                android:id="@+id/masteradmin">
+                <ImageView
+                    android:layout_width="wrap_content" android:src="@drawable/ic_madmin_black_48dp"
+                    android:layout_height="wrap_content" android:id="@+id/imageView"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/master_admin" android:layout_below="@+id/imageView"
+                    android:layout_height="wrap_content" android:paddingTop="20dp" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp" android:paddingBottom="4dp"
+            android:paddingLeft="4dp" android:paddingRight="4dp"
+            android:layout_weight="@string/Button9">
+            <RelativeLayout
+                android:layout_width="match_parent" android:background="@drawable/rounded_medium_black_click"
+                android:layout_height="match_parent" android:gravity="center_vertical" android:id="@+id/localadmin">
+                <ImageView
+                    android:layout_width="wrap_content" android:src="@drawable/ic_ladmin_black_48dp"
+                    android:layout_height="wrap_content" android:id="@+id/imageView1" android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/local_admin" android:layout_below="@+id/imageView1"
+                    android:layout_height="wrap_content" android:paddingTop="20dp" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_weight="@string/Button9"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_weight="@string/Button9"
+        android:layout_height="match_parent" android:orientation="horizontal">
+    </LinearLayout>
+</LinearLayout>
+

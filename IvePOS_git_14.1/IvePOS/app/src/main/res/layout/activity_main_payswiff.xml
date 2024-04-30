@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paynear_payment_sdk_demo_version" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        android:hint="@string/error77"
+        android:inputType="number">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/referanceno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        android:hint="@string/enter_referancenuber">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/mob_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/referanceno"
+        android:layout_margin="5dp"
+        android:focusable="true"
+        android:hint="@string/enter_referancenuber">
+
+        <requestFocus />
+    </EditText>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/trxn_status"
+        android:layout_below="@+id/paired_provider">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+
+            <Button
+                android:id="@+id/sale"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/getDeviceStatus"
+                android:text="@string/sale" />
+            <!--android:visibility="gone"-->
+
+            <Button
+                android:id="@+id/preauth"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sale"
+                android:layout_alignRight="@+id/sale"
+                android:layout_below="@+id/sale"
+                android:layout_marginTop="24dp"
+                android:text="@string/pre_auth"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/cashback"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sale"
+                android:layout_alignRight="@+id/sale"
+                android:layout_below="@+id/preauth"
+                android:layout_marginTop="24dp"
+                android:text="@string/cash_back"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/emi"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/cashback"
+                android:text="@string/emi"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/cash_at_pos"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/emi"
+                android:text="@string/cash_pos"
+                android:visibility="gone" />
+            <!--android:visibility="gone"-->
+
+            <Button
+                android:id="@+id/emi2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/cash_at_pos"
+                android:text="@string/emi_with_payment_option_code"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/llRadio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mob_no"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/radioComm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/radio_bluetooth" />
+
+            <RadioButton
+                android:id="@+id/radioUSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/radio_usb" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paired_provider"
+        android:layout_below="@+id/llRadio"
+        android:text="@string/select_paired_device" />
+
+    <Spinner
+        android:id="@+id/paired_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:background="@drawable/rounded_corners" />
+
+    <Button
+        android:id="@+id/prepaid"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/prepaid_card"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/rki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prepaid"
+        android:layout_alignRight="@+id/prepaid"
+        android:layout_below="@+id/prepaid"
+        android:layout_marginTop="18dp"
+        android:text="@string/remote_process"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/trxn_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/get_transaction_status" />
+
+</RelativeLayout>

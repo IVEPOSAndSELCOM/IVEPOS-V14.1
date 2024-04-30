@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="320dp" android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6"
+        android:layout_marginBottom="5dp">
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout android:focusable="true"
+        android:focusableInTouchMode="true" android:layout_width="0px"
+        android:layout_height="0px" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp" android:paddingRight="15dp"
+        android:paddingBottom="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="15sp"
+            android:text=" "
+            android:id="@+id/textViewRegStoreNameLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textViewRegCompanyNameMessage" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1dp"
+            android:paddingRight="10dp"
+            android:id="@+id/editTextRegStoreName"
+            android:layout_below="@+id/textViewRegStoreNameLabel"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/text_border_selector"
+            android:hint="@string/store_name"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="15sp"
+            android:text=" "
+            android:textColor="@color/alert"
+            android:id="@+id/textViewRegStoreNameMessage"
+            android:layout_below="@+id/editTextRegStoreName"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

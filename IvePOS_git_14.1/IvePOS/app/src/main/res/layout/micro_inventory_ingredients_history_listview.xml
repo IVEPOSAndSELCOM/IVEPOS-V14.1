@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/title_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:weightSum="@string/Button5"
+        android:paddingBottom="3dp"
+        android:layout_below="@+id/header_action">
+
+        <LinearLayout
+            android:id="@+id/date_time"
+            android:layout_width="0dp"
+            android:layout_weight="1.8"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp">
+
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/itemname"
+                android:layout_height="wrap_content"
+                android:text="@string/ingredient"/>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/avg_price"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avg_price"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/unit"
+                android:layout_height="wrap_content"
+                android:text="@string/unit"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/paid_pending"
+            android:layout_toRightOf="@+id/date_time"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/min_price"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min_price"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="match_parent" android:id="@+id/max_price"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max_price"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/paid_pending"
+            android:layout_width="0dp"
+            android:layout_weight="@string/Button9"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/total_qty"
+                    android:layout_height="wrap_content"
+                    android:text="@string/act_qty"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/ "/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn3"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/total_price"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cost"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/wastage_qty"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wastage_qty"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn4"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/wastage_price"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cost"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

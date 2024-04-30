@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginBottom="4dp"
+        android:background="#e6e6e6"
+        android:elevation="4dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/go_back"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/actionBarItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/go_back"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/action_cancellation1" />
+
+            <LinearLayout
+                android:id="@+id/pane2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:elevation="2dp"
+                android:orientation="vertical"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/current_bill_amount" />
+
+                    <TextView
+                        android:id="@+id/rs_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView17"
+                        android:text=" @string/insert " />
+
+                    <TextView
+                        android:id="@+id/totalold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/rs_text"
+                        android:text="@string/_0_0"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="#7f7f7f"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:weightSum="@string/Button5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/subtotal"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subtotalold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:gravity="center"
+                        android:text="@string/_0_0"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/disc"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="("
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/discountvaluenew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Button13"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="%"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=")"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/discountold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="@string/_0_0"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:weightSum="@string/Button5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/action_tax"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/taxold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:gravity="center"
+                        android:text="@string/_0_0"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/rounded"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/roundoffold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="@string/_0_0"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/proceed_button"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/etBillno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="0,1,2,3,4,5,6,7,8,9,-,_"
+                android:hint="Enter bill no..."
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:minWidth="200dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/proceed_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/go"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="@string/Button9"
+            android:paddingTop="0dp" android:paddingBottom="4dp"
+            android:paddingLeft="8dp" android:paddingRight="4dp"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent" android:id="@+id/pane1"
+                android:layout_height="match_parent" android:visibility="visible"
+                android:orientation="vertical"
+                android:background="@drawable/white_rounded_corners"
+                android:elevation="2dp"
+                android:layout_margin="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:elevation="4dp"
+                    android:gravity="center_vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/edit_tab"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/edit_pack"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/edit_page"/>
+
+                        <ImageView
+                            android:id="@+id/btnclose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_clear_grey_24dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:clickable="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:text="@string/close"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/btnclose">
+                            <TextView
+                                android:id="@+id/rupee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="@string/insert"
+                                android:textStyle="bold"
+                                android:layout_centerVertical="true"
+                                android:textSize="18sp"/>
+                            <!--<ImageView-->
+                            <!--android:layout_width="wrap_content" android:clickable="true"-->
+                            <!--android:layout_height="wrap_content" android:background="@drawable/white_click"-->
+                            <!--android:src="@drawable/delete_icon" android:id="@+id/t1close"-->
+                            <!--android:paddingTop="10dp" android:paddingBottom="10dp"-->
+                            <!--android:paddingLeft="15dp" android:paddingRight="15dp"-->
+                            <!--android:layout_alignParentRight="true"/>-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/rupee"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerVertical="true"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_weight="@string/Button9"
+                                android:gravity="center"
+                                android:text="@string/_0_0"
+                                android:id="@+id/totalnew"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btncancelorder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/Button27"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7f7f7f"/>
+                <ScrollView android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:layout_below="@+id/tabla_cuerpo">
+                    <TableLayout android:orientation="vertical"
+                        android:id="@+id/lytpedido"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp">
+                    </TableLayout>
+                </ScrollView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7f7f7f"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp" android:paddingRight="10dp"
+                    android:paddingBottom="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:weightSum="@string/Button5"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="@string/Button9"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/subtotal"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="@string/Button9"
+                            android:gravity="center"
+                            android:text="@string/_0_0"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:id="@+id/subtotalnew"/>
+                        <TextView
+                            android:layout_width="0dp" android:visibility="visible"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="@string/Button9"
+                            android:gravity="center"
+                            android:text="@string/_0_0"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:id="@+id/subtotalnew_hide"/>
+                        <LinearLayout
+                            android:layout_width="0dp" android:layout_weight="1.2" android:orientation="horizontal"
+                            android:layout_height="wrap_content" android:gravity="left">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:text="@string/disc"/>
+                            <TextView
+                                android:layout_width="wrap_content" android:text="("
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content" android:text="@string/Button13"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:id="@+id/discountvalueold"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content" android:text="%"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content" android:text=")"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:text="@string/_0_0"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:id="@+id/discountnew"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:weightSum="@string/Button5"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="@string/Button9"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/action_tax"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="@string/Button9"
+                            android:gravity="center"
+                            android:text="@string/_0_0"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:id="@+id/taxnew"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/rounded"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:text="@string/_0_0"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:id="@+id/roundoffnew"/>
+                    </LinearLayout>
+                    <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#000000"-->
+                    <!--android:layout_marginTop="8dp"/>-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginTop="8dp">-->
+                    <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="@string/Button9"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/rss"-->
+                    <!--android:textStyle="bold"/>-->
+                    <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="@string/Button9"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/_0_0"-->
+                    <!--android:id="@+id/totalold"-->
+                    <!--android:textStyle="bold"/>-->
+                    <!--</LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+                        <!--<Button-->
+                        <!--android:id="@+id/btnclose"-->
+                        <!--android:textSize="18sp"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:textColor="#000000"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="@string/Button9"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:background="@drawable/medium_black_click"-->
+                        <!--android:text="@string/close"-->
+                        <!--android:textAllCaps="false"/>-->
+                        <!--<Button-->
+                        <!--android:id="@+id/btncancelorder"-->
+                        <!--android:textSize="18sp"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="@string/Button9"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:background="@drawable/red_click"-->
+                        <!--android:text="@string/Button27"-->
+                        <!--android:textAllCaps="false"/>-->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="@string/Button9"
+            android:paddingTop="0dp" android:paddingBottom="4dp"
+            android:paddingLeft="4dp" android:paddingRight="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent" android:id="@+id/pane3"
+                android:layout_height="match_parent" android:visibility="visible"
+                android:orientation="vertical"
+                android:background="@drawable/white_rounded_corners"
+                android:elevation="2dp"
+                android:layout_margin="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:elevation="4dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/returns_tab"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/returns_pack"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/returns_page"/>
+
+                        <ImageView
+                            android:id="@+id/btnrevert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:src="@drawable/ic_clear_grey_24dp"
+                            android:text="@string/revert"
+                            android:textStyle="bold"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/btnrevert">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/returns"
+                                android:textColor="@color/ColorAccent"
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:layout_centerVertical="true" />
+                            <TextView
+                                android:layout_width="wrap_content" android:id="@+id/inn"
+                                android:layout_height="wrap_content"
+                                android:text=" @string/insert "
+                                android:textStyle="bold"
+                                android:textSize="18sp"
+                                android:layout_centerVertical="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="@string/Button9"
+                                android:textSize="18sp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:text="@string/_0_0"
+                                android:id="@+id/totalcancel"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content" android:background="@drawable/white_click"-->
+                        <!--android:layout_height="wrap_content" android:clickable="true"-->
+                        <!--android:src="@drawable/delete_icon" android:id="@+id/t2close"-->
+                        <!--android:paddingTop="10dp" android:paddingBottom="10dp"-->
+                        <!--android:paddingLeft="15dp" android:paddingRight="15dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_alignParentRight="true"/>-->
+
+                        <Button
+                            android:id="@+id/btnconfirmcancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/confirm"
+                            android:drawableLeft="@drawable/ic_returns_refunds_white_24dp"
+                            android:drawablePadding="10dp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7f7f7f"/>
+                <ScrollView android:orientation="horizontal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+                    android:layout_below="@+id/tabla_cuerpo">
+                    <TableLayout
+                        android:layout_gravity="right"
+                        android:orientation="vertical"
+                        android:id="@+id/lytpedido1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp">
+                    </TableLayout>
+                </ScrollView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7f7f7f"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp" android:paddingRight="10dp"
+                    android:paddingBottom="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:weightSum="@string/Button5"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="@string/Button9"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/subtotal"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="@string/Button9"
+                            android:gravity="center"
+                            android:text="@string/_0_0"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:id="@+id/subtotalcancel"/>
+                        <LinearLayout
+                            android:layout_width="0dp" android:layout_weight="1.2" android:orientation="horizontal"
+                            android:layout_height="wrap_content" android:gravity="left">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:text="@string/disc"/>
+                            <TextView
+                                android:layout_width="wrap_content" android:text="("
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content" android:text="@string/Button13"
+                                android:id="@+id/discountvaluecancel"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content" android:text="%"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content" android:text=")"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:text="@string/_0_0"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:id="@+id/discountcancel"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:weightSum="@string/Button5"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="@string/Button9"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/action_tax"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="@string/Button9"
+                            android:gravity="center"
+                            android:text="@string/_0_0"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:id="@+id/taxcancel"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/rounded"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:text="@string/_0_0"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:id="@+id/roundoffcancel"/>
+                    </LinearLayout>
+                    <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#000000"-->
+                    <!--android:layout_marginTop="8dp"/>-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginTop="8dp">-->
+                    <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="@string/Button9"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/rss"-->
+                    <!--android:id="@+id/textView18"-->
+                    <!--android:textStyle="bold"/>-->
+                    <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="@string/Button9"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/_0_0"-->
+                    <!--android:id="@+id/totalcancel"-->
+                    <!--android:textStyle="bold"/>-->
+                    <!--</LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+                        <!--<Button-->
+                        <!--android:id="@+id/btnrevert" android:textSize="18sp"-->
+                        <!--android:layout_width="0dp" android:textColor="#000000"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="@string/Button9"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:background="@drawable/medium_black_click"-->
+                        <!--android:text="@string/revert"-->
+                        <!--android:textAllCaps="false"/>-->
+                        <!--<Button-->
+                        <!--android:id="@+id/btnconfirmcancel" android:textSize="18sp"-->
+                        <!--android:layout_width="0dp" android:textColor="#ffffff"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="@string/Button9"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:background="@drawable/red_click"-->
+                        <!--android:text="Confirm Return"-->
+                        <!--android:textAllCaps="false"/>-->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtTarget"
+            android:layout_marginBottom="10dp"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnModel"
+            android:gravity="left"
+            android:layout_marginBottom="5dp" />
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnLang"
+            android:gravity="left"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

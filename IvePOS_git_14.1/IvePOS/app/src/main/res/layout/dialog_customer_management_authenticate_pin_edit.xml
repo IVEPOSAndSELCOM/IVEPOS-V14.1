@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/relativeLayout1"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content" android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/change_username_pic"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:padding="15dp"
+            android:text="@string/authenticate_pin"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical">
+            <Switch
+                android:id="@+id/mySwitch" android:saveEnabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="visible">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/forgot_pin"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="10dp"
+            android:text="@string/forgot_change_pin"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/phoneno_valid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/white_rounded_corners"
+        android:elevation="2dp"
+        android:visibility="gone"
+        android:layout_below="@+id/no._of_tables_text">
+        <Button
+            android:id="@+id/phoneno_valid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:id="@+id/last_four"
+            android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:text="@string/_1234"
+            android:layout_toLeftOf="@+id/phoneno_valid"
+            android:textSize="15sp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:id="@+id/first_six"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/last_four">
+
+            <EditText
+                android:id="@+id/enter_phone_num" android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="phone no. 6 digits"
+                android:maxLength="@string/Button7"
+                android:selectAllOnFocus="true"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/otp_valid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/white_rounded_corners"
+        android:elevation="2dp"
+        android:visibility="gone"
+        android:layout_below="@+id/no._of_tables_text">
+        <Button
+            android:id="@+id/savetables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:id="@+id/four_opt"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/savetables">
+
+            <EditText
+                android:id="@+id/enter_otp" android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="OTP code"
+                android:maxLength="@string/Button5"
+                android:selectAllOnFocus="true"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_click_shape_rounded_corners"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="2dp"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/warning"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_mail_sms_is_not_sent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_checking_your_network_connection_n2_go_to_your_email_settings_and_enable_allow_less_secure_apps"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent" android:id="@+id/cancel"
+        android:layout_height="wrap_content"
+        android:layout_weight="@string/Button9"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:background="@drawable/ok"
+        android:text="@string/subscription_prompt_cancel"
+        android:layout_marginRight="1dp"/>
+
+
+</LinearLayout>

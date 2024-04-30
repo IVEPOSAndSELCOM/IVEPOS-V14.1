@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/relativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="320dp" android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6">
+        <ImageButton
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/light_black_click"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/subscription_prompt_cancel"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_name"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btncancel"
+            android:layout_toLeftOf="@+id/btnsave"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_done_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ok"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/submit"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent" android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/change_username_pic"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="@string/customername"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/change_username_pic"
+                        android:layout_centerVertical="true"
+                        android:hint="will apply to all bills"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent" android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical">
+                    <Switch
+                        android:id="@+id/mySwitch" android:saveEnabled="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent" android:id="@+id/pay_later_limit"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content" android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text="@string/pay_later_limit_present_limit"/>
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/present_limit"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text=""/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:text=")"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/limit_status"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:text="@string/no_limit"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:text=" , "
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/limit_value"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:hint=""
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e6e6e6"/>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:id="@+id/commission_charges"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/change_username_pic"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="@string/commission_charges"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/comm_status"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:text="@string/off"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:text=" , "
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/comm_value"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:hint="percentage"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--<FrameLayout-->
+                <!--android:layout_width="match_parent" android:layout_marginLeft="10dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="right|center_vertical">-->
+                <!--<Switch-->
+                <!--android:id="@+id/mySwitch1" android:saveEnabled="false"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="right|center_vertical"/>-->
+
+                <!--</FrameLayout>-->
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:visibility="visible">-->
+            <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Enter in percentage"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="% of bill amount"/>-->
+
+            <!--</LinearLayout>-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e6e6e6"/>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:id="@+id/auth_pin"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/change_username_pic"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="@string/authentication_pin"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/auth_pin_status"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:text="@string/off"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:text=" , "
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/auth_pin_set_notset"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:hint="not set"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--<FrameLayout-->
+                <!--android:layout_width="match_parent" android:layout_marginLeft="10dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="right|center_vertical">-->
+                <!--<Switch-->
+                <!--android:id="@+id/mySwitch2" android:saveEnabled="false"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="right|center_vertical"/>-->
+
+                <!--</FrameLayout>-->
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:visibility="visible">-->
+            <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:id="@+id/create_pin"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:text="Create pin"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="#ffffff"/>-->
+
+            <!--</LinearLayout>-->
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e6e6e6"/>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:id="@+id/bday_wish"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/change_username_pic"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="@string/birthday_wish"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/dbay_date_status"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:text="@string/off"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:text=" , "
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/dbay_date"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/change_username_pic"
+                            android:layout_centerVertical="true"
+                            android:hint="Select date"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e6e6e6"/>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:id="@+id/default_discount"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="@string/default_discount"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/def_dis_status"
+                            android:layout_height="wrap_content"
+                            android:text="@string/off"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" , "
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/def_dis_val"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Button13"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/def_dis_type"
+                            android:layout_height="wrap_content"
+                            android:text="%"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e6e6e6"/>
+            <LinearLayout
+                android:layout_width="match_parent" android:id="@+id/default_tax"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="@string/taxes_override"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/no_of_taxes"
+                            android:layout_height="wrap_content"
+                            android:text="@string/all"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/no_of_taxes"
+                            android:text="@string/taxes_selected"
+                            android:textColor="#000000" />
+
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content" android:id="@+id/def_dis_val"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/Button13"-->
+                        <!--android:textColor="#000000"/>-->
+
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content" android:id="@+id/def_dis_type"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="%"-->
+                        <!--android:textColor="#000000"/>-->
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_width="match_parent" android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical">
+                    <Switch
+                        android:id="@+id/mySwitch_taxes" android:saveEnabled="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

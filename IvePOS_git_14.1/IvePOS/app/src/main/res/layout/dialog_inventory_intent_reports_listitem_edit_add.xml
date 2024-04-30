@@ -1,0 +1,532 @@
+<LinearLayout
+    android:layout_width="320dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="#e6e6e6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6"
+        android:layout_marginBottom="5dp">
+        <ImageButton
+            android:id="@+id/canceledit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/light_black_click_shape_rounded_corners"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/subscription_prompt_cancel"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" android:layout_marginLeft="10dp"
+            android:text="@string/vendor" android:layout_toRightOf="@+id/canceledit"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/okedit_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/okedit_bank"
+            android:layout_centerVertical="true"
+            android:background="@drawable/red_click_shape_rounded_corners"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/Button25"/>
+
+        <ImageButton
+            android:id="@+id/okedit_bank" android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_print_black_24dp"
+            android:layout_toLeftOf="@+id/okedit"
+            android:layout_centerVertical="true"
+            android:background="@drawable/green_click_shape_rounded_corners"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="@string/save"/>
+
+        <ImageButton
+            android:id="@+id/okedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/green_click_shape_rounded_corners"
+            android:padding="10dp"
+            android:src="@drawable/ic_done_black_24dp"
+            android:text="@string/save"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent" android:id="@+id/barr"
+                android:layout_height="wrap_content" android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" android:gravity="bottom"
+                    android:layout_toLeftOf="@+id/vendor_add">
+                    <TextView
+                        android:layout_width="match_parent"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:id="@+id/vend_name"
+                        android:hint="Select vendor"
+                        android:textSize="15sp"
+                        android:selectAllOnFocus="true"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:nextFocusDown="@id/discountvalue1"/>
+                </LinearLayout>
+
+
+
+                <ImageButton
+                    android:id="@+id/vendor_add"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_margin="2dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:elevation="2dp"
+                    android:background="@drawable/light_black_click_shape_rounded_corners"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent" android:id="@+id/vendor_det_lay"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:background="@drawable/white_rounded_corners"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent" android:id="@+id/vend_phoneno"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_no" android:padding="2dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/DarkBlack"/>
+                <TextView
+                    android:layout_width="match_parent" android:id="@+id/vend_email"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email" android:padding="2dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/DarkBlack"/>
+                <TextView
+                    android:layout_width="match_parent" android:id="@+id/vend_address"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address" android:padding="2dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/DarkBlack"/>
+                <TextView
+                    android:layout_width="match_parent" android:id="@+id/vend_gstin"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gstin" android:padding="2dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/DarkBlack"/>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="@string/invoice_no"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:maxLines="@string/Button9"
+                    android:textSize="15sp"
+                    android:id="@+id/invoice_no"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:orientation="horizontal"
+                    android:layout_toLeftOf="@+id/image" android:gravity="bottom"
+                    android:layout_height="50dp">
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:layout_height="wrap_content" android:layout_weight="@string/Button9"-->
+<!--                        android:layout_width="match_parent" android:layout_marginRight="2dp">-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent" android:orientation="horizontal"
+                        android:layout_height="wrap_content" android:layout_weight="@string/Button9"
+                        style="@style/Widget.AppCompat.Spinner.Underlined">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:hint="No. of items" android:gravity="bottom"
+                            android:maxLines="@string/Button9" android:layout_weight="@string/Button9"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:nextFocusDown="@+id/nameedit"
+                            android:id="@+id/no_of_items"/>
+                    </RelativeLayout>
+
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:layout_height="wrap_content" android:layout_weight="@string/Button9"-->
+<!--                        android:layout_width="match_parent">-->
+                        <RelativeLayout
+                            android:layout_width="match_parent" android:orientation="horizontal"
+                            android:layout_height="wrap_content" android:layout_weight="@string/Button9"
+                            style="@style/Widget.AppCompat.Spinner.Underlined">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="@string/Rs" android:gravity="bottom"
+                                android:maxLines="@string/Button9"
+                                android:layout_height="match_parent"
+                                android:textSize="15sp"
+                                android:nextFocusDown="@+id/nameedit"
+                                android:id="@+id/bill_totoal_rs"/>
+                            <TextView
+                                android:layout_width="match_parent" android:layout_toRightOf="@+id/bill_totoal_rs"
+                                android:hint="@string/voidsale_transactionapprovalview_total_amount" android:gravity="bottom"
+
+                                android:maxLines="@string/Button9"
+                                android:layout_height="match_parent"
+                                android:textSize="15sp"
+                                android:nextFocusDown="@+id/nameedit"
+                                android:id="@+id/bill_totoal_amount"/>
+                        </RelativeLayout>
+
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="12dp"
+                    android:layout_centerVertical="true"
+                    android:rotation="180"
+                    android:src="@drawable/ic_keyboard_arrow_up_black_24dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/total_pane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_margin="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:background="@drawable/white_rounded_corners"
+                android:elevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_marginRight="8dp">
+
+                    <TextView
+                        android:id="@+id/bill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/DarkBlack"
+                        android:text="@string/bill_amount" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/bill">
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/inn"
+                            android:layout_height="wrap_content" android:layout_toLeftOf="@+id/dialog_billamount"
+                            android:text="@string/Rs"
+                            android:textColor="@color/DarkBlack"/>
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/dialog_billamount"
+                            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                            android:textColor="@color/DarkBlack"
+                            android:text="@string/Button13"/>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_marginRight="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/tax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBlack"
+                            android:text="@string/_tax"/>
+
+                        <TextView
+                            android:id="@+id/dialog_percent_tax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBlack"
+                            android:text="@string/Button6"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBlack"
+                            android:text="%)"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/tax">
+                        <TextView
+                            android:layout_width="wrap_content" android:layout_toLeftOf="@+id/dialog_amount_tax"
+                            android:layout_height="wrap_content" android:id="@+id/inn1"
+                            android:text="@string/Rs"
+                            android:textColor="@color/DarkBlack"/>
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/dialog_amount_tax"
+                            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                            android:textColor="@color/DarkBlack"
+                            android:text="@string/Button13"/>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_marginRight="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBlack"
+                            android:text="@string/disc_adj"/>
+
+                        <TextView
+                            android:id="@+id/dialog_percent_disc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBlack"
+                            android:text="@string/Button6"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/DarkBlack"
+                            android:text="%)"/>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/discount">
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/inn2"
+                            android:layout_height="wrap_content" android:layout_toLeftOf="@+id/dialog_amount_discount"
+                            android:text="@string/Rs"
+                            android:textColor="@color/DarkBlack"/>
+                        <TextView
+                            android:layout_width="wrap_content" android:id="@+id/dialog_amount_discount"
+                            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+                            android:textColor="@color/DarkBlack"
+                            android:text="@string/Button13"/>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_and_time" android:paddingLeft="4dp"
+                    style="@style/TextAppearance.Design.Hint"/>
+                <LinearLayout
+                    android:layout_width="match_parent" android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+                    <TextView
+                        android:layout_width="match_parent" android:text="@string/_01nov17" style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_height="wrap_content" android:layout_weight="@string/Button9"
+                        android:textSize="15sp"
+                        android:id="@+id/editText11"/>
+
+                    <TextView
+                        android:layout_width="match_parent" android:text="@string/hiiii"
+                        android:background="@null" android:visibility="gone"
+                        android:textColor="#000000" android:ellipsize="end"
+                        android:paddingLeft="5dp" android:paddingRight="5dp"
+                        android:paddingBottom="3dp" android:paddingTop="3dp"
+                        android:maxLines="@string/Button9" android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:id="@+id/editText1"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent" android:text="@string/_12_00_am" style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_height="wrap_content" android:layout_weight="@string/Button9"
+                        android:textSize="15sp"
+                        android:id="@+id/editText_from_day_visible"/>
+
+                    <TextView
+                        android:layout_width="match_parent" android:text="@string/hiiii"
+                        android:background="@null" android:visibility="gone"
+                        android:textColor="#000000" android:ellipsize="end"
+                        android:paddingLeft="5dp" android:paddingRight="5dp"
+                        android:paddingBottom="3dp" android:paddingTop="3dp"
+                        android:maxLines="@string/Button9" android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:id="@+id/editText_from_day_hide"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@string/Button9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/due_date" android:paddingLeft="4dp"
+                        style="@style/TextAppearance.Design.Hint"/>
+
+                    <TextView
+                        android:layout_width="match_parent" android:text="@string/hiii" android:visibility="gone"
+                        android:background="@null" android:gravity="center_vertical"
+                        android:textColor="#000000" android:ellipsize="end"
+                        android:paddingLeft="5dp" android:paddingRight="5dp"
+                        android:paddingBottom="3dp" android:paddingTop="3dp"
+                        android:maxLines="@string/Button9" android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:id="@+id/editText2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="@string/_01nov17" style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@string/Button9"
+                        android:textSize="15sp"
+                        android:id="@+id/editText22"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn3"
+                    android:text="@string/Rs" android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp" android:layout_marginTop="8dp"
+                    android:nextFocusDown="@+id/nameedit" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_height="wrap_content" android:id="@+id/payyy"
+                    android:layout_width="match_parent"
+                    android:layout_weight="@string/Button9">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:hint="@string/Pay"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        android:maxLines="@string/Button9"
+                        android:textSize="15sp"
+                        android:id="@+id/pay_amount"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

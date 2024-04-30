@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/indiv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="@string/item_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/itemname"
+                    android:text="@string/x"
+                    android:textColor="@color/DarkBlack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/qty"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/itemname"
+                    android:layout_toRightOf="@+id/x"
+                    android:text="@string/_15_0"
+                    android:textSize="12sp"
+                    android:textColor="@color/DarkBlack"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:layout_toLeftOf="@+id/total"
+            android:orientation="horizontal"
+            android:id="@+id/indiv">
+
+            <TextView
+                android:layout_width="wrap_content" android:id="@+id/inn"
+                android:layout_height="wrap_content"
+                android:text="@string/Rs"
+                android:textSize="12sp"
+                android:textColor="@color/DarkBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/indiv_price"
+                android:layout_height="wrap_content"
+                android:text="@string/individual_price"
+                android:textSize="12sp"
+                android:textColor="@color/DarkBlack"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_alignParentRight="true"
+            android:id="@+id/total">
+
+            <TextView
+                android:layout_width="wrap_content" android:id="@+id/inn1"
+                android:layout_height="wrap_content"
+                android:text="@string/Rs"
+                android:textSize="12sp"
+                android:textColor="@color/ColorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_9999"
+                android:textSize="12sp"
+                android:textColor="@color/ColorPrimaryDark" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

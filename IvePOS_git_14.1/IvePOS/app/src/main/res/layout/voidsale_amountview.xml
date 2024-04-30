@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:padding="@dimen/padding_small">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:id="@+id/creditsale_REL_saledetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:orientation="vertical">
+
+                <com.mswipetech.wisepos.demo.sdk.DecAmtEditText
+                    android:id="@+id/voidsaleinputdetailsview_TXT_amount"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_modified_states"
+                    android:ellipsize="@string/start"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/amount"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:paddingRight="6dp"
+                    android:singleLine="true"
+                    android:textSize="22dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/voidsaleinputdetailsview_TXT_last4digits"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_modified_states"
+                    android:ellipsize="@string/start"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/creditsale_cardholderdetailsview_last_4_digits"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLength="@string/Button5"
+                    android:paddingRight="6dp"
+                    android:singleLine="true"
+                    android:textSize="22dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/voidsale_RLT_kewpad"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/voidsaleinputdetailsview_BTN_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_arrownext_img_selector"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

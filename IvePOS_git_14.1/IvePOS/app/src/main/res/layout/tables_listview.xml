@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="86dp" android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingRight="1dp"
+    android:background="#7f7f7f">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/linearLayouthi"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:background="@drawable/table_back_gr" >
+
+        <TextView
+            android:id="@+id/name"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="@string/Button9"
+            android:maxLines="@string/Button9"
+            android:text="@string/table_name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:padding="4dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/table_rr"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/imageView13"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_table"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:id="@+id/imageView13"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

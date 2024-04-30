@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    //Master Admin
+
+    //Local Admin
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:layout_marginTop="12px"
+        android:layout_marginBottom="10px">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/userone"
+                android:id="@+id/userone" />
+
+            <EditText
+                android:layout_width="168px"
+                android:layout_height="38px"
+                android:inputType="textPersonName"
+                android:hint="Enter Name"
+                android:background="@drawable/rounded_usertext"
+                android:id="@+id/etuseronename"
+                android:layout_marginLeft="85px"
+                android:layout_marginTop="3px"
+                android:textSize="15sp"
+               />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Name"
+                android:background="#00a99d"
+                android:id="@+id/etuseroneusername"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="48px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/etuseroneoldpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="88px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/etuseronenewpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="130px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/etuseroneconfirmpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="168px"
+                android:textSize="12sp"/>
+
+            <ImageButton android:id="@+id/etuseronesubmit" android:background="@drawable/clpa_button" android:layout_width="148px" android:layout_height="35px" android:src="@drawable/submit"
+                android:layout_marginLeft="59px"
+                android:layout_marginTop="253px"
+
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/usertwo"
+                android:id="@+id/usertwo" />
+
+            <EditText
+                android:layout_width="168px"
+                android:layout_height="38px"
+                android:inputType="textPersonName"
+                android:hint="Enter Name"
+                android:background="@drawable/rounded_usertext"
+                android:id="@+id/etusertwoname"
+                android:layout_marginLeft="85px"
+                android:layout_marginTop="3px"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Name"
+                android:background="#00a99d"
+                android:id="@+id/etusertwousername"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="48px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/etusertwooldpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="88px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/etusertwonewpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="130px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/etusertwoconfirmpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="168px"
+                android:textSize="12sp"/>
+
+            <ImageButton android:id="@+id/etusertwosubmit" android:background="@drawable/clpa_button" android:layout_width="148px" android:layout_height="35px" android:src="@drawable/submit"
+                android:layout_marginLeft="59px"
+                android:layout_marginTop="253px"
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/userthree"
+                android:id="@+id/userthree" />
+
+            <EditText
+                android:layout_width="168px"
+                android:layout_height="38px"
+                android:inputType="textPersonName"
+                android:hint="Enter Name"
+                android:background="@drawable/rounded_usertext"
+                android:id="@+id/userthreename"
+                android:layout_marginLeft="85px"
+                android:layout_marginTop="3px"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Name"
+                android:background="#00a99d"
+                android:id="@+id/userthreeusername"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="48px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/userthreeoldpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="88px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/userthreenewpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="130px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/userthreeconfirmpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="168px"
+                android:textSize="12sp"/>
+
+            <ImageButton android:id="@+id/userthreesubmit" android:background="@drawable/clpa_button" android:layout_width="148px" android:layout_height="35px" android:src="@drawable/submit"
+                android:layout_marginLeft="59px"
+                android:layout_marginTop="253px"
+
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/userfour"
+                android:id="@+id/userfour" />
+
+            <EditText
+                android:layout_width="168px"
+                android:layout_height="38px"
+                android:inputType="textPersonName"
+                android:hint="Enter Name"
+                android:background="@drawable/rounded_usertext"
+                android:id="@+id/userfourname"
+                android:layout_marginLeft="85px"
+                android:layout_marginTop="3px"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Name"
+                android:background="#00a99d"
+                android:id="@+id/userfourusername"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="48px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/userfouroldpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="88px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/userfournewpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="130px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/userfourconfirmpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="168px"
+                android:textSize="12sp"/>
+
+            <ImageButton android:id="@+id/userfoursubmit" android:background="@drawable/clpa_button" android:layout_width="148px" android:layout_height="35px" android:src="@drawable/submit"
+                android:layout_marginLeft="59px"
+                android:layout_marginTop="253px"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/userfive"
+                android:id="@+id/userfive" />
+
+            <EditText
+                android:layout_width="168px"
+                android:layout_height="38px"
+                android:inputType="textPersonName"
+                android:hint="Enter Name"
+                android:background="@drawable/rounded_usertext"
+                android:id="@+id/userfivename"
+                android:layout_marginLeft="85px"
+                android:layout_marginTop="3px"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Name"
+                android:background="#00a99d"
+                android:id="@+id/userfiveusername"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="48px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/userfiveoldpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="88px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/userfivenewpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="130px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/userfiveconfirmpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="168px"
+                android:textSize="12sp"/>
+
+            <ImageButton android:id="@+id/userfivesubmit" android:background="@drawable/clpa_button" android:layout_width="148px" android:layout_height="35px" android:src="@drawable/submit"
+                android:layout_marginLeft="59px"
+                android:layout_marginTop="253px"
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/usersix"
+                android:id="@+id/usersix" />
+
+            <EditText
+                android:layout_width="168px"
+                android:layout_height="38px"
+                android:inputType="textPersonName"
+                android:hint="Enter Name"
+                android:background="@drawable/rounded_usertext"
+                android:id="@+id/usersixname"
+                android:layout_marginLeft="85px"
+                android:layout_marginTop="3px"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Name"
+                android:background="#00a99d"
+                android:id="@+id/usersixusername"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="48px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/usersixoldpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="88px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/usersixnewpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="130px"
+                android:textSize="12sp"
+                />
+
+            <EditText
+                android:layout_width="100px"
+                android:layout_height="30px"
+                android:singleLine="true"
+                android:hint="Enter Password"
+                android:background="#00a99d"
+                android:id="@+id/usersixconfirmpass"
+                android:password="true"
+                android:layout_marginLeft="158px"
+                android:layout_marginTop="168px"
+                android:textSize="12sp"/>
+
+            <ImageButton android:id="@+id/usersixsubmit" android:background="@drawable/clpa_button" android:layout_width="148px" android:layout_height="35px" android:src="@drawable/submit"
+                android:layout_marginLeft="59px"
+                android:layout_marginTop="253px"
+
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

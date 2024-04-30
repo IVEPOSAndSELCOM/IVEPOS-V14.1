@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="#e6e6e6">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/change_username_pic"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:padding="15dp"
+            android:text="@string/commission_charges"/>
+        <FrameLayout
+            android:layout_width="match_parent" android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical">
+            <Switch
+                android:id="@+id/mySwitch" android:saveEnabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="visible">
+        <FrameLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:background="#e6e6e6">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_height="wrap_content" android:id="@+id/commission_charges_valid"
+                    android:layout_width="130dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:selectAllOnFocus="true"
+                        android:id="@+id/commission_charges_value"
+                        android:hint="@string/commission_charges"
+                        android:textSize="15sp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:inputType="numberDecimal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/rspercent1"
+                    android:entries="@array/discount_type"
+                    android:prompt="@string/choose_discount"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="0dp" android:paddingRight="0dp"
+                    android:paddingBottom="0dp" android:paddingTop="0dp"
+                    android:textColor="#000000" android:ellipsize="end"
+                    android:maxLines="@string/Button9"
+                    android:layout_height="match_parent"
+                    android:text="%"
+                    android:lines="@string/Button9"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/of_bill_amount"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/search_content">
+        <Button
+            android:layout_width="match_parent" android:id="@+id/cancel"
+            android:layout_height="wrap_content"
+            android:layout_weight="@string/Button9"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/ok"
+            android:text="@string/subscription_prompt_cancel"
+            android:layout_marginRight="1dp"/>
+        <Button
+            android:layout_width="match_parent" android:id="@+id/savetime"
+            android:layout_height="wrap_content"
+            android:layout_weight="@string/Button9"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/ok"
+            android:text="@string/save"
+            android:layout_marginLeft="1dp"/>
+    </LinearLayout>
+
+</LinearLayout>

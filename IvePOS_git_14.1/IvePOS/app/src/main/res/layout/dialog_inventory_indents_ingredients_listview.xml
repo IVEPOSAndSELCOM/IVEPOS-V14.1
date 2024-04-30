@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent" android:id="@+id/first"
+            android:layout_height="wrap_content" android:layout_toLeftOf="@+id/second"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lasttransaction_date"
+                    android:id="@+id/item_date"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/time"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/vendor_name"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/DarkBlack"
+                    android:text="@string/vendor_name"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        ///////////////////////////////////////
+        <LinearLayout
+            android:layout_width="wrap_content" android:id="@+id/second"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_alignParentRight="true"
+            android:gravity="right">
+            <LinearLayout
+                android:layout_width="wrap_content" android:gravity="right"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content" android:textColor="@color/DarkBlack"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_qty"
+                    android:id="@+id/item_qty"/>
+
+                <TextView
+                    android:id="@+id/unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_unit"
+                    android:textColor="@color/DarkBlack"/>
+
+                <TextView
+                    android:id="@+id/x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x"
+                    android:textColor="@color/DarkBlack"
+                    android:layout_toRightOf="@+id/item_qty"/>
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"
+                    android:textColor="@color/DarkBlack"
+                    android:layout_toRightOf="@+id/item_qty"/>
+
+                <TextView
+                    android:id="@+id/item_indiv_price" android:textColor="@color/DarkBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/x"
+                    android:layout_toLeftOf="@+id/total_price"
+                    android:text="@string/price"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content" android:gravity="right"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content" android:textColor="@color/DarkBlack"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wastage_qty"
+                    android:id="@+id/wastage_qty"/>
+
+                <TextView
+                    android:id="@+id/unit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_unit"
+                    android:textColor="@color/DarkBlack"/>
+
+                <TextView
+                    android:id="@+id/x1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x"
+                    android:textColor="@color/DarkBlack"
+                    android:layout_toRightOf="@+id/item_qty"/>
+
+                <TextView
+                    android:id="@+id/x2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"
+                    android:textColor="@color/DarkBlack"
+                    android:layout_toRightOf="@+id/item_qty"/>
+
+                <TextView
+                    android:id="@+id/item_indiv_price1" android:textColor="@color/DarkBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/x2"
+                    android:layout_toLeftOf="@+id/total_price"
+                    android:text="@string/price"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/inn2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"/>
+                <TextView
+                    android:layout_width="wrap_content" android:id="@+id/item_total_price"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

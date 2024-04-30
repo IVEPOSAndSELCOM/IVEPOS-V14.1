@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical">
+
+
+	<LinearLayout
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<RelativeLayout
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<!-- This is for the info image -->
+			<ImageView
+				android:id="@+id/customdlg_IMV_image"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:src="@android:drawable/ic_menu_info_details" />
+			<!-- Title -->
+
+			<TextView android:id="@+id/customdlg_TXT_title"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:textSize="24dip" android:text="@string/nfccard_type" android:textColor="#343434"
+				android:textStyle="bold" android:typeface="sans" />
+		</RelativeLayout>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_margin="10dp"
+		>
+
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<ListView
+				android:id="@+id/nfccardtype_list_selection"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:choiceMode="singleChoice"
+				android:divider="@color/light_grey"
+				android:dividerHeight="@dimen/divider_height_normal"/>
+		</RelativeLayout>
+
+
+	</RelativeLayout>
+
+</LinearLayout>

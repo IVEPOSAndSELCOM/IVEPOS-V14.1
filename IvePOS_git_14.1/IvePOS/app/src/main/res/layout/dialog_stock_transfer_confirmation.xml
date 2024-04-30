@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:background="#e6e6e6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_backup_success_green_48dp"/>
+
+        <TextView
+            android:id="@+id/restore_filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stock_transferred_successfully"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingLeft="15dp"
+            android:textColor="#da4336"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent" android:layout_weight="@string/Button9"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/done" android:id="@+id/done"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="@drawable/ok"/>
+    </LinearLayout>
+
+</LinearLayout>

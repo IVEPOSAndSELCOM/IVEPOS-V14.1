@@ -1,0 +1,581 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="5dp" android:paddingRight="5dp" android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:background="#ffffff">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/complogo">
+            <TextView
+                android:layout_width="wrap_content" android:text="@string/bill_copy"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"/>
+            <ImageView
+                android:layout_width="107dp" android:id="@+id/viewImagee"
+                android:layout_height="60dp"
+                android:layout_gravity="center" android:background="#ffffff"/>
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/compname"
+                android:layout_height="wrap_content"
+                android:text="@string/company_name"
+                android:gravity="center"
+                android:textSize="11.5sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/address1"
+                android:layout_height="wrap_content"
+                android:text="@string/address_line_1"
+                android:textSize="10sp"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/address2" 
+                android:layout_height="wrap_content"
+                android:text="@string/address_line_2"
+                android:textSize="10sp"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/address3"
+                android:layout_height="wrap_content"
+                android:text="@string/address_line_3"
+                android:textSize="10sp"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/phoneno"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_no"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/emailid"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/website"
+                android:layout_height="wrap_content"
+                android:text="@string/website"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent" android:id="@+id/taxlineone"
+                android:layout_height="wrap_content"
+                android:text="@string/tax_license_nos"
+                android:gravity="center_horizontal"
+                android:textSize="10sp"
+                android:textColor="#000000"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#7f7f7f"/>
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:weightSum="@string/Button10"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   android:layout_marginTop="5dp" >
+
+            <TextView
+                android:text="@string/date_of_order"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/date_of_order1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/restaurant_name"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/rest_name1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/restaurant_address"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/rest_addre1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/restaurant_no"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/rest_num1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/restaurant_email_id"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/rest_emailid1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/gst_no"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/gst_no1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/owner_s_name"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/owners_name1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/owner_s_number"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/owners_num1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/owner_s_email_id"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/owners_email_id1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/zomato_relationship_manager_email_id"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/zomato_rela_manag_email_id1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/merchant_registered_email_id_with_zomato"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/zomato_regi_email_id1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/zomato_ordering_url"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/zomato_order_url1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/menu_timings_yes_no"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/menu_timings1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/delivery_charges_if_any"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/deli_charg1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/packing_charges_if_any"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/pack_charg1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/gst_if_any"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/gst_any1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/contact_no_of_concerned_person_for_details"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/contact_num1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/swiggy_relationship_manager_email_id"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/swiggy_relat_manag_email_id1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent" android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:orientation="horizontal"   >
+
+            <TextView
+                android:text="@string/swiggy_ordering_url_restaurant_id"  android:paddingRight="10dp"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+            <TextView
+                android:text=": "
+                android:layout_width="wrap_content" android:textSize="11.5sp"
+                android:layout_height="wrap_content"/>
+            
+            <TextView
+                android:id="@+id/swiggy_order_url1" android:text="@string/Button9"
+                android:layout_width="0dp" android:textSize="11.5sp"
+                android:layout_height="wrap_content" android:layout_weight="@string/Button9"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent" android:paddingTop="10dp"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+        <!--android:id="@+id/splitname"-->
+        <!--android:layout_width="158dp" android:textSize="27sp"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <!--<TextView-->
+        <!--android:text="@string/Button13" android:id="@+id/splittotal" android:gravity="end" android:paddingRight="20dp"-->
+        <!--android:layout_width="200dp" android:textSize="27sp"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="#ffffffff" >-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView1"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:src="@drawable/ic_intuition_logo_green_72dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="25dp"-->
+    <!--android:textColor="@android:color/holo_green_dark"-->
+    <!--android:textSize="21sp" />-->
+
+    <!--</RelativeLayout>-->

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.intuition.selcom.SignupActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <Button
+        android:textSize="18sp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/red_click"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/new_company"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_margin="20dp"
+        android:id="@+id/btn_company"
+        />
+
+    <Button
+        android:textSize="18sp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/red_click"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/new_store"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_margin="20dp"
+        android:id="@+id/btn_store"
+        />
+
+    <Button
+        android:textSize="18sp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/red_click"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/new_device"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_margin="20dp"
+        android:id="@+id/btn_device"
+        />
+
+    <Button
+        android:textSize="18sp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:background="@drawable/red_click"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/backup"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_margin="20dp"
+        android:id="@+id/btn_backup"
+        />
+
+
+</LinearLayout>
