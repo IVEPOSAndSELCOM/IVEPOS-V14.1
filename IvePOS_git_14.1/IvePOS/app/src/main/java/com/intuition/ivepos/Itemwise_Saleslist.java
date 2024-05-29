@@ -732,7 +732,7 @@ public class Itemwise_Saleslist extends AppCompatActivity implements ReceiveList
                         insert1_cc = "\u0024";
                         insert1_rs = "\u0024";
                     }else {
-                        if (str_country.toString().equals("Dinar")) {
+                        if (str_country.toString().equals("Dinars")) {
                             insert1_cc = "D";
                             insert1_rs = "KD.";
                         }else {
@@ -775,6 +775,11 @@ public class Itemwise_Saleslist extends AppCompatActivity implements ReceiveList
                                                                 if (str_country.toString().equals("Dirhams")) {
                                                                     insert1_cc = "AED";
                                                                     insert1_rs = "AED.";
+                                                                }else {
+                                                                    if (str_country.toString().equals("Kuwait Dinar")) {
+                                                                        insert1_cc = "KWD";
+                                                                        insert1_rs = "KWD.";
+                                                                    }
                                                                 }
                                                             }
                                                         }

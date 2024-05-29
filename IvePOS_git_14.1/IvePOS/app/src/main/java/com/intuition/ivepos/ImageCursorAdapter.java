@@ -153,6 +153,9 @@ public class ImageCursorAdapter extends SimpleCursorAdapter {
         TextView inn = (TextView) v.findViewById(R.id.inn);
         inn.setText(insert1_cc);
 
+        TextView inn2 = (TextView) v.findViewById(R.id.inn2);
+        inn2.setText(insert1_cc);
+
 //        if (str_country.toString().equals("Rupee") || str_country.toString().equals("India")) {
 //            System.out.println("Rohith India");
 //            insert1_cc = "\u20B9";

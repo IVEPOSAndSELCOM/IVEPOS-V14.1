@@ -81,7 +81,7 @@ public class ImageCursorAdapter_Inventory_Itemslist extends SimpleCursorAdapter 
                         inn.setText(insert1_cc);
                         inn1.setText(insert1_cc);
                     }else {
-                        if (str_country.toString().equals("Dinar")) {
+                        if (str_country.toString().equals("Dinars")) {
                             insert1_cc = "D";
                             inn.setText(insert1_cc);
                             inn1.setText(insert1_cc);
@@ -135,6 +135,12 @@ public class ImageCursorAdapter_Inventory_Itemslist extends SimpleCursorAdapter 
                                                                     insert1_cc = "AED";
                                                                     inn.setText(insert1_cc);
                                                                     inn1.setText(insert1_cc);
+                                                                }else {
+                                                                    if (str_country.toString().equals("Kuwait Dinar")) {
+                                                                        insert1_cc = "KWD";
+                                                                        inn.setText(insert1_cc);
+                                                                        inn1.setText(insert1_cc);
+                                                                    }
                                                                 }
                                                             }
                                                         }

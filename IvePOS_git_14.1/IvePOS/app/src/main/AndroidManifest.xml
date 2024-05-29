@@ -839,7 +839,6 @@
             android:configChanges="orientation|screenLayout|screenSize"
             android:exported="true"
             android:label="Admin"
-            android:parentActivityName=".BeveragesMenuFragment_Dine"
             android:theme="@style/AppTheme_sherlock"
             android:windowSoftInputMode="adjustPan" />
         <activity
@@ -847,28 +846,24 @@
             android:configChanges="orientation|screenLayout|screenSize"
             android:exported="true"
             android:label="User"
-            android:parentActivityName=".BeveragesMenuFragment_Dine"
             android:theme="@style/AppTheme_sherlock" />
         <activity
             android:name=".MultiFragCustomerActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:exported="true"
             android:label="User"
-            android:parentActivityName=".BeveragesMenuFragment_Dine"
             android:theme="@style/AppTheme_sherlock" />
         <activity
             android:name=".MultiFragCloudSubscrition"
             android:configChanges="orientation|screenLayout|screenSize"
             android:exported="true"
             android:label="User"
-            android:parentActivityName=".BeveragesMenuFragment_Dine"
             android:theme="@style/AppTheme_sherlock" />
         <activity
             android:name=".MultiFragDatabaseActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:exported="true"
             android:label="Product and tax"
-            android:parentActivityName=".BeveragesMenuFragment_Dine"
             android:theme="@style/AppTheme_sherlock"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
@@ -876,7 +871,6 @@
             android:configChanges="orientation|screenLayout|screenSize"
             android:exported="true"
             android:label="Reports"
-            android:parentActivityName=".BeveragesMenuFragment_Dine"
             android:theme="@style/AppTheme_sherlock"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -884,14 +878,12 @@
             android:configChanges="orientation|screenLayout|screenSize"
             android:exported="true"
             android:label="Settings"
-            android:parentActivityName=".BeveragesMenuFragment_Dine"
             android:theme="@style/AppTheme_sherlock" />
         <activity
             android:name=".MultiFragBackupActivity"
             android:configChanges="screenLayout|screenSize"
             android:exported="true"
             android:label="Backup"
-            android:parentActivityName=".BeveragesMenuFragment_Dine"
             android:theme="@style/AppTheme_sherlock"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -899,14 +891,12 @@
             android:configChanges="orientation|screenLayout|screenSize"
             android:exported="true"
             android:label="Ingredients"
-            android:parentActivityName=".BeveragesMenuFragment_Dine"
             android:theme="@style/AppTheme_sherlock" />
         <activity
             android:name=".MultiFragExpensesActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:exported="true"
             android:label="@string/title27"
-            android:parentActivityName=".BeveragesMenuFragment_Dine"
             android:theme="@style/AppTheme_sherlock"
             android:windowSoftInputMode="adjustPan" />
         <activity

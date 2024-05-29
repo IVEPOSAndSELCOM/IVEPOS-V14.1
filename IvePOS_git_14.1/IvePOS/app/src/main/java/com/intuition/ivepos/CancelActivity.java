@@ -378,7 +378,7 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                         rupee.setText(insert1_cc);
                         inn.setText(insert1_cc);
                     }else {
-                        if (str_country.toString().equals("Dinar")) {
+                        if (str_country.toString().equals("Dinars")) {
                             insert1_cc = "D";
                             insert1_rs = "KD.";
                             rs_text.setText(insert1_cc);
@@ -454,6 +454,14 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                                                     rs_text.setText(insert1_cc);
                                                                     rupee.setText(insert1_cc);
                                                                     inn.setText(insert1_cc);
+                                                                }else {
+                                                                    if (str_country.toString().equals("Kuwait Dinar")) {
+                                                                        insert1_cc = "KWD";
+                                                                        insert1_rs = "KWD.";
+                                                                        rs_text.setText(insert1_cc);
+                                                                        rupee.setText(insert1_cc);
+                                                                        inn.setText(insert1_cc);
+                                                                    }
                                                                 }
                                                             }
                                                         }
@@ -1156,6 +1164,8 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                     String taxx5 = ccvv.getString(41);
                                     String taxx_v5 = ccvv.getString(42);
                                     String hsn_hsn = ccvv.getString(34);
+                                    String old_total = ccvv.getString(50);
+                                    String old_total_indiv = ccvv.getString(56);
 
                                     ContentValues contentValues = new ContentValues();
 //                                contentValues.put("_id", id);
@@ -1203,6 +1213,8 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                         contentValues.put("reason", radioBtncash.getText().toString());
                                     }
                                     contentValues.put("datetimee_new", time24_new);
+                                    contentValues.put("old_total", old_total);
+                                    contentValues.put("old_total_indiv", old_total_indiv);
 
 
                                     contentUri = Uri.withAppendedPath(StubProvider.CONTENT_URI, "All_Sales_Cancelled");
@@ -2085,6 +2097,8 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                         String taxx5 = ccvv.getString(41);
                                         String taxx_v5 = ccvv.getString(42);
                                         String hsn_hsn = ccvv.getString(34);
+                                        String old_total = ccvv.getString(50);
+                                        String old_total_indiv = ccvv.getString(56);
 
                                         ContentValues contentValues = new ContentValues();
 //                                contentValues.put("_id", id);
@@ -2132,6 +2146,8 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                             contentValues.put("reason", radioBtncash.getText().toString());
                                         }
                                         contentValues.put("datetimee_new", time24_new);
+                                        contentValues.put("old_total", old_total);
+                                        contentValues.put("old_total_indiv", old_total_indiv);
 
 
                                         contentUri = Uri.withAppendedPath(StubProvider.CONTENT_URI, "All_Sales_Cancelled");
@@ -3030,6 +3046,8 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                             String taxx5 = ccvv.getString(41);
                                             String taxx_v5 = ccvv.getString(42);
                                             String hsn_hsn = ccvv.getString(34);
+                                            String old_total = ccvv.getString(50);
+                                            String old_total_indiv = ccvv.getString(56);
 
                                             ContentValues contentValues = new ContentValues();
 //                                contentValues.put("_id", id);
@@ -3077,6 +3095,8 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                                 contentValues.put("reason", radioBtncash.getText().toString());
                                             }
                                             contentValues.put("datetimee_new", time24_new);
+                                            contentValues.put("old_total", old_total);
+                                            contentValues.put("old_total_indiv", old_total_indiv);
 
 
                                             contentUri = Uri.withAppendedPath(StubProvider.CONTENT_URI, "All_Sales_Cancelled");
@@ -3997,6 +4017,8 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                                     String taxx5 = ccvv.getString(41);
                                                     String taxx_v5 = ccvv.getString(42);
                                                     String hsn_hsn = ccvv.getString(34);
+                                                    String old_total = ccvv.getString(50);
+                                                    String old_total_indiv = ccvv.getString(56);
 
                                                     ContentValues contentValues = new ContentValues();
 //                                        contentValues.put("_id", id);
@@ -4044,6 +4066,8 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                                         contentValues.put("reason", radioBtncash.getText().toString());
                                                     }
                                                     contentValues.put("datetimee_new", time24_new);
+                                                    contentValues.put("old_total", old_total);
+                                                    contentValues.put("old_total_indiv", old_total_indiv);
 
 
                                                     contentUri = Uri.withAppendedPath(StubProvider.CONTENT_URI, "All_Sales_Cancelled");
@@ -21180,6 +21204,9 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
 
 
         float rom = Float.parseFloat(onlybilltaxnew.getText().toString())+Float.parseFloat(onlybillnew_hide.getText().toString())-Float.parseFloat(onlybilldiscountnew.getText().toString());
+        System.out.println("onlybilltotalnew3 "+onlybilltaxnew.getText().toString());
+        System.out.println("onlybilltotalnew3 "+onlybillnew_hide.getText().toString());
+        System.out.println("onlybilltotalnew3 "+onlybilldiscountnew.getText().toString());
         System.out.println("onlybilltotalnew3 "+rom);
         if (str_round_off.toString().equals("No")) {
             onlybilltotalnew.setText(String.format("%.2f", rom));
@@ -22297,7 +22324,11 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
             }
         }
 
-        float rom = Float.parseFloat(onlybilltaxnew.getText().toString()) + Float.parseFloat(onlybillnew_hide.getText().toString()) - Float.parseFloat(onlybilldiscountnew.getText().toString());
+//        float rom = Float.parseFloat(onlybilltaxnew.getText().toString()) + Float.parseFloat(onlybillnew_hide.getText().toString()) - Float.parseFloat(onlybilldiscountnew.getText().toString());
+        float rom = Float.parseFloat(onlybillnew.getText().toString());
+        System.out.println("onlybilltotalnew8 "+onlybilltaxnew.getText().toString());
+        System.out.println("onlybilltotalnew8 "+onlybillnew_hide.getText().toString());
+        System.out.println("onlybilltotalnew8 "+onlybilldiscountnew.getText().toString());
         System.out.println("onlybilltotalnew8 "+rom);
         if (str_round_off.toString().equals("No")) {
             onlybilltotalnew.setText(String.format("%.2f", rom));
@@ -23600,7 +23631,7 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                                             cz.setText("");
                                                         }
 
-                                                        if (editText.getText().toString().equals("0")){
+                                                        if (editText.getText().toString().equals("0") || editText.getText().toString().equals("0.0") || editText.getText().toString().equals("0.00")){
                                                             textView1.setText("0");
                                                         }else {
                                                             Float cc = newvv*cal;
@@ -24198,7 +24229,7 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                                         cz.setText("");
                                                     }
 
-                                                    if (editText.getText().toString().equals("0")){
+                                                    if (editText.getText().toString().equals("0") || editText.getText().toString().equals("0.0") || editText.getText().toString().equals("0.00")){
                                                         textView1.setText("0");
                                                     }else {
                                                         Float cc = newvv*cal;
@@ -26210,7 +26241,7 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                                             cz.setText("");
                                                         }
 
-                                                        if (editText.getText().toString().equals("0")){
+                                                        if (editText.getText().toString().equals("0") || editText.getText().toString().equals("0.0") || editText.getText().toString().equals("0.00")){
                                                             textView1.setText("0");
                                                         }else {
                                                             Float cc = newvv*cal;
@@ -26828,7 +26859,7 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                                             cz.setText("");
                                                         }
 
-                                                        if (editText.getText().toString().equals("0")) {
+                                                        if (editText.getText().toString().equals("0") || editText.getText().toString().equals("0.0") || editText.getText().toString().equals("0.00")) {
                                                             textView1.setText("0");
                                                         } else {
                                                             Float cc = newvv * cal;
@@ -27251,7 +27282,7 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
 //                                                } while (cursor1.moveToNext());
 //                                            }
 //
-//                                            if (editText.getText().toString().equals("0")) {
+//                                            if (editText.getText().toString().equals("0") || editText.getText().toString().equals("0.0") || editText.getText().toString().equals("0.00")) {
 //                                                textView1.setText("0");
 //                                            } else {
 //                                                Float cc = newvv * cal;
@@ -28298,7 +28329,7 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                                         cz.setText("");
                                                     }
 
-                                                    if (editText.getText().toString().equals("0")){
+                                                    if (editText.getText().toString().equals("0") || editText.getText().toString().equals("0.0") || editText.getText().toString().equals("0.00")){
                                                         textView1.setText("0");
                                                     }else {
                                                         Float cc = newvv*cal;
@@ -28915,7 +28946,7 @@ public class CancelActivity extends AppCompatActivity implements ReceiveListener
                                                         cz.setText("");
                                                     }
 
-                                                    if (editText.getText().toString().equals("0")) {
+                                                    if (editText.getText().toString().equals("0") || editText.getText().toString().equals("0.0") || editText.getText().toString().equals("0.00")) {
                                                         textView1.setText("0");
                                                     } else {
                                                         Float cc = newvv * cal;

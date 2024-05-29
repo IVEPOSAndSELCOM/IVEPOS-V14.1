@@ -288,7 +288,7 @@ public class ExpenseActivity extends Fragment {
                         insert1_rs = "\u0024";
                         rs_text.setText(insert1_cc);
                     }else {
-                        if (str_country.toString().equals("Dinar")) {
+                        if (str_country.toString().equals("Dinars")) {
                             insert1_cc = "D";
                             insert1_rs = "KD.";
                             rs_text.setText(insert1_cc);
@@ -342,6 +342,12 @@ public class ExpenseActivity extends Fragment {
                                                                     insert1_cc = "AED";
                                                                     insert1_rs = "AED.";
                                                                     rs_text.setText(insert1_cc);
+                                                                }else {
+                                                                    if (str_country.toString().equals("Kuwait Dinar")) {
+                                                                        insert1_cc = "KWD";
+                                                                        insert1_rs = "KWD.";
+                                                                        rs_text.setText(insert1_cc);
+                                                                    }
                                                                 }
                                                             }
                                                         }

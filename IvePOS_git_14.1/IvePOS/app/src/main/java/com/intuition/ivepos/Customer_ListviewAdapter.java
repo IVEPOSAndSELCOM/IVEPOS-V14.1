@@ -231,7 +231,7 @@ public class Customer_ListviewAdapter extends SimpleCursorAdapter {
                         rs_deposit1.setText(insert1_cc);
                         rs_cashout1.setText(insert1_cc);
                     }else {
-                        if (str_country.toString().equals("Dinar")) {
+                        if (str_country.toString().equals("Dinars")) {
                             insert1_cc = "D";
                             rs_total_sale1.setText(insert1_cc);
                             rs_credit1.setText(insert1_cc);
@@ -329,6 +329,16 @@ public class Customer_ListviewAdapter extends SimpleCursorAdapter {
                                                                     rs_charges1.setText(insert1_cc);
                                                                     rs_deposit1.setText(insert1_cc);
                                                                     rs_cashout1.setText(insert1_cc);
+                                                                }else {
+                                                                    if (str_country.toString().equals("Kuwait Dinar")) {
+                                                                        insert1_cc = "KWD";
+                                                                        rs_total_sale1.setText(insert1_cc);
+                                                                        rs_credit1.setText(insert1_cc);
+                                                                        rs_refunds1.setText(insert1_cc);
+                                                                        rs_charges1.setText(insert1_cc);
+                                                                        rs_deposit1.setText(insert1_cc);
+                                                                        rs_cashout1.setText(insert1_cc);
+                                                                    }
                                                                 }
                                                             }
                                                         }

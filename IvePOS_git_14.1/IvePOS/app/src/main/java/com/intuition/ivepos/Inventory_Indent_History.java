@@ -189,7 +189,7 @@ public class Inventory_Indent_History extends AppCompatActivity {
                         inn1.setText(insert1_cc);
                         inn2.setText(insert1_cc);
                     }else {
-                        if (str_country.toString().equals("Dinar")) {
+                        if (str_country.toString().equals("Dinars")) {
                             insert1_cc = "D";
                             insert1_rs = "KD.";
                             inn.setText(insert1_cc);
@@ -265,6 +265,14 @@ public class Inventory_Indent_History extends AppCompatActivity {
                                                                     inn.setText(insert1_cc);
                                                                     inn1.setText(insert1_cc);
                                                                     inn2.setText(insert1_cc);
+                                                                }else {
+                                                                    if (str_country.toString().equals("Kuwait Dinar")) {
+                                                                        insert1_cc = "KWD";
+                                                                        insert1_rs = "KWD.";
+                                                                        inn.setText(insert1_cc);
+                                                                        inn1.setText(insert1_cc);
+                                                                        inn2.setText(insert1_cc);
+                                                                    }
                                                                 }
                                                             }
                                                         }

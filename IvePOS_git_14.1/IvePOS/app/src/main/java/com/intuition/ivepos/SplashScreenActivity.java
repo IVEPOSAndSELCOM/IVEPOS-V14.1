@@ -301,7 +301,10 @@ public class SplashScreenActivity extends AppCompatActivity {
 //        }
 
 
-                getSecurityKey();
+//             getSecurityKey();
+
+        DownloadMusicfromInternet31 downloadMusicfromInternet = new DownloadMusicfromInternet31();
+        downloadMusicfromInternet.execute();
 
 //        DownloadMusicfromInternet3 downloadMusicfromInternet = new DownloadMusicfromInternet3();
 //        downloadMusicfromInternet.execute();
@@ -959,6 +962,98 @@ public class SplashScreenActivity extends AppCompatActivity {
                     //progressBar.setVisibility(View.GONE);
                 }
             }
+        }
+
+    }
+
+    class DownloadMusicfromInternet31 extends AsyncTask<String, Void, Integer> {
+        private ProgressDialog dialog = new ProgressDialog(SplashScreenActivity.this);
+        boolean reachable;
+
+        @Override
+        protected Integer doInBackground(String... params) {
+
+//            try {
+//                Process p1 = java.lang.Runtime.getRuntime().exec("ping -c 1 www.google.com");
+//                int returnVal = p1.waitFor();
+//                reachable = (returnVal==0);
+//                System.out.println(""+reachable);
+//            } catch (Exception e) {
+//                // TODO Auto-generated catch block
+//                e.printStackTrace();
+//            }
+
+            final ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+            if (cm != null) {
+                if (Build.VERSION.SDK_INT < 23) {
+                    try {
+                        Process p1 = java.lang.Runtime.getRuntime().exec("ping -c 1 www.google.com");
+                        int returnVal = p1.waitFor();
+                        reachable = (returnVal==0);
+                        System.out.println(""+reachable);
+                    } catch (Exception e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+//                            return result;
+                } else {
+                    boolean isOnline = false;
+                    try {
+                        ConnectivityManager manager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                        NetworkCapabilities capabilities = manager.getNetworkCapabilities(manager.getActiveNetwork());  // need ACCESS_NETWORK_STATE permission
+                        isOnline = capabilities != null && capabilities.hasCapability(NetworkCapabilities.NET_CAPABILITY_VALIDATED);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    if (isOnline){
+                        System.out.println("internet");
+                        reachable = true;
+
+                    }else {
+                        System.out.println("no internet");
+                        reachable = false;
+                    }
+
+//                    return isOnline;
+                }
+            }
+
+//            return false;
+
+            return null;
+        }
+
+        // Show Progress bar before downloading Music
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            // Shows Progress Bar Dialog and then call doInBackground method
+            //showDialog(progress_bar_type);
+
+//            dialog.setMessage(getString(R.string.setmessage3));
+//            dialog.setCanceledOnTouchOutside(false);
+//            dialog.setCancelable(false);
+//            dialog.show();
+        }
+
+
+        @Override
+        protected void onPostExecute(Integer file_url) {
+            dialog.dismiss();
+
+            SharedPreferences pref = getDefaultSharedPreferencesMultiProcess(getApplicationContext()); // 0 - for private mode
+            boolean isSignedin= pref.getBoolean("signin", false); // getting String
+
+            if (reachable) {
+                getSecurityKey();
+            }else {
+                DownloadMusicfromInternet3 downloadMusicfromInternet = new DownloadMusicfromInternet3();
+                downloadMusicfromInternet.execute();
+            }
+
+
         }
 
     }

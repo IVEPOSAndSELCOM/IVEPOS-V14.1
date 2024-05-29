@@ -87,7 +87,7 @@ public class ImageCursorAdapter8 extends SimpleCursorAdapter {
                         insert1_cc = "\u0024";
                         inn.setText(insert1_cc);
                     }else {
-                        if (str_country.toString().equals("Dinar")) {
+                        if (str_country.toString().equals("Dinars")) {
                             insert1_cc = "D";
                             inn.setText(insert1_cc);
                         }else {
@@ -130,6 +130,11 @@ public class ImageCursorAdapter8 extends SimpleCursorAdapter {
                                                                 if (str_country.toString().equals("Dirhams")) {
                                                                     insert1_cc = "AED";
                                                                     inn.setText(insert1_cc);
+                                                                }else {
+                                                                    if (str_country.toString().equals("Kuwait Dinar")) {
+                                                                        insert1_cc = "KWD";
+                                                                        inn.setText(insert1_cc);
+                                                                    }
                                                                 }
                                                             }
                                                         }

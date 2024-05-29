@@ -866,7 +866,7 @@ public class DatabaseitemActivity extends Fragment implements DialogInterface.On
                         insert1_cc = "\u0024";
                         insert1_rs = "\u0024";
                     }else {
-                        if (str_country.toString().equals("Dinar")) {
+                        if (str_country.toString().equals("Dinars")) {
                             insert1_cc = "D";
                             insert1_rs = "KD.";
                         }else {
@@ -6019,7 +6019,7 @@ public class DatabaseitemActivity extends Fragment implements DialogInterface.On
                             insert1_rs = "\u0024";
                             holder.inn.setText(insert1_cc);
                         }else {
-                            if (str_country.toString().equals("Dinar")) {
+                            if (str_country.toString().equals("Dinars")) {
                                 insert1_cc = "D";
                                 insert1_rs = "KD.";
                                 holder.inn.setText(insert1_cc);

@@ -424,7 +424,7 @@
                             android:textStyle="bold"
                             android:id="@+id/subtotalnew"/>
                         <TextView
-                            android:layout_width="0dp" android:visibility="visible"
+                            android:layout_width="0dp" android:visibility="gone"
                             android:layout_height="wrap_content"
                             android:layout_weight="@string/Button9"
                             android:gravity="center"

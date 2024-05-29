@@ -614,7 +614,7 @@
         <item>Pound (\u00a3)</item>
         <item>Euro (\u20ac)</item>
         <item>Dollar (\u0024)</item>
-        <item>Dinar (D)</item>
+        <item>Dinars (D)</item>
         <item>Shilling (S)</item>
         <item>Ringitt (RM)</item>
         <item>Rial (OR)</item>
@@ -625,6 +625,7 @@
         <item>Congolese Franc (FC)</item>
         <item>Dirhams (AED)</item>
         <item>Qatari Riyals (QAR)</item>
+        <item>Kuwait Dinar (KWD)</item>
     </string-array>
 
 <!--    <string-array name="printertype">

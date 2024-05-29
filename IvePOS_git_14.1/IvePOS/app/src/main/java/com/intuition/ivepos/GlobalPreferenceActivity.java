@@ -1772,7 +1772,7 @@ public class GlobalPreferenceActivity extends Fragment implements EasyPermission
                         insert1_cc = "\u0024";
                         insert1_rs = "\u0024";
                     }else {
-                        if (str_country.toString().equals("Dinar")) {
+                        if (str_country.toString().equals("Dinars")) {
                             insert1_cc = "D";
                             insert1_rs = "KD.";
                         }else {
@@ -1815,6 +1815,11 @@ public class GlobalPreferenceActivity extends Fragment implements EasyPermission
                                                                 if (str_country.toString().equals("Dirhams")) {
                                                                     insert1_cc = "AED";
                                                                     insert1_rs = "AED.";
+                                                                }else {
+                                                                    if (str_country.toString().equals("Kuwait Dinar")) {
+                                                                        insert1_cc = "KWD";
+                                                                        insert1_rs = "KWD.";
+                                                                    }
                                                                 }
                                                             }
                                                         }
@@ -2408,7 +2413,7 @@ public class GlobalPreferenceActivity extends Fragment implements EasyPermission
                     if (country_sel.contains("Dollar")){
                         country_selection.setSelection(3);
                     }else {
-                        if (country_sel.contains("Dinar")){
+                        if (country_sel.contains("Dinars")){
                             country_selection.setSelection(4);
                         }else {
                             if (country_sel.contains("Shilling")) {
@@ -2440,6 +2445,10 @@ public class GlobalPreferenceActivity extends Fragment implements EasyPermission
                                                             }else {
                                                                 if (str_country.toString().equals("Dirhams")) {
                                                                     country_selection.setSelection(13);
+                                                                }else {
+                                                                    if (str_country.toString().equals("Kuwait Dinar")) {
+                                                                        country_selection.setSelection(15);
+                                                                    }
                                                                 }
                                                             }
                                                         }
